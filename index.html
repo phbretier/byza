@@ -264,5 +264,26 @@
         </td>
     </tr>
 </table>
+
+<script>
+    window.addEventListener('load', function () {
+        var tableWidth = document.getElementById('maintable').offsetWidth;
+        var windowWidth = window.innerWidth;
+
+        // Calcul du scale idéal pour que le tableau remplisse la fenêtre
+        var idealScale = windowWidth / tableWidth;
+
+        // On plafonne entre 0.5 et 3.0 (300%)
+        var clampedScale = Math.min(3.0, Math.max(0.5, idealScale));
+
+        // Mise à jour dynamique du viewport
+        var viewport = document.querySelector('meta[name="viewport"]');
+        viewport.setAttribute('content',
+            'width=device-width, initial-scale=' + clampedScale.toFixed(2) +
+            ', user-scalable=yes, minimum-scale=0.5, maximum-scale=4.0'
+        );
+    });
+</script>
+
 </body>
 </html>
