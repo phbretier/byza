@@ -2,16 +2,20 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vent en Trégor-Goëlo</title>
     <style>
         body {
             background-color: #222;
             color: #fff;
-            /* zoom: 250%; */
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
         }
         table {
             border-collapse: collapse;
-            margin: 0 auto;
+            width: 100%;
+            table-layout: fixed;
         }
 
         table, th, td {
@@ -21,16 +25,33 @@
         tr {
             text-align: center;
         }
+        td {
+            font-size: 4vw; /* Taille adaptative au lieu de zoom */
+        }
         a:link, a:visited {
             color: #fff;
         }
         .section {
             color: #ff8020;
-            font-size: x-large;
+            font-size: 5vw;
         }
         .big {
-            font-size: x-large;
+            font-size: 5vw;
         }
+        .iframe-wrapper {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            position: relative;
+        }
+        .iframe-wrapper iframe {
+            width: 300%; /* iframe interne plus large, puis on la réduit */
+            height: 300%;
+            transform: scale(0.333);
+            transform-origin: top left;
+            border: none;
+        }
+    </style>
     </style>
 </head>
 <body>
@@ -40,33 +61,46 @@
             Bus
             <br>
             <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/2842?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+            <div class="iframe-wrapper">
+                <iframe frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/2842?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+			</div>
         </td>
         <td colspan="2">
             Goas-Trez
             <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/holfuy/787?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+            <div class="iframe-wrapper">
+                <iframe frameBorder="0" src="https://www.spotair.mobi/widget/wind/holfuy/787?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+			</div>
         </td>
         <td colspan="2">
             Ile Grande
             <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/holfuy/809?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+            <div class="iframe-wrapper">
+                <iframe frameBorder="0" src="https://www.spotair.mobi/widget/wind/holfuy/809?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+			</div>
         </td>
     </tr>
     <tr>
         <td colspan="2">
             Lannion
             <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/metar/LFRO?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+            <div class="iframe-wrapper">
+                <iframe frameBorder="0" src="https://www.spotair.mobi/widget/wind/metar/LFRO?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+			</div>
         </td>
         <td colspan="2">
             <a href="https://www.meteociel.fr/temps-reel/obs_villes.php?code2=7117&affint=1">Perros</a>
             <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/meteo-france/22168001?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+            <div class="iframe-wrapper">
+                <iframe frameBorder="0" src="https://www.spotair.mobi/widget/wind/meteo-france/22168001?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+			</div>
         </td>
         <td colspan="2">
             Port Blanc
             <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/holfuy/1037?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+            <div class="iframe-wrapper">
+                <iframe frameBorder="0" src="https://www.spotair.mobi/widget/wind/holfuy/1037?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+			</div>
         </td>
     </tr>
     <tr>
@@ -74,33 +108,44 @@
             Bréhat
             <br>
             <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/meteo-france/22016001?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+			</div>
         </td>
         <td colspan="2">
             Milepat
             <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/116?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+            <div class="iframe-wrapper">
+                <iframe frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/116?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+			</div>
         </td>
         <td colspan="2">
             Bonaparte
             <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/5070?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+            <div class="iframe-wrapper">
+                <iframe frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/5070?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+			</div>
         </td>
     </tr>
     <tr>
         <td colspan="2">
             Binic
             <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/pioupiou/1456?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+            <div class="iframe-wrapper">
+                <iframe frameBorder="0" src="https://www.spotair.mobi/widget/wind/pioupiou/1456?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+			</div>
         </td>
         <td colspan="2">
             Roselier déco
             <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/89?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+            <div class="iframe-wrapper">
+                <iframe frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/89?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+			</div>
         </td>
         <td colspan="2">
             Saint Pabu
             <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/160?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+            <div class="iframe-wrapper">
+                <iframe frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/160?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
+			</div>
         </td>
     </tr>
     <tr>
