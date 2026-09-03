@@ -56,10 +56,25 @@
                 </td>
             `;
         }
+        function celluleBalise(colspan, nom, cheminSpotair) {
+            const urlSpotair = `https://www.spotair.mobi/widget/wind/${cheminSpotair}?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true`;
+            return `
+                <td colspan="${colspan}">
+                    ${nom}
+                    <br>
+                    <iframe width="75" height="75" frameborder="0" src="${urlSpotair}"></iframe>
+                </td>
+            `;
+        }
     </script>
 </head>
 <body>
 <table>
+    <tr>
+        <script> document.write(celluleBalise(2,"27723/montmin.htm","Veyrier (Talloires)<br>(453m)","pioupiou/1476")); </script>
+        <script> document.write(celluleBalise(2,"27723/montmin.htm","Montmin déco<br>(1276m)","ffvl/75")); </script>
+        <script> document.write(celluleBalise(2,"27723/montmin.htm","Doussard attéro<br>(451m)","letskite/46087")); </script>
+    </tr>
     <tr>
         <td colspan="2">
             Veyrier (Talloires)
@@ -244,42 +259,9 @@
         </td>
     </tr>
     <tr>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/27723/montmin.htm">Montmin</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/45.853/6.223?aromeFrance,clouds,45.853,6.223,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=45.853&long=6.223&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=6.223&lat=45.853&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/27347/chamoux_sur_gelon.htm">Chamoux</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/45.527/6.258?aromeFrance,clouds,45.527,6.258,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=45.527&long=6.258&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=6.258&lat=45.527&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/27288/aiguebelette_le_lac.htm">Aiguebelette</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/45.602/5.807?aromeFrance,clouds,45.602,5.807,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=45.602&long=5.807&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=5.807&lat=45.602&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
-    </tr>
-    <tr>
-        <script> document.write(celluleMeteo(2,"34050/plouha.htm","Plouha","(Bonaparte)","48.706","-2.925")); </script>
-        <script> document.write(celluleMeteo(2,"27288/aiguebelette_le_lac.htm","Aiguebelette","","48.45.602","-2.5.807")); </script>
-        <script> document.write(celluleMeteo(2,"34050/plouha.htm","Plouha","(Bonaparte)","48.706","-2.925")); </script>
-    </tr>
-    <tr>
-        <script> document.write(celluleMeteo(3,"34050/plouha.htm","Plouha","(Bonaparte)","48.706","-2.925")); </script>
-        <script> document.write(celluleMeteo(3,"27288/aiguebelette_le_lac.htm","Aiguebelette","","48.45.602","-2.5.807")); </script>
+        <script> document.write(celluleMeteo(2,"27723/montmin.htm","Montmin","","45.853","6.223")); </script>
+        <script> document.write(celluleMeteo(2,"27347/chamoux_sur_gelon.htm","Chamoux","","45.527","6.258")); </script>
+        <script> document.write(celluleMeteo(2,"27288/aiguebelette_le_lac.htm","Aiguebelette","","45.602","5.807")); </script>
     </tr>
 </table>
 </body>
