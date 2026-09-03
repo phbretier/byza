@@ -35,7 +35,7 @@
         }
     </style>
     <script>
-        function celluleMeteo(colspan, cheminMeteociel, nom, sousNom, latitude, longitude) {
+        function celluleMeteo(colspan, cheminMeteociel, nom, latitude, longitude) {
             const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
             const urlWindy =`https://www.windy.com/plugin/sdg/aromeFrance/${latitude}/${longitude}?aromeFrance,clouds,${latitude},${longitude},10,i:pressure,p:wind`;
             const urlVelivole =`https://www.velivole.fr/profile?lat=${latitude}&long=${longitude}&model=AROME`;
@@ -43,8 +43,6 @@
             return `
                 <td colspan="${colspan}">
                     <a href="${urlMeteociel}">${nom}</a>
-                    <br>
-                    <a href="${urlMeteociel}">${sousNom}</a>
                     <br>
                     <div style="height: 10px;"></div>
                     <a href="${urlWindy}" target="_blank" class="big">📈</a>
@@ -76,142 +74,29 @@
         <script> document.write(celluleBalise(2,"Doussard attéro<br>(451m)","letskite/46087")); </script>
     </tr>
     <tr>
-        <td colspan="2">
-            Veyrier (Talloires)
-            <br>
-            (453m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/pioupiou/1476?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Montmin déco 
-            <br>
-            (1276m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/75?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Doussard attéro 
-            <br>
-            (451m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/letskite/46087?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
+        <script> document.write(celluleBalise(2,"Marlens<br>(509m)","pioupiou/326")); </script>
+        <script> document.write(celluleBalise(2,"Sambuy<br>(1827m)","ffvl/182")); </script>
+        <script> document.write(celluleBalise(2,"Seythenex<br>(784m)","romma/168")); </script>
     </tr>
     <tr>
-        <td colspan="2">
-            Marlens 
-            <br>
-            (509m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/pioupiou/326?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Sambuy 
-            <br>
-            (1827m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/182?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Seythenex 
-            <br>
-            (784m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/romma/168?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
+        <script> document.write(celluleBalise(2,"Val d'Arly<br>(930m)","romma/49")); </script>
+        <script> document.write(celluleBalise(2,"Bisanne<br>(1929m)","ffvl/25")); </script>
+        <script> document.write(celluleBalise(2,"Col des Saisies<br>(1614m)","meteo-france/73132003")); </script>
     </tr>
     <tr>
-        <td colspan="2">
-            Val d'Arly 
-            <br>
-            (930m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/romma/49?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Bisanne 
-            <br>
-            (1929m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/25?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Col des Saisies 
-            <br>
-            (1614m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/meteo-france/73132003?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
+        <script> document.write(celluleBalise(2,"Chamoux<br>(1267m)","pioupiou/159")); </script>
+        <script> document.write(celluleBalise(2,"Montlambert<br>(894m)","ffvl/5120")); </script>
+        <script> document.write(celluleBalise(2,"Albertville<br>(314m)","meteometeo-france/73297003")); </script>
     </tr>
     <tr>
-        <td colspan="2">
-            Chamoux 
-            <br>
-            (1267m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/pioupiou/159?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Montlambert 
-            <br>
-            (894m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/5120?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Albertville 
-            <br>
-            (314m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/meteo-france/73297003?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
+        <script> document.write(celluleBalise(2,"Revard<br>(1500m)","ffvl/5017")); </script>
+        <script> document.write(celluleBalise(2,"Croc Sire<br>(1392m)","ffvl/3399")); </script>
+        <script> document.write(celluleBalise(2,"Sire sud<br>(1505m)","ffvl/2641")); </script>
     </tr>
     <tr>
-        <td colspan="2">
-            Revard 
-            <br>
-            (1500m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/5017?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Croc Sire 
-            <br>
-            (1392m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/3399?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Sire sud 
-            <br>
-            (1505m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/2641?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            Meyrieux-Trouet 
-            <br>
-            (612 m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/romma/52?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Mont du Chat 
-            <br>
-            (1496m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/meteo-france/73051001?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Aiguebelette 
-            <br>
-            (1121m)
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/11?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
+        <script> document.write(celluleBalise(2,"Meyrieux-Trouet<br>(612m)","romma/52")); </script>
+        <script> document.write(celluleBalise(2,"Mont du Chat<br>(1496m)","meteo-france/73051001")); </script>
+        <script> document.write(celluleBalise(2,"Aiguebelette<br>(1121m)","ffvl/11")); </script>
     </tr>
     <tr>
         <td></td>
@@ -259,38 +144,9 @@
         </td>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"27723/montmin.htm","Montmin","","45.853","6.223")); </script>
-        <script> document.write(celluleMeteo(2,"27347/chamoux_sur_gelon.htm","Chamoux","","45.527","6.258")); </script>
-        <script> document.write(celluleMeteo(2,"27288/aiguebelette_le_lac.htm","Aiguebelette","","45.602","5.807")); </script>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/13555/saint_hilaire.htm">Saint Hilaire<br></a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/45.3106/5.8853?aromeFrance,clouds,45.3106,5.8853,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=45.3106&long=5.8853&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=5.8853&lat=45.3106&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/13600/saint_pierre_de_chartreuse">Saint Pierre<br>(la Sia)</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/45.345/5.846?aromeFrance,clouds,45.345,5.846,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=45.345&long=5.846&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=5.846&lat=45.345&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/13628/sarcenas.htm">Sarcenas<br>(Charmant Som)</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/45.323/5.763?aromeFrance,clouds,45.323,5.763,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=45.323&long=5.763&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=5.763&lat=45.323&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
+        <script> document.write(celluleMeteo(2,"27723/montmin.htm","Montmin","45.853","6.223")); </script>
+        <script> document.write(celluleMeteo(2,"27347/chamoux_sur_gelon.htm","Chamoux","45.527","6.258")); </script>
+        <script> document.write(celluleMeteo(2,"27288/aiguebelette_le_lac.htm","Aiguebelette","45.602","5.807")); </script>
     </tr>
 </table>
 </body>
