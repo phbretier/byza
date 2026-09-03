@@ -29,6 +29,32 @@
     }
 </style>
 <script>
+    function webcams() {
+        return `
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="section" colspan="6">
+                    Webcams
+                </td>
+            </tr>
+        `;
+    }
+    function previs() {
+        return `
+            <tr>
+                <td class="section" colspan="6">
+                    Prévisions
+                </td>
+            </tr>
+        `;
+    }
     function celluleBalise(colspan, nom, cheminSpotair) {
         const urlSpotair = `https://www.spotair.mobi/widget/wind/${cheminSpotair}?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true`;
         return `
