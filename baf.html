@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0"">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
     <title>Vent autour de Marlens</title>
     <style>
         body {
@@ -34,6 +34,29 @@
             font-size: larger;
         }
     </style>
+    <script>
+        function celluleMeteo(colspan, cheminMeteociel, nom, sousNom, latitude, longitude) {
+            const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
+            const urlWindy =`https://www.windy.com/plugin/sdg/aromeFrance/${latitude}/${longitude}?aromeFrance,clouds,${latitude},${longitude},10,i:pressure,p:wind`;
+            const urlVelivole =`https://www.velivole.fr/profile?lat=${latitude}&long=${longitude}&model=AROME`;
+            const urlSondage =`https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${longitude}&lat=${latitude}&ech=0&map=0`;
+            return `
+                <td colspan="${colspan}">
+                    <a href="${urlMeteociel}">${nom}</a>
+                    <br>
+                    <a href="${urlMeteociel}">${sousNom}</a>
+                    <br>
+                    <div style="height: 10px;"></div>
+                    <a href="${urlWindy}" target="_blank" class="big">📈</a>
+                    &hairsp;
+                    <a href="${urlVelivole}" target="_blank" class="big">📊</a>
+                    &hairsp;
+                    <a href="${urlSondage}" target="_blank" class="big">📉</a>
+                    <div style="height: 10px;"></div>
+                </td>
+            `;
+        }
+    </script>
 </head>
 <body>
 <table>
@@ -248,6 +271,15 @@
             &hairsp;
             <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=5.807&lat=45.602&ech=0&map=0" target="_blank" class="big">📉</a>
         </td>
+    </tr>
+    <tr>
+        <script> document.write(celluleMeteo(2,"34050/plouha.htm","Plouha","(Bonaparte)","48.706","-2.925")); </script>
+        <script> document.write(celluleMeteo(2,"27288/aiguebelette_le_lac.htm","Aiguebelette","","48.45.602","-2.5.807")); </script>
+        <script> document.write(celluleMeteo(2,"34050/plouha.htm","Plouha","(Bonaparte)","48.706","-2.925")); </script>
+    </tr>
+    <tr>
+        <script> document.write(celluleMeteo(3,"34050/plouha.htm","Plouha","(Bonaparte)","48.706","-2.925")); </script>
+        <script> document.write(celluleMeteo(3,"27288/aiguebelette_le_lac.htm","Aiguebelette","","48.45.602","-2.5.807")); </script>
     </tr>
 </table>
 </body>
