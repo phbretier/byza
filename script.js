@@ -53,4 +53,3 @@ function celluleMeteo(colspan, cheminMeteociel, nom, latitude, longitude) {
         </td>
     `;
 }
-fetch("https://github.com/phbretier/byza");
