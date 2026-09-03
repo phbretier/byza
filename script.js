@@ -53,3 +53,5 @@ function celluleMeteo(colspan, cheminMeteociel, nom, latitude, longitude) {
         </td>
     `;
 }
+
+fetch("https://www.leboncoin.fr/ad/bricolage/3262204349");
