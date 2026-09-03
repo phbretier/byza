@@ -2,105 +2,30 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0"">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
     <title>Vent Normandie</title>
-    <style>
-        body {
-            background-color: #222;
-            color: #fff;
-            margin: 0;
-            padding: 10px;
-        }
-        table {
-            border-collapse: collapse;
-            margin: 0 auto;
-        }
-
-        table, th, td {
-            border: 1px solid #444;
-            padding: 5px;
-        }
-        tr {
-            text-align: center;
-        }
-        a:link, a:visited {
-            color: #fff;
-        }
-        .section {
-            color: #ff8020;
-            font-size: x-large;
-        }
-        .big {
-            font-size: larger;
-        }
-    </style>
+    <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
+    <script src="https://phbretier.github.io/byza/script.js"></script>
 </head>
 <body>
 <table>
     <tr>
-        <td colspan="2">
-            Saint Omer
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/122?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Roche à Bunel
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/6093?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            St Marc d'Ouilly
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/2352?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
+        <script> document.write(celluleBalise(2,"Saint Omer","ffvl/122")); </script>
+        <script> document.write(celluleBalise(2,"Roche à Bunel","ffvl/6093")); </script>
+        <script> document.write(celluleBalise(2,"St Marc d'Ouilly","ffvl/2352")); </script>
     </tr>
     <tr>
-        <td colspan="2">
-            Granville
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/meteo-france/50218001?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Granville - Roc
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/3502?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Champeaux
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/pioupiou/1449?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
+        <script> document.write(celluleBalise(2,"Granville","meteo-france/50218001")); </script>
+        <script> document.write(celluleBalise(2,"Granville - Roc","ffvl/3502")); </script>
+        <script> document.write(celluleBalise(2,"Champeaux","pioupiou/1449")); </script>
     </tr>
     <tr>
-        <td colspan="2">
-            Saint Lô
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/2334?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Vierville
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/97?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Commes
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/158?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
+        <script> document.write(celluleBalise(2,"Saint Lô","ffvl/2334")); </script>
+        <script> document.write(celluleBalise(2,"Vierville","ffvl/97")); </script>
+        <script> document.write(celluleBalise(2,"Commes","ffvl/158")); </script>
     </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td class="section" colspan="6">
-            Webcams
-        </td>
-    </tr>
+
+    <script> document.write(webcams()); </script>
     <tr>
         <td colspan="3">
             <a href="https://live.plaine-altitude.com/player/?controls=1">Clécy</a>
@@ -109,97 +34,22 @@
             <a href="https://www.skaping.com/8-milles-nautic/granville/video">Granville</a>
         </td>
     </tr>
+
+    <script> document.write(previs()); </script>
     <tr>
-        <td class="section" colspan="6">
-            Prévisions
-        </td>
+        <script> document.write(celluleMeteo(2,"3715/clecy.htm","Clécy","48.927","-0.469")); </script>
+        <script> document.write(celluleMeteo(2,"3758/crocy.htm","Crocy","48.8775","-0.04636")); </script>
+        <script> document.write(celluleMeteo(2,"4260/pont_d_ouilly.htm","Saint-Marc d'Ouilly","48.8774","-0.40978")); </script>
     </tr>
     <tr>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/3715/clecy.htm">Clécy</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/48.927/-0.469?aromeFrance,clouds,48.927,-0.469,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=48.927&long=-0.469&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=-0.469&lat=48.927&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/3758/crocy.htm">Crocy</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/48.8775/-0.04636?aromeFrance,clouds,48.8775,-0.04636,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=48.8775&long=-0.04636&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=-0.04636&lat=48.8775&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/4260/pont_d_ouilly.htm">Saint-Marc d'Ouilly</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/48.8774/-0.40978?aromeFrance,clouds,48.8774,-0.40978,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=48.8774&long=-0.40978&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=-0.40978&lat=48.8774&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
+        <script> document.write(celluleMeteo(2,"17318/champeaux.htm","Champeaux","48.732","-1.537")); </script>
+        <script> document.write(celluleMeteo(2,"17411/granville.htm","Granville","48.836","-1.609")); </script>
+        <script> document.write(celluleMeteo(2,"17668/saint_lo.htm","Saint-Lô","49.107","-1.096")); </script>
     </tr>
     <tr>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/17318/champeaux.htm">Champeaux</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/48.732/-1.537?aromeFrance,clouds,48.732,-1.537,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=48.732&long=-1.537&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=-1.537&lat=48.732&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/17411/granville.htm">Granville</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/48.836/-1.609?aromeFrance,clouds,48.836,-1.609,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=48.836&long=-1.609&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=-1.609&lat=48.836&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/17668/saint_lo.htm">Saint-Lô</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/49.107/-1.096?aromeFrance,clouds,49.107,-1.096,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=49.107&long=-1.096&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=-1.096&lat=49.107&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/4241/vierville_sur_mer.htm">Vierville-sur-Mer</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/49.383/-0.911?aromeFrance,clouds,49.383,-0.911,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=49.383&long=-0.911&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=-0.911&lat=49.383&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/3725/commes.htm">Commes</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/49.346/-0.726?aromeFrance,clouds,49.346,-0.726,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=49.346&long=-0.726&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=-0.726&lat=49.346&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/4207/tracy_sur_mer.htm">Tracy-sur-mer</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/49.336/-0.646?aromeFrance,clouds,49.336,-0.646,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=49.336&long=-0.646&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=-0.646&lat=49.336&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
+        <script> document.write(celluleMeteo(2,"4241/vierville_sur_mer.htm","Vierville-sur-Mer","49.383","-0.911")); </script>
+        <script> document.write(celluleMeteo(2,"3725/commes.htm","Commes","49.346","-0.726")); </script>
+        <script> document.write(celluleMeteo(2,"4207/tracy_sur_mer.htm","Tracy-sur-mer","49.336","-0.646")); </script>
     </tr>
 </table>
 </body>
