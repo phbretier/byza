@@ -2,100 +2,28 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0"">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
     <title>Vent à Saint-Hilaire</title>
-    <style>
-        body {
-            background-color: #222;
-            color: #fff;
-            margin: 0;
-            padding: 10px;
-        }
-        table {
-            border-collapse: collapse;
-            margin: 0 auto;
-        }
-
-        table, th, td {
-            border: 1px solid #444;
-            padding: 5px;
-        }
-        tr {
-            text-align: center;
-        }
-        a:link, a:visited {
-            color: #fff;
-        }
-        .section {
-            color: #ff8020;
-            font-size: x-large;
-        }
-        .big {
-            font-size: larger;
-        }
-    </style>
+    <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
+    <script src="https://phbretier.github.io/byza/script.js"></script>
 </head>
 <body>
 <table>
     <tr>
-        <td colspan="3">
-            Saint Hilaire déco sud
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/romma/186?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="3">
-            Saint Hilaire déco nord
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/61?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
+        <script> document.write(celluleBalise(3,"Saint Hilaire déco sud","romma/186")); </script>
+        <script> document.write(celluleBalise(3,"Saint Hilaire déco nord","ffvl/61")); </script>
     </tr>
     <tr>
-        <td colspan="3">
-            Saint Pierre la Scia
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/ffvl/13?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="3">
-            Saint Pierre les Egaux
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/meteo-france/38442008?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
+        <script> document.write(celluleBalise(3,"Saint Pierre la Scia","ffvl/13")); </script>
+        <script> document.write(celluleBalise(3,"Saint Pierre les Egaux","meteo-france/38442008")); </script>
     </tr>
     <tr>
-        <td colspan="2">
-            VL38
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/pioupiou/636?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Le Cheylas
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/pioupiou/106?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
-        <td colspan="2">
-            Le Versoud
-            <br>
-            <iframe width="75" height="75" frameBorder="0" src="https://www.spotair.mobi/widget/wind/meteo-france/38538002?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true"></iframe>
-        </td>
+        <script> document.write(celluleBalise(2,"VL38","pioupiou/636")); </script>
+        <script> document.write(celluleBalise(2,"Le Cheylas","pioupiou/106")); </script>
+        <script> document.write(celluleBalise(2,"Le Versoud","meteo-france/38538002")); </script>
     </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td colspan="6">
-            <a href="https://www.murblanc.org/sthil">Infos Prévol Saint Hilaire</a>
-        </td>
-    </tr>
-    <tr>
-        <td class="section" colspan="6">
-            Webcams
-        </td>
-    </tr>
+    
+    <script> document.write(webcams()); </script>
     <tr>
         <td colspan="3">
             <a href="https://www.prevol.com/prevolwebcam/upload/prevol3decos.jpg">Saint Hilaire Nord</a>
@@ -105,43 +33,16 @@
         </td>
     </tr>
     <tr>
-        <td class="section" colspan="6">
-            Prévisions
+        <td colspan="6">
+            <a href="https://www.murblanc.org/sthil">Infos Prévol Saint Hilaire</a>
         </td>
     </tr>
+
+    <script> document.write(previs()); </script>
     <tr>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/13555/saint_hilaire.htm">Saint Hilaire</a>
-            <br>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/45.3106/5.8853?aromeFrance,clouds,45.3106,5.8853,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=45.3106&long=5.8853&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=5.8853&lat=45.3106&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/13600/saint_pierre_de_chartreuse">Saint Pierre</a>
-            <br>
-            <a href="https://www.meteociel.fr/previsions-arome-1h/13600/saint_pierre_de_chartreuse">(la Sia)</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/45.345/5.846?aromeFrance,clouds,45.345,5.846,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=45.345&long=5.846&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=5.846&lat=45.345&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/13628/sarcenas.htm">Sarcenas</a>
-            <br>
-            <a href="https://www.meteociel.fr/previsions-arome-1h/13628/sarcenas.htm">(Charmant Som)</a>
-            <br>
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/45.323/5.763?aromeFrance,clouds,45.323,5.763,10,i:pressure,p:wind" target="_blank" class="big">📈</a> 
-            &hairsp;
-            <a href="https://www.velivole.fr/profile?lat=45.323&long=5.763&model=AROME" target="_blank" class="big">📊</a>
-            &hairsp;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=5.763&lat=45.323&ech=0&map=0" target="_blank" class="big">📉</a>
-        </td>
+        <script> document.write(celluleMeteo(2,"13555/saint_hilaire.htm","Saint Hilaire","45.3106","5.8853")); </script>
+        <script> document.write(celluleMeteo(2,"13600/saint_pierre_de_chartreuse.htm","Saint Pierre<br>la Sia","45.345","5.846")); </script>
+        <script> document.write(celluleMeteo(2,"13628/sarcenas.htm","Sarcenas<br>Charmant Som","45.323","5.763")); </script>
     </tr>
 </table>
 </body>
