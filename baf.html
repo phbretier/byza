@@ -2,7 +2,13 @@
 <html>
 <head>
     <title>Vent autour de Marlens</title>
-    <!--#include virtual="head.html" -->
+    <script>
+        fetch("head.html")
+            .then(response => response.text())
+            .then(contenu => {
+                document.head.insertAdjacentHTML("afterbegin", contenu);
+            });
+    </script>
 </head>
 <body>
 <table>
