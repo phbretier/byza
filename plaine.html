@@ -10,26 +10,38 @@
 <body>
 <table>
     <tr>
-        <script> document.write(celluleBalise(2,"Massognes<br>(Jarzay, 95m)","ffvl/5111")); </script>
-        <script> document.write(celluleBalise(2,"Chaudefonds<br>(Angers, 69m)","ffvl/2253")); </script>
-        <script> document.write(celluleBalise(2,"Notre-Dame<br>de-la-Mer (128m)","ffvl/126")); </script>
+        <script> document.write(celluleBalise(2,"Massognes","ffvl/5111")); </script>
+        <script> document.write(celluleBalise(2,"Grand Moiré","pioupiou/2168")); </script>
+        <script> document.write(celluleBalise(2,"Pouancay","pioupiou/841")); </script>
+    </tr>
+    <tr>
+        <script> document.write(celluleBalise(2,"Chaudefonds","pioupiou/2198")); </script>
+        <script> document.write(celluleBalise(2,"Angers","holfuy/899")); </script>
+        <script> document.write(celluleBalise(2,"Angers Arpt","metar/LFJR")); </script>
+    </tr>
+    <tr>
+        <script> document.write(celluleBalise(2,"Evreux","metar/LFOE")); </script>
+        <script> document.write(celluleBalise(2,"Thoiry","pioupiou/2161")); </script>
+        <script> document.write(celluleBalise(2,"Roquette","ffvl/5069")); </script>
     </tr>
 
     <script> document.write(webcams()); </script>
-
+    <tr>
+        <td colspan="6">
+            <a href="https://cam-aero.eu/raspicamaero/LFCT_Thouars/img">Thouars</a>
+        </td>
+    </tr>
     <script> document.write(previs()); </script>
     <tr>
-        <script> document.write(celluleMeteo(2,"31599/massognes.htm","Massognes<br>(Jarzay)","46.7637","0.0468")); </script>
-        <script> document.write(celluleMeteo(2,"16935/chaudefonds_sur_layon.htm","Chaudefonds-sur-Layon","47.3228","-0.7174")); </script>
+        <script> document.write(celluleMeteo(3,"31599/massognes.htm","Massognes","46.7637","0.0468")); </script>
+        <script> document.write(celluleMeteo(3,"29306/availles_thouarsais.htm","Grand Moiré","46.858","-0.182")); </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"29145/jeufosse.htm","Notre-Dame-de-la-Mer","49.0362","1.5396")); </script>
-        <script> document.write(celluleMeteo(2,"13083/orbigny.htm","Orbigny<br>(Les Pallis)","47.2196","1.28")); </script>
+        <script> document.write(celluleMeteo(3,"16935/chaudefonds_sur_layon.htm","Chaudefonds","47.3228","-0.7174")); </script>
+        <script> document.write(celluleMeteo(3,"16883/blaison_gohier.htm","Blaison-Gohier","47.403","-0.397")); </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"33100/mereville.htm","Méréville","48.3367","2.081")); </script>
-        <script> document.write(celluleMeteo(2,"28581/amponville.htm","Amponville","48.2786","2.5365")); </script>
-        <script> document.write(celluleMeteo(2,"29262/thoiry.htm","Thoiry","48.8792","1.7803")); </script>
+        <script> document.write(celluleMeteo(6,"29145/jeufosse.htm","Jeufosse","49.0362","1.5396")); </script>
     </tr>
 </table>
 </body>
