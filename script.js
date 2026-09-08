@@ -1,3 +1,13 @@
+function celluleBalise(colspan, nom, cheminSpotair) {
+    const urlSpotair = `https://www.spotair.mobi/widget/wind/${cheminSpotair}?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true`;
+    return `
+        <td colspan="${colspan}">
+            ${nom}
+            <br>
+            <iframe width="75" height="75" frameborder="0" src="${urlSpotair}"></iframe>
+        </td>
+    `;
+}
 function webcams() {
     return `
         <tr>
@@ -24,16 +34,6 @@ function previs() {
         </tr>
     `;
 }
-function celluleBalise(colspan, nom, cheminSpotair) {
-    const urlSpotair = `https://www.spotair.mobi/widget/wind/${cheminSpotair}?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true`;
-    return `
-        <td colspan="${colspan}">
-            ${nom}
-            <br>
-            <iframe width="75" height="75" frameborder="0" src="${urlSpotair}"></iframe>
-        </td>
-    `;
-}
 function celluleMeteo(colspan, cheminMeteociel, nom, latitude, longitude) {
     const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
     const urlWindy =`https://www.windy.com/plugin/sdg/aromeFrance/${latitude}/${longitude}?aromeFrance,clouds,${latitude},${longitude},10,i:pressure,p:wind`;
@@ -52,5 +52,51 @@ function celluleMeteo(colspan, cheminMeteociel, nom, latitude, longitude) {
             <div style="height: 10px;"></div>
         </td>
     `;
-;
+}
+function liens() {
+    return `
+        <tr>
+            <td class="section" colspan="6">
+                Autres sites <a href="https://puretrack.io/#philippe-bretier">📍</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <a href="index.html">Trégor</a>
+            </td>
+            <td colspan="2">
+                <a href="bfk.html">Bzh</a>
+            </td>
+            <td colspan="2">
+                <a href="clecy.html">Normandie</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <a href="plaine.html">Plaine</a>
+            </td>
+            <td colspan="3">
+                <a href="mc.html">Massif<br>Central</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <a href="baf.html">BAF</a>
+            </td>
+            <td colspan="3">
+                <a href="sh.html">St Hilaire</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <a href="pyr.html">Pyrénées</a>
+            </td>
+            <td colspan="2">
+                <a href="millau.html">Millau</a>
+            </td>
+            <td colspan="2">
+                <a href="vj.html">Vosges<br>Jura</a>
+            </td>
+        </tr>
+    `;
 }
