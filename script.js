@@ -76,7 +76,7 @@ function liens() {
                 <a href="plaine.html">Plaine</a>
             </td>
             <td colspan="3">
-                <a href="mc.html">Massif<br>Central</a>
+                <a href="mc.html">Massif Central</a>
             </td>
         </tr>
         <tr>
@@ -95,7 +95,7 @@ function liens() {
                 <a href="millau.html">Millau</a>
             </td>
             <td colspan="2">
-                <a href="vj.html">Vosges<br>Jura</a>
+                <a href="vj.html">Vosges Jura</a>
             </td>
         </tr>
     `;
