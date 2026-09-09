@@ -36,6 +36,7 @@ function previs() {
 }
 function celluleMeteo(colspan, cheminMeteociel, nom, latitude, longitude) {
     const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
+    const urlMeteoParapente =`https://meteo-parapente.com/#/${latitude},${longitude},9`;
     const urlWindy =`https://www.windy.com/plugin/sdg/aromeFrance/${latitude}/${longitude}?aromeFrance,clouds,${latitude},${longitude},10,i:pressure,p:wind`;
     const urlVelivole =`https://www.velivole.fr/profile?lat=${latitude}&long=${longitude}&model=AROME`;
     const urlSondage =`https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${longitude}&lat=${latitude}&ech=0&map=0`;
@@ -44,9 +45,11 @@ function celluleMeteo(colspan, cheminMeteociel, nom, latitude, longitude) {
             <a href="${urlMeteociel}">${nom}</a>
             <br>
             <div style="height: 10px;"></div>
-            <a href="${urlWindy}" target="_blank" class="big">📈</a>
+            <a href="${urlMeteoParapente}" target="_blank" class="big">🪂</a>
             &hairsp;
             <a href="${urlVelivole}" target="_blank" class="big">📊</a>
+            <br>
+            <a href="${urlWindy}" target="_blank" class="big">📈</a>
             &hairsp;
             <a href="${urlSondage}" target="_blank" class="big">📉</a>
             <div style="height: 10px;"></div>
@@ -87,14 +90,11 @@ function liens() {
             </td>
         </tr>
         <tr>
-            <td colspan="2">
+            <td colspan=3">
                 <a href="https://www.windy.com/fr/-Nuages-clouds?iconEu,clouds,47.758,1.455,5,i:deg0,p:wind">Nuages</a>
             </td>
-            <td colspan="2">
+            <td colspan="3">
                 <a href="https://www.velivole.fr/?center_lat=49.82&center_long=10.75&zoom=5.3">Velivole</a>
-            </td>
-            <td colspan="2">
-                <a href="https://meteo-parapente.com/#/48.671,-3.576,9">meteo parapente</a>
             </td>
         </tr>
     
