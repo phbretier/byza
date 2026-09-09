@@ -116,11 +116,14 @@ function liens() {
             </td>
         </tr>
         <tr>
-            <td colspan="3">
+            <td colspan="2">
                 <a href="plaine.html">Plaine</a>
             </td>
-            <td colspan="3">
+            <td colspan="2">
                 <a href="mc.html">Massif Central</a>
+            </td>
+            <td colspan="2">
+                <a href="ardeche.html">Ardèche</a>
             </td>
         </tr>
         <tr>
