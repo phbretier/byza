@@ -10,35 +10,42 @@
 <body>
 <table>
     <tr>
-        <script> document.write(celluleBalise(3,"Pouncho d'Agast<br>(807m)","ffvl/66")); </script>
-        <script> document.write(celluleBalise(3,"Millau-Larzac<br>(Brunas, 736m)","ffvl/2039")); </script>
+        <script> document.write(celluleBalise(2,"Pouncho d'Agast<br>838m","ffvl/66")); </script>
+        <script> document.write(celluleBalise(2,"Brunas<br>867m","ffvl/2039")); </script>
+        <script> document.write(celluleBalise(2,"Millau<br>712m","meteo-france/12145001")); </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(3,"Tournemire<br>(757m)","ffvl/3542")); </script>
-        <script> document.write(celluleBalise(3,"Pic d'Andan<br>(769m)","ffvl/28")); </script>
+        <script> document.write(celluleBalise(3,"Tournemire<br>750m","ffvl/3542")); </script>
+        <script> document.write(celluleBalise(3,"Novis<br>866m","ffvl/3542")); </script>
+        <script> document.write(celluleBalise(3,"Ispagnac<br>838m","ffvl/114")); </script>
     </tr>
 
     <script> document.write(webcams()); </script>
     <tr>
         <td colspan="3">
-            <a href="https://www.skaping.com/millau/pouncho/panoramique-droite">Pouncho (droite)</a>
-            <br>
-            <a href="https://www.skaping.com/millau/pouncho/panoramique-gauche">Pouncho (gauche)</a>
+            <a href="https://www.skaping.com/millau/pouncho/panoramique">Pouncho</a>
         </td>
         <td colspan="3">
-            <a href="https://www.skaping.com/millau/brunas/viaduc">Brunas / Viaduc</a>
+            <a href="https://www.skaping.com/millau/brunas/panoramique">Brunas</a>
         </td>
     </tr>
     <tr>
-        <td colspan="6">
-            <a href="http://www.meteo-millau.fr/webcam.php">Webcam météo Millau</a>
+        <td colspan="3">
+            <a href="http://www.meteo-millau.fr/webcam.php">Millau</a>
+        </td>
+        <td colspan="3">
+            <a href="https://www.solarcam.fr/CDVL48/last_big.jpg">Ispagnac</a>
         </td>
     </tr>
 
     <script> document.write(previs()); </script>
     <tr>
-        <script> document.write(celluleMeteo(3,"3317/millau.htm","Millau<br>(Pouncho / Brunas / Andan)","44.0732","3.0642")); </script>
+        <script> document.write(celluleMeteo(3,"3317/millau.htm","Millau","44.0732","3.0642")); </script>
         <script> document.write(celluleMeteo(3,"3454/tournemire.htm","Tournemire","43.9666","3.0293")); </script>
+    </tr>
+    <tr>
+        <script> document.write(celluleMeteo(3,"3442/severac_le_chateau.htm","Novis","44.3766","3.5107")); </script>
+        <script> document.write(celluleMeteo(3,"16741/ispagnac.htm","Ispagnac","44.3766","3.5107")); </script>
     </tr>
 
     <script> document.write(liens()); </script>
