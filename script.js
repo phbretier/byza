@@ -57,6 +57,49 @@ function liens() {
     return `
         <tr>
             <td class="section" colspan="6">
+                Prévisions Générales
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <a href="https://weather.metoffice.gov.uk/maps-and-charts/surface-pressure">Fronts</a>
+            </td>
+            <td colspan="2">
+                <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?500h,temp,52.000,-3.500,3,i:gh,p:wind">Géopot.</a>
+                <br>
+                <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?500h,temp,52.000,-3.500,3,i:gh,p:wind">500hPa</a>
+            </td>
+            <td colspan="2">
+                <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?850h,temp,52.000,-3.500,3,i:temp,p:temp">Temp.</a>
+                <br>
+                <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?850h,temp,52.000,-3.500,3,i:temp,p:temp">850hPa</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <a href="https://www.windy.com/fr/-Pression-pressure?pressure,52.000,-3.500,3,i:pressure,p:wind">Pression</a>
+            </td>
+            <td colspan="2">
+                <a href="https://www.windy.com/fr/-Satellite-satellite?satellite,47.758,1.455,5,i:pressure,p:wind">Satellite</a>
+            </td>
+            <td colspan="2">
+                <a href="https://www.windy.com/fr/-Thermiques-ccl?ccl,47.758,1.455,5,i:deg0,p:wind">Plafonds</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <a href="https://www.windy.com/fr/-Nuages-clouds?iconEu,clouds,47.758,1.455,5,i:deg0,p:wind">Nuages</a>
+            </td>
+            <td colspan="2">
+                <a href="https://www.velivole.fr/?center_lat=49.82&center_long=10.75&zoom=5.3">Velivole</a>
+            </td>
+            <td colspan="2">
+                <a href="https://meteo-parapente.com/#/48.671,-3.576,9">meteo parapente</a>
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="section" colspan="6">
                 Autres sites <a href="https://puretrack.io/#philippe-bretier">📍</a>
             </td>
         </tr>
