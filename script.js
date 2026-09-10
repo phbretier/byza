@@ -128,27 +128,25 @@ function liens() {
             </td>
         </tr>
         <tr>
-            <td colspan="3">
+            <td colspan="2">
                 <a href="baf.html">BAF</a>
             </td>
-            <td colspan="3">
+            <td colspan="2">
                 <a href="sh.html">St Hilaire</a>
             </td>
+            <td colspan="2">
+                <a href="jura.html">Jura</a>
+            </td>
         </tr>
         <tr>
-            <td colspan="3">
+            <td colspan="2">
                 <a href="pyr.html">Pyrénées</a>
             </td>
-            <td colspan="3">
+            <td colspan="2">
                 <a href="millau.html">Millau</a>
             </td>
-        </tr>
-        <tr>
-            <td colspan="3">
+            <td colspan="2">
                 <a href="vosges.html">Vosges</a>
-            </td>
-            <td colspan="3">
-                <a href="jura.html">Jura</a>
             </td>
         </tr>
     `;
