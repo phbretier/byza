@@ -110,10 +110,10 @@ function liens() {
                 <a href="index.html">Trégor</a>
             </td>
             <td colspan="2">
-                <a href="bfk.html">Bzh</a>
+                <a href="bzh.html">Bzh</a>
             </td>
             <td colspan="2">
-                <a href="clecy.html">Normandie</a>
+                <a href="normandie.html">Normandie</a>
             </td>
         </tr>
         <tr>
