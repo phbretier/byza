@@ -49,7 +49,7 @@ function celluleMeteo(colspan, cheminMeteociel, nom, latitude, longitude) {
             <div style="height: 10px;"></div>
             <a href="${urlMeteoParapente}" target="_blank" class="big">🪂</a>
             &thinsp;
-            <a href="${urlWindyAirgram}" target="_blank" class="big">🌪</a>
+            <a href="${urlWindyAirgram}" target="_blank" class="big">⛅</a>
             &thinsp;
             <a href="${urlVelivole}" target="_blank" class="big">📊</a>
             <br>
