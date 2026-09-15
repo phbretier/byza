@@ -67,7 +67,9 @@ function liens() {
         </tr>
         <tr>
             <td colspan="2">
-                <a href="https://weather.metoffice.gov.uk/maps-and-charts/surface-pressure">Fronts</a>
+                <a href="https://weather.metoffice.gov.uk/maps-and-charts/surface-pressure">Fronts UK</a>
+                <br>
+                <a href="https://meteofrance.com/isofronts">Fronts MF</a>
             </td>
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?500h,temp,52.000,-3.500,3,i:gh,p:wind">Géopot.</a>
@@ -92,11 +94,14 @@ function liens() {
             </td>
         </tr>
         <tr>
-            <td colspan=3">
+            <td colspan=2">
                 <a href="https://www.windy.com/fr/-Nuages-clouds?iconEu,clouds,47.758,1.455,5,i:deg0,p:wind">Nuages</a>
             </td>
-            <td colspan="3">
+            <td colspan="2">
                 <a href="https://www.velivole.fr/?center_lat=49.82&center_long=10.75&zoom=5.3">Velivole</a>
+            </td>
+            <td colspan="2">
+                <a href="https://www.meteoblue.com/fr/meteo/prevision/meteogramweb/tr%c3%a9l%c3%a9vern_france_2971893">Meteoblue</a>
             </td>
         </tr>
     
