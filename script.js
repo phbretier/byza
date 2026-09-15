@@ -37,7 +37,8 @@ function previs() {
 function celluleMeteo(colspan, cheminMeteociel, nom, latitude, longitude) {
     const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
     const urlMeteoParapente =`https://meteo-parapente.com/#/${latitude},${longitude},9`;
-    const urlWindy =`https://www.windy.com/plugin/sdg/aromeFrance/${latitude}/${longitude}?aromeFrance,clouds,${latitude},${longitude},10,i:pressure,p:wind`;
+    const urlFlyXCSounding =`https://www.windy.com/plugin/sdg/aromeFrance/${latitude}/${longitude}?aromeFrance,clouds,${latitude},${longitude},10,i:pressure,p:wind`;
+    const urlWindyAirgram =`https://www.windy.com/${latitude}/${longitude}/wind?arome,clouds,${latitude},${longitude},10,i:temp,p:wind`;
     const urlVelivole =`https://www.velivole.fr/profile?lat=${latitude}&long=${longitude}&model=AROME`;
     const urlSondage =`https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${longitude}&lat=${latitude}&ech=0&map=0`;
     // &emsp; 1 em ; &ensp; 0,5 em ; &nbsp; 0,25-0,33 em ; &thinsp;  0,16-0,20 em ; &hairsp; 0,08-0,10 em
@@ -47,11 +48,13 @@ function celluleMeteo(colspan, cheminMeteociel, nom, latitude, longitude) {
             <br>
             <div style="height: 10px;"></div>
             <a href="${urlMeteoParapente}" target="_blank" class="big">🪂</a>
-            &nbsp;
+            &thinsp;
+            <a href="${urlWindyAirgram}" target="_blank" class="big">💨</a>
+            &thinsp;
             <a href="${urlVelivole}" target="_blank" class="big">📊</a>
             <br>
             <div style="height: 10px;"></div>
-            <a href="${urlWindy}" target="_blank" class="big">📈</a>
+            <a href="${urlFlyXCSounding}" target="_blank" class="big">📈</a>
             &nbsp;
             <a href="${urlSondage}" target="_blank" class="big">📉</a>
             <div style="height: 10px;"></div>
