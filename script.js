@@ -41,16 +41,16 @@ function celluleMeteo(colspan, cheminMeteociel, nom, latitude, longitude) {
     const urlWindyAirgram =`https://www.windy.com/${latitude}/${longitude}/airgram?clouds,${latitude},${longitude},10,i:temp,p:wind`;
     const urlVelivole =`https://www.velivole.fr/profile?lat=${latitude}&long=${longitude}&model=AROME`;
     const urlSondage =`https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${longitude}&lat=${latitude}&ech=0&map=0`;
-    // &emsp; 1 em ; &ensp; 0,5 em ; &nbsp; 0,25-0,33 em ; &thinsp;  0,16-0,20 em ; &hairsp; 0,08-0,10 em
+    // &emsp; 1 em ; &ensp; 0,5 em ; &nbsp; 0,25-0,33 em ; &thinsp; &#8239; 0,16-0,20 em ; &hairsp; 0,08-0,10 em
     return `
         <td colspan="${colspan}">
             <a href="${urlMeteociel}">${nom}</a>
             <br>
             <div style="height: 10px;"></div>
             <a href="${urlMeteoParapente}" target="_blank" class="big">🪂</a>
-            &thinsp;
+            &#8239;
             <a href="${urlWindyAirgram}" target="_blank" class="big">⛅</a>
-            &thinsp;
+            &#8239;
             <a href="${urlVelivole}" target="_blank" class="big">📊</a>
             <br>
             <div style="height: 10px;"></div>
