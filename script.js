@@ -11,12 +11,12 @@ function celluleBalise(colspan, nom, cheminSpotair) {
 function webcams() {
     return `
         <tr>
-            <td>&emsp;&emsp;&emsp;</td>
-            <td>&emsp;&emsp;&emsp;</td>
-            <td>&emsp;&emsp;&emsp;</td>
-            <td>&emsp;&emsp;&emsp;</td>
-            <td>&emsp;&emsp;&emsp;</td>
-            <td>&emsp;&emsp;&emsp;</td>
+            <td>&ensp;&ensp;&ensp;&ensp;&ensp;</td>
+            <td>&ensp;&ensp;&ensp;&ensp;&ensp;</td>
+            <td>&ensp;&ensp;&ensp;&ensp;&ensp;</td>
+            <td>&ensp;&ensp;&ensp;&ensp;&ensp;</td>
+            <td>&ensp;&ensp;&ensp;&ensp;&ensp;</td>
+            <td>&ensp;&ensp;&ensp;&ensp;&ensp;</td>
         </tr>
         <tr>
             <td class="section" colspan="6">
