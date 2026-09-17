@@ -6,35 +6,9 @@
     <title>Vent en Trégor-Goëlo</title>
     <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
     <script src="https://phbretier.github.io/byza/script.js"></script>
-    <script>
-        function celluleMeteo2(colspan, cheminMeteociel, nom, latitude, longitude) {
-            return `
-                <td colspan="${colspan}">
-                  <button id="ouvrirLiens${nom}">
-                    ${nom}
-                  </button>
-                
-                  <script>
-                    document.getElementById("ouvrirLiens${nom}").addEventListener("click", function () {
-                        window.open("https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}", "_blank");
-                        window.open("https://meteo-parapente.com/#/${latitude},${longitude},9", "_blank");
-                        window.open("https://www.windy.com/plugin/sdg/aromeFrance/${latitude}/${longitude}?aromeFrance,clouds,${latitude},${longitude},10,i:pressure,p:wind", "_blank");
-                        window.open("https://www.windy.com/${latitude}/${longitude}/airgram?clouds,${latitude},${longitude},10,i:temp,p:wind", "_blank");
-                        window.open("https://www.velivole.fr/profile?lat=${latitude}&long=${longitude}&model=AROME", "_blank");
-                        window.open("https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${longitude}&lat=${latitude}&ech=0&map=0", "_blank");
-                    });
-                  <\/script>
-                </td>
-            `;
-        }
-    </script>
 </head>
 <body>
 <table>
-    <tr>
-        <script> document.write(celluleMeteo2(2,"33939/plestin_les_greves.htm","Plestin","48.6719","-3.5739")); </script>
-    </tr>
-    
     <tr>
         <script> document.write(celluleBalise(2,"Bus","ffvl/2842")); </script>
         <script> document.write(celluleBalise(2,"Goas Trez","holfuy/787")); </script>
