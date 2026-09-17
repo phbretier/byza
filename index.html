@@ -8,12 +8,6 @@
     <script src="https://phbretier.github.io/byza/script.js"></script>
     <script>
         function celluleMeteo2(colspan, cheminMeteociel, nom, latitude, longitude) {
-            const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
-            const urlMeteoParapente =`https://meteo-parapente.com/#/${latitude},${longitude},9`;
-            const urlFlyXCSounding =`https://www.windy.com/plugin/sdg/aromeFrance/${latitude}/${longitude}?aromeFrance,clouds,${latitude},${longitude},10,i:pressure,p:wind`;
-            const urlWindyAirgram =`https://www.windy.com/${latitude}/${longitude}/airgram?clouds,${latitude},${longitude},10,i:temp,p:wind`;
-            const urlVelivole =`https://www.velivole.fr/profile?lat=${latitude}&long=${longitude}&model=AROME`;
-            const urlSondage =`https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${longitude}&lat=${latitude}&ech=0&map=0`;
             return `
                 <td colspan="${colspan}">
                   <button id="ouvrirLiens${nom}">
@@ -22,12 +16,12 @@
                 
                   <script>
                     document.getElementById("ouvrirLiens${nom}").addEventListener("click", function () {
-                        window.open(urlMeteociel, "_blank");
-                        window.open(urlMeteoParapente, "_blank");
-                        window.open(urlFlyXCSounding, "_blank");
-                        window.open(urlWindyAirgram, "_blank");
-                        window.open(urlVelivole, "_blank");
-                        window.open(urlSondage, "_blank");
+                        window.open("https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}", "_blank");
+                        window.open("https://meteo-parapente.com/#/${latitude},${longitude},9", "_blank");
+                        window.open("https://www.windy.com/plugin/sdg/aromeFrance/${latitude}/${longitude}?aromeFrance,clouds,${latitude},${longitude},10,i:pressure,p:wind", "_blank");
+                        window.open("https://www.windy.com/${latitude}/${longitude}/airgram?clouds,${latitude},${longitude},10,i:temp,p:wind", "_blank");
+                        window.open("https://www.velivole.fr/profile?lat=${latitude}&long=${longitude}&model=AROME", "_blank");
+                        window.open("https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${longitude}&lat=${latitude}&ech=0&map=0", "_blank");
                     });
                   <\/script>
                 </td>
