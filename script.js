@@ -1,4 +1,4 @@
-fonction test(colspan, nom) {
+function test(colspan, nom) {
     return `
         <td colspan="${colspan}">
             <a href="#" class="open-menu">${nom}</a>
@@ -6,7 +6,7 @@ fonction test(colspan, nom) {
     `;
 }
 
-fonction test2() {
+function test2() {
     return `
         <script>
             document.querySelectorAll('.open-menu').forEach(link => {
