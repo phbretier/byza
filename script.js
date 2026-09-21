@@ -31,18 +31,18 @@ function test2() {
                 container.className = 'menu-open';
 
                 const htmlContent = \`
-                  <a href="https://meteo-parapente.com/#/${this.dataset.latitude},${this.dataset.longitude},9" target="_blank" class="big">🪂</a>
+                  <a href="https://meteo-parapente.com/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big">🪂</a>
                   &#8239;
-                  <a href="https://www.windy.com/${this.dataset.latitude}/${this.dataset.longitude}/airgram?clouds,${this.dataset.latitude},${this.dataset.longitude},10,i:temp,p:wind" target="_blank" class="big">⛅</a>
+                  <a href="https://www.windy.com/${this.dataset.lat}/${this.dataset.lon}/airgram?clouds,${this.dataset.lat},${this.dataset.lon},10,i:temp,p:wind" target="_blank" class="big">⛅</a>
                   &#8239;
-                  <a href="https://www.velivole.fr/profile?lat=${this.dataset.latitude}&long=${this.dataset.longitude}&model=AROME" target="_blank" class="big">📊</a>
+                  <a href="https://www.velivole.fr/profile?lat=${this.dataset.lat}&long=${this.dataset.lon}&model=AROME" target="_blank" class="big">📊</a>
                   <br>
                   <div style="height: 10px;"></div>
-                  <a href="meteoblue.html#${this.dataset.nom}/${this.dataset.latitude}/${this.dataset.longitude}" target="_blank" class="big">🌎</a>
+                  <a href="meteoblue.html#${this.dataset.nom}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="big">🌎</a>
                   &#8239;
-                  <a href="https://www.windy.com/plugin/sdg/aromeFrance/${this.dataset.latitude}/${this.dataset.longitude}?aromeFrance,clouds,${this.dataset.latitude},${this.dataset.longitude},10,i:pressure,p:wind" target="_blank" class="big">📈</a>
+                  <a href="https://www.windy.com/plugin/sdg/aromeFrance/${this.dataset.lat}/${this.dataset.lon}?aromeFrance,clouds,${this.dataset.lat},${this.dataset.lon},10,i:pressure,p:wind" target="_blank" class="big">📈</a>
                   &#8239;
-                  <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${this.dataset.latitude}&lat=${this.dataset.longitude}&ech=0&map=0" target="_blank" class="big">📉</a>
+                  <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${this.dataset.lat}&lat=${this.dataset.lon}&ech=0&map=0" target="_blank" class="big">📉</a>
                   <div style="height: 10px;"></div>
                 \`;
                 // Insérer le contenu HTML dans le container
@@ -92,13 +92,13 @@ function previs() {
         </tr>
     `;
 }
-function celluleMeteo(colspan, cheminMeteociel, nom, latitude, longitude) {
+function celluleMeteo(colspan, cheminMeteociel, nom, lat, lon) {
     const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
-    const urlMeteoParapente =`https://meteo-parapente.com/#/${latitude},${longitude},9`;
-    const urlFlyXCSounding =`https://www.windy.com/plugin/sdg/aromeFrance/${latitude}/${longitude}?aromeFrance,clouds,${latitude},${longitude},10,i:pressure,p:wind`;
-    const urlWindyAirgram =`https://www.windy.com/${latitude}/${longitude}/airgram?clouds,${latitude},${longitude},10,i:temp,p:wind`;
-    const urlVelivole =`https://www.velivole.fr/profile?lat=${latitude}&long=${longitude}&model=AROME`;
-    const urlSondage =`https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${longitude}&lat=${latitude}&ech=0&map=0`;
+    const urlMeteoParapente =`https://meteo-parapente.com/#/${lat},${lon},9`;
+    const urlFlyXCSounding =`https://www.windy.com/plugin/sdg/aromeFrance/${lat}/${lon}?aromeFrance,clouds,${lat},${lon},10,i:pressure,p:wind`;
+    const urlWindyAirgram =`https://www.windy.com/${lat}/${lon}/airgram?clouds,${lat},${lon},10,i:temp,p:wind`;
+    const urlVelivole =`https://www.velivole.fr/profile?lat=${lat}&long=${lon}&model=AROME`;
+    const urlSondage =`https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${lon}&lat=${lat}&ech=0&map=0`;
     // &emsp; 1 em ; &ensp; 0,5 em ; &nbsp; 0,25-0,33 em ; &thinsp; &#8239; 0,16-0,20 em ; &hairsp; 0,08-0,10 em
     return `
         <td colspan="${colspan}">
