@@ -15,50 +15,48 @@ function test(colspan, nom) {
 }
 
 function test2() {
-    return `
-        <script>
-            document.querySelectorAll('.open-menu').forEach(link => {
-              link.addEventListener('click', function(e) {
-                // remplace le click 
-                e.preventDefault();
-                // ferme si déjà ouvert et fin
-                if (this.nextElementSibling && this.nextElementSibling.classList.contains('menu-opened')) {
-                  this.nextElementSibling.remove();
-                  return;
-                }
-                // ferme ceux déjà ouverts
-                document.querySelectorAll('.menu-opened').forEach(menu_opened => {
-                    menu_opened.remove()
-                }
-            
-                // le container à ouvrir
-                const container = document.createElement('div');
-                container.className = 'menu-opened';
+    document.querySelectorAll('.open-menu').forEach(link => {
+      link.addEventListener('click', function(e) {
+        // remplace le click 
+        e.preventDefault();
+        // ferme si déjà ouvert et fin
+        if (this.nextElementSibling && this.nextElementSibling.classList.contains('menu-opened')) {
+            console.log("un menu-opened a supprimer");
+            this.nextElementSibling.remove();
+            return;
+        }
+        // ferme ceux déjà ouverts
+        document.querySelectorAll('.menu-opened').forEach(menu_opened => {
+            console.log("un menu-opened a supprimer");
+            menu_opened.remove()
+        }
+    
+        // le container à ouvrir
+        const container = document.createElement('div');
+        container.className = 'menu-opened';
 
-                const htmlContent = \`
-                  <a href="https://meteo-parapente.com/#/\${this.dataset.lat},\${this.dataset.lon},9" target="_blank" class="big">🪂</a>
-                  &#8239;
-                  <a href="https://www.windy.com/\${this.dataset.lat}/\${this.dataset.lon}/airgram?clouds,\${this.dataset.lat},\${this.dataset.lon},10,i:temp,p:wind" target="_blank" class="big">⛅</a>
-                  &#8239;
-                  <a href="https://www.velivole.fr/profile?lat=\${this.dataset.lat}&long=\${this.dataset.lon}&model=AROME" target="_blank" class="big">📊</a>
-                  <br>
-                  <div style="height: 10px;"></div>
-                  <a href="meteoblue.html#\${this.dataset.nom}/\${this.dataset.lat}/\${this.dataset.lon}" target="_blank" class="big">🌎</a>
-                  &#8239;
-                  <a href="https://www.windy.com/plugin/sdg/aromeFrance/\${this.dataset.lat}/\${this.dataset.lon}?aromeFrance,clouds,\${this.dataset.lat},\${this.dataset.lon},10,i:pressure,p:wind" target="_blank" class="big">📈</a>
-                  &#8239;
-                  <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=\${this.dataset.lat}&lat=\${this.dataset.lon}&ech=0&map=0" target="_blank" class="big">📉</a>
-                  <div style="height: 10px;"></div>
-                \`;
-                // Insérer le contenu HTML dans le container
-                container.innerHTML = htmlContent;
+        const htmlContent = `
+            <a href="https://meteo-parapente.com/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big">🪂</a>
+            &#8239;
+            <a href="https://www.windy.com/${this.dataset.lat}/${this.dataset.lon}/airgram?clouds,${this.dataset.lat},${this.dataset.lon},10,i:temp,p:wind" target="_blank" class="big">⛅</a>
+            &#8239;
+            <a href="https://www.velivole.fr/profile?lat=${this.dataset.lat}&long=${this.dataset.lon}&model=AROME" target="_blank" class="big">📊</a>
+            <br>
+            <div style="height: 10px;"></div>
+            <a href="meteoblue.html#${this.dataset.nom}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="big">🌎</a>
+            &#8239;
+            <a href="https://www.windy.com/plugin/sdg/aromeFrance/${this.dataset.lat}/${this.dataset.lon}?aromeFrance,clouds,${this.dataset.lat},${this.dataset.lon},10,i:pressure,p:wind" target="_blank" class="big">📈</a>
+            &#8239;
+            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${this.dataset.lat}&lat=${this.dataset.lon}&ech=0&map=0" target="_blank" class="big">📉</a>
+            <div style="height: 10px;"></div>
+        `;
+        // Insérer le contenu HTML dans le container
+        container.innerHTML = htmlContent;
 
-                // Insère le container juste en dessous
-                this.after(container);
-              });
-            });
-        </script>
-    `;
+        // Insère le container juste en dessous
+        this.after(container);
+      });
+    });
 }
 
 function celluleBalise(colspan, nom, cheminSpotair) {
