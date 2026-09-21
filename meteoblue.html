@@ -5,14 +5,15 @@
     <script src="https://phbretier.github.io/byza/script.js"></script>
     <script>
         const [nom, lat, lon] = window.location.hash.substring(1).split("/");
-        document.title = `MétéoBlue ${nom}`;
+        const lieu = nom.decodeURIComponent().trim();
+        document.title = `MétéoBlue ${lieu}`;
     </script>
 </head>
 <body>
     <script>
         document.write(`
             <div class="section" style="display: flex; justify-content: center;"> 
-                Prévisions MétéoBlue pour - ${nom.replace(/%20/g, ' ').trim()} - (${lat},${lon})
+                Prévisions MétéoBlue pour - ${lieu} - (${lat},${lon})
             </div>
             <br>
         `);
@@ -28,8 +29,8 @@
         ];
         
         items.forEach(([label, suffix]) => {
-            const name = `${label} ${nom}`;
-            const url = `https://my.meteoblue.com/images/meteogram${suffix}?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${encodeURIComponent(name)}`;
+            const name = `${label} ${lieu}`;
+            const url = `https://my.meteoblue.com/images/meteogram${suffix}?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${encodeURIComponent(lieu)}`;
             var menu = `
                 <div class="section" style="display: flex; justify-content: center;" id="${encodeURIComponent(label)}">${label}</div> 
                 <div style="display: flex; justify-content: center;">
