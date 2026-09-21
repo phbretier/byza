@@ -14,21 +14,18 @@ function test2() {
                 // remplace le click 
                 e.preventDefault();
                 // ferme si déjà ouvert et fin
-                if (this.nextElementSibling && this.nextElementSibling.classList.contains('menu-open')) {
+                if (this.nextElementSibling && this.nextElementSibling.classList.contains('menu-opened')) {
                   this.nextElementSibling.remove();
                   return;
                 }
                 // ferme ceux déjà ouverts
-                document.querySelectorAll('.menu-open').forEach(menu_open => {
-                    menu_open.remove()
+                document.querySelectorAll('.menu-opened').forEach(menu_opened => {
+                    menu_opened.remove()
                 }
             
-                // la cellule courante
-                const currentTr = this.closest('tr');
-                
                 // le container à ouvrir
                 const container = document.createElement('div');
-                container.className = 'menu-open';
+                container.className = 'menu-opened';
 
                 const htmlContent = \`
                   <a href="https://meteo-parapente.com/#/\${this.dataset.lat},\${this.dataset.lon},9" target="_blank" class="big">🪂</a>
@@ -49,7 +46,7 @@ function test2() {
                 container.innerHTML = htmlContent;
 
                 // Insère le container juste en dessous
-                currentTr.after(newRow);
+                this.after(container);
               });
             });
         </script>
