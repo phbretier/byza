@@ -42,7 +42,7 @@ function SectionWebcams() {
     `);
 }
 
-function Webcam(colspan, nom, url) {
+function webcam(colspan, nom, url) {
     document.write(`
         <td colspan="${colspan}">
             <a href="${url}">${nom}</a>
