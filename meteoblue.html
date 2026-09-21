@@ -9,11 +9,14 @@
     </script>
 </head>
 <body>
-    <div class="section">
-        <script> document.write(`Prévisions MétéoBlue pour - ${nom} - (${lat},${lon})`); </script>
-    </div>
-    <br>
     <script>
+        document.write(`
+            <div class="section" style="display: flex; justify-content: center;"> 
+                Prévisions MétéoBlue pour - ${nom} - (${lat},${lon})
+            </div>
+            <br>
+        `);
+        
         const items = [
             ['Météogram', ''],
             ['Météogram Air', '_air'],
