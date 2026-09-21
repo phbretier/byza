@@ -39,7 +39,7 @@
             <a href="https://www.meteociel.fr/previsions-arome-1h/33918/lannion.htm">Menu</a>
             <br>
             <div style="height: 10px;"></div>
-            <a href="#" class="open-menu big">⋮</a>
+            <a href="#" class="open-menu big" data-nom="Maez" data-lat="48.736" data-lon="-3.5491">⋮</a>
         </td>
         <td colspan="2">
             <a href="https://www.meteociel.fr/previsions-arome-1h/33918/lannion.htm">MB</a>
@@ -47,6 +47,10 @@
             <div style="height: 10px;"></div>
             <script> 
                 document.write(`<a href="meteoblue.html#${nom}/${lat}/${lon}" target="_blank" class="big">🌎</a>`); 
+            </script>
+            <br>
+            <script> 
+                document.write(`<a href="meteoblue.html#${nom}/${lat}/${lon}" target="_blank" class="big"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>`); 
             </script>
         </td>
     </tr>
@@ -57,17 +61,17 @@
             <td colspan="6">
               <img src="https://my.meteoblue.com/images/meteogram?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram ${nom}" width="100%"/>
               <br>
-              <img src="https://my.meteoblue.com/images/meteogram_air?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram ${nom}" width="100%"/>
+              <img src="https://my.meteoblue.com/images/meteogram_air?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram Air${nom}" width="100%"/>
               <br>
-              <img src="https://my.meteoblue.com/images/meteogram_thermal?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram ${nom}" width="100%"/>
+              <img src="https://my.meteoblue.com/images/meteogram_thermal?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram Thermal ${nom}" width="100%"/>
               <br>
-              <img src="https://my.meteoblue.com/images/meteogram_multimodel?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram ${nom}" width="100%"/>
+              <img src="https://my.meteoblue.com/images/meteogram_multimodel?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram Multimodel ${nom}" width="100%"/>
               <br>
-              <img src="https://my.meteoblue.com/images/meteogram_multimodelwind?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram ${nom}" width="100%"/>
+              <img src="https://my.meteoblue.com/images/meteogram_multimodelwind?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram Wind ${nom}" width="100%"/>
               <br>
-              <img src="https://my.meteoblue.com/images/meteogram_stueve?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram ${nom}" width="100%"/>
+              <img src="https://my.meteoblue.com/images/meteogram_stueve?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram Stueve ${nom}" width="100%"/>
               <br>
-              <img src="https://my.meteoblue.com/images/meteogram_sounding?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram ${nom}" width="100%"/>
+              <img src="https://my.meteoblue.com/images/meteogram_sounding?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram Sounding ${nom}" width="100%"/>
             </td>
           </tr>
         `;
