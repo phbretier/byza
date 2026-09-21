@@ -7,63 +7,66 @@
 <body>
 <table>
     <tr>
-        <script> document.write(celluleBalise(2,"<br>Chaspinhac<br>905m","ffvl/82")); </script>
-        <script> document.write(celluleBalise(2,"Mt Denise<br>E<br>714m","meteo-france/43046001")); </script>
-        <script> document.write(celluleBalise(2,"Mt Denise<br>O<br>829m","metar/LFHP")); </script>
+        <script> 
+            balise(2,"<br>Chaspinhac<br>905m","ffvl/82"); 
+            balise(2,"Mt Denise<br>E<br>714m","meteo-france/43046001"); 
+            balise(2,"Mt Denise<br>O<br>829m","metar/LFHP"); 
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(3,"Mt Mézenc<br>1753m","ffvl/193")); </script>
-        <script> document.write(celluleBalise(3,"Chaudeyrolles<br>1381m","ffvl/3550")); </script>
+        <script> 
+            balise(3,"Mt Mézenc<br>1753m","ffvl/193"); 
+            balise(3,"Chaudeyrolles<br>1381m","ffvl/3550"); 
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Cornillon<br>Job<br>1130m","ffvl/2047")); </script>
-        <script> document.write(celluleBalise(2,"<br>Mt Chouvé<br>1462m","ffvl/30")); </script>
-        <script> document.write(celluleBalise(2,"<br>Mt Chouvé<br>1428m","pioupiou/2001")); </script>
+        <script> 
+            balise(2,"Cornillon<br>Job<br>1130m","ffvl/2047"); 
+            balise(2,"<br>Mt Chouvé<br>1462m","ffvl/30"); 
+            balise(2,"<br>Mt Chouvé<br>1428m","pioupiou/2001"); 
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Tanargue<br>1510m","ffvl/2917")); </script>
-        <script> document.write(celluleBalise(2,"St Désirat<br>325m","holfuy/1119")); </script>
-        <script> document.write(celluleBalise(2,"St Désirat<br>135m","meteo-france/26002003")); </script>
-    </tr>
-
-    <script> document.write(webcams()); </script>
-    <tr>
-    <tr>
-        <td colspan="2">
-            <a href="https://www.skaping.com/les-estables-video">Mt Mézenc</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.skaping.com/les-estables/ski-alpin/panoramique">Mt Mézenc</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.skaping.com/lugik-parc/sommet">Mt Mézenc</a>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <a href="https://www.skaping.com/lepuyenvelay/notredamedefrance">Mt Denise</a>
-        </td>
-        <td colspan="2">
-            <a href="https://webcams.inforoutes.fr/croixdebauzon.jpg">Tanargue</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.aeroclubdannonay.org/img/cameraAero.jpeg?971">St Désirat</a>
-        </td>
+        <script> 
+            balise(2,"Tanargue<br>1510m","ffvl/2917"); 
+            balise(2,"St Désirat<br>325m","holfuy/1119"); 
+            balise(2,"St Désirat<br>135m","meteo-france/26002003"); 
+        </script>
     </tr>
 
-    <script> document.write(previs()); </script>
+    <script> SectionWebcams(); </script>
     <tr>
-        <script> document.write(celluleMeteo(2,"15265/chaspinhac.htm","Chaspinhac","45.1044","3.9315")); </script>
-        <script> document.write(celluleMeteo(2,"15353/polignac.htm","Mt Denise","45.0581","3.854")); </script>
-        <script> document.write(celluleMeteo(2,"15295/les_estables.htm","Mt Mézenc","44.9103","4.1928")); </script>
+        <script> 
+            webcam(2, "Mt Mézenc", "https://www.skaping.com/les-estables-video");
+            webcam(2, "Mt Mézenc", "https://www.skaping.com/les-estables/ski-alpin/panoramique");
+            webcam(2, "Mt Mézenc", "https://www.skaping.com/lugik-parc/sommet");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"23140/job.htm","Mt Chouvé","45.631","3.7813")); </script>
-        <script> document.write(celluleMeteo(2,"2392/valgorge.htm","Tanargue","44.6112","4.0825")); </script>
-        <script> document.write(celluleMeteo(2,"2295/saint_desirat","St Désirat","45.2529444","4.7959831")); </script>
+        <script> 
+            webcam(2, "Mt Denise", "https://www.skaping.com/lepuyenvelay/notredamedefrance");
+            webcam(2, "Tanargue", "https://webcams.inforoutes.fr/croixdebauzon.jpg");
+            webcam(2, "St Désirat", "https://www.aeroclubdannonay.org/img/cameraAero.jpeg?971");
+        </script>
     </tr>
 
-    <script> document.write(liens()); </script>
+    <script> SectionPrevisions(); </script>
+    <tr>
+        <script> 
+            previsions(2,"15265/chaspinhac.htm","Chaspinhac","45.1044","3.9315")) 
+            previsions(2,"15353/polignac.htm","Mt Denise","45.0581","3.854"); 
+            previsions(2,"15295/les_estables.htm","Mt Mézenc","44.9103","4.1928"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsions(2,"23140/job.htm","Mt Chouvé","45.631","3.7813"); 
+            previsions(2,"2392/valgorge.htm","Tanargue","44.6112","4.0825"); 
+            previsions(2,"2295/saint_desirat","St Désirat","45.2529444","4.7959831"); 
+        </script>
+    </tr>
+
+    <script> BasDePage(); </script>
 </table>
 </body>
 </html>
