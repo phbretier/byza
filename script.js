@@ -69,7 +69,7 @@ function previsions(colspan, cheminMeteociel, nom, lat, lon) {
             &#8239;
             <a href="${urlWindyAirgram}" target="_blank" class="big"><img src="https://www.windy.com/favicon.ico" alt="⛅" width="24px"/></a>
             &#8239;
-            <a href="${urlVelivole}" target="_blank" class="big"><img src="${iconVV}" alt="📊" width="24px"/></a>
+            <a href="${urlVelivole}" target="_blank" class="big"><img src="${iconVV}" style="filter: invert(1);" alt="📊" width="24px"/></a>
             <br>
             <div style="height: 10px;"></div>
             <a href="meteoblue.html#${encodeURIComponent(nom)}}/${lat}/${lat}" target="_blank" class="big"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
