@@ -38,9 +38,9 @@ fonction test2() {
                   <a href="https://www.velivole.fr/profile?lat=${this.dataset.latitude}&long=${this.dataset.longitude}&model=AROME" target="_blank" class="big">📊</a>
                   <br>
                   <div style="height: 10px;"></div>
-                  <a href="https://www.windy.com/plugin/sdg/aromeFrance/${this.dataset.latitude}/${this.dataset.longitude}?aromeFrance,clouds,${this.dataset.latitude},${this.dataset.longitude},10,i:pressure,p:wind" target="_blank" class="big">🌎</a>
+                  <a href="meteoblue.html#${this.dataset.nom}/${this.dataset.latitude}/${this.dataset.longitude}" target="_blank" class="big">🌎</a>
                   &#8239;
-                  <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${this.dataset.latitude}&lat=${this.dataset.longitude}&ech=0&map=0" target="_blank" class="big">📈</a>
+                  <a href="https://www.windy.com/plugin/sdg/aromeFrance/${this.dataset.latitude}/${this.dataset.longitude}?aromeFrance,clouds,${this.dataset.latitude},${this.dataset.longitude},10,i:pressure,p:wind" target="_blank" class="big">📈</a>
                   &#8239;
                   <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${this.dataset.latitude}&lat=${this.dataset.longitude}&ech=0&map=0" target="_blank" class="big">📉</a>
                   <div style="height: 10px;"></div>
