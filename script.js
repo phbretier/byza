@@ -28,8 +28,8 @@ function test2() {
         // ferme ceux déjà ouverts
         document.querySelectorAll('.menu-opened').forEach(menu_opened => {
             console.log("un menu-opened a supprimer");
-            menu_opened.remove()
-        }
+            menu_opened.remove();
+        });
     
         // le container à ouvrir
         const container = document.createElement('div');
