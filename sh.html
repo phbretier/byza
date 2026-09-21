@@ -7,29 +7,33 @@
 <body>
 <table>
     <tr>
-        <script> balise(2,"St Hilaire S","romma/186"); </script>
-        <script> balise(2,"St Hilaire N","ffvl/61"); </script>
-        <script> balise(2,"Lumbin","pioupiou/2023"); </script>
+        <script> 
+            balise(2,"St Hilaire S","romma/186"); 
+            balise(2,"St Hilaire N","ffvl/61"); 
+            balise(2,"Lumbin","pioupiou/2023"); 
+        </script>
     </tr>
     <tr>
-        <script> balise(2,"Touvet","pioupiou/106"); </script>
-        <script> balise(2,"Lumbin","romma/289"); </script>
-        <script> balise(2,"Versoud","meteo-france/38538002"); </script>
+        <script> 
+            balise(2,"Touvet","pioupiou/106"); 
+            balise(2,"Lumbin","romma/289"); 
+            balise(2,"Versoud","meteo-france/38538002"); 
+        </script>
     </tr>
     <tr>
-        <script> balise(2,"Petit Som","ffvl/3770"); </script>
-        <script> balise(2,"la Scia","ffvl/13"); </script>
-        <script> balise(2,"St Pierre","meteo-france/38442008"); </script>
+        <script> 
+            balise(2,"Petit Som","ffvl/3770"); 
+            balise(2,"la Scia","ffvl/13"); 
+            balise(2,"St Pierre","meteo-france/38442008"); 
+        </script>
     </tr>
     
     <script> SectionWebcams(); </script>
     <tr>
-        <td colspan="3">
-            <a href="https://www.prevol.com/prevolwebcam/upload/prevol3decos.jpg">St Hilaire N</a>
-        </td>
-        <td colspan="3">
-            <a href="https://air-alpin.com/api/webcam">St Hilaire E</a>
-        </td>
+        <script> 
+            webcam(3, "St Hilaire N", "https://www.prevol.com/prevolwebcam/upload/prevol3decos.jpg");
+            webcam(3, "St Hilaire E", "https://air-alpin.com/api/webcam");
+        </script>
     </tr>
     <tr>
         <td colspan="6">
@@ -39,12 +43,14 @@
 
     <script> SectionPrevisions(); </script>
     <tr>
-        <script> previsions(2,"13555/saint_hilaire.htm","<br>St Hilaire","45.3068","5.8882"); </script>
-        <script> previsions(2,"13600/saint_pierre_de_chartreuse.htm","<br>la Sia","45.345","5.846"); </script>
-        <script> previsions(2,"13628/sarcenas.htm","Charmant<br>Som","45.3251","5.7652"); </script>
+        <script> 
+            previsions(2,"13555/saint_hilaire.htm","<br>St Hilaire","45.3068","5.8882"); 
+            previsions(2,"13600/saint_pierre_de_chartreuse.htm","<br>la Sia","45.345","5.846"); 
+            previsions(2,"13628/sarcenas.htm","Charmant<br>Som","45.3251","5.7652"); 
+        </script>
     </tr>
 
-    <script> basDePage(); </script>
+    <script> BasDePage(); </script>
 </table>
 </body>
 </html>
