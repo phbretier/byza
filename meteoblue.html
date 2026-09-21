@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
+    <title>Prévisions</title>
+    <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
+    <script src="https://phbretier.github.io/byza/script.js"></script>
+    <script>
+        const [nom, lat, lon] = window.location.hash.substring(1).split("/");
+        document.title = `Prévisions pour ${nom}`;
+    </script>
+</head>
+<body>
+<table>
+    <tr>
+        <script> document.write(celluleBalise(2,"Bus","ffvl/2842")); </script>
+        <script> document.write(celluleBalise(2,"Goas Trez","holfuy/787")); </script>
+        <script> document.write(celluleBalise(2,"Ile Grande","holfuy/809")); </script>
+    </tr>
+
+    <script> document.write(webcams()); </script>
+    <tr>
+        <td colspan="2">
+            <a href="https://s1.vision-environnement.com/live/modules/timelapse/captureptz/perrosguirec4.jpg">Perros</a>
+        </td>
+        <td colspan="2">
+            <a href="https://s1.vision-environnement.com/live/modules/timelapse/capture/trestraou.jpg">Trestraou</a>
+        </td>
+        <td colspan="2">
+            <a href="https://s1.vision-environnement.com/live/modules/timelapse/captureptz/trevou.jpg">Trévou-Tr.</a>
+        </td>
+    </tr>
+
+    <script> document.write(previs()); </script>
+    <tr>
+        <script> document.write(celluleMeteo(2,"33918/lannion.htm","Maez","48.736","-3.5491")); </script>
+        <td colspan="2">
+            <a href="https://www.meteociel.fr/previsions-arome-1h/33918/lannion.htm">Menu</a>
+            <br>
+            <div style="height: 10px;"></div>
+            <a href="#" class="open-menu big">⋮</a>
+        </td>
+        <td colspan="2">
+            <a href="https://www.meteociel.fr/previsions-arome-1h/33918/lannion.htm">MB</a>
+            <br>
+            <div style="height: 10px;"></div>
+            <script> document.write(`<a href="meteoblue.html#${this.dataset.nom}/${this.dataset.latitude}/${this.dataset.longitude}" target="_blank" class="big">🌎</a>`); </script>
+        </td>
+    </tr>
+
+    <script>
+        const [nom, lat, lon] = window.location.hash.substring(1).split("/");
+        const images = `
+          <tr>
+            <td colspan="6">
+              <img src="https://my.meteoblue.com/images/meteogram?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram ${nom}" width="100%"/>
+              <br>
+              <img src="https://my.meteoblue.com/images/meteogram_air?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram ${nom}" width="100%"/>
+              <br>
+              <img src="https://my.meteoblue.com/images/meteogram_thermal?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram ${nom}" width="100%"/>
+              <br>
+              <img src="https://my.meteoblue.com/images/meteogram_multimodel?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram ${nom}" width="100%"/>
+              <br>
+              <img src="https://my.meteoblue.com/images/meteogram_multimodelwind?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram ${nom}" width="100%"/>
+              <br>
+              <img src="https://my.meteoblue.com/images/meteogram_stueve?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram ${nom}" width="100%"/>
+              <br>
+              <img src="https://my.meteoblue.com/images/meteogram_sounding?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${nom}" alt="Météogram ${nom}" width="100%"/>
+            </td>
+          </tr>
+        `;
+        document.write(images);
+    </script>
+
+  
+    <script> document.write(liens()); </script>
+</table>
+</body>
+</html>
