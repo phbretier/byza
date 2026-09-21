@@ -1,114 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
     <title>Vent en Trégor-Goëlo</title>
-    <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
     <script src="https://phbretier.github.io/byza/script.js"></script>
 </head>
 <body>
 <table>
     <tr>
-        <script> document.write(celluleBalise(2,"Bus","ffvl/2842")); </script>
-        <script> document.write(celluleBalise(2,"Goas Trez","holfuy/787")); </script>
-        <script> document.write(celluleBalise(2,"Ile Grande","holfuy/809")); </script>
+        <script> 
+            balise(2,"Bus","ffvl/2842");
+            balise(2,"Goas Trez","holfuy/787");
+            balise(2,"Ile Grande","holfuy/809");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Lannion","metar/LFRO")); </script>
-        <script> document.write(celluleBalise(2,"<a href=\"https://www.meteociel.fr/temps-reel/obs_villes.php?code2=7117&affint=1\">Perros</a>","meteo-france/22168001")); </script>
-        <script> document.write(celluleBalise(2,"Port Blanc","holfuy/1037")); </script>
+        <script>              
+            balise(2,"Lannion","metar/LFRO");
+            balise(2,"<a href=\"https://www.meteociel.fr/temps-reel/obs_villes.php?code2=7117&affint=1\">Perros</a>","meteo-france/22168001");
+            balise(2,"Port Blanc","holfuy/1037");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Bréhat","meteo-france/22016001")); </script>
-        <script> document.write(celluleBalise(2,"Milepat","ffvl/116")); </script>
-        <script> document.write(celluleBalise(2,"Bonaparte","ffvl/5070")); </script>
+        <script>              
+            balise(2,"Bréhat","meteo-france/22016001");
+            balise(2,"Milepat","ffvl/116");
+            balise(2,"Bonaparte","ffvl/5070");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Binic","pioupiou/1456")); </script>
-        <script> document.write(celluleBalise(2,"Roselier","ffvl/89")); </script>
-        <script> document.write(celluleBalise(2,"St Pabu","ffvl/160")); </script>
-    </tr>
-
-    <script> document.write(webcams()); </script>
-    <tr>
-        <td colspan="2">
-            <a href="https://www.viewsurf.com/univers/plage/vue/19304-france-bretagne-plestin-les-greves-panoramique-hd">St Efflam</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.meteo-trebeurden.fr/camera/image00001.jpg">Bihit</a>
-            <br>
-            <a href="https://www.meteo-trebeurden.fr/Gauges/GaugesSmallFr.htm">Stat. météo</a>
-        </td>
-        <td colspan="2">
-            <a href="http://www.windsurfbreizh22.com/webcamHD/webcam1/image2014.php">Tresmeur</a>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <a href="https://s1.vision-environnement.com/live/modules/timelapse/captureptz/perrosguirec4.jpg">Perros</a>
-        </td>
-        <td colspan="2">
-            <a href="https://s1.vision-environnement.com/live/modules/timelapse/capture/trestraou.jpg">Trestraou</a>
-        </td>
-        <td colspan="2">
-            <a href="https://s1.vision-environnement.com/live/modules/timelapse/captureptz/trevou.jpg">Trévou-Tr.</a>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <a href="https://s1.vision-environnement.com/live/modules/timelapse/captureptz/loguivy.jpg">Loguivy</a>
-        </td>
-        <td colspan="2">
-            <a href="https://s1.vision-environnement.com/live/modules/timelapse/captureptz/plouezec.jpg">Plouezec</a>
-        </td>
-        <td colspan="2">
-            <a href="https://s1.vision-environnement.com/live/modules/timelapse/capture/brehec.jpg">Bréhec</a>
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <a href="http://www.windsurfbreizh22.com/webcamHD/webcam-rosaires/image2014.php">Rosaires</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.skaping.com/pleneuf-val-andre/casino">Pléneuf</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.vision-environnement.com/live/player/erquy0.php">Erquy</a>
-        </td>
+        <script>              
+            balise(2,"Binic","pioupiou/1456");
+            balise(2,"Roselier","ffvl/89");
+            balise(2,"St Pabu","ffvl/160");
+        </script>
     </tr>
 
-    <script> document.write(previs()); </script>
+    <script> SectionWebcams(); </script>
     <tr>
-        <script> document.write(celluleMeteo(3,"33939/plestin_les_greves.htm","Plestin<br><a href=\"https://www.meteociel.fr/previsions-arome-1h/33945/saint_michel_en_greve.htm\">St Michel</a>","48.6719","-3.5739")); </script>
-        <script> document.write(celluleMeteo(3,"34352/tredrez_locquemeau.htm","Trédrez<br>Beg-ar-Forn","48.6946","-3.5793")); </script>
+        <script> 
+            webcam(2, "St Efflam", "https://www.viewsurf.com/univers/plage/vue/19304-france-bretagne-plestin-les-greves-panoramique-hd");
+            webcam(2, "Bihit<br><a href=\"https://www.meteo-trebeurden.fr/Gauges/GaugesSmallFr.htm\">Stat. météo</a>", "https://www.meteo-trebeurden.fr/camera/image00001.jpg");
+            webcam(2, "Tresmeur", "http://www.windsurfbreizh22.com/webcamHD/webcam1/image2014.php");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"33918/lannion.htm","Maez","48.736","-3.5491")); </script>
-        <script> document.write(celluleMeteo(2,"33918/lannion.htm","Beg Leguer","48.7503","-3.5496")); </script>
-        <script> document.write(celluleMeteo(2,"33933/trebeurden.htm","Bihit","48.7609","-3.5771")); </script>
+        <script> 
+            webcam(2, "Perros", "https://s1.vision-environnement.com/live/modules/timelapse/captureptz/perrosguirec4.jpg");
+            webcam(2, "Trestraou", "https://s1.vision-environnement.com/live/modules/timelapse/capture/trestraou.jpg");
+            webcam(2, "Trévou-Tr.", "https://s1.vision-environnement.com/live/modules/timelapse/captureptz/trevou.jpg");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"33932/perros_guirec.htm","Perros","48.8209","-3.4644")); </script>
-        <script> document.write(celluleMeteo(2,"33931/louannec.htm","Louannec","48.797","-3.421")); </script>
-        <script> document.write(celluleMeteo(2,"33937/trelevern.htm","Pors Garo","48.809","-3.386")); </script>
+        <script> 
+            webcam(2, "Loguivy", "https://s1.vision-environnement.com/live/modules/timelapse/captureptz/loguivy.jpg");
+            webcam(2, "Plouezec", "https://s1.vision-environnement.com/live/modules/timelapse/captureptz/plouezec.jpg");
+            webcam(2, "Bréhec", "https://s1.vision-environnement.com/live/modules/timelapse/capture/brehec.jpg");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"34019/ploubazlanec.htm","Lann Vras","48.8175","-3.0352")); </script>
-        <script> document.write(celluleMeteo(2,"34020/plouezec.htm","Milepat","48.7657","-3.0103")); </script>
-        <script> document.write(celluleMeteo(2,"34050/plouha.htm","Bonaparte","48.7056","-2.9224")); </script>
+        <script> 
+            webcam(2, "Rosaires", "http://www.windsurfbreizh22.com/webcamHD/webcam-rosaires/image2014.php");
+            webcam(2, "Pléneuf", "https://www.skaping.com/pleneuf-val-andre/casino");
+            webcam(2, "Erquy", "https://www.vision-environnement.com/live/player/erquy0.php");
+        </script>
+    </tr>
+
+    <script> SectionPrevisions(); </script>
+    <tr>
+        <script> 
+            previsions(3,"33939/plestin_les_greves.htm","Plestin<br><a href=\"https://www.meteociel.fr/previsions-arome-1h/33945/saint_michel_en_greve.htm\">St Michel</a>","48.6719","-3.5739");
+            previsions(3,"34352/tredrez_locquemeau.htm","Trédrez<br>Beg-ar-Forn","48.6946","-3.5793"); 
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"34082/binic.htm","Déco Henri","48.590","-2.811")); </script>
-        <script> document.write(celluleMeteo(2,"34028/pordic.htm","Tournemine","48.5766","-2.7761")); </script>
-        <script> document.write(celluleMeteo(2,"34027/plerin.htm","Roselier","48.5546","-2.7157")); </script>
+        <script> 
+            previsions(2,"33918/lannion.htm","Maez","48.736","-3.5491");
+            previsions(2,"33918/lannion.htm","Beg Leguer","48.7503","-3.5496"); 
+            previsions(2,"33933/trebeurden.htm","Bihit","48.7609","-3.5771"); 
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(3,"33984/hillion.htm","Hillion","48.537","-2.625")); </script>
-        <script> document.write(celluleMeteo(3,"34024/pleneuf_val_andre.htm","St Pabu","48.601","-2.507")); </script>
+        <script> 
+            previsions(2,"33932/perros_guirec.htm","Perros","48.8209","-3.4644");
+            previsions(2,"33931/louannec.htm","Louannec","48.797","-3.421"); 
+            previsions(2,"33937/trelevern.htm","Pors Garo","48.809","-3.386"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsions(2,"34019/ploubazlanec.htm","Lann Vras","48.8175","-3.0352");
+            previsions(2,"34020/plouezec.htm","Milepat","48.7657","-3.0103"); 
+            previsions(2,"34050/plouha.htm","Bonaparte","48.7056","-2.9224"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsions(2,"34082/binic.htm","Déco Henri","48.590","-2.811");
+            previsions(2,"34028/pordic.htm","Tournemine","48.5766","-2.7761"); 
+            previsions(2,"34027/plerin.htm","Roselier","48.5546","-2.7157"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsions(3,"33984/hillion.htm","Hillion","48.537","-2.625"); 
+            previsions(3,"34024/pleneuf_val_andre.htm","St Pabu","48.601","-2.507"); 
+        </script>
     </tr>
     
-    <script> document.write(liens()); </script>
+    <script> BasDePage(); </script>
 </table>
 </body>
 </html>
