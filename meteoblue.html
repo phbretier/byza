@@ -5,7 +5,7 @@
     <script src="https://phbretier.github.io/byza/script.js"></script>
     <script>
         const [nom, lat, lon] = window.location.hash.substring(1).split("/");
-        const lieu = nom.decodeURIComponent().trim();
+        const lieu = decodeURIComponent(nom).trim();
         document.title = `MétéoBlue ${lieu}`;
     </script>
 </head>
