@@ -27,12 +27,17 @@
         items.forEach(([label, suffix]) => {
             const name = `${label} ${nom}`;
             const url = `https://my.meteoblue.com/images/meteogram${suffix}?lat=${lat}&lon=${lon}&asl=73&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=png&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${encodeURIComponent(name)}`;
-            var menu = `<div class="section" style="display: flex; justify-content: center;" id="${encodeURIComponent(label)}">${label}</div> `;
+            var menu = `
+                <div class="section" style="display: flex; justify-content: center;" id="${encodeURIComponent(label)}">${label}</div> 
+                <div style="display: flex; justify-content: center;">
+            `;
             items.forEach(([label2, suffix2]) => {
                 if (label != label2) {
-                    menu += `&ensp; <a href="#${encodeURIComponent(label2)}">${label2}</a> `;
+                    const mots = label2.split(" ");
+                    menu += `&ensp; <a href="#${encodeURIComponent(label2)}">${mots[mots.length - 1]}</a> `;
                 }
             });
+            menu += "&ensp; </div>";
             document.write(`
                 <div style="height: 20px;"></div>
                 ${menu}
