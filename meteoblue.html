@@ -45,7 +45,10 @@
             <a href="https://www.meteociel.fr/previsions-arome-1h/33918/lannion.htm">MB</a>
             <br>
             <div style="height: 10px;"></div>
-            <script> document.write(`<a href="meteoblue.html#${this.dataset.nom}/${this.dataset.latitude}/${this.dataset.longitude}" target="_blank" class="big">🌎</a>`); </script>
+            <script> 
+                const [nom, lat, lon] = window.location.hash.substring(1).split("/");
+                document.write(`<a href="meteoblue.html#${nom}/${lat}/${lon}" target="_blank" class="big">🌎</a>`); 
+            </script>
         </td>
     </tr>
 
