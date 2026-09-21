@@ -1,7 +1,7 @@
 fonction test(colspan, nom) {
     return `
         <td colspan="${colspan}">
-            <a href="#" class="open-menu"'>${nom}</a>
+            <a href="#" class="open-menu">${nom}</a>
         </td>
     `;
 }
