@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
     <title>Vent à Saint-Hilaire</title>
-    <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
     <script src="https://phbretier.github.io/byza/script.js"></script>
 </head>
 <body>
 <table>
     <tr>
-        <script> document.write(celluleBalise(2,"St Hilaire S","romma/186")); </script>
-        <script> document.write(celluleBalise(2,"St Hilaire N","ffvl/61")); </script>
-        <script> document.write(celluleBalise(2,"Lumbin","pioupiou/2023")); </script>
+        <script> balise(2,"St Hilaire S","romma/186"); </script>
+        <script> balise(2,"St Hilaire N","ffvl/61"); </script>
+        <script> balise(2,"Lumbin","pioupiou/2023"); </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Touvet","pioupiou/106")); </script>
-        <script> document.write(celluleBalise(2,"Lumbin","romma/289")); </script>
-        <script> document.write(celluleBalise(2,"Versoud","meteo-france/38538002")); </script>
+        <script> balise(2,"Touvet","pioupiou/106"); </script>
+        <script> balise(2,"Lumbin","romma/289"); </script>
+        <script> balise(2,"Versoud","meteo-france/38538002"); </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Petit Som","ffvl/3770")); </script>
-        <script> document.write(celluleBalise(2,"la Scia","ffvl/13")); </script>
-        <script> document.write(celluleBalise(2,"St Pierre","meteo-france/38442008")); </script>
+        <script> balise(2,"Petit Som","ffvl/3770"); </script>
+        <script> balise(2,"la Scia","ffvl/13"); </script>
+        <script> balise(2,"St Pierre","meteo-france/38442008"); </script>
     </tr>
     
-    <script> document.write(webcams()); </script>
+    <script> SectionWebcams(); </script>
     <tr>
         <td colspan="3">
             <a href="https://www.prevol.com/prevolwebcam/upload/prevol3decos.jpg">St Hilaire N</a>
@@ -40,37 +37,14 @@
         </td>
     </tr>
 
-    <script> document.write(previs()); </script>
+    <script> SectionPrevisions(); </script>
     <tr>
-        <script> document.write(celluleMeteo(2,"13555/saint_hilaire.htm","<br>St Hilaire","45.3068","5.8882")); </script>
-        <script> document.write(celluleMeteo(2,"13600/saint_pierre_de_chartreuse.htm","<br>la Sia","45.345","5.846")); </script>
-        <script> document.write(celluleMeteo(2,"13628/sarcenas.htm","Charmant<br>Som","45.3251","5.7652")); </script>
-    </tr>
-    <tr>
-        <script> document.write(celluleMeteo(2,"33918/lannion.htm","Maez","48.736","-3.5491")); </script>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/33918/lannion.htm">Menu Meaz</a>
-            <br>
-            <div style="height: 10px;"></div>
-            <a href="#" class="open-menu big" data-nom="Maez" data-lat="48.736" data-lon="-3.5491">⋮</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.meteociel.fr/previsions-arome-1h/33918/lannion.htm">MB Maez</a>
-            <br>
-            <div style="height: 10px;"></div>
-            <script> 
-                document.write(`<a href="meteoblue.html#Maez/48.736/-3.5491" target="_blank" class="big">🌎</a>`); 
-            </script>
-            <br>
-            <script> 
-                document.write(`<a href="meteoblue.html#Maez/48.736/-3.5491" target="_blank" class="big"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>`); 
-            </script>
-        </td>
+        <script> previsions(2,"13555/saint_hilaire.htm","<br>St Hilaire","45.3068","5.8882"); </script>
+        <script> previsions(2,"13600/saint_pierre_de_chartreuse.htm","<br>la Sia","45.345","5.846"); </script>
+        <script> previsions(2,"13628/sarcenas.htm","Charmant<br>Som","45.3251","5.7652"); </script>
     </tr>
 
-
-    <script> document.write(liens()); </script>
-    <script> test2(); </script>
+    <script> basDePage(); </script>
 </table>
 </body>
 </html>
