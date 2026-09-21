@@ -1,3 +1,61 @@
+fonction test(colspan, nom) {
+    return `
+        <td colspan="${colspan}">
+            <a href="#" class="open-menu"'>${nom}</a>
+        </td>
+    `;
+}
+
+fonction test2() {
+    return `
+        <script>
+            document.querySelectorAll('.open-menu').forEach(link => {
+              link.addEventListener('click', function(e) {
+                // remplace le click 
+                e.preventDefault();
+                // ferme si déjà ouvert et fin
+                if (this.nextElementSibling && this.nextElementSibling.classList.contains('menu-open')) {
+                  this.nextElementSibling.remove();
+                  return;
+                }
+                // ferme ceux déjà ouverts
+                document.querySelectorAll('.menu-open').forEach(menu_open => {
+                    menu_open.remove()
+                }
+            
+                // la cellule courante
+                const currentTr = this.closest('tr');
+                
+                // le container à ouvrir
+                const container = document.createElement('div');
+                container.className = 'menu-open';
+
+                const htmlContent = \`
+                  <a href="https://meteo-parapente.com/#/${this.dataset.latitude},${this.dataset.longitude},9" target="_blank" class="big">🪂</a>
+                  &#8239;
+                  <a href="https://www.windy.com/${this.dataset.latitude}/${this.dataset.longitude}/airgram?clouds,${this.dataset.latitude},${this.dataset.longitude},10,i:temp,p:wind" target="_blank" class="big">⛅</a>
+                  &#8239;
+                  <a href="https://www.velivole.fr/profile?lat=${this.dataset.latitude}&long=${this.dataset.longitude}&model=AROME" target="_blank" class="big">📊</a>
+                  <br>
+                  <div style="height: 10px;"></div>
+                  <a href="https://www.windy.com/plugin/sdg/aromeFrance/${this.dataset.latitude}/${this.dataset.longitude}?aromeFrance,clouds,${this.dataset.latitude},${this.dataset.longitude},10,i:pressure,p:wind" target="_blank" class="big">🌎</a>
+                  &#8239;
+                  <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${this.dataset.latitude}&lat=${this.dataset.longitude}&ech=0&map=0" target="_blank" class="big">📈</a>
+                  &#8239;
+                  <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${this.dataset.latitude}&lat=${this.dataset.longitude}&ech=0&map=0" target="_blank" class="big">📉</a>
+                  <div style="height: 10px;"></div>
+                \`;
+                // Insérer le contenu HTML dans le container
+                container.innerHTML = htmlContent;
+
+                // Insère le container juste en dessous
+                currentTr.after(newRow);
+              });
+            });
+        </script>
+    `;
+}
+
 function celluleBalise(colspan, nom, cheminSpotair) {
     const urlSpotair = `https://www.spotair.mobi/widget/wind/${cheminSpotair}?mode=free_flight&unit=kmh&name=false&quadrant=false&windValues=true&dark=true`;
     return `
@@ -104,7 +162,7 @@ function liens() {
                 <a href="https://www.velivole.fr/?center_lat=49.82&center_long=10.75&zoom=5.3">Velivole</a>
             </td>
             <td colspan="2">
-                <a href="https://www.meteoblue.com/fr/meteo/prevision/meteogramweb/tr%c3%a9l%c3%a9vern_france_2971893">Meteoblue</a>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=windAnimation~rainbow~auto~10%20m%20above%20gnd~pressure2mOverlay&coords=3.84/45.19/1">Meteoblue</a>
             </td>
         </tr>
     
