@@ -14,7 +14,7 @@ const iconMB = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y
 const iconVV = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAP1BMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC6E+JdAAAAFXRSTlMADgYq31o4/XZQRhrroYOPuc7VZfKE94RIAAAAz0lEQVR4AXRQBQKAIBCjB8LJifz/q3bHTBbExBNSiV9oY/9FB/9JB3kmm3DTlMdMSBent030WK11i2l+wTjxRk5IJEWI9xwDJht0xIC+JwISEyfQvJlUHgfo3Ex3aQ75KRq13tvgbSYNWqxWtaWElcrgzdWBsw6wwua8+F2B2c/ccwdTEIVQah5Hrl4eVSg1eemy0fbRYzoJX8NdVIVF3LZqn2I0JEu/dZNI3kSPIJnWqGor2eZAyJWliHuD0ifUA6h0b126/kAzDpiIhiEAAIYTCNDs4bFsAAAAAElFTkSuQmCC";
 
 
-function Balise(colspan, nom, cheminSpotair) {
+function balise(colspan, nom, cheminSpotair) {
     document.write(`
         <td colspan="${colspan}">
             ${nom}
