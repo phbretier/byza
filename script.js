@@ -1,3 +1,11 @@
+<script> document.write(`
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
+    <link rel="icon" href="https://png.pngtree.com/png-vector/20240529/ourlarge/pngtree-colorful-logo-design-for-paragliding-png-image_6963179.png" type="image/png" />
+    <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
+`); </script>
+
+
 function test(colspan, nom) {
     return `
         <td colspan="${colspan}">
