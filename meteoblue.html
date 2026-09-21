@@ -12,7 +12,7 @@
     <script>
         document.write(`
             <div class="section" style="display: flex; justify-content: center;"> 
-                Prévisions MétéoBlue pour - ${nom} - (${lat},${lon})
+                Prévisions MétéoBlue pour - ${nom.replace(/%20/g, ' ').trim()} - (${lat},${lon})
             </div>
             <br>
         `);
