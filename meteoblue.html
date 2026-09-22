@@ -35,22 +35,22 @@
             const name = `${label} ${lieu}`;
             const url = `https://my.meteoblue.com/images/meteogram${suffix}?lat=${lat}&lon=${lon}&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=webp&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${encodeURIComponent(lieu)}&wind_symbol=barb`;
             var entete = `
-                <div class="section" style="display: flex; justify-content: center; " id="${encodeURIComponent(label)}">${label}</div> 
+                <div class="section" id="${encodeURIComponent(label)}">${label}</div> 
             `;
             if (['_stueve', '_sounding'].includes(suffix)) {
                 entete += `
-                    <select id="dateSelector${suffix}">Date</select>
-                    <select id="timeSelector${suffix}">Heure</select>
+                    <select id="dateSelector${suffix}"></select>
+                    <select id="timeSelector${suffix}"></select>
                 `;
                 dateSelectors.push([suffix, url]);
             } else if (['_multimodelwind'].includes(suffix)) {
                 entete += `
-                    <select id="daySelector${suffix}">Jour</select>
+                    <select id="daySelector${suffix}"></select>
                 `;
                 daySelectors.push([suffix, url]);
             } else {
                 entete += `
-                    <select id="daysSelector${suffix}">Durée</select>
+                    <select id="daysSelector${suffix}"></select>
                 `;
                 daysSelectors.push([suffix, url]);
             }
@@ -66,13 +66,15 @@
             });
             menu += "&ensp; </div>";
             document.write(`
-                <div style="height: 20px;"></div>
-                ${entete}
-                <br>
-                ${menu}
-                <br>
-                <img src="${url}" alt="${name}" id="image${suffix}" width="100%"/>
-                <br>
+                <div style="display: flex; justify-content: center;">
+                    <div style="height: 20px;"></div>
+                    ${entete}
+                    <br>
+                    ${menu}
+                    <br>
+                    <img src="${url}" alt="${name}" id="image${suffix}" width="100%"/>
+                    <br>
+                </div>
             `);
         });
         
@@ -113,6 +115,7 @@
         daySelectors.forEach(([suffix, url]) => {
             const daySelector = document.getElementById(`daySelector${suffix}`);
             for (let i = 0; i <= 5; i++) {
+                const option = document.createElement('option');
                 option.value = i;
                 option.text = (i === 0) ? "J" : `J+${i}`;
                 daySelector.appendChild(option);
@@ -127,6 +130,7 @@
         daysSelectors.forEach(([suffix, url]) => {
             const daysSelector = document.getElementById(`daysSelector${suffix}`);
             for (let i = 3; i <= 5; i++) {
+                const option = document.createElement('option');
                 option.value = i;
                 option.text = `${i} jours`;
                 daysSelector.appendChild(option);
