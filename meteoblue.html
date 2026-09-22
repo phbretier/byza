@@ -84,7 +84,7 @@
         const today = new Date();
         dateSelectors.forEach(([suffix, url]) => {
             const dateSelector = document.getElementById(`dateSelector${suffix}`);
-            for (let i = 0; i <= 7; i++) {
+            for (let i = 0; i <= 6; i++) {
                 const date = new Date(today);
                 date.setDate(today.getDate() + i);
                 const option = document.createElement('option');
@@ -117,7 +117,7 @@
 
         daySelectors.forEach(([suffix, url]) => {
             const daySelector = document.getElementById(`daySelector${suffix}`);
-            for (let i = 1; i <= 8; i++) {
+            for (let i = 1; i <= 7; i++) {
                 const option = document.createElement('option');
                 option.value = i;
                 option.text = (i === 1) ? "J" : `J+${i-1}`;
@@ -132,7 +132,7 @@
 
         daysSelectors.forEach(([suffix, url]) => {
             const daysSelector = document.getElementById(`daysSelector${suffix}`);
-            for (let i = 3; i <= 8; i++) {
+            for (let i = 3; i <= 7; i++) {
                 const option = document.createElement('option');
                 option.value = i;
                 option.text = `${i} jours`;
