@@ -97,54 +97,66 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon) {
             <a href="${urlMeteociel}">${nom}</a>
             <br>
             <div style="height: 10px;"></div>
-            <a href="#" class="open-menu big" data-nom="${nom}" data-lat="${lat}" data-lon="${lat}">⋮</a>
+            <a href="#" class="open-menu big" data-nom="${nom}" data-lat="${lat}" data-lon="${lat}">⫶☰</a>
         </td>
     `);
 }
 
 function BasDePage() {
     document.querySelectorAll('.open-menu').forEach(link => {
-      link.addEventListener('click', function(e) {
-        // remplace le click 
-        e.preventDefault();
-        // ferme si déjà ouvert et fin
-        if (this.nextElementSibling && this.nextElementSibling.classList.contains('menu-opened')) {
-            console.log("un menu-opened a supprimer");
-            this.nextElementSibling.remove();
-            return;
-        }
-        // ferme ceux déjà ouverts
-        document.querySelectorAll('.menu-opened').forEach(menu_opened => {
-            console.log("un menu-opened a supprimer");
-            menu_opened.remove();
-        });
+        link.addEventListener('click', function(e) {
+            // remplace le click 
+            e.preventDefault();
+            // ferme si déjà ouvert et fin
+            if (this.nextElementSibling && this.nextElementSibling.classList.contains('menu-opened')) {
+                console.log("un menu-opened a supprimer");
+                this.nextElementSibling.remove();
+                return;
+            }
+            // ferme ceux déjà ouverts
+            document.querySelectorAll('.menu-opened').forEach(menu_opened => {
+                console.log("un menu-opened a supprimer");
+                menu_opened.remove();
+            });
+        
+            // le container à ouvrir
+            const container = document.createElement('div');
+            container.className = 'menu-opened';
+            container.style.fontSize = 'small';
     
-        // le container à ouvrir
-        const container = document.createElement('div');
-        container.className = 'menu-opened';
-
-        const htmlContent = `
-            <a href="https://meteo-parapente.com/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big">🪂</a>
-            &#8239;
-            <a href="https://www.windy.com/${this.dataset.lat}/${this.dataset.lon}/airgram?clouds,${this.dataset.lat},${this.dataset.lon},10,i:temp,p:wind" target="_blank" class="big">⛅</a>
-            &#8239;
-            <a href="https://www.velivole.fr/profile?lat=${this.dataset.lat}&long=${this.dataset.lon}&model=AROME" target="_blank" class="big">📊</a>
-            <br>
-            <div style="height: 10px;"></div>
-            <a href="meteoblue.html#${this.dataset.nom}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="big">🌎</a>
-            &#8239;
-            <a href="https://www.windy.com/plugin/sdg/aromeFrance/${this.dataset.lat}/${this.dataset.lon}?aromeFrance,clouds,${this.dataset.lat},${this.dataset.lon},10,i:pressure,p:wind" target="_blank" class="big">📈</a>
-            &#8239;
-            <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${this.dataset.lat}&lat=${this.dataset.lon}&ech=0&map=0" target="_blank" class="big">📉</a>
-            <div style="height: 10px;"></div>
-        `;
-          
-        // Insérer le contenu HTML dans le container
-        container.innerHTML = htmlContent;
-
-        // Insère le container juste en dessous
-        this.after(container);
-      });
+            // &emsp; 1 em ; &ensp; 0,5 em ; &nbsp; 0,25-0,33 em ; &thinsp; &#8239; 0,16-0,20 em ; &hairsp; 0,08-0,10 em
+            const htmlContent = `
+                <a href="https://meteo-parapente.com/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big">
+                    <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/> Météo Parapente
+                </a>
+                <br>
+                <a href="https://www.windy.com/${this.dataset.lat}/${this.dataset.lon}/airgram?clouds,${this.dataset.lat},${this.dataset.lon},10,i:temp,p:wind" target="_blank" class="big">
+                    <img src="https://www.windy.com/favicon.ico" alt="⛅" width="24px"/> AirGram Windy
+                </a>
+                <br>
+                <a href="https://www.velivole.fr/profile?lat=${this.dataset.lat}&long=${this.dataset.lon}&model=AROME" target="_blank" class="big">
+                    <img src="${iconVV}" style="filter: invert(1);" alt="📊" width="24px"/> Coupe Velivole
+                </a>
+                <br>
+                <a href="meteoblue.html#${this.dataset.nom}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="big">
+                    <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/> Météo Blue
+                </a>
+                <br>
+                <a href="https://www.windy.com/plugin/sdg/aromeFrance/${this.dataset.lat}/${this.dataset.lon}?aromeFrance,clouds,${this.dataset.lat},${this.dataset.lon},10,i:pressure,p:wind" target="_blank" class="big">
+                    <img src="https://flyxc.app/static/img/jumoplane.svg" alt="📈" width="24px"/> Emagramme FlyXC
+                </a>
+                <br>
+                <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${this.dataset.lat}&lat=${this.dataset.lon}&ech=0&map=0" target="_blank" class="big">
+                    <img src="https://meteofrance.fr/sites/default/files/favicon_0.png" alt="📉" width="24px"/> Emagramme Météo France
+                </a>
+            `;
+              
+            // Insérer le contenu HTML dans le container
+            container.innerHTML = htmlContent;
+    
+            // Insère le container juste en dessous
+            this.after(container);
+        });
     });
     
     document.write(`
