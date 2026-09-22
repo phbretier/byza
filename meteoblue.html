@@ -35,22 +35,28 @@
             const name = `${label} ${lieu}`;
             const url = `https://my.meteoblue.com/images/meteogram${suffix}?lat=${lat}&lon=${lon}&tz=Europe%2FParis&apikey=taIbwrSiUgM1FTvK&format=webp&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${encodeURIComponent(lieu)}&wind_symbol=barb`;
             var entete = `
-                <div class="section" id="${encodeURIComponent(label)}">${label}</div> 
+                <div class="section" id="${encodeURIComponent(label)}" style="display: flex; justify-content: center;">${label}</div> 
             `;
             if (['_stueve', '_sounding'].includes(suffix)) {
                 entete += `
-                    <select id="dateSelector${suffix}"></select>
-                    <select id="timeSelector${suffix}"></select>
+                    <div style="display: flex; justify-content: center;">
+                        <select id="dateSelector${suffix}"></select>
+                        <select id="timeSelector${suffix}"></select>
+                    </div>
                 `;
                 dateSelectors.push([suffix, url]);
             } else if (['_multimodelwind'].includes(suffix)) {
                 entete += `
-                    <select id="daySelector${suffix}"></select>
+                    <div style="display: flex; justify-content: center;">
+                        <select id="daySelector${suffix}"></select>
+                    </div>
                 `;
                 daySelectors.push([suffix, url]);
             } else {
                 entete += `
-                    <select id="daysSelector${suffix}"></select>
+                    <div style="display: flex; justify-content: center;">
+                        <select id="daysSelector${suffix}"></select>
+                    </div>
                 `;
                 daysSelectors.push([suffix, url]);
             }
@@ -66,15 +72,13 @@
             });
             menu += "&ensp; </div>";
             document.write(`
-                <div style="display: flex; justify-content: center;">
-                    <div style="height: 20px;"></div>
-                    ${entete}
-                    <br>
-                    ${menu}
-                    <br>
-                    <img src="${url}" alt="${name}" id="image${suffix}" width="100%"/>
-                    <br>
-                </div>
+                <div style="height: 20px;"></div>
+                ${entete}
+                <br>
+                ${menu}
+                <br>
+                <img src="${url}" alt="${name}" id="image${suffix}" width="100%"/>
+                <br>
             `);
         });
         
