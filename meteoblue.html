@@ -52,7 +52,7 @@
                     </div>
                 `;
                 daySelectors.push([suffix, url]);
-            } else if (['_air'].includes(suffix)) {
+            } else if (['', '_air', '_multimodel'].includes(suffix)) {
                 entete += `
                     <div style="display: flex; justify-content: center;">
                         <select id="daysSelector${suffix}"></select>
