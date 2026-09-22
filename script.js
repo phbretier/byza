@@ -97,7 +97,7 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon) {
             <a href="${urlMeteociel}">${nom}</a>
             <br>
             <div style="height: 10px;"></div>
-            <a href="#" class="open-menu" data-nom="${nom.replace(/<[^>]*>/g, ' ').trim()}" data-lat="${lat}" data-lon="${lat}">⫶☰</a>
+            <a href="#" class="open-menu" data-nom="${nom.replace(/<[^>]*>/g, ' ').trim()}" data-lat="${lat}" data-lon="${lon}">⫶☰</a>
         </td>
     `);
 }
@@ -149,7 +149,7 @@ function BasDePage() {
                     <img src="https://flyxc.app/static/img/jumoplane.svg" alt="📈" width="24px"/> Émagramme
                 </a>
                 <br><div style="height: 7px;"></div>
-                <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${this.dataset.lat}&lat=${this.dataset.lon}&ech=0&map=0" target="_blank" class="big">
+                <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${this.dataset.lon}&lat=${this.dataset.lat}&ech=0&map=0" target="_blank" class="big">
                     <img src="https://meteofrance.fr/sites/default/files/favicon_0.png" alt="📉" width="24px"/> Émagramme
                 </a>
                 <br><div style="height: 10px;"></div>
