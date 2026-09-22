@@ -52,7 +52,7 @@
                     </div>
                 `;
                 daySelectors.push([suffix, url]);
-            } else {
+            } else if (['_air'].includes(suffix)) {
                 entete += `
                     <div style="display: flex; justify-content: center;">
                         <select id="daysSelector${suffix}"></select>
@@ -74,7 +74,6 @@
             document.write(`
                 <div style="height: 20px;"></div>
                 ${entete}
-                <br>
                 ${menu}
                 <br>
                 <img src="${url}" alt="${name}" id="image${suffix}" width="100%"/>
@@ -85,7 +84,7 @@
         const today = new Date();
         dateSelectors.forEach(([suffix, url]) => {
             const dateSelector = document.getElementById(`dateSelector${suffix}`);
-            for (let i = 0; i <= 5; i++) {
+            for (let i = 0; i <= 7; i++) {
                 const date = new Date(today);
                 date.setDate(today.getDate() + i);
                 const option = document.createElement('option');
@@ -118,10 +117,10 @@
 
         daySelectors.forEach(([suffix, url]) => {
             const daySelector = document.getElementById(`daySelector${suffix}`);
-            for (let i = 0; i <= 5; i++) {
+            for (let i = 1; i <= 8; i++) {
                 const option = document.createElement('option');
                 option.value = i;
-                option.text = (i === 0) ? "J" : `J+${i}`;
+                option.text = (i === 1) ? "J" : `J+${i-1}`;
                 daySelector.appendChild(option);
             }
             daySelector.addEventListener('change', function() {
