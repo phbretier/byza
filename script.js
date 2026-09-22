@@ -66,7 +66,7 @@ function previsions(colspan, cheminMeteociel, nom, lat, lon) {
     const urlFlyXCSounding =`https://www.windy.com/plugin/sdg/aromeFrance/${lat}/${lon}?aromeFrance,clouds,${lat},${lon},10,i:pressure,p:wind`;
     const urlWindyAirgram =`https://www.windy.com/${lat}/${lon}/airgram?clouds,${lat},${lon},10,i:temp,p:wind`;
     const urlVelivole =`https://www.velivole.fr/profile?lat=${lat}&long=${lon}&model=AROME`;
-    const urlSondage =`https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${lon}&lat=${lat}&ech=0&map=0`;
+    const urlSondage =`https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lat=${lat}&lon=${lon}&ech=0&map=0`;
     // &emsp; 1 em ; &ensp; 0,5 em ; &nbsp; 0,25-0,33 em ; &thinsp; &#8239; 0,16-0,20 em ; &hairsp; 0,08-0,10 em
     document.write(`
         <td colspan="${colspan}">
@@ -149,7 +149,7 @@ function BasDePage() {
                     <img src="https://flyxc.app/static/img/jumoplane.svg" alt="📈" width="24px"/> Émagramme
                 </a>
                 <br><div style="height: 7px;"></div>
-                <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${this.dataset.lon}&lat=${this.dataset.lat}&ech=0&map=0" target="_blank" class="big">
+                <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lat=${this.dataset.lat}&lon=${this.dataset.lon}&ech=0&map=0" target="_blank" class="big">
                     <img src="https://meteofrance.fr/sites/default/files/favicon_0.png" alt="📉" width="24px"/> Émagramme
                 </a>
                 <br><div style="height: 10px;"></div>
