@@ -42,17 +42,17 @@
                     <select id="dateSelector${suffix}">Date</select>
                     <select id="timeSelector${suffix}">Heure</select>
                 `;
-                dateSelectors.appendChild([suffix, url]);
+                dateSelectors.push([suffix, url]);
             } else if (['_multimodelwind'].includes(suffix)) {
                 entete += `
                     <select id="daySelector${suffix}">Jour</select>
                 `;
-                daySelectors.appendChild([suffix, url]);
+                daySelectors.push([suffix, url]);
             } else {
                 entete += `
                     <select id="daysSelector${suffix}">Durée</select>
                 `;
-                daysSelectors.appendChild([suffix, url]);
+                daysSelectors.push([suffix, url]);
             }
             
             var menu = `
