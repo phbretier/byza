@@ -80,7 +80,7 @@ function previsions(colspan, cheminMeteociel, nom, lat, lon) {
             <a href="${urlVelivole}" target="_blank" class="big"><img src="${iconVV}" style="filter: invert(1);" alt="📊" width="24px"/></a>
             <br>
             <div style="height: 10px;"></div>
-            <a href="meteoblue.html#${encodeURIComponent(nom.replace(/<[^>]*>/g, ' '))}/${lat}/${lon}" target="_blank" class="big"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
+            <a href="meteoblue.html#${encodeURIComponent(nom.replace(/<[^>]*>/g, ' ').trim())}/${lat}/${lon}" target="_blank" class="big"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
             &#8239;
             <a href="${urlFlyXCSounding}" target="_blank" class="big"><img src="https://flyxc.app/static/img/jumoplane.svg" alt="📈" width="24px"/></a>
             &#8239;
@@ -97,7 +97,7 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon) {
             <a href="${urlMeteociel}">${nom}</a>
             <br>
             <div style="height: 10px;"></div>
-            <a href="#" class="open-menu" data-nom="${nom}" data-lat="${lat}" data-lon="${lat}">⫶☰</a>
+            <a href="#" class="open-menu" data-nom="${nom.replace(/<[^>]*>/g, ' ').trim()}" data-lat="${lat}" data-lon="${lat}">⫶☰</a>
         </td>
     `);
 }
@@ -141,7 +141,7 @@ function BasDePage() {
                     <img src="${iconVV}" style="filter: invert(1);" alt="📊" width="24px"/> Coupe
                 </a>
                 <br><div style="height: 7px;"></div>
-                <a href="meteoblue.html#${this.dataset.nom}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="big">
+                <a href="meteoblue.html#${encodeURIComponent(this.dataset.nom)}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="big">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/> MétéoBlue
                 </a>
                 <br><div style="height: 7px;"></div>
