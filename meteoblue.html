@@ -102,7 +102,7 @@
                 const date = dateSelector.value;
                 const time = timeSelector.value;
                 const image = document.getElementById(`image${suffix}`);
-                image.src = `$[url}&date=${date}&hour=${time}`;
+                image.src = `${url}&date=${date}&hour=${time}`;
             });
             timeSelector.addEventListener('change', function() {
                 const date = dateSelector.value;
