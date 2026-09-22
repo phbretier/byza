@@ -3,7 +3,7 @@ document.write(`
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
     <link rel="icon" href="favicon.png" type="image/png" />
     <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
-`); 
+`);
 
 const iconMP = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAA/1BMVEVHcExGqupApts/pdpFq+lHwOg+otA6lco7nNA4i8c5lM1Jw+Y/p9M9os87m844lMc3kMU2iMU5jM85kc0ze78ydrkwb7s0gMtAq9Y9pdI+pNQ7m843jMM1hcA1hMA0fr4xdrkvbrUvbbUxcL9Gv+U/qdJAqeA5jM0zer8yer8ua7EsY65EuOFArNUtZrErYq0tZLBFuuZBrdRCs+E+ndwtZ7EsYbRFveBCttpBsNUubLYwcbZKzetIxeVEu9xEuNxEteMqXqpFvuIsYq9GwuBEu91JxuhHwuJFvuFGvuA3hMkwcbQvbLVCsthDteNAqNwxdrc/q9U7m80yecYyeMYiESjjAAAAVXRSTlMABCY8CSiKyOGSOjPQ/////2Q7Z5OuWhnc9ZVB8v/p+v7uwEZ6/2ku2MX/8Nqn4/8yEf51S9momfv/eA8Ysf7QV/+EUf7kQ2LJ3UH5t6xxcvj19jksLdNDuQAAARdJREFUeAG10QMWxDAABNBkbdu2bdvo/a9SGw+LqfvjgB8EqtRqlUbetDq9waA3muTMbLHabHaHQ+90uT1ej8/PMxiwBkNhkzsSjcXiiUQimUpzmMkGc8QzH4lG44ViolQq+1isZKvUiztqhPgjXauXG+SPpjnTyrYpbHaoZ6Nb7xGltP3BkEU2o3p9DMBkOhvMq9WFCNO1ZQPA1Wyw0jab4uk3uss1aG5mfRbENc2b7U4MbJ/7zUErW5EY7W5zlNQc+31dcp6TzSwjMr+nWCrVfBAAOJ0d91CAp8T5fFmT/8zH2fa6ut3ueHIUPs4jP1UO7ub4Cj2DwdfrZWPwzTYzyRyyWSuxnyIU5Z+YLxQQRdS83xrwXTAYoyu/SVqBpwAAAABJRU5ErkJggg==";
 const iconMC = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAvVBMVEX5yADzwQD/0AD/2ADzygrAthuqqyDTvBfiwhC4siLsxwrw2xShpieSkiXPwSHYyyAlPCgFEBJCWC364Al8eSANGBgMGCBKXSkACBMAAAsYJyIhLRgAAABZYSBEVSNSaCw1QiFDTSQAABQQFw66ui87QBb/6BAAByXg1CEZIRAAIS0sOyMAIjcRGxCgqzNzcSEYOzGCii0VQjyKnTc1UC46XTdLWStXcDSHkSxidjBugTAAABpjYxp0fyjr0BPBaBuqAAAAv0lEQVR4AS0PgwHDQPAaO7XN2Nb+Y/V1NgBghpkKLIHjOcRIABEgiJLMKZKqgW6YForY88Vytd5sRX23PxxVFDid5/rlfLDMw/V2uK9QYHG0H8/X+zPXv7efA7breaofhNEm5kE2BHDc5JjOs1e+X/MAHKBAMS/n5St/ogCHA2G1DOb1grSojYACl/bw6A7vz0n/Vr2DWobmfEnp2vNjBc72Ej1Hs1f16kkOE0xVaWQ5VbiJng48x4g+R4FjjOAPaXYS8eHdAVwAAAAASUVORK5CYII=";
@@ -97,7 +97,7 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon) {
             <a href="${urlMeteociel}">${nom}</a>
             <br>
             <div style="height: 10px;"></div>
-            <a href="#" class="open-menu big" data-nom="${nom}" data-lat="${lat}" data-lon="${lat}">⫶☰</a>
+            <a href="#" class="open-menu" data-nom="${nom}" data-lat="${lat}" data-lon="${lat}">⫶☰</a>
         </td>
     `);
 }
@@ -105,7 +105,7 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon) {
 function BasDePage() {
     document.querySelectorAll('.open-menu').forEach(link => {
         link.addEventListener('click', function(e) {
-            // remplace le click 
+            // remplace le click
             e.preventDefault();
             // ferme si déjà ouvert et fin
             if (this.nextElementSibling && this.nextElementSibling.classList.contains('menu-opened')) {
@@ -118,47 +118,51 @@ function BasDePage() {
                 console.log("un menu-opened a supprimer");
                 menu_opened.remove();
             });
-        
+
             // le container à ouvrir
             const container = document.createElement('div');
             container.className = 'menu-opened';
-            container.style.fontSize = 'small';
-    
+            container.style.fontSize = 'x-small';
+            container.style.textAlign = 'left';
+
+
             // &emsp; 1 em ; &ensp; 0,5 em ; &nbsp; 0,25-0,33 em ; &thinsp; &#8239; 0,16-0,20 em ; &hairsp; 0,08-0,10 em
             const htmlContent = `
+                <div style="height: 10px;"></div>
                 <a href="https://meteo-parapente.com/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big">
-                    <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/> Météo Parapente
+                    <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/> MétéoParap.
                 </a>
-                <br>
+                <br><div style="height: 5px;"></div>
                 <a href="https://www.windy.com/${this.dataset.lat}/${this.dataset.lon}/airgram?clouds,${this.dataset.lat},${this.dataset.lon},10,i:temp,p:wind" target="_blank" class="big">
-                    <img src="https://www.windy.com/favicon.ico" alt="⛅" width="24px"/> AirGram Windy
+                    <img src="https://www.windy.com/favicon.ico" alt="⛅" width="24px"/> AirGram
                 </a>
-                <br>
+                <br><div style="height: 5px;"></div>
                 <a href="https://www.velivole.fr/profile?lat=${this.dataset.lat}&long=${this.dataset.lon}&model=AROME" target="_blank" class="big">
-                    <img src="${iconVV}" style="filter: invert(1);" alt="📊" width="24px"/> Coupe Velivole
+                    <img src="${iconVV}" style="filter: invert(1);" alt="📊" width="24px"/> Coupe
                 </a>
-                <br>
+                <br><div style="height: 5px;"></div>
                 <a href="meteoblue.html#${this.dataset.nom}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="big">
-                    <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/> Météo Blue
+                    <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/> MétéoBlue
                 </a>
-                <br>
+                <br><div style="height: 5px;"></div>
                 <a href="https://www.windy.com/plugin/sdg/aromeFrance/${this.dataset.lat}/${this.dataset.lon}?aromeFrance,clouds,${this.dataset.lat},${this.dataset.lon},10,i:pressure,p:wind" target="_blank" class="big">
-                    <img src="https://flyxc.app/static/img/jumoplane.svg" alt="📈" width="24px"/> Emagramme FlyXC
+                    <img src="https://flyxc.app/static/img/jumoplane.svg" alt="📈" width="24px"/> Emagramme
                 </a>
-                <br>
+                <br><div style="height: 5px;"></div>
                 <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lon=${this.dataset.lat}&lat=${this.dataset.lon}&ech=0&map=0" target="_blank" class="big">
-                    <img src="https://meteofrance.fr/sites/default/files/favicon_0.png" alt="📉" width="24px"/> Emagramme Météo France
+                    <img src="https://meteofrance.fr/sites/default/files/favicon_0.png" alt="📉" width="24px"/> Emagramme
                 </a>
+                <br><div style="height: 10px;"></div>
             `;
-              
+
             // Insérer le contenu HTML dans le container
             container.innerHTML = htmlContent;
-    
+
             // Insère le container juste en dessous
             this.after(container);
         });
     });
-    
+
     document.write(`
         <tr>
             <td class="section" colspan="6">
@@ -204,7 +208,7 @@ function BasDePage() {
                 <a href="https://www.meteoblue.com/fr/meteo/cartes#map=windAnimation~rainbow~auto~10%20m%20above%20gnd~pressure2mOverlay&coords=3.84/45.19/1">Meteoblue</a>
             </td>
         </tr>
-    
+
         <tr>
             <td class="section" colspan="6">
                 Autres sites <a href="https://puretrack.io/#philippe-bretier">📍</a>
@@ -372,7 +376,7 @@ function liens() {
                 <a href="https://www.meteoblue.com/fr/meteo/cartes#map=windAnimation~rainbow~auto~10%20m%20above%20gnd~pressure2mOverlay&coords=3.84/45.19/1">Meteoblue</a>
             </td>
         </tr>
-    
+
         <tr>
             <td class="section" colspan="6">
                 Autres sites <a href="https://puretrack.io/#philippe-bretier">📍</a>
