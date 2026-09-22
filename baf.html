@@ -1,97 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
     <title>Vent autour de Marlens</title>
-    <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
     <script src="https://phbretier.github.io/byza/script.js"></script>
 </head>
 <body>
 <table>
     <tr>
-        <script> document.write(celluleBalise(2,"Talloires<br>453m","pioupiou/1476")); </script>
-        <script> document.write(celluleBalise(2,"Montmin<br>1276m","ffvl/75")); </script>
-        <script> document.write(celluleBalise(2,"Doussard<br>451m","letskite/46087")); </script>
+        <script> 
+            balise(2,"Talloires<br>453m","pioupiou/1476");
+            balise(2,"Montmin<br>1276m","ffvl/75");
+            balise(2,"Doussard<br>451m","letskite/46087");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Sambuy<br>1827m","ffvl/182")); </script>
-        <script> document.write(celluleBalise(2,"Seythenex<br>784m","romma/168")); </script>
-        <script> document.write(celluleBalise(2,"Marlens<br>509m","pioupiou/326")); </script>
+        <script> 
+            balise(2,"Sambuy<br>1827m","ffvl/182");
+            balise(2,"Seythenex<br>784m","romma/168");
+            balise(2,"Marlens<br>509m","pioupiou/326");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Val d'Arly<br>930m","romma/49")); </script>
-        <script> document.write(celluleBalise(2,"Bisanne<br>1929m","ffvl/25")); </script>
-        <script> document.write(celluleBalise(2,"Saisies<br>1614m","meteo-france/73132003")); </script>
+        <script> 
+            balise(2,"Val d'Arly<br>930m","romma/49");
+            balise(2,"Bisanne<br>1929m","ffvl/25");
+            balise(2,"Saisies<br>1614m","meteo-france/73132003");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Albertville<br>314m","meteo-france/73297003")); </script>
-        <script> document.write(celluleBalise(2,"Chamoux<br>1267m","pioupiou/159")); </script>
-        <script> document.write(celluleBalise(2,"Montlambert<br>894m","ffvl/5120")); </script>
+        <script> 
+            balise(2,"Albertville<br>314m","meteo-france/73297003");
+            balise(2,"Chamoux<br>1267m","pioupiou/159");
+            balise(2,"Montlambert<br>894m","ffvl/5120");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Revard<br>1500m","ffvl/5017")); </script>
-        <script> document.write(celluleBalise(2,"Croc Sire<br>1392m","ffvl/3399")); </script>
-        <script> document.write(celluleBalise(2,"Sire sud<br>1505m","ffvl/2641")); </script>
+        <script> 
+            balise(2,"Revard<br>1500m","ffvl/5017");
+            balise(2,"Croc Sire<br>1392m","ffvl/3399");
+            balise(2,"Sire sud<br>1505m","ffvl/2641");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(3,"Mt du Chat<br>1496m","meteo-france/73051001")); </script>
-        <script> document.write(celluleBalise(3,"Aiguebelette<br>1121m","ffvl/11")); </script>
+        <script> 
+            balise(3,"Mt du Chat<br>1496m","meteo-france/73051001");
+            balise(3,"Aiguebelette<br>1121m","ffvl/11");
+        </script>
     </tr>
     
-    <script> document.write(webcams()); </script>
+    <script> SectionWebcams(); </script>
     <tr>
-        <td colspan="2">
-            <a href="https://grandsespaces.com/webcams/DOME.jpg">Planfait</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.skaping.com/sources-du-lac-annecy/douss-plage/">Doussard</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.skaping.com/sources-du-lac-annecy/giez">Faverge</a>
-        </td>
+        <script> 
+            webcam(2, "Planfait", "https://grandsespaces.com/webcams/DOME.jpg");
+            webcam(2, "Doussard", "https://www.skaping.com/sources-du-lac-annecy/douss-plage/");
+            webcam(2, "Faverge", "https://www.skaping.com/sources-du-lac-annecy/giez");
+        </script>
     </tr>
     <tr>
-        <td colspan="2">
-            <a href="https://www.chooksprod.com/parapente-annecy-marlens-webcam.jpg">Marlens</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.skaping.com/sambuy">Sambuy</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.skaping.com/les-saisies/le-manant">Bisanne</a>
-        </td>
+        <script> 
+            webcam(2, "Marlens", "https://www.chooksprod.com/parapente-annecy-marlens-webcam.jpg");
+            webcam(2, "Sambuy", "https://www.skaping.com/sambuy");
+            webcam(2, "Bisanne", "https://www.skaping.com/les-saisies/le-manant");
+        </script>
     </tr>
     <tr>
-        <td colspan="2">
-            <a href="https://www.acalbertville.com/webcam/lfka.jpg">Albertville</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.skaping.com/grandlac/revard">Revard</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.skaping.com/lac-aiguebelette/peage">Aiguebelette</a>
-        </td>
+        <script> 
+            webcam(2, "Albertville", "https://www.acalbertville.com/webcam/lfka.jpg");
+            webcam(2, "Revard", "https://www.skaping.com/grandlac/revard");
+            webcam(2, "Aiguebelette", "https://www.skaping.com/lac-aiguebelette/peage");
+        </script>
     </tr>
     
-    <script> document.write(previs()); </script>
+    <script> SectionPrevisions(); </script>
     <tr>
-        <script> document.write(celluleMeteo(2,"27723/montmin.htm","Montmin","45.853","6.223")); </script>
-        <script> document.write(celluleMeteo(2,"27707/marlens.htm","Marlens","45.7777","6.3394")); </script>
-        <script> document.write(celluleMeteo(2,"27783/seythenex.htm","Sambuy","45.6914","6.2727")); </script>
-    </tr>
-    <tr>        
-        <script> document.write(celluleMeteo(2,"27653/cordon.htm","Aravis","45.9128","6.5707")); </script>
-        <script> document.write(celluleMeteo(2,"27579/villard_sur_doron.htm","Bisane","45.7467","6.507")); </script>
-        <script> document.write(celluleMeteo(2,"27347/chamoux_sur_gelon.htm","Chamoux","45.5296","6.2527")); </script>
+        <script> 
+            previsionsMenu(2,"27723/montmin.htm","Montmin","45.853","6.223");
+            previsionsMenu(2,"27707/marlens.htm","Marlens","45.7777","6.3394");
+            previsionsMenu(2,"27783/seythenex.htm","Sambuy","45.6914","6.2727");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"27513/saint_jean_de_la_porte.htm","Montlambert","45.5528","6.1052")); </script>
-        <script> document.write(celluleMeteo(2,"27376/les_deserts.htm","Revard","45.6832","5.9747")); </script>
-        <script> document.write(celluleMeteo(2,"27288/aiguebelette_le_lac.htm","Aiguebelette","45.602","5.807")); </script>
+        <script> 
+            previsionsMenu(2,"27653/cordon.htm","Aravis","45.9128","6.5707");
+            previsionsMenu(2,"27579/villard_sur_doron.htm","Bisane","45.7467","6.507");
+            previsionsMenu(2,"27347/chamoux_sur_gelon.htm","Chamoux","45.5296","6.2527");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(2,"27513/saint_jean_de_la_porte.htm","Montlambert","45.5528","6.1052");
+            previsionsMenu(2,"27376/les_deserts.htm","Revard","45.6832","5.9747");
+            previsionsMenu(2,"27288/aiguebelette_le_lac.htm","Aiguebelette","45.602","5.807");
+        </script>
     </tr>
 
-    <script> document.write(liens()); </script>
+    <script> BasDePage(); </script>
 </table>
 </body>
 </html>

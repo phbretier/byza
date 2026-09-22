@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
     <title>Vent à Millau</title>
-    <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
     <script src="https://phbretier.github.io/byza/script.js"></script>
 </head>
 <body>
 <table>
     <tr>
-        <script> document.write(celluleBalise(2,"Pouncho<br>d'Agast<br>838m","ffvl/66")); </script>
-        <script> document.write(celluleBalise(2,"<br>Brunas<br>867m","ffvl/2039")); </script>
-        <script> document.write(celluleBalise(2,"<br>Millau<br>712m","meteo-france/12145001")); </script>
+        <script> 
+            balise(2,"Pouncho<br>d'Agast<br>838m","ffvl/66");
+            balise(2,"<br>Brunas<br>867m","ffvl/2039");
+            balise(2,"<br>Millau<br>712m","meteo-france/12145001");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Tournemire<br>750m","ffvl/3542")); </script>
-        <script> document.write(celluleBalise(2,"Novis<br>866m","ffvl/3542")); </script>
-        <script> document.write(celluleBalise(2,"Ispagnac<br>838m","ffvl/114")); </script>
+        <script> 
+            balise(2,"Tournemire<br>750m","ffvl/3542");
+            balise(2,"Novis<br>866m","ffvl/3542");
+            balise(2,"Ispagnac<br>838m","ffvl/114");
+        </script>
     </tr>
 
-    <script> document.write(webcams()); </script>
+    <script> SectionWebcams(); </script>
     <tr>
-        <td colspan="3">
-            <a href="https://www.skaping.com/millau/pouncho/panoramique">Pouncho</a>
-        </td>
-        <td colspan="3">
-            <a href="https://www.skaping.com/millau/brunas/panoramique">Brunas</a>
-        </td>
+        <script> 
+            webcam(3, "Pouncho", "https://www.skaping.com/millau/pouncho/panoramique");
+            webcam(3, "Brunas", "https://www.skaping.com/millau/brunas/panoramique");
+        </script>
     </tr>
     <tr>
-        <td colspan="3">
-            <a href="http://www.meteo-millau.fr/webcam.php">Millau</a>
-        </td>
-        <td colspan="3">
-            <a href="https://www.solarcam.fr/CDVL48/last_big.jpg">Ispagnac</a>
-        </td>
+        <script> 
+            webcam(3, "Millau", "http://www.meteo-millau.fr/webcam.php");
+            webcam(3, "Ispagnac", "https://www.solarcam.fr/CDVL48/last_big.jpg");
+        </script>
     </tr>
 
-    <script> document.write(previs()); </script>
+    <script> SectionPrevisions(); </script>
     <tr>
-        <script> document.write(celluleMeteo(3,"3317/millau.htm","Millau","44.0732","3.0642")); </script>
-        <script> document.write(celluleMeteo(3,"3454/tournemire.htm","Tournemire","43.9666","3.0293")); </script>
+        <script> 
+            previsionsMenu(3,"3317/millau.htm","Millau","44.0732","3.0642");
+            previsionsMenu(3,"3454/tournemire.htm","Tournemire","43.9666","3.0293");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(3,"3442/severac_le_chateau.htm","Novis","44.3766","3.5107")); </script>
-        <script> document.write(celluleMeteo(3,"16741/ispagnac.htm","Ispagnac","44.3766","3.5107")); </script>
+        <script> 
+            previsionsMenu(3,"3442/severac_le_chateau.htm","Novis","44.3766","3.5107");
+            previsionsMenu(3,"16741/ispagnac.htm","Ispagnac","44.3766","3.5107");
+        </script>
     </tr>
 
-    <script> document.write(liens()); </script>
+    <script> BasDePage(); </script>
 </table>
 </body>
 </html>

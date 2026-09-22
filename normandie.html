@@ -1,101 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
     <title>Vent Normandie</title>
-    <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
     <script src="https://phbretier.github.io/byza/script.js"></script>
 </head>
 <body>
 <table>
     <tr>
-        <script> document.write(celluleBalise(2,"<br>St Omer","ffvl/122")); </script>
-        <script> document.write(celluleBalise(2,"Roche<br>à Bunel","ffvl/6093")); </script>
-        <script> document.write(celluleBalise(2,"St Marc<br>d'Ouilly","ffvl/2352")); </script>
+        <script> 
+            balise(2,"<br>St Omer","ffvl/122");
+            balise(2,"Roche<br>à Bunel","ffvl/6093");
+            balise(2,"St Marc<br>d'Ouilly","ffvl/2352");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"<br>Granville","meteo-france/50218001")); </script>
-        <script> document.write(celluleBalise(2,"Granville<br>Roc","ffvl/3502")); </script>
-        <script> document.write(celluleBalise(2,"<br>Champeaux","pioupiou/1449")); </script>
+        <script> 
+            balise(2,"<br>Granville","meteo-france/50218001");
+            balise(2,"Granville<br>Roc","ffvl/3502");
+            balise(2,"<br>Champeaux","pioupiou/1449");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"St Lô","ffvl/2334")); </script>
-        <script> document.write(celluleBalise(2,"Vierville","ffvl/97")); </script>
-        <script> document.write(celluleBalise(2,"Commes","ffvl/158")); </script>
+        <script> 
+            balise(2,"St Lô","ffvl/2334");
+            balise(2,"Vierville","ffvl/97");
+            balise(2,"Commes","ffvl/158");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Octeville","meteo-france/76481001")); </script>
-        <script> document.write(celluleBalise(2,"Oct. Arpt","metar/LFOH")); </script>
-        <script> document.write(celluleBalise(2,"Le Havre","meteo-france/76552001")); </script>
+        <script> 
+            balise(2,"Octeville","meteo-france/76481001");
+            balise(2,"Oct. Arpt","metar/LFOH");
+            balise(2,"Le Havre","meteo-france/76552001");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(3,"2 Amants","ffvl/55")); </script>
-        <script> document.write(celluleBalise(3,"Londinières","ffvl/3429")); </script>
+        <script> 
+            balise(3,"2 Amants","ffvl/55");
+            balise(3,"Londinières","ffvl/3429");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Vauville","ffvl/81")); </script>
-        <script> document.write(celluleBalise(2,"la Hague","ffvl/1013")); </script>
-        <script> document.write(celluleBalise(2,"Omonville","ffvl/1014")); </script>
+        <script> 
+            balise(2,"Vauville","ffvl/81");
+            balise(2,"la Hague","ffvl/1013");
+            balise(2,"Omonville","ffvl/1014");
+        </script>
     </tr>
 
-    <script> document.write(webcams()); </script>
+    <script> SectionWebcams(); </script>
     <tr>
-        <td colspan="2">
-            <a href="https://live.plaine-altitude.com/player/?controls=1">Clécy</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.skaping.com/8-milles-nautic/granville/video">Granville</a>
-        </td>
-        <td colspan="2">
-            <a href="https://pv.viewsurf.com/1292/baie-du-mont-saint-michel?i=NTM3Njo">Champeaux</a>
-        </td>
+        <script> 
+            webcam(2, "Clécy", "https://live.plaine-altitude.com/player/?controls=1");
+            webcam(2, "Granville", "https://www.skaping.com/8-milles-nautic/granville/video");
+            webcam(2, "Champeaux", "https://pv.viewsurf.com/1292/baie-du-mont-saint-michel?i=NTM3Njo");
+        </script>
     </tr>
     <tr>
-        <td colspan="3">
-            <a href="https://pv.viewsurf.com/1552/La-Hague-Goury?i=NjEwNjp1bmRlZmluZWQ">Goury</a>
-        </td>
-        <td colspan="3">
-            <a href="https://pv.viewsurf.com/826/La-Hague-Vauville?i=NzYwNDo">Vauville</a>
-        </td>
+        <script> 
+            webcam(3, "Goury", "https://pv.viewsurf.com/1552/La-Hague-Goury?i=NjEwNjp1bmRlZmluZWQ");
+            webcam(3, "Vauville", "https://pv.viewsurf.com/826/La-Hague-Vauville?i=NzYwNDo");
+        </script>
     </tr>
     <tr>
-        <td colspan="3">
-            <a href="https://www.vision-environnement.com/live/player/ouistreham0.php">Ouistreham</a>
-        </td>
-        <td colspan="3">
-            <a href="https://pv.viewsurf.com/2152/Sainte-Adresse?i=NzczMjp1bmRlZmluZWQ">Octeville</a>
-        </td>
+        <script> 
+            webcam(3, "Ouistreham", "https://www.vision-environnement.com/live/player/ouistreham0.php");
+            webcam(3, "Octeville", "https://pv.viewsurf.com/2152/Sainte-Adresse?i=NzczMjp1bmRlZmluZWQ");
+        </script>
     </tr>
 
-    <script> document.write(previs()); </script>
+    <script> SectionPrevisions(); </script>
     <tr>
-        <script> document.write(celluleMeteo(2,"3715/clecy.htm","<br>Clécy","48.927","-0.469")); </script>
-        <script> document.write(celluleMeteo(2,"3758/crocy.htm","<br>Crocy","48.8543","-0.0519")); </script>
-        <script> document.write(celluleMeteo(2,"4260/pont_d_ouilly.htm","St Marc<br>d'Ouilly","48.8824","-0.4452")); </script>
+        <script> 
+            previsionsMenu(2,"3715/clecy.htm","<br>Clécy","48.927","-0.469");
+            previsionsMenu(2,"3758/crocy.htm","<br>Crocy","48.8543","-0.0519");
+            previsionsMenu(2,"4260/pont_d_ouilly.htm","St Marc<br>d'Ouilly","48.8824","-0.4452");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"17318/champeaux.htm","Champeaux","48.7058","-1.4995")); </script>
-        <script> document.write(celluleMeteo(2,"17411/granville.htm","Granville","48.8451","-1.5903")); </script>
-        <script> document.write(celluleMeteo(2,"17668/saint_lo.htm","St Lô","49.107","-1.096")); </script>
+        <script> 
+            previsionsMenu(2,"17318/champeaux.htm","Champeaux","48.7058","-1.4995");
+            previsionsMenu(2,"17411/granville.htm","Granville","48.8451","-1.5903");
+            previsionsMenu(2,"17668/saint_lo.htm","St Lô","49.107","-1.096");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"4241/vierville_sur_mer.htm","Vierville","49.383","-0.911")); </script>
-        <script> document.write(celluleMeteo(2,"3725/commes.htm","Commes","49.346","-0.726")); </script>
-        <script> document.write(celluleMeteo(2,"4207/tracy_sur_mer.htm","Tracy","49.3421","-0.6358")); </script>
+        <script> 
+            previsionsMenu(2,"4241/vierville_sur_mer.htm","Vierville","49.383","-0.911");
+            previsionsMenu(2,"3725/commes.htm","Commes","49.346","-0.726");
+            previsionsMenu(2,"4207/tracy_sur_mer.htm","Tracy","49.3421","-0.6358");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"28308/octeville_sur_mer.htm","Octeville","49.5485384","0.0891717")); </script>
-        <script> document.write(celluleMeteo(2,"9078/val_de_reuil.htm","2 Amants","49.319","1.2463")); </script>
-        <script> document.write(celluleMeteo(2,"28220/londinieres.htm","Londinières","49.8496","1.4105")); </script>
+        <script> 
+            previsionsMenu(2,"28308/octeville_sur_mer.htm","Octeville","49.5485384","0.0891717");
+            previsionsMenu(2,"9078/val_de_reuil.htm","2 Amants","49.319","1.2463");
+            previsionsMenu(2,"28220/londinieres.htm","Londinières","49.8496","1.4105");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"33815/vauville.htm","Vauville","49.648894","-1.8535654")); </script>
-        <script> document.write(celluleMeteo(2,"33816/beaumont_hague.htm","La Hague","49.648894","-1.8535654")); </script>
-        <script> document.write(celluleMeteo(2,"/33805/jobourg.htm","Jobourg","49.6886231","-1.9331135")); </script>
+        <script> 
+            previsionsMenu(2,"33815/vauville.htm","Vauville","49.648894","-1.8535654");
+            previsionsMenu(2,"33816/beaumont_hague.htm","La Hague","49.648894","-1.8535654");
+            previsionsMenu(2,"/33805/jobourg.htm","Jobourg","49.6886231","-1.9331135");
+        </script>
     </tr>
 
-    <script> document.write(liens()); </script>
+    <script> BasDePage(); </script>
 </table>
 </body>
 </html>

@@ -1,85 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
     <title>Vent dans le Massif Central</title>
-    <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
     <script src="https://phbretier.github.io/byza/script.js"></script>
 </head>
 <body>
 <table>
     <tr>
-        <script> document.write(celluleBalise(2,"Puy de<br>Dôme N<br>1441m","pioupiou/2209")); </script>
-        <script> document.write(celluleBalise(2,"Puy de<br>Dôme S<br>1427m","pioupiou/2208")); </script>
-        <script> document.write(celluleBalise(2,"<br>St Sandoux<br>780m","ffvl/1003")); </script>
+        <script> 
+            balise(2,"Puy de<br>Dôme N<br>1441m","pioupiou/2209");
+            balise(2,"Puy de<br>Dôme S<br>1427m","pioupiou/2208");
+            balise(2,"<br>St Sandoux<br>780m","ffvl/1003");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Puy de la<br>Tache<br>1615m","ffvl/1004")); </script>
-        <script> document.write(celluleBalise(2,"Puy de<br>Sancy<br>1385m","meteo-france/63098001")); </script>
-        <script> document.write(celluleBalise(2,"Puy de<br>Paillaret<br>1287m","meteo-france/63038002")); </script>
+        <script> 
+            balise(2,"Puy de la<br>Tache<br>1615m","ffvl/1004");
+            balise(2,"Puy de<br>Sancy<br>1385m","meteo-france/63098001");
+            balise(2,"Puy de<br>Paillaret<br>1287m","meteo-france/63038002");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Le Claux<br>1522m","pioupiou/1634")); </script>
-        <script> document.write(celluleBalise(2,"Niermont<br>1594m","pioupiou/2180")); </script>
-        <script> document.write(celluleBalise(2,"Puy Mary<br>1667m","ffvl/177")); </script>
+        <script> 
+            balise(2,"Le Claux<br>1522m","pioupiou/1634");
+            balise(2,"Niermont<br>1594m","pioupiou/2180");
+            balise(2,"Puy Mary<br>1667m","ffvl/177");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(3,"Plomb du Cantal<br>1799m","pioupiou/1468")); </script>
-        <script> document.write(celluleBalise(3,"Prat de Bouc<br>1405m","meteo-france/15025001")); </script>
+        <script> 
+            balise(3,"Plomb du Cantal<br>1799m","pioupiou/1468");
+            balise(3,"Prat de Bouc<br>1405m","meteo-france/15025001");
+        </script>
     </tr>
 
-    <script> document.write(webcams()); </script>
+    <script> SectionWebcams(); </script>
     <tr>
-        <td colspan="2">
-            <a href="https://wwwobs.univ-bpclermont.fr/opgc/webcampdd.jpg">Puy de<br>Dôme<br>sommet</a>
-        </td>
-         <td colspan="2">
-            <a href="https://www.golfdesvolcans.fr/wp-content/uploads/cam/parcours_n1_golf_des_volcans.jpg">Puy de<br>Dôme<br>golf</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.orcines.fr/wp-content/uploads/webcam/webcam.jpg">Puy de<br>Dôme<br>Orcines</a>
-        </td>
+        <script> 
+            webcam(2, "Puy de<br>Dôme<br>sommet", "https://wwwobs.univ-bpclermont.fr/opgc/webcampdd.jpg");
+            webcam(2, "Puy de<br>Dôme<br>golf", "https://www.golfdesvolcans.fr/wp-content/uploads/cam/parcours_n1_golf_des_volcans.jpg");
+            webcam(2, "Puy de<br>Dôme<br>Orcines", "https://www.orcines.fr/wp-content/uploads/webcam/webcam.jpg");
+        </script>
     </tr>
     <tr>
-        <td colspan="2">
-            <a href="https://app.webcam-hd.com/tnm/ibox/FTPCam/sancy_sommet-station.jpg">Puy de<br>Sancy</a>
-        </td>
-        <td colspan="2">
-            <a href="https://app.webcam-hd.com/tnm/ibox/FTPCam/sancy_bas-station.jpg">Mt Dore</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.youtube.com/watch?v=XWmQtBOaSXQ">Puy de<br>Paillaret</a>
-        </td>
+        <script> 
+            webcam(2, "Puy de<br>Sancy", "https://app.webcam-hd.com/tnm/ibox/FTPCam/sancy_sommet-station.jpg");
+            webcam(2, "Mt Dore", "https://app.webcam-hd.com/tnm/ibox/FTPCam/sancy_bas-station.jpg");
+            webcam(2, "Puy de<br>Paillaret", "https://www.youtube.com/watch?v=XWmQtBOaSXQ");
+        </script>
     </tr>
     <tr>
-        <td colspan="2">
-            <a href="https://app.webcam-hd.com/lioran/lioran_combe">Lioran<br>1760m</a>
-        </td>
-        <td colspan="2">
-            <a href="https://visionenvironnement.quanteec.com/contents/encodings/live/b20c4a11-9f53-4a45-746c-7561-6665-64-b2da-d526197ae84dd/master.m3u8">Lioran<br>1460m</a>
-        </td>
-        <td colspan="2">
-            <a href="https://visionenvironnement.quanteec.com/contents/encodings/live/371098a3-9c53-42f1-746c-7561-6665-64-acba-d3f0f94dd409d/master.m3u8">Lioran<br>1242m</a>
-        </td>
+        <script> 
+            webcam(2, "Lioran<br>1760m", "https://app.webcam-hd.com/lioran/lioran_combe");
+            webcam(2, "Lioran<br>1460m", "https://visionenvironnement.quanteec.com/contents/encodings/live/b20c4a11-9f53-4a45-746c-7561-6665-64-b2da-d526197ae84dd/master.m3u8");
+            webcam(2, "Lioran<br>1242m", "https://visionenvironnement.quanteec.com/contents/encodings/live/371098a3-9c53-42f1-746c-7561-6665-64-acba-d3f0f94dd409d/master.m3u8");
+        </script>
     </tr>
 
-    <script> document.write(previs()); </script>
+    <script> SectionPrevisions(); </script>
     <tr>
-        <script> document.write(celluleMeteo(3,"23223/orcines.htm","Puy de Dôme","45.7718","2.9638")); </script>
-        <script> document.write(celluleMeteo(3,"23353/saint_sandoux.htm","St Sandoux","45.6317","3.1164")); </script>
+        <script> 
+            previsionsMenu(3,"23223/orcines.htm","Puy de Dôme","45.7718","2.9638");
+            previsionsMenu(3,"23353/saint_sandoux.htm","St Sandoux","45.6317","3.1164");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"23038/chambon_sur_lac.htm","Puy de<br>la Tache","45.592","2.8454")); </script>
-        <script> document.write(celluleMeteo(2,"40021/le_mont_dore.htm","Puy de<br>Sancy","45.5285","2.8138")); </script>
-        <script> document.write(celluleMeteo(2,"22999/besse_et_saint_anastaise.htm","Puy de<br>Paillaret","45.5085","2.825")); </script>
+        <script> 
+            previsionsMenu(2,"23038/chambon_sur_lac.htm","Puy de<br>la Tache","45.592","2.8454");
+            previsionsMenu(2,"40021/le_mont_dore.htm","Puy de<br>Sancy","45.5285","2.8138");
+            previsionsMenu(2,"22999/besse_et_saint_anastaise.htm","Puy de<br>Paillaret","45.5085","2.825");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(3,"4308/le_claux.htm","Le Claux","45.1529","2.7326")); </script>
-        <script> document.write(celluleMeteo(3,"4446/saint_jacques_des_blats.htm","Plomb du Cantal","45.0612","2.7608")); </script>
+        <script> 
+            previsionsMenu(3,"4308/le_claux.htm","Le Claux","45.1529","2.7326");
+            previsionsMenu(3,"4446/saint_jacques_des_blats.htm","Plomb du Cantal","45.0612","2.7608");
+        </script>
     </tr>
 
-    <script> document.write(liens()); </script>
+    <script> BasDePage(); </script>
 </table>
 </body>
 </html>

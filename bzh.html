@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
     <title>Vent Bretagne</title>
-    <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
     <script src="https://phbretier.github.io/byza/script.js"></script>
 </head>
 <body>
 <table>
     <tr>
-        <script> document.write(celluleBalise(2,"Roselier","ffvl/89")); </script>
-        <script> document.write(celluleBalise(2,"St Pabu","ffvl/160")); </script>
-        <script> document.write(celluleBalise(2,"Janzé","pioupiou/1630")); </script>
+        <script> 
+            balise(2,"Roselier","ffvl/89");
+            balise(2,"St Pabu","ffvl/160");
+            balise(2,"Janzé","pioupiou/1630");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Noé<br>Blanche","meteo-france/35202001")); </script>
-        <script> document.write(celluleBalise(2,"<br>Vannes","holfuy/937")); </script>
-        <script> document.write(celluleBalise(2,"<br>Pénestin","ffvl/41")); </script>
+        <script> 
+            balise(2,"Noé<br>Blanche","meteo-france/35202001");
+            balise(2,"<br>Vannes","holfuy/937");
+            balise(2,"<br>Pénestin","ffvl/41");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Tréfeuntec","ffvl/1006")); </script>
-        <script> document.write(celluleBalise(2,"Menez Hom","ffvl/88")); </script>
-        <script> document.write(celluleBalise(2,"Rosnoen","ffvl/5097")); </script>
+        <script> 
+            balise(2,"Tréfeuntec","ffvl/1006");
+            balise(2,"Menez Hom","ffvl/88");
+            balise(2,"Rosnoen","ffvl/5097");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(3,"Rolzac'h","ffvl/85")); </script>
-        <script> document.write(celluleBalise(3,"St Segal","meteo-france/29263002")); </script>
+        <script> 
+            balise(3,"Rolzac'h","ffvl/85");
+            balise(3,"St Segal","meteo-france/29263002");
+        </script>
     </tr>
 
-    <script> document.write(webcams()); </script>
+    <script> SectionWebcams(); </script>
     <tr>
-        <td colspan="4">
-            Vannes
-            <br>
-            <a href="https://api.holfuy.com/cam/s937.jpg">Mouette Sinagote</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.penestin.fr/decouvrir/sports-et-loisirs/webcams-de-penestin">Pénestin</a>
-        </td>
+        <script> 
+            webcam(4, "Vannes<br>Mouette Sinagote", "https://api.holfuy.com/cam/s937.jpg");
+            webcam(2, "Pénestin", "https://www.penestin.fr/decouvrir/sports-et-loisirs/webcams-de-penestin");
+        </script>
     </tr>
 
-    <script> document.write(previs()); </script>
+    <script> SectionPrevisions(); </script>
     <tr>
-        <script> document.write(celluleMeteo(2,"34142/rouillac.htm","<br>Rouillac","48.286","-2.381")); </script>
-        <script> document.write(celluleMeteo(2,"34098/jugon_les_lacs.htm","Jugon<br>les Lacs","48.4178","-2.2899")); </script>
-        <script> document.write(celluleMeteo(2,"34033/lanfains.htm","<br>Lanfains","48.3685","-2.921")); </script>
+        <script> 
+            previsionsMenu(2,"34142/rouillac.htm","<br>Rouillac","48.286","-2.381");
+            previsionsMenu(2,"34098/jugon_les_lacs.htm","Jugon<br>les Lacs","48.4178","-2.2899");
+            previsionsMenu(2,"34033/lanfains.htm","<br>Lanfains","48.3685","-2.921");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(3,"12617/saint_seglin.htm","St Séglin","47.8545","-2.0156")); </script>
-        <script> document.write(celluleMeteo(3,"12518/la_noe_blanche.htm","Noé Blanche","47.8092","-1.7346")); </script>
+        <script> 
+            previsionsMenu(3,"12617/saint_seglin.htm","St Séglin","47.8545","-2.0156");
+            previsionsMenu(3,"12518/la_noe_blanche.htm","Noé Blanche","47.8092","-1.7346");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(3,"15552/masserac.htm","Masserac","47.6882","-1.9011")); </script>
-        <script> document.write(celluleMeteo(3,"19266/penestin.htm","Pénestin","47.4826","-2.4944")); </script>
+        <script> 
+            previsionsMenu(3,"15552/masserac.htm","Masserac","47.6882","-1.9011");
+            previsionsMenu(3,"19266/penestin.htm","Pénestin","47.4826","-2.4944");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"9472/botmeur.htm","Botmeur","48.372","-3.953")); </script>
-        <script> document.write(celluleMeteo(2,"9503/dineault.htm","Menez Hom","48.220","-4.235")); </script>
-        <script> document.write(celluleMeteo(2,"9503/dineault.htm","St Nic","48.202","-4.316")); </script>
+        <script> 
+            previsionsMenu(2,"9472/botmeur.htm","Botmeur","48.372","-3.953");
+            previsionsMenu(2,"9503/dineault.htm","Menez Hom","48.220","-4.235");
+            previsionsMenu(2,"9503/dineault.htm","St Nic","48.202","-4.316");
+        </script>
     </tr>
 
-    <script> document.write(liens()); </script>
+    <script> BasDePage(); </script>
 </table>
 </body>
 </html>

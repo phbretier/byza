@@ -1,85 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
     <title>Vent dans les Vosges</title>
-    <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
     <script src="https://phbretier.github.io/byza/script.js"></script>
 </head>
 <body>
 <table>
     <tr>
-        <script> document.write(celluleBalise(2,"Reinhards<br>munster<br>506m","ffvl/45")); </script>
-        <script> document.write(celluleBalise(2,"<br>Breitenbach<br>928m","ffvl/74")); </script>
-        <script> document.write(celluleBalise(2,"<br>Altenberg<br>880m","ffvl/1007")); </script>
+        <script> 
+            balise(2,"Reinhards<br>munster<br>506m","ffvl/45");
+            balise(2,"<br>Breitenbach<br>928m","ffvl/74");
+            balise(2,"<br>Altenberg<br>880m","ffvl/1007");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"St Dié SO<br>836m","ffvl/3335")); </script>
-        <script> document.write(celluleBalise(2,"St Dié N<br>707m","ffvl/2320")); </script>
-        <script> document.write(celluleBalise(2,"St Dié E<br>722m","ffvl/5121")); </script>
+        <script> 
+            balise(2,"St Dié SO<br>836m","ffvl/3335");
+            balise(2,"St Dié N<br>707m","ffvl/2320");
+            balise(2,"St Dié E<br>722m","ffvl/5121");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Vagney S<br>811m","pioupiou/1700")); </script>
-        <script> document.write(celluleBalise(2,"Vagney<br>805m","meteo-france/88486003")); </script>
-        <script> document.write(celluleBalise(2,"Vagney S<br>935m","ffvl/76")); </script>
+        <script> 
+            balise(2,"Vagney S<br>811m","pioupiou/1700");
+            balise(2,"Vagney<br>805m","meteo-france/88486003");
+            balise(2,"Vagney S<br>935m","ffvl/76");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Rupt/Moselle<br>820m","ffvl/1008")); </script>
-        <script> document.write(celluleBalise(2,"Drumont<br>1184m","ffvl/147")); </script>
-        <script> document.write(celluleBalise(2,"Bussang<br>615m","meteo-france/88081004")); </script>
+        <script> 
+            balise(2,"Rupt/Moselle<br>820m","ffvl/1008");
+            balise(2,"Drumont<br>1184m","ffvl/147");
+            balise(2,"Bussang<br>615m","meteo-france/88081004");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Treh<br>Markstein<br>1262m","ffvl/136")); </script>
-        <script> document.write(celluleBalise(2,"Markstein<br>crète<br>1184m","meteo-france/68247003")); </script>
-        <script> document.write(celluleBalise(2,"<br>Pusteblume<br>449m","pioupiou/1355")); </script>
+        <script> 
+            balise(2,"Treh<br>Markstein<br>1262m","ffvl/136");
+            balise(2,"Markstein<br>crète<br>1184m","meteo-france/68247003");
+            balise(2,"<br>Pusteblume<br>449m","pioupiou/1355");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(3,"Ballon d'Alsace<br>1247m","ffvl/5022")); </script>
-        <script> document.write(celluleBalise(3,"Ballon de Servance<br>1247m","meteo-france/70283006")); </script>
+        <script> 
+            balise(3,"Ballon d'Alsace<br>1247m","ffvl/5022");
+            balise(3,"Ballon de Servance<br>1247m","meteo-france/70283006");
+        </script>
     </tr>
 
-    <script> document.write(webcams()); </script>
+    <script> SectionWebcams(); </script>
     <tr>
-        <td colspan="2">
-            <a href="https://grandvol.com/webcam/capture/breitenbach.jpg">Breitenbach</a>
-        </td>
-        <td colspan="2">
-            <a href="https://rtsp.me/embed/eZ98nbBD/">St Dié</a>
-        </td>
-        <td colspan="2">
-            <a href="https://vagney.eu/wp-includes/images/webcam/cameracroixhetre.jpg">Vagney</a>
-        </td>
+        <script> 
+            webcam(2, "Breitenbach", "https://grandvol.com/webcam/capture/breitenbach.jpg");
+            webcam(2, "St Dié", "https://rtsp.me/embed/eZ98nbBD/");
+            webcam(2, "Vagney", "https://vagney.eu/wp-includes/images/webcam/cameracroixhetre.jpg");
+        </script>
     </tr>
     <tr>
-        <td colspan="2">
-            <a href="https://www.bussang.fr/webcam/Bussang_Cam2_Drumont.jpg">Drumont</a>
-        </td>
-        <td colspan="2">
-            <a href="https://https://app.webcam-hd.com/markstein/grenouillere">Markstein</a>
-        </td>
-        <td colspan="2">
-            <a href="https://www.skaping.com/ballon-d-alsace/sommet-teleski">Ballon d'Alsace</a>
-        </td>
+        <script> 
+            webcam(2, "Drumont", "https://www.bussang.fr/webcam/Bussang_Cam2_Drumont.jpg");
+            webcam(2, "Markstein", "https://app.webcam-hd.com/markstein/grenouillere");
+            webcam(2, "Ballon d'Alsace", "https://www.skaping.com/ballon-d-alsace/sommet-teleski");
+        </script>
     </tr>
 
-    <script> document.write(previs()); </script>
+    <script> SectionPrevisions(); </script>
     <tr>
-        <script> document.write(celluleMeteo(2,"24972/reinhardsmunster.htm","Reinhards<br>munster","48.6775","7.3121")); </script>
-        <script> document.write(celluleMeteo(2,"24669/breitenbach.htm","<br>Breitenbach","48.3837","7.2825")); </script>
-        <script> document.write(celluleMeteo(2,"32331/saint_die.htm","<br>St Dié","48.2721","6.9311")); </script>
+        <script> 
+            previsionsMenu(2,"24972/reinhardsmunster.htm","Reinhards<br>munster","48.6775","7.3121");
+            previsionsMenu(2,"24669/breitenbach.htm","<br>Breitenbach","48.3837","7.2825");
+            previsionsMenu(2,"32331/saint_die.htm","<br>St Dié","48.2721","6.9311");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(2,"32401/vagney.htm","Vagney","48.0386","6.7082")); </script>
-        <script> document.write(celluleMeteo(2,"32326/rupt_sur_moselle.htm","Rupt/Moselle","47.9225","6.6858")); </script>
-        <script> document.write(celluleMeteo(2,"25215/fellering.htm","Drumont","47.8983","6.9192")); </script>
+        <script> 
+            previsionsMenu(2,"32401/vagney.htm","Vagney","48.0386","6.7082");
+            previsionsMenu(2,"32326/rupt_sur_moselle.htm","Rupt/Moselle","47.9225","6.6858");
+            previsionsMenu(2,"25215/fellering.htm","Drumont","47.8983","6.9192");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(3,"25215/fellering.htm","Markstein","47.9257","7.0119")); </script>
-        <script> document.write(celluleMeteo(3,"25431/sewen.htm","Ballon d'Alsace","47.8248","6.8402")); </script>
+        <script> 
+            previsionsMenu(3,"25215/fellering.htm","Markstein","47.9257","7.0119");
+            previsionsMenu(3,"25431/sewen.htm","Ballon d'Alsace","47.8248","6.8402");
+        </script>
     </tr>
 
-    <script> document.write(liens()); </script>
+    <script> BasDePage(); </script>
 </table>
 </body>
 </html>

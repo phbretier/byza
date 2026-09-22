@@ -1,85 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
     <title>Vent dans le Jura</title>
-    <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
     <script src="https://phbretier.github.io/byza/script.js"></script>
 </head>
 <body>
 <table>
     <tr>
-        <script> document.write(celluleBalise(2,"Mandeure<br>485m","ffvl/2156")); </script>
-        <script> document.write(celluleBalise(2,"Montbéliard<br>317m","metar/LFSM")); </script>
-        <script> document.write(celluleBalise(2,"Fahy<br>596m","meteoswiss/FAH")); </script>
+        <script> 
+            balise(2,"Mandeure<br>485m","ffvl/2156");
+            balise(2,"Montbéliard<br>317m","metar/LFSM");
+            balise(2,"Fahy<br>596m","meteoswiss/FAH");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Planoise<br>NE<br>443m","pioupiou/2212")); </script>
-        <script> document.write(celluleBalise(2,"Planoise<br>SO<br>487m","ffvl/2195")); </script>
-        <script> document.write(celluleBalise(2,"<br>Arguel<br>463m","ffvl/5043")); </script>
+        <script> 
+            balise(2,"Planoise<br>NE<br>443m","pioupiou/2212");
+            balise(2,"Planoise<br>SO<br>487m","ffvl/2195");
+            balise(2,"<br>Arguel<br>463m","ffvl/5043");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Morteau N<br>1051m","ffvl/2991")); </script>
-        <script> document.write(celluleBalise(2,"Morteau NO<br>939m","ffvl/2963")); </script>
-        <script> document.write(celluleBalise(2,"Morteau SE<br>1109m","ffvl/148")); </script>
+        <script> 
+            balise(2,"Morteau N<br>1051m","ffvl/2991");
+            balise(2,"Morteau NO<br>939m","ffvl/2963");
+            balise(2,"Morteau SE<br>1109m","ffvl/148");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Mt Poupet<br>NO<br>818m","ffvl/2805")); </script>
-        <script> document.write(celluleBalise(2,"Mt Poupet<br>NNE<br>650m","ffvl/2372")); </script>
-        <script> document.write(celluleBalise(2,"Mt Poupet<br>S<br>820m","ffvl/92")); </script>
+        <script> 
+            balise(2,"Mt Poupet<br>NO<br>818m","ffvl/2805");
+            balise(2,"Mt Poupet<br>NNE<br>650m","ffvl/2372");
+            balise(2,"Mt Poupet<br>S<br>820m","ffvl/92");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Mt d'Or N<br>1218m","ffvl/2317")); </script>
-        <script> document.write(celluleBalise(2,"Mt d'Or NE<br>1310m","ffvl/2348")); </script>
-        <script> document.write(celluleBalise(2,"Mt d'Or E<br>1456m","ffvl/38")); </script>
+        <script> 
+            balise(2,"Mt d'Or N<br>1218m","ffvl/2317");
+            balise(2,"Mt d'Or NE<br>1310m","ffvl/2348");
+            balise(2,"Mt d'Or E<br>1456m","ffvl/38");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"<br>Crozet<br>1657m","romma/108")); </script>
-        <script> document.write(celluleBalise(2,"<br>Crozet<br>529m","ffvl/3569")); </script>
-        <script> document.write(celluleBalise(2,"Petit<br>Montrond<br>1595m","ffvl/1595")); </script>
+        <script> 
+            balise(2,"<br>Crozet<br>1657m","romma/108");
+            balise(2,"<br>Crozet<br>529m","ffvl/3569");
+            balise(2,"Petit<br>Montrond<br>1595m","ffvl/1595");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"<br>Mt Myon<br>650m","ffvl/70")); </script>
-        <script> document.write(celluleBalise(2,"<br>Montagna<br>358m","romma/247")); </script>
-        <script> document.write(celluleBalise(2,"St Etienne<br>du bois<br>243m","romma/17")); </script>
+        <script> 
+            balise(2,"<br>Mt Myon<br>650m","ffvl/70");
+            balise(2,"<br>Montagna<br>358m","romma/247");
+            balise(2,"St Etienne<br>du bois<br>243m","romma/17");
+        </script>
     </tr>
 
-    <script> document.write(webcams()); </script>
+    <script> SectionWebcams(); </script>
     <tr>
-        <td colspan="3">
-            <a href="https://webcam.io/webcams/z5ZODM/15-minutes?repeat=0&delay_start=0&delay_end=1">Montbéliard</a>
-        </td>
-        <td colspan="3">
-            <a href="https://app.webcam-hd.com/val-de-morteau/val-de-morteau_meix-musy">Morteau</a>
-        </td>
+        <script> 
+            webcam(3, "Montbéliard", "https://webcam.io/webcams/z5ZODM/15-minutes?repeat=0&delay_start=0&delay_end=1");
+            webcam(3, "Morteau", "https://app.webcam-hd.com/val-de-morteau/val-de-morteau_meix-musy");
+        </script>
     </tr>
     <tr>
-        <td colspan="3">
-            <a href="https://app.webcam-hd.com/orex_metabief/morond">Mt d'Or</a>
-        </td>
-        <td colspan="3">
-            <a href="https://app.webcam-hd.com/mont-jura/sommet-monthoisey">Crozet</a>
-        </td>
-
+        <script> 
+            webcam(3, "Mt d'Or", "https://app.webcam-hd.com/orex_metabief/morond");
+            webcam(3, "Crozet", "https://app.webcam-hd.com/mont-jura/sommet-monthoisey");
+        </script>
     </tr>
 
-    <script> document.write(previs()); </script>
+    <script> SectionPrevisions(); </script>
     <tr>
-        <script> document.write(celluleMeteo(2,"7783/mathay.htm","Mandeure","47.4315","6.7958")); </script>
-        <script> document.write(celluleMeteo(2,"7478/avanne_aveney.htm","Planoise","47.2044","5.9775")); </script>
-        <script> document.write(celluleMeteo(2,"7821/morteau.htm","Morteau","47.0732","6.6039")); </script>
+        <script> 
+            previsionsMenu(2,"7783/mathay.htm","Mandeure","47.4315","6.7958");
+            previsionsMenu(2,"7478/avanne_aveney.htm","Planoise","47.2044","5.9775");
+            previsionsMenu(2,"7821/morteau.htm","Morteau","47.0732","6.6039");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(3,"14177/saint_thiebaud.htm","Mt Poupet","46.97","5.8759")); </script>
-        <script> document.write(celluleMeteo(3,"7765/longevilles_mont_d_or.htm","Mt d'Or","46.7504","6.3439")); </script>
+        <script> 
+            previsionsMenu(3,"14177/saint_thiebaud.htm","Mt Poupet","46.97","5.8759");
+            previsionsMenu(3,"7765/longevilles_mont_d_or.htm","Mt d'Or","46.7504","6.3439");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleMeteo(3,"123/crozet.htm","Crozet","46.2986","5.9833")); </script>
-        <script> document.write(celluleMeteo(3,"283/pressiat.htm","Mt Myon","46.3302","5.3967")); </script>
+        <script> 
+            previsionsMenu(3,"123/crozet.htm","Crozet","46.2986","5.9833");
+            previsionsMenu(3,"283/pressiat.htm","Mt Myon","46.3302","5.3967");
+        </script>
     </tr>
 
-    <script> document.write(liens()); </script>
+    <script> BasDePage(); </script>
 </table>
 </body>
 </html>

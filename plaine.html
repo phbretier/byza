@@ -1,92 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
     <title>Vol de plaine</title>
-    <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
     <script src="https://phbretier.github.io/byza/script.js"></script>
 </head>
 <body>
 <table>
     <tr>
-        <script> document.write(celluleBalise(2,"<br>Massognes","ffvl/5111")); </script>
-        <script> document.write(celluleBalise(2,"Grand<br>Moiré","pioupiou/2168")); </script>
-        <script> document.write(celluleBalise(2,"<br>Pouancay","pioupiou/841")); </script>
+        <script> 
+            balise(2,"<br>Massognes","ffvl/5111");
+            balise(2,"Grand<br>Moiré","pioupiou/2168");
+            balise(2,"<br>Pouancay","pioupiou/841");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"<br>Chaudefonds","pioupiou/2198")); </script>
-        <script> document.write(celluleBalise(2,"<br>Angers","holfuy/899")); </script>
-        <script> document.write(celluleBalise(2,"Angers<br>Arpt","metar/LFJR")); </script>
+        <script> 
+            balise(2,"<br>Chaudefonds","pioupiou/2198");
+            balise(2,"<br>Angers","holfuy/899");
+            balise(2,"Angers<br>Arpt","metar/LFJR");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Evreux","metar/LFOE")); </script>
-        <script> document.write(celluleBalise(2,"Thoiry","pioupiou/2061")); </script>
-        <script> document.write(celluleBalise(2,"Roquette","ffvl/5069")); </script>
+        <script> 
+            balise(2,"Evreux","metar/LFOE");
+            balise(2,"Thoiry","pioupiou/2061");
+            balise(2,"Roquette","ffvl/5069");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Guéret","ffvl/31")); </script>
-        <script> document.write(celluleBalise(2,"St Laurent","meteo-france/23206002")); </script>
-        <script> document.write(celluleBalise(2,"Soult","pioupiou/818")); </script>
+        <script> 
+            balise(2,"Guéret","ffvl/31");
+            balise(2,"St Laurent","meteo-france/23206002");
+            balise(2,"Soult","pioupiou/818");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Revin","ffvl/2164")); </script>
-        <script> document.write(celluleBalise(2,"Fumay","ffvl/5055")); </script>
-        <script> document.write(celluleBalise(2,"Bar/Aube","ffvl/73")); </script>
+        <script> 
+            balise(2,"Revin","ffvl/2164");
+            balise(2,"Fumay","ffvl/5055");
+            balise(2,"Bar/Aube","ffvl/73");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Baulme","ffvl/152")); </script>
-        <script> document.write(celluleBalise(2,"Savigny","ffvl/5100")); </script>
-        <script> document.write(celluleBalise(2,"Velars","ffvl/5099")); </script>
+        <script> 
+            balise(2,"Baulme","ffvl/152");
+            balise(2,"Savigny","ffvl/5100");
+            balise(2,"Velars","ffvl/5099");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"St Martin/<br>Armançon","meteo-france/89418007")); </script>
-        <script> document.write(celluleBalise(2,"St Martin/<br>Armançon","ffvl/113")); </script>
-        <script> document.write(celluleBalise(2,"<br>Noyers","ffvl/5035")); </script>
+        <script> 
+            balise(2,"St Martin/<br>Armançon","meteo-france/89418007");
+            balise(2,"St Martin/<br>Armançon","ffvl/113");
+            balise(2,"<br>Noyers","ffvl/5035");
+        </script>
     </tr>
     <tr>
-        <script> document.write(celluleBalise(2,"Uchon","ffvl/65")); </script>
-        <script> document.write(celluleBalise(2,"Autun","meteo-france/71014004")); </script>
-        <script> document.write(celluleBalise(2,"Mt Dardon","pioupiou/962")); </script>
+        <script> 
+            balise(2,"Uchon","ffvl/65");
+            balise(2,"Autun","meteo-france/71014004");
+            balise(2,"Mt Dardon","pioupiou/962");
+        </script>
     </tr>
 
-    <script> document.write(webcams()); </script>
+    <script> SectionWebcams(); </script>
     <tr>
-        <td colspan="2">
-            <a href="https://cam-aero.eu/raspicamaero/LFCT_Thouars/img">Thouars</a>
-        </td>
-        <td colspan="2">
-            <a href="https://dev.meteo-centre.fr/?mcw_embed=saint-sulpice-le-gueretois">Guéret</a>
-        </td>
-        <td colspan="2">
-            <a href="https://aeroclub-cotedor.ovh/camera/DSO.jpg">Baulme</a>
-        </td>
-    </tr>
-    <script> document.write(previs()); </script>
-    <tr>
-        <script> document.write(celluleMeteo(3,"31599/massognes.htm","Massognes","46.7637","0.0468")); </script>
-        <script> document.write(celluleMeteo(3,"29306/availles_thouarsais.htm","Grand Moiré","46.858","-0.182")); </script>
-    </tr>
-    <tr>
-        <script> document.write(celluleMeteo(3,"16935/chaudefonds_sur_layon.htm","Chaudefonds","47.3228","-0.7174")); </script>
-        <script> document.write(celluleMeteo(3,"16883/blaison_gohier.htm","Blaison Gohier","47.403","-0.397")); </script>
-    </tr>
-    <tr>
-        <script> document.write(celluleMeteo(2,"29145/jeufosse.htm","Jeufosse","49.0362","1.5396")); </script>
-        <script> document.write(celluleMeteo(2,"6742/gueret.htm","Guéret","46.1637","1.8377")); </script>
-        <script> document.write(celluleMeteo(2,"16122/floirac.htm","Soult","44.898","1.6543")); </script>
-    </tr>
-    <tr>
-        <script> document.write(celluleMeteo(2,"35478/revin.htm","Revin","49.9478","4.6246")); </script>
-        <script> document.write(celluleMeteo(4,"32770/saint_martin_sur_armancon.htm","St Martin/Armançon","47.8738","4.0567")); </script>
-    </tr>
-    <tr>
-        <script> document.write(celluleMeteo(2,"34373/bar_sur_aube.htm","Bar/Aube","48.2187","4.6996")); </script>
-        <script> document.write(celluleMeteo(2,"6014/baulme_la_roche.htm","Baulme","47.3489","4.8014")); </script>
-        <script> document.write(celluleMeteo(2,"26875/uchon.htm","Uchon","46.807","4.2535")); </script>
+        <script> 
+            webcam(2, "Thouars", "https://cam-aero.eu/raspicamaero/LFCT_Thouars/img");
+            webcam(2, "Guéret", "https://dev.meteo-centre.fr/?mcw_embed=saint-sulpice-le-gueretois");
+            webcam(2, "Baulme", "https://aeroclub-cotedor.ovh/camera/DSO.jpg");
+        </script>
     </tr>
 
-    <script> document.write(liens()); </script>
+    <script> SectionPrevisions(); </script>
+    <tr>
+        <script> 
+            previsionsMenu(3,"31599/massognes.htm","Massognes","46.7637","0.0468");
+            previsionsMenu(3,"29306/availles_thouarsais.htm","Grand Moiré","46.858","-0.182");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(3,"16935/chaudefonds_sur_layon.htm","Chaudefonds","47.3228","-0.7174");
+            previsionsMenu(3,"16883/blaison_gohier.htm","Blaison Gohier","47.403","-0.397");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(2,"29145/jeufosse.htm","Jeufosse","49.0362","1.5396");
+            previsionsMenu(2,"6742/gueret.htm","Guéret","46.1637","1.8377");
+            previsionsMenu(2,"16122/floirac.htm","Soult","44.898","1.6543");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(2,"35478/revin.htm","Revin","49.9478","4.6246");
+            previsionsMenu(4,"32770/saint_martin_sur_armancon.htm","St Martin/Armançon","47.8738","4.0567");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(2,"34373/bar_sur_aube.htm","Bar/Aube","48.2187","4.6996");
+            previsionsMenu(2,"6014/baulme_la_roche.htm","Baulme","47.3489","4.8014");
+            previsionsMenu(2,"26875/uchon.htm","Uchon","46.807","4.2535");
+        </script>
+    </tr>
+
+    <script> BasDePage(); </script>
 </table>
 </body>
 </html>
