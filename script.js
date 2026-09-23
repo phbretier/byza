@@ -106,7 +106,7 @@ function SectionWebcams() {
 function webcam(colspan, nom, url) {
     document.write(`
         <td colspan="${colspan}">
-            <a href="${url}">${nom}</a>
+            <a href="${url}" target="_blank">${nom}</a>
         </td>
     `);
 }
@@ -131,7 +131,7 @@ function previsions(colspan, cheminMeteociel, nom, lat, lon) {
     // &emsp; 1 em ; &ensp; 0,5 em ; &nbsp; 0,25-0,33 em ; &thinsp; &#8239; 0,16-0,20 em ; &hairsp; 0,08-0,10 em
     document.write(`
         <td colspan="${colspan}">
-            <a href="${urlMeteociel}">${nom}</a>
+            <a href="${urlMeteociel}" target="_blank">${nom}</a>
             <br>
             <div style="height: 10px;"></div>
             <a href="${urlMeteoParapente}" target="_blank" class="big"><img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/></a>
@@ -162,9 +162,9 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientationsOK=
     if (orientationsOK.length !== 0) {
         var img = `<img src="${generateSVG(orientationsKO, orientationsOK)}" alt="(${orientationsOK.join("-")})" width="24px"/>`
         if (fiche !== null) {
-            img = `<a href="https://www.spotair.mobi/spot/${fiche}">${img}</a>`
+            img = `<a href="https://www.spotair.mobi/spot/${fiche}" target="_blank">${img}</a>`
         } 
-        td += ` ${img} &ensp;  `;
+        td += ` ${img} &nbsp;  `;
     }
     td += `
             <a href="#" class="open-menu" data-nom="${nom.replace(/<[^>]*>/g, ' ').trim()}" data-lat="${lat}" data-lon="${lon}">⫶☰</a>
@@ -237,9 +237,9 @@ function BasDePage() {
         </tr>
         <tr>
             <td colspan="2">
-                <a href="https://weather.metoffice.gov.uk/maps-and-charts/surface-pressure">Fronts UK</a>
+                <a href="https://weather.metoffice.gov.uk/maps-and-charts/surface-pressure" target="_blank">Fronts UK</a>
                 <br>
-                <a href="https://meteofrance.com/isofronts">Fronts MF</a>
+                <a href="https://meteofrance.com/isofronts" target="_blank">Fronts MF</a>
             </td>
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?500h,temp,52.000,-3.500,3,i:gh,p:wind">Géopot.</a>
@@ -268,16 +268,16 @@ function BasDePage() {
                 <a href="https://www.windy.com/fr/-Nuages-clouds?iconEu,clouds,47.758,1.455,5,i:deg0,p:wind">Nuages</a>
             </td>
             <td colspan="2">
-                <a href="https://www.velivole.fr/?center_lat=49.82&center_long=10.75&zoom=5.3">Velivole</a>
+                <a href="https://www.velivole.fr/?center_lat=49.82&center_long=10.75&zoom=5.3" target="_blank">Velivole</a>
             </td>
             <td colspan="2">
-                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=windAnimation~rainbow~auto~10%20m%20above%20gnd~pressure2mOverlay&coords=3.84/45.19/1">Meteoblue</a>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=windAnimation~rainbow~auto~10%20m%20above%20gnd~pressure2mOverlay&coords=3.84/45.19/1" target="_blank">Meteoblue</a>
             </td>
         </tr>
 
         <tr>
             <td class="section" colspan="6">
-                Autres sites <a href="https://puretrack.io/#philippe-bretier">📍</a>
+                Autres sites <a href="https://puretrack.io/#philippe-bretier" target="_blank">📍</a>
             </td>
         </tr>
         <tr>
