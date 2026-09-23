@@ -157,13 +157,14 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientationsOK=
         <td colspan="${colspan}">
             <a href="${urlMeteociel}">${nom}</a>
             <br>
+            <div style="height: 5px;"></div>
     `;
     if (orientationsOK !== null) {
         var img = `<img src="${generateSVG(orientationsKO, orientationsOK)}" alt="(${orientationsOK.split("-").join("-")})" width="50px"/>`
         if (fiche !== null) {
             img = `<a href="https://www.spotair.mobi/spot/${fiche}" target="_blank">${img}</a>`
         } 
-        td += ` ${img} &8239;  `;
+        td += ` ${img} &#8239; `;
     }
     td += `
             <a href="#" class="open-menu" data-nom="${nom.replace(/<[^>]*>/g, ' ').trim()}" data-lat="${lat}" data-lon="${lon}">⫶☰</a>
