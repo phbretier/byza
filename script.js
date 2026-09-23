@@ -66,10 +66,10 @@ const PathsDict = {
 // Fonction pour générer le SVG avec les chemins sélectionnés
 function generateSVG(oranges, verts) {
   const orangePaths = Object.entries(PathsDict)
-    .filter(([id]) => oranges.includes(id))
+    .filter(([id]) => oranges.split("-").includes(id))
     .map(([_, pathLine]) => pathLine);
   const vertPaths = Object.entries(PathsDict)
-    .filter(([id]) => verts.includes(id))
+    .filter(([id]) => verts.split("-").includes(id))
     .map(([_, pathLine]) => pathLine);
   const svgString = svgHeader + "\n" + orangePaths.join("\n") + "\n" + svgVert + vertPaths.join("\n") + "\n" + svgFooter;
   return `data:image/svg+xml;base64,${btoa(unescape(encodeURIComponent(svgString)))}`;
@@ -151,7 +151,7 @@ function previsions(colspan, cheminMeteociel, nom, lat, lon) {
     `);
 }
 
-function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientationsOK=[], orientationsKO=[], fiche=null) {
+function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientationsOK=null, orientationsKO=null, fiche=null) {
     const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
     var td = `
         <td colspan="${colspan}">
@@ -159,8 +159,8 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientationsOK=
             <br>
             <div style="height: 10px;"></div>
     `;
-    if (orientationsOK.length !== 0) {
-        var img = `<img src="${generateSVG(orientationsKO, orientationsOK)}" alt="(${orientationsOK.join("-")})" width="24px"/>`
+    if (orientationsOK !== null) {
+        var img = `<img src="${generateSVG(orientationsKO, orientationsOK)}" alt="(${orientationsOK.split("-").join("-")})" width="24px"/>`
         if (fiche !== null) {
             img = `<a href="https://www.spotair.mobi/spot/${fiche}" target="_blank">${img}</a>`
         } 
