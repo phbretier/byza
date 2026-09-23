@@ -13,6 +13,67 @@ const iconMF = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpI
 const iconMB = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAdVBMVEUUSGYWSGcJQ2MORmRviJnQ2NyMpbMARGOEmaf4+fmousMAQWH29/crWXRPcYdVdostXnk+ZX1HbIIfUm5phZe7yNDa4OTg5umarLhefZDW3uK0wcn+/f3p7e/v8vIAPF4pVHB2k6OAlqVCaIAbVHHCz9aovMY1LWdqAAAA9klEQVR4AdSRVWLEIBBAJ0wcsrEGHWT1/kdspG7/xeExDv+gZX8wxtivDPOi/E04q+qm/fSAjLNVZldY1aLNGMNXRdid+gE4jP1Y4QZhnObqhT4tUhXaaKtsDbwWi7bWmUPQSPKShA9SUchjHURQgYrTZmluaZmSpqYdBkeuWuG5M1JcVp8xuXDmvFOq53GgAupmAY6aNMAO8wqTlVfGhqa4raFkmJWkZ/wBCg0I5c+SF7EAB00lfoez8T4f8tWhaodihZ1U0wpJzslRkIGWcZOcy7tBTA93Zdjd25kNWgZbDkcCedz+HGvkuC3r2691Q3zeIE2HAADXFCy2Gj9GAAAAAElFTkSuQmCC";
 const iconVV = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAP1BMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC6E+JdAAAAFXRSTlMADgYq31o4/XZQRhrroYOPuc7VZfKE94RIAAAAz0lEQVR4AXRQBQKAIBCjB8LJifz/q3bHTBbExBNSiV9oY/9FB/9JB3kmm3DTlMdMSBent030WK11i2l+wTjxRk5IJEWI9xwDJht0xIC+JwISEyfQvJlUHgfo3Ex3aQ75KRq13tvgbSYNWqxWtaWElcrgzdWBsw6wwua8+F2B2c/ccwdTEIVQah5Hrl4eVSg1eemy0fbRYzoJX8NdVIVF3LZqn2I0JEu/dZNI3kSPIJnWqGor2eZAyJWliHuD0ifUA6h0b126/kAzDpiIhiEAAIYTCNDs4bFsAAAAAElFTkSuQmCC";
 
+// Entête SVG
+const svgHeader = `
+<svg width="81.938mm" height="81.938mm" version="1.1" viewBox="0 0 81.938 81.938" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="pin" transform="translate(-75.09 -138.1)">
+    <path d="m116.06 139.85a29.766 29.766 0 0 0-29.766 29.766 29.766 29.766 0 0 0 5.3041 16.901h-0.0403l0.55294 0.71727a29.766 29.766 0 0 0 1.0387 1.3462l22.91 29.708 22.657-29.381a29.766 29.766 0 0 0 1.4113-1.8299l0.43201-0.56017h-6e-3a29.766 29.766 0 0 0 5.2715-16.902 29.766 29.766 0 0 0-29.766-29.766z" fill="#0b81b6" stroke="#444" stroke-linejoin="round" stroke-width="3.5"/>
+  </g>
+  <g id="Blanc" transform="translate(.49998 .49961)">
+    <circle cx="40.469" cy="31.016" r="24.5" fill="#f0f0f0" stroke-width=".2674"/>
+  </g>
+  <g id="Orange" fill="#FF8020" stroke-width=".2674">
+`;
+
+// millieu SVG
+const svgVert = `
+  </g>
+  <g id="Vert" fill="#42b018" stroke-width=".2674">
+`;
+
+// Fin du SVG
+const svgFooter = `
+  </g>
+  <g id="parapente" transform="matrix(.2606 0 0 .2606 28.276 15.312)" fill="#444">
+    <path transform="translate(-100.38 -42.825)" d="m119.19 31.859c17.363-4.0685 35.203-9.5501 39.688 0-16.054 10.621-15.642 59.945-23.812 71.438h-15.875c-3.2061-24.251-6.9504-66.709 0-71.438z" />
+    <path transform="translate(-100.38 -42.825)" d="m159.75 35.675c-11.395 10.997-13.085 43.123-16.748 54.392h6.6146c5.0759-2.3814 12.601-27.837 10.134-54.392z" />
+    <path transform="translate(-100.38 -42.825)" d="m124.29 156.88h10.583l3.1598 3.0958 41.77 11.615c3.0748 0.91545 5.0609 10.249 0.0491 11.748-9.52 0.49884-14.889-0.95547-22.327-1.4371-11.073 0.49191-17.205 1.3-29.043 0.13876-5.8349-0.83535-10.87-11.572-11.549-23.598 0.72446-1.8042 4.8873 0.7007 7.3571 1.0837z" />
+    <path transform="translate(-100.38 -42.825)" d="m137.76 149.08a6.6146 6.6146 0 0 1-6.4127 6.6115 6.6146 6.6146 0 0 1-6.8042-6.2079 6.6146 6.6146 0 0 1 5.9974-6.9904 6.6146 6.6146 0 0 1 7.1702 5.7812z" />
+  </g>
+</svg>
+`;
+
+// Dictionnaire avec chaque ligne de path
+const PathsDict = {
+  "NE":  `<path id="NE" transform="rotate(247.5)" d="m-27.47 43.114a24.5  24.5 0 0 1-17.324 7.176v-24.5z"/>`,
+  "E":   `<path id="E"  transform="rotate(-67.5)" d="m3.8861 67.235a24.5  24.5 0 0 1-17.324 7.176v-24.5z"/>`,
+  "SE":  `<path id="SE" transform="rotate(-22.5)" d="m43.114 62.119a24.5  24.5 0 0 1-17.324 7.176v-24.5z"/>`,
+  "S":   `<path id="S"  transform="rotate(22.5)"  d="m67.235 30.763a24.5  24.5 0 0 1-17.324 7.176v-24.5z"/>`,
+  "SO":  `<path id="SO" transform="rotate(67.5)"  d="m62.119-8.4656a24.5  24.5 0 0 1-17.324 7.176v-24.5z"/>`,
+  "N":   `<path id="N"  transform="rotate(202.5)" d="m-32.586 3.8861a24.5 24.5 0 0 1-17.324 7.176v-24.5z"/>`,
+  "O":   `<path id="O"  transform="rotate(112.5)" d="m30.763-32.586a24.5  24.5 0 0 1-17.324 7.176v-24.5z"/>`,
+  "NO":  `<path id="NO" transform="rotate(157.5)" d="m-8.4656-27.47a24.5  24.5 0 0 1-17.324 7.176v-24.5z"/>`,
+  "NNE": `<path id="NNE" d="M 54.707 51.806 C 52.311 53.611 48.751 54.955 45.612 55.578 L 40.969 31.516 Z" transform="rotate(225, 40.969 31.516)" />`,
+  "ENE": `<path id="ENE" d="M 54.707 51.806 C 52.311 53.611 48.751 54.955 45.612 55.578 L 40.969 31.516 Z" transform="rotate(270, 40.969 31.516)" />`,
+  "ESE": `<path id="ESE" d="M 54.707 51.806 C 52.311 53.611 48.751 54.955 45.612 55.578 L 40.969 31.516 Z" transform="rotate(315, 40.969 31.516)" />`,
+  "SSE": `<path id="SSE" d="M 54.707 51.806 C 52.311 53.611 48.741 54.926 45.612 55.578 L 40.969 31.516 Z"/>`,
+  "SSO": `<path id="SSO" d="M 54.707 51.806 C 52.311 53.611 48.751 54.955 45.612 55.578 L 40.969 31.516 Z" transform="rotate( 45, 40.969 31.516)" />`,
+  "OSO": `<path id="OSO" d="M 54.707 51.806 C 52.311 53.611 48.751 54.955 45.612 55.578 L 40.969 31.516 Z" transform="rotate( 90, 40.969 31.516)" />`,
+  "ONO": `<path id="ONO" d="M 54.707 51.806 C 52.311 53.611 48.751 54.955 45.612 55.578 L 40.969 31.516 Z" transform="rotate(135, 40.969 31.516)" />`,
+  "NNO": `<path id="NNO" d="M 54.707 51.806 C 52.311 53.611 48.751 54.955 45.612 55.578 L 40.969 31.516 Z" transform="rotate(180, 40.969 31.516)" />`,
+};
+
+// Fonction pour générer le SVG avec les chemins sélectionnés
+function generateSVG(oranges, verts) {
+  const orangePaths = Object.entries(PathsDict)
+    .filter(([id]) => oranges.includes(id))
+    .map(([_, pathLine]) => pathLine);
+  const vertPaths = Object.entries(PathsDict)
+    .filter(([id]) => verts.includes(id))
+    .map(([_, pathLine]) => pathLine);
+  const svgString = svgHeader + "\n" + orangePaths.join("\n") + "\n" + svgVert + vertPaths.join("\n") + "\n" + svgFooter;
+  return `data:image/svg+xml;base64,${btoa(unescape(encodeURIComponent(svgString)))}`;
+}
 
 function balise(colspan, nom, cheminSpotair) {
     document.write(`
@@ -90,16 +151,25 @@ function previsions(colspan, cheminMeteociel, nom, lat, lon) {
     `);
 }
 
-function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon) {
+function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientationsOK=[], orientationsKO=[]) {
     const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
-    document.write(`
+    ver td = `
         <td colspan="${colspan}">
             <a href="${urlMeteociel}">${nom}</a>
             <br>
             <div style="height: 10px;"></div>
+    `;
+    if (orientationsOK.length !== 0) {
+        td += `
+            <img src="${generateSVG(orientationsKO, orientationsOK)}" alt="(${orientationsOK.join("-")})" width="24px"/> &ensp; 
+        `;
+        ;
+    }
+    td += `
             <a href="#" class="open-menu" data-nom="${nom.replace(/<[^>]*>/g, ' ').trim()}" data-lat="${lat}" data-lon="${lon}">⫶☰</a>
         </td>
     `);
+    document.write(td);
 }
 
 function BasDePage() {
