@@ -34,7 +34,7 @@ const svgVert = `
 // Fin du SVG
 const svgFooter = `
   </g>
-  <g id="parapente" transform="matrix(.2606 0 0 .2606 28.276 15.312)" fill="#444">
+  <g id="parapente" transform="matrix(.2606 0 0 .2606 28.276 15.312)" fill="#444" opacity="0.5">
     <path transform="translate(-100.38 -42.825)" d="m119.19 31.859c17.363-4.0685 35.203-9.5501 39.688 0-16.054 10.621-15.642 59.945-23.812 71.438h-15.875c-3.2061-24.251-6.9504-66.709 0-71.438z" />
     <path transform="translate(-100.38 -42.825)" d="m159.75 35.675c-11.395 10.997-13.085 43.123-16.748 54.392h6.6146c5.0759-2.3814 12.601-27.837 10.134-54.392z" />
     <path transform="translate(-100.38 -42.825)" d="m124.29 156.88h10.583l3.1598 3.0958 41.77 11.615c3.0748 0.91545 5.0609 10.249 0.0491 11.748-9.52 0.49884-14.889-0.95547-22.327-1.4371-11.073 0.49191-17.205 1.3-29.043 0.13876-5.8349-0.83535-10.87-11.572-11.549-23.598 0.72446-1.8042 4.8873 0.7007 7.3571 1.0837z" />
@@ -157,14 +157,13 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientationsOK=
         <td colspan="${colspan}">
             <a href="${urlMeteociel}">${nom}</a>
             <br>
-            <div style="height: 10px;"></div>
     `;
     if (orientationsOK !== null) {
-        var img = `<img src="${generateSVG(orientationsKO, orientationsOK)}" alt="(${orientationsOK.split("-").join("-")})" width="24px"/>`
+        var img = `<img src="${generateSVG(orientationsKO, orientationsOK)}" alt="(${orientationsOK.split("-").join("-")})" width="50px"/>`
         if (fiche !== null) {
             img = `<a href="https://www.spotair.mobi/spot/${fiche}" target="_blank">${img}</a>`
         } 
-        td += ` ${img} &nbsp;  `;
+        td += ` ${img} &8239;  `;
     }
     td += `
             <a href="#" class="open-menu" data-nom="${nom.replace(/<[^>]*>/g, ' ').trim()}" data-lat="${lat}" data-lon="${lon}">⫶☰</a>
