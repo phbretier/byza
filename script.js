@@ -153,7 +153,7 @@ function previsions(colspan, cheminMeteociel, nom, lat, lon) {
 
 function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientationsOK=[], orientationsKO=[], fiche=null) {
     const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
-    ver td = `
+    var td = `
         <td colspan="${colspan}">
             <a href="${urlMeteociel}">${nom}</a>
             <br>
