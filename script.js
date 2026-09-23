@@ -151,7 +151,7 @@ function previsions(colspan, cheminMeteociel, nom, lat, lon) {
     `);
 }
 
-function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientationsOK=[], orientationsKO=[]) {
+function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientationsOK=[], orientationsKO=[], fiche=null) {
     const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
     ver td = `
         <td colspan="${colspan}">
@@ -160,10 +160,11 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientationsOK=
             <div style="height: 10px;"></div>
     `;
     if (orientationsOK.length !== 0) {
-        td += `
-            <img src="${generateSVG(orientationsKO, orientationsOK)}" alt="(${orientationsOK.join("-")})" width="24px"/> &ensp; 
-        `;
-        ;
+        var img = `<img src="${generateSVG(orientationsKO, orientationsOK)}" alt="(${orientationsOK.join("-")})" width="24px"/>`
+        if (fiche !== null) {
+            img = `<a href="https://www.spotair.mobi/spot/${fiche}">${img}</a>`
+        } 
+        td += ` ${img} &ensp;  `;
     }
     td += `
             <a href="#" class="open-menu" data-nom="${nom.replace(/<[^>]*>/g, ' ').trim()}" data-lat="${lat}" data-lon="${lon}">⫶☰</a>
@@ -189,14 +190,11 @@ function BasDePage() {
                 menu_opened.remove();
             });
 
-            // le container à ouvrir
+            // le container
             const container = document.createElement('div');
             container.className = 'menu-opened';
             container.style.fontSize = 'small';
             container.style.textAlign = 'left';
-
-
-            // &emsp; 1 em ; &ensp; 0,5 em ; &nbsp; 0,25-0,33 em ; &thinsp; &#8239; 0,16-0,20 em ; &hairsp; 0,08-0,10 em
             const htmlContent = `
                 <div style="height: 10px;"></div>
                 <a href="https://meteo-parapente.com/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big">
@@ -224,8 +222,6 @@ function BasDePage() {
                 </a>
                 <br><div style="height: 10px;"></div>
             `;
-
-            // Insérer le contenu HTML dans le container
             container.innerHTML = htmlContent;
 
             // Insère le container juste en dessous
