@@ -169,7 +169,7 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientationsOK=
     td += `
             <a href="#" class="open-menu" data-nom="${nom.replace(/<[^>]*>/g, ' ').trim()}" data-lat="${lat}" data-lon="${lon}">⫶☰</a>
         </td>
-    `);
+    `;
     document.write(td);
 }
 
