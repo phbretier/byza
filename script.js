@@ -59,9 +59,9 @@ const PathsDict = {
 };
 
 const couleurs = {
-    "vert":   "42b018";
-    "orange": "FF8020";
-    "blanc":  "f0f0f0";
+    "vert":   "42b018",
+    "orange": "FF8020",
+    "blanc":  "f0f0f0",
 };
 
 // Fonction pour générer le SVG avec les chemins sélectionnés
