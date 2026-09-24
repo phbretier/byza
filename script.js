@@ -13,28 +13,23 @@ const iconMF = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpI
 const iconMB = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAdVBMVEUUSGYWSGcJQ2MORmRviJnQ2NyMpbMARGOEmaf4+fmousMAQWH29/crWXRPcYdVdostXnk+ZX1HbIIfUm5phZe7yNDa4OTg5umarLhefZDW3uK0wcn+/f3p7e/v8vIAPF4pVHB2k6OAlqVCaIAbVHHCz9aovMY1LWdqAAAA9klEQVR4AdSRVWLEIBBAJ0wcsrEGHWT1/kdspG7/xeExDv+gZX8wxtivDPOi/E04q+qm/fSAjLNVZldY1aLNGMNXRdid+gE4jP1Y4QZhnObqhT4tUhXaaKtsDbwWi7bWmUPQSPKShA9SUchjHURQgYrTZmluaZmSpqYdBkeuWuG5M1JcVp8xuXDmvFOq53GgAupmAY6aNMAO8wqTlVfGhqa4raFkmJWkZ/wBCg0I5c+SF7EAB00lfoez8T4f8tWhaodihZ1U0wpJzslRkIGWcZOcy7tBTA93Zdjd25kNWgZbDkcCedz+HGvkuC3r2691Q3zeIE2HAADXFCy2Gj9GAAAAAElFTkSuQmCC";
 const iconVV = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAP1BMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC6E+JdAAAAFXRSTlMADgYq31o4/XZQRhrroYOPuc7VZfKE94RIAAAAz0lEQVR4AXRQBQKAIBCjB8LJifz/q3bHTBbExBNSiV9oY/9FB/9JB3kmm3DTlMdMSBent030WK11i2l+wTjxRk5IJEWI9xwDJht0xIC+JwISEyfQvJlUHgfo3Ex3aQ75KRq13tvgbSYNWqxWtaWElcrgzdWBsw6wwua8+F2B2c/ccwdTEIVQah5Hrl4eVSg1eemy0fbRYzoJX8NdVIVF3LZqn2I0JEu/dZNI3kSPIJnWqGor2eZAyJWliHuD0ifUA6h0b126/kAzDpiIhiEAAIYTCNDs4bFsAAAAAElFTkSuQmCC";
 
+const menu = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGHaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49J++7vycgaWQ9J1c1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCc/Pg0KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+PHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIj48dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPjwvcmRmOkRlc2NyaXB0aW9uPjwvcmRmOlJERj48L3g6eG1wbWV0YT4NCjw/eHBhY2tldCBlbmQ9J3cnPz4slJgLAAANFElEQVRoQ+2ZaYyd1XmAn3POt9117tzrZexZvI+NHTsUjG2gAWKa4IgsJRahDZGaCiV1VaJEJekiNVKDUiKl6fKjUlSRkhTSUDUISsGAGyClDVtiSthsbDP1Ml5mxuOZueu3n9Mfd7zcsT0Ykh9OxCNdXenO951znu+857zvd0YAhl8D5MwfflV5T+Ri4z2Ri433RC42fm1ExC8rIVqWxcoFOZb3eFTyggXdLuWcixKGKIVmqKn5CUcnI/aNBOwbaVFvhTObedf8giKCy5Z28dHfKHP1YIFKzhAmAa4lKXoeGVshBGgDSWo4MhkRp4Y5BYdYC14YavI/e+r8eNcUo5OtmY2/I961yG9eUuG2a+dx5bIsOVcwUm0xUm1RyWfJOQ6eLZloxtT9lAXdDuP1mOvvegNtoDun2LZ5Prd/eAGJhpGq5qk3fb7/kxF2HZqa2dUF8Y5FKkWPP/94P799WReClGZoaEUxo7UmC0sFXEuRcSQP7jzBt7Yfpe6nzCvafGpThZU9GR57ZZKD4yHrBrJ85cZe4sQgTUzf2utIS4Pcffd3+NuHdjHe1DO7npV3JHLVygp3faqfJXMUk80EY0AIODxZozuboeA5pNpQzCjuf36cv/jhoY77X7xzLb0ll1aUIoSgEaTTfzEgFI6bYW5PHwfHGnzt+zt59KWxjvtn44JFbrlqIXd+ciGYhGZoEAKkFFRbAc0oprdUINWnm8o4kl1HWvxsqEGcwuo+lxU9DkXPwxhzdqfGoNOI/KL1VAbW0NrzBHf/6CBf//dhjD4pfH4uSOTWD/Ty9a0LaAYxUdq+CdqzcWyqQXfWI+PYpGmMEBJEe1fPOBLHasu2ohTHcrCVxMzSo05ChFAo26aSUzz6apMv3fsWQZTMvLSDtxW5aWMPf/M7fTSDmOSMsBVAojWtKKYr45EmMVauG5PG6MhvWwLaGMIkJWNbCCEws1mcwkz3AJW8xY/3+Gz7p334YTzzwlPMmhA3Dpb5xs19+GGnBNNdKSkpZjySyCe/6HL6P/wn2IX56DQ6dZ0Ugpxjt++5IAnOeL6G8XrM5pUZvnXrsvZsnwcF/OXMHwHKBY97PreMvKPxk9PhdBqBSSJ0EoKQeOV+WmN7aR15FWk5HVe+7fCNwegYk4SYNJ5eEwaMxqQJDT/gsgEHlMsL+6oz74bZQuubn1nBLVcUOVFPTkZJByZN8CqLyfatZWr3k6RBHSEVQrWf/ttjMEmM0QnC9nCK83G7+3CKPahMF8r2AEEa+8T148QTB1CNQ3zmH3bx/NDZyfOcIhsHy/zLtqU0gvicC9MYjZCK/i1/RlQ9xtiLP2Du+puZfP0JotooQlkzbzmNMeg4AKlwu/vIDayjuGgtyusmDRPSqIkOfXQSYoxBKgvp5lBuloxpsvPZp7nxK/fTCDoX/zlEBN/9w0u4ZoVLzT9fUjLT4bQIf3yIzLwVFJdsYuyF+9o71rmmENCxj1A2ud73UVhxNZl5S0mP19j32H8RTY7Sf/1SkjCgnaBk+xsNCIRl43YtoH/VarZu+yYP7niuo+2zRNYMdPHAF5YTxu2ENxs6CRHSQigLo1ME4hwSoh33aUy2932U1t6AV1kEh45gXnkdDhxm+M0D7Ds+zto7bkC5GUySYpIGQiiwcxiTYEuoFFwe3znM5/96O9V6s6OXs7aBLe/vJmtPP4y3QVouQiow+jwSoKMW0vaYu/HT9G7eRj70UA9uRz34GNae/YhEU6p0k5/TBcrDhCdI/P8mEU8TR0+iW3uoFPOkKL75by/xe3/10FkSzJwRISQ//NJq1i60aEUXYDIbxpBGLbI9q5i34dPIbIXxJ3YQv/gaJtFoRxEmMc3QJ84oeq5dS6bLJ4qegVIIloVAk69m+def9POP21/nreHzlywdIgvLWf7jj1fhqJT0fMvjAjBpgtEJpVWbqazbSji5m+q+BwmqIxhlYygg6UY6JaxsESfjoltHiJKXoORjAolIbEqexY5nQ37/7ztrtnPRIbJxsMy9n1+CHyYzd4ALRsc+0s4w59KtdC2/lvrYdqaO/gBMgHBdhBDtuA0lhA4kHgiNceqQNQiVw2t2cWxonLservPozonpBT87HWukklPY6szV394qTXr+0uAkRqekQQOvspjezXdQWLKBE8PfZnLkHrANws0BFkYrjLEwnsQUI0y5huluQFEilARhUMsGWfaBdXxsg8fc3IXlpQ6RjGudyuAmTVC5OfRvvJVCqZc0bExLJRidtj9pgo4D0rCJkBbltVtYuuXLeEXD2IE7aU7+J1JlEVhICa4tkaodByZNUVaJrsU34RV6sH2QNQcnDmkeewbf1dx4zRw+vjpH3nVO1V7no6NEGVyQ44a1RcJYAwbXcnhD5BCL17Oyby1ISWraJbVUNsrL45UHKC2/ir4rbyHbdxk7n36M4Z9+m1LhOHg5AERL0xpVHN5ryCLJFQRaAUrgioD60CiPP9Tihed8ZGDRU7ZxzQhjhyJefS1koGBhhEVVw8BlOZQl8auzJMTr1lT4zm2LqfsJAshIxVcPDjFcsfjdSz7Gb/VfTV9XN8o200mqXf80Gy32vvpznnnkEfa88ipKuWz5YDcbP2Tj25JC13Jee+JN7n9girkViyvXZ1i1xsbOGUYOhux4MuLIaIylBFrD0gGXlUtd3tgXcGwswrMlR2spBy6V9FxpM/R4xK4dnTVXh8hgb5EHvrAco1O0gYyUPDxxgu/5Y2gCSs0CmyYWs3puP/nuHFEaMTVxgpHhYQ4PH8VRklwuQ5JCmsKW6/Jcfo2H11Ni+OVx7rlniiRtd1cuWniu4PhkQpwYbPt06ESxIZn+zbUlJjAcJWHyIwqjLH7+3SbV0eDU9cwUcR2LR+5YQ19JECYGAThC8GytwY+imDfrxxEnQgpDKZkWlBJJV8ZG2RaRUcTaYMn2y5ScPjlZucRlcLli6KBmz1shKYZYQ5xoFIKcKwlSjRCCnC0w5vSApBD4oeZYNqU6KCis8Di8HV5/8fhpg2k61kiaalb25rl8cYYgbjengUHP5UPzl/B/kWa820ctz1JbaCEji3LdxvFsPFsijUAIgaVATr8Kj51IeHNfzPhEguMIBAIpIOtIEmMIU4MUkHMkWoPRYCmBlAJiw3iUcGyDILPcIWomfPHSa9i9b4rxauNMj7PfR443NFuvqJBqferJRICXtNjfqLNbBpTLDkoKam5K4GtMzRAEmhMyQWrIC4VUAilEu7404HntDVJJgQRCX5N32ycuniURCCYaCROkmNAQhZpJozmyXJPOFaRJihvY/NGGq1EJPPXy/jOHfbbIWDVk0bwC6xdnaIX6dPkkIAO8MNVgKk3RgB/HTJUSGvME4YBNdYmgltUwqTEB+KFmXKacyGlk0yBiQRRpJoOUY6WUNAYVQBIZqn7C6ALNxPsVrbmCiW7DyKKEpUt6+PLg9WwsLOWmJetZnPe474mf8sr+yTOHfXb1CzCn6PHAF1fR2yWoB20ZQ3vx7/cDflavEwrBwnnLWFru5d63nueAM0bRc2mcSAgnE+wGKCEwZUnqgjya4kyBwZDOlZheRTqe4owZZAxJtyBcCJYtyDgOwjE0w5BN1jK+dvknaMYtVDTO/v17ufEbO5lodCbpc4owXc7f+wfL6PIMNf+0jCckjmwfIkgnR657gN1hwp++toN8j0QmAp2Ar1NaYUyp6OBaiqClicIUIyBKY7ysImPbhHWDygjiNGVBUsK1bfYGx8kUJbUg4ga1hNsXrSIOjhEHLbZ97yDP7O6cDc4VWic5Xg15bsjnysES/d3WdJKEFENk2p8wDqhXjzJf+5jY8Fy1hvQkrSShErp8tLKG41WfceNTyFsoV4Bv8dneq5lHiTdqozhZie0J4qrmq4Ob2dqznFyzyfhUnXLssDWfYaGscXAi5Pb7DvPsnrMlmE0EYKwa8OjLU5TyHuv6M3g2RNN5AAAhEFIR6YTVmQy5RBLWNZdoj9vK89jc1cWltsvYZJNdgY9fS/hscYCbF/azLuNRaPgcarQYbyV8wi2zSUU0poZZ5VpclS3ykXIXfYUMD73W4vZ/3s+eI/Uzh9fBeUNrJpsGy3zug/O5ekUWzzI0g5TojAPAdiUg0aa9NiKjCdMET7WLq6emqpSUYkMhRyuJEQJylks1SRkNIwYyLhqDQZCxBXnPYu9ozN/tGOGRnWNvO8wLFjnJ5cu6+eQVc7hmZY6FJYXEECWaKDGkpt3azAYFkFOK1Bh83VmS21LgKgESbEsSp7B3NObh/53i/udGL/h/KO9Y5CSlvMuGZUU2rSiyrj/DQNmm6Ekcq50MwbSzdGckTn8LDJBqCGLDRFNz8ETEK4daPLu3xs6hGnEy+xHpTN61SAdC0VNy6C179JUd5nfZlHMWOVfh2Aol2rMVximtUFMLUibqMaO1lJGpkGNTIVON6Bcayi9H5CLgrFOUX1XeE7nYeE/kYuP/AX+++jaw0sgrAAAAAElFTkSuQmCC";
+
 // Entête SVG
 const svgHeader = `
 <svg width="81.938mm" height="81.938mm" version="1.1" viewBox="0 0 81.938 81.938" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g id="pin" transform="translate(-75.09 -138.1)">
+  <!-- <g id="Pin" transform="translate(-75.09 -138.1)">
     <path d="m116.06 139.85a29.766 29.766 0 0 0-29.766 29.766 29.766 29.766 0 0 0 5.3041 16.901h-0.0403l0.55294 0.71727a29.766 29.766 0 0 0 1.0387 1.3462l22.91 29.708 22.657-29.381a29.766 29.766 0 0 0 1.4113-1.8299l0.43201-0.56017h-6e-3a29.766 29.766 0 0 0 5.2715-16.902 29.766 29.766 0 0 0-29.766-29.766z" fill="#0b81b6" stroke="#444" stroke-linejoin="round" stroke-width="3.5"/>
-  </g>
-  <g id="Blanc" transform="translate(.49998 .49961)">
+  </g> -->
+  <g id="Cercle" transform="translate(.49998 .49961)">
+    <circle cx="40.469" cy="31.016" r="30" fill="#0b81b6" stroke="#444" stroke-linejoin="round" stroke-width="3.5"/>
     <circle cx="40.469" cy="31.016" r="24.5" fill="#f0f0f0" stroke-width=".2674"/>
   </g>
-  <g id="Orange" fill="#FF8020" stroke-width=".2674">
-`;
-
-// millieu SVG
-const svgVert = `
-  </g>
-  <g id="Vert" fill="#42b018" stroke-width=".2674">
 `;
 
 // Fin du SVG
 const svgFooter = `
-  </g>
-  <g id="parapente" transform="matrix(.2606 0 0 .2606 28.276 15.312)" fill="#444" opacity="0.5">
+  <g id="Parapente" transform="matrix(.2606 0 0 .2606 28.276 15.312)" fill="#444" opacity="0.5">
     <path transform="translate(-100.38 -42.825)" d="m119.19 31.859c17.363-4.0685 35.203-9.5501 39.688 0-16.054 10.621-15.642 59.945-23.812 71.438h-15.875c-3.2061-24.251-6.9504-66.709 0-71.438z" />
     <path transform="translate(-100.38 -42.825)" d="m159.75 35.675c-11.395 10.997-13.085 43.123-16.748 54.392h6.6146c5.0759-2.3814 12.601-27.837 10.134-54.392z" />
     <path transform="translate(-100.38 -42.825)" d="m124.29 156.88h10.583l3.1598 3.0958 41.77 11.615c3.0748 0.91545 5.0609 10.249 0.0491 11.748-9.52 0.49884-14.889-0.95547-22.327-1.4371-11.073 0.49191-17.205 1.3-29.043 0.13876-5.8349-0.83535-10.87-11.572-11.549-23.598 0.72446-1.8042 4.8873 0.7007 7.3571 1.0837z" />
@@ -64,15 +59,16 @@ const PathsDict = {
 };
 
 // Fonction pour générer le SVG avec les chemins sélectionnés
-function generateSVG(oranges, verts) {
-  const orangePaths = Object.entries(PathsDict)
-    .filter(([id]) => oranges.split("-").includes(id))
-    .map(([_, pathLine]) => pathLine);
-  const vertPaths = Object.entries(PathsDict)
-    .filter(([id]) => verts.split("-").includes(id))
-    .map(([_, pathLine]) => pathLine);
-  const svgString = svgHeader + "\n" + orangePaths.join("\n") + "\n" + svgVert + vertPaths.join("\n") + "\n" + svgFooter;
-  return `data:image/svg+xml;base64,${btoa(unescape(encodeURIComponent(svgString)))}`;
+function generateSVG(orientations) {
+    var svgString = svgHeader;
+    Object.entries(orientations).forEach(([couleur, liste]) => {
+        const paths = Object.entries(PathsDict)
+            .filter(([id]) => liste.split("-").includes(id))
+            .map(([_, pathLine]) => pathLine);
+        svgString += `<g fill="#${(couleur == "vert") ? "42b018" : "FF8020"}" stroke-width=".2674"> ${paths} </g>`;
+    });
+    svgString += svgFooter;
+    return `data:image/svg+xml;base64,${btoa(unescape(encodeURIComponent(svgString)))}`;
 }
 
 function balise(colspan, nom, cheminSpotair) {
@@ -151,7 +147,7 @@ function previsions(colspan, cheminMeteociel, nom, lat, lon) {
     `);
 }
 
-function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientationsOK=null, orientationsKO=null, fiche=null) {
+function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientations=null, fiche=null) {
     const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
     var td = `
         <td colspan="${colspan}">
@@ -160,7 +156,7 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientationsOK=
             <div style="height: 5px;"></div>
     `;
     if (orientationsOK !== null) {
-        var img = `<img src="${generateSVG(orientationsKO, orientationsOK)}" alt="(${orientationsOK.split("-").join("-")})" width="50px"/>`
+        var img = `<img src="${generateSVG(orientations)}" alt="(${orientations['vert'].split('-').join('-')})" width="50px"/>`
         if (fiche !== null) {
             img = `<a href="https://www.spotair.mobi/spot/${fiche}" target="_blank">${img}</a>`
         } 
