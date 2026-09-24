@@ -65,7 +65,7 @@ function generateSVG(orientations) {
         const paths = Object.entries(PathsDict)
             .filter(([id]) => liste.split("-").includes(id))
             .map(([_, pathLine]) => pathLine);
-        svgString += `<g fill="#${(couleur == "vert") ? "42b018" : "FF8020"}" stroke-width=".2674"> ${paths} </g>`;
+        svgString += `<g fill="#${(couleur == 'vert') ? '42b018' : 'FF8020'}" stroke-width=".2674"> ${paths} </g>`;
     });
     svgString += svgFooter;
     return `data:image/svg+xml;base64,${btoa(unescape(encodeURIComponent(svgString)))}`;
@@ -155,8 +155,9 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientations=nu
             <br>
             <div style="height: 5px;"></div>
     `;
-    if (orientationsOK !== null) {
-        var img = `<img src="${generateSVG(orientations)}" alt="(${orientations['vert'].split('-').join('-')})" width="50px"/>`
+    if (orientations !== null) {
+        const alt = (Object.hasOwn(orientations, 'vert')) ? orientations['vert'].split('-').join('-') : '🧭';
+        var img = `<img src="${generateSVG(orientations)}" alt="(${alt})" width="50px"/>`
         if (fiche !== null) {
             img = `<a href="https://www.spotair.mobi/spot/${fiche}" target="_blank">${img}</a>`
         } 
