@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sites en Trégor-Goëlo</title>
+    <script src="https://phbretier.github.io/byza/script.js"></script>
+    <script>
+        function orientation(orientations) {
+            const alt = (Object.hasOwn(orientations, 'vert')) ? orientations['vert'].split('-').join('-') : '🧭';
+            var img = `<img src="${generateSVG(orientations)}" alt="(${alt})" width="50px"/>`
+            document.write(img);
+        }
+    </script>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="2">
+            <script> orientation({"vert": "NO"}) </script>
+            <br>
+            Locquirec
+            <br>
+            Bus
+            <br>
+            Pors Garo
+            <br>
+            Port-Béni
+            <br>
+            Od Joge
+            <br>
+            Hillion
+            <br>
+        </td>
+        <td colspan="2">
+            <script> orientation({"vert": "N"}) </script>
+            <br>
+            Tablettes
+            <br>
+            Perros
+            <br>
+            Louannec
+            <br>
+            Lann Vras
+            <br>
+            Milepat
+            <br>
+            Déco Henri
+            <br>
+            Tablettes
+            <br>
+            Roselier
+            <br>
+            Grève des Vallées
+        </td>
+        <td colspan="2">
+            <script> orientation({"vert": "NE"}) </script>
+            <br>
+            Perros
+            <br>
+            Launay
+            <br>
+            Porz Donan
+            <br>
+            Brehec
+            <br>
+            La Chapelle
+            <br>
+            Vau Chaperon
+            <br>
+            Vau Madec
+            <br>
+            Bonaparte
+            <br>
+            Déco Henri
+            <br>
+            Tournemine
+            <br>
+            Roselier
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <script> orientation({"vert": "O"}) </script>
+            <br>
+            Beg-ar-Forn
+            <br>
+            Maez
+            <br>
+            Bihit
+            <br>
+            Pors Garo
+            <br>
+            Bilfot
+        </td>
+        <td colspan="2">
+        </td>
+        <td colspan="2">
+            <script> orientation({"vert": "E"}) </script>
+            <br>
+            La Trinité
+            <br>
+            Notoret
+            <br>
+            Porz ar Birnec
+            <br>
+            Brehec
+            <br>
+            Rognouze
+            <br>
+            Tournemine
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <script> orientation({"vert": "SO"}) </script>
+            <br>
+            Beg Leguer
+        </td>
+        <td colspan="2">
+            <script> orientation({"vert": "S"}) </script>
+            <br>
+            Bihit
+            <br>
+            Brehec
+            <br>
+            Roselier
+        </td>
+        <td colspan="2">
+            <script> orientation({"vert": "SE"}) </script>
+            <br>
+            Porz ar Birnec
+            <br>
+            Berjul
+            <br>
+            Brehec
+            <br>
+            Roselier
+        </td>
+    </tr>
+
+    <script> BasDePage(); </script>
+</table>
+</body>
+</html>
