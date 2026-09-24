@@ -168,7 +168,7 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientations=nu
         const alt = (Object.hasOwn(orientations, 'vert')) ? orientations['vert'].split('-').join('-') : '🧭';
         var img = `<img src="${generateSVG(orientations)}" alt="(${alt})" width="50px"/>`
         if (fiche !== null) {
-            img = `<a href="https://www.spotair.mobi/spot/${fiche}" target="_blank">${img}</a>`
+            img = `<a href="${(isNaN(fiche)) ? 'https://maps.app.goo.gl/' : 'https://www.spotair.mobi/spot/'}${fiche}" target="_blank">${img}</a>`
         } 
         td += ` ${img} `;
     }
