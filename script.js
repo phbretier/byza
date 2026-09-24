@@ -163,7 +163,7 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientations=nu
         td += ` ${img} &#8239; `;
     }
     td += `
-            <a href="#" class="open-menu" data-nom="${nom.replace(/<[^>]*>/g, ' ').trim()}" data-lat="${lat}" data-lon="${lon}">⫶☰</a>
+            <a href="#" class="open-menu" data-nom="${nom.replace(/<[^>]*>/g, ' ').trim()}" data-lat="${lat}" data-lon="${lon}"><img src="${menu}" alt="🍔" width="24px"/></a>
         </td>
     `;
     document.write(td);
