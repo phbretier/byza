@@ -1,7 +1,8 @@
 document.write(`
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.1, maximum-scale=4.0">
-    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="icon" href="favicon.png" type="image/png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="favicon-dark.png" type="image/png" media="(prefers-color-scheme: dark)" />
     <link rel="stylesheet" href="https://phbretier.github.io/byza/style.css">
 `);
 
