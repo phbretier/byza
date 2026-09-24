@@ -83,7 +83,7 @@ function balise(colspan, nom, cheminSpotair) {
 
 function SectionWebcams() {
     document.write(`
-        <tr>
+        <tr style="visibility: collapse;">
             <td>&ensp;&ensp;&ensp;&ensp;&ensp;</td>
             <td>&ensp;&ensp;&ensp;&ensp;&ensp;</td>
             <td>&ensp;&ensp;&ensp;&ensp;&ensp;</td>
