@@ -58,6 +58,12 @@ const PathsDict = {
   "NNO": `<path id="NNO" d="M 54.707 51.806 C 52.311 53.611 48.751 54.955 45.612 55.578 L 40.969 31.516 Z" transform="rotate(180, 40.969 31.516)" />`,
 };
 
+const couleurs = {
+    "vert":   "42b018";
+    "orange": "FF8020";
+    "blanc":  "f0f0f0";
+};
+
 // Fonction pour générer le SVG avec les chemins sélectionnés
 function generateSVG(orientations) {
     var svgString = svgHeader;
@@ -65,7 +71,9 @@ function generateSVG(orientations) {
         const paths = Object.entries(PathsDict)
             .filter(([id]) => liste.split("-").includes(id))
             .map(([_, pathLine]) => pathLine);
-        svgString += `<g fill="#${(couleur == 'vert') ? '42b018' : 'FF8020'}" stroke-width=".2674"> ${paths} </g>`;
+        if (Object.hasOwn(couleurs, couleur)) {
+            svgString += `<g fill="#${couleurs[couleur]}" stroke-width=".2674"> ${paths} </g>`;
+        }
     });
     svgString += svgFooter;
     return `data:image/svg+xml;base64,${btoa(unescape(encodeURIComponent(svgString)))}`;
