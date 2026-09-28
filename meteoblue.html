@@ -15,7 +15,6 @@
             <div class="section" style="display: flex; justify-content: center;"> 
                 MétéoBlue - ${lieu} - (${lat},${lon})
             </div>
-            <br>
         `);
         
         const items = [
@@ -70,7 +69,7 @@
                     menu += `&ensp; <a href="#${encodeURIComponent(label2)}">${mots[mots.length - 1]}</a> `;
                 }
             });
-            menu += "&ensp; </div>";
+            menu += "&ensp; <a href="#${encodeURIComponent(label2)}">${mots[mots.length - 1]}</a> &ensp; </div>";
             document.write(`
                 <div style="height: 20px;"></div>
                 ${entete}
@@ -152,10 +151,11 @@
     <div class="section" style="display: flex; justify-content: center;"> 
         Glossaire et Info pratiques
     </div>
+    <div style="height: 20px;"></div>
 
+    <h2 id='CAPE'>1. CAPE — Convective Available Potential Energy</h2>
     <script>
         var aide = `
-            <hr />
             <div style="display: flex; justify-content: center; font-size: small;">
         `;
         const glossaire = ['CAPE', 'CIN', 'LiftedIndex', 'Helicity', 'Pratique', 'Résumé'];
@@ -164,12 +164,9 @@
         });
         aide += `
             &ensp; </div>
-            <hr />
         `;
         document.write(aide);
     </script>
-
-    <h2 id='CAPE'>1. CAPE — Convective Available Potential Energy</h2>
     
     <h3>Définition</h3>
     <p>La <strong>CAPE</strong> mesure l’énergie disponible pour qu’une parcelle d’air chaude et humide monte dans une atmosphère plus froide.</p>
@@ -226,10 +223,10 @@
       <strong>Important :</strong> la CAPE indique la quantité d’énergie disponible, mais pas si cette énergie sera effectivement libérée. Il faut aussi regarder le déclenchement, l’humidité et le blocage éventuel de l’atmosphère.
     </blockquote>
     
+    <h2 id='CIN'>2. CIN — Convective Inhibition</h2>
     <script>
         document.write(aide);
     </script>
-    <h2 id='CIN'>2. CIN — Convective Inhibition</h2>
     
     <h3>Définition</h3>
     <p>La <strong>CIN</strong>, ou inhibition convective, représente l’énergie qui empêche une parcelle d’air de commencer à monter.</p>
@@ -286,10 +283,10 @@
       Une CIN élevée n’est donc pas automatiquement une bonne nouvelle : elle peut simplement <strong>retarder</strong> une convection qui deviendra ensuite énergique.
     </blockquote>
     
+    <h2 id='LiftedIndex'>3. Lifted Index — LI ou indice de soulèvement</h2>
     <script>
         document.write(aide);
     </script>
-    <h2 id='LiftedIndex'>3. Lifted Index — LI ou indice de soulèvement</h2>
     
     <h3>Définition</h3>
     <p>Le <strong>Lifted Index</strong> compare la température d’une parcelle d’air soulevée à celle de l’environnement à un niveau donné, souvent autour de 500 hPa.</p>
@@ -350,11 +347,11 @@
     </ul>
     <p>Le LI est utile pour confirmer le caractère instable d’une masse d’air, mais il ne décrit pas précisément la force des thermiques près du sol.</p>
     
+    <h2 id='Helicity'>4. Helicity — Hélicité, souvent SRH</h2>
     <script>
         document.write(aide);
     </script>
-    <h2 id='Helicity'>4. Helicity — Hélicité, souvent SRH</h2>
-    
+
     <h3>Définition</h3>
     <p>L’hélicité, souvent appelée <strong>Storm Relative Helicity</strong> ou <strong>SRH</strong>, mesure la combinaison entre :</p>
     <ul>
@@ -414,10 +411,10 @@
       Pour un parapentiste, une hélicité élevée n’implique pas toujours un danger immédiat. Elle devient particulièrement significative lorsqu’elle est associée à une convection active.
     </blockquote>
     
+    <h2 id='Pratique'>5. Lecture pratique pour le parapente</h2>
     <script>
         document.write(aide);
     </script>
-    <h2 id='Pratique'>5. Lecture pratique pour le parapente</h2>
 
     <h3>Signification des couleurs d’arrière-plan</h3>
     <p>Le dégradé allant du <strong>gris foncé au jaune</strong> semble représenter une classification globale de la stabilité :</p>
@@ -477,10 +474,11 @@
       <li><strong>Les effets locaux</strong> : Vallées, brises de pente, convergences et rotors peuvent dominer les indices météorologiques généraux.</li>
     </ul>
     
+    <h2 id='Résumé'>Résumé</h2>
     <script>
         document.write(aide);
     </script>
-    <h2 id='Résumé'>Résumé</h2>
+
     <ul>
       <li><strong>CAPE</strong> : quantité d’énergie disponible pour la convection.</li>
       <li><strong>CIN</strong> : barrière qui empêche ou retarde le déclenchement des thermiques.</li>
