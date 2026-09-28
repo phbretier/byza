@@ -128,7 +128,7 @@ function SectionPrevisions() {
 
 function previsions(colspan, cheminMeteociel, nom, lat, lon) {
     const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
-    const urlMeteoParapente =`https://meteo-parapente.com/#/${lat},${lon},9`;
+    const urlMeteoParapente =`https://meteo-parapente.com/v5/#/${lat},${lon},9`;
     const urlFlyXCSounding =`https://www.windy.com/plugin/sdg/aromeFrance/${lat}/${lon}?aromeFrance,clouds,${lat},${lon},10,i:pressure,p:wind`;
     const urlWindyAirgram =`https://www.windy.com/${lat}/${lon}/airgram?clouds,${lat},${lon},10,i:temp,p:wind`;
     const urlVelivole =`https://www.velivole.fr/profile?lat=${lat}&long=${lon}&model=AROME`;
@@ -203,7 +203,7 @@ function BasDePage() {
             container.style.textAlign = 'left';
             const htmlContent = `
                 <div style="height: 10px;"></div>
-                <a href="https://meteo-parapente.com/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big">
+                <a href="https://meteo-parapente.com/v5/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big">
                     <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/> MétéoParap.
                 </a>
                 <br><div style="height: 7px;"></div>
