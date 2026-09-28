@@ -289,6 +289,14 @@ function BasDePage() {
                 <a href="https://www.meteoblue.com/fr/meteo/cartes#map=windAnimation~rainbow~auto~10%20m%20above%20gnd~pressure2mOverlay&coords=3.84/45.19/1" target="_blank">Meteoblue</a>
             </td>
         </tr>
+        <tr>
+            <td colspan=3">
+                <a href="https://skopaero.com/" target="_blank">Skopaero</a>
+            </td>
+            <td colspan="3">
+                <a href="https://paraglidable.com/" target="_blank">Paraglidable</a>
+            </td>
+        </tr>
 
         <tr>
             <td class="section" colspan="6">
