@@ -336,26 +336,26 @@ function BasDePage() {
                 <a href="jura.html">Jura</a>
             </td>
             <td colspan="2">
-                <a href="alpesnord.html">Jura</a>
+                <a href="alpesnord.html">Alpes Nord</a>
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <a href="baf.html">BAF</a>
+                <a href="baf.html">Annecy</a>
             </td>
             <td colspan="2">
                 <a href="sh.html">St Hilaire</a>
             </td>
             <td colspan="2">
-                <a href="ecrins.html">St Hilaire</a>
+                <a href="ecrins.html">Écrins</a>
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <a href="baronnies.html">BAF</a>
+                <a href="baronnies.html">Baronnies</a>
             </td>
             <td colspan="2">
-                <a href="alpessud.html">St Hilaire</a>
+                <a href="alpessud.html">Alpes Sud</a>
             </td>
             <td colspan="2">
                 <a href="millau.html">Millau</a>
@@ -363,10 +363,10 @@ function BasDePage() {
         </tr>
         <tr>
             <td colspan="3">
-                <a href="pyrOuest.html">Pyrénées</a>
+                <a href="pyrOuest.html">Pyrénées Ouest</a>
             </td>
             <td colspan="3">
-                <a href="pyrEst.html">Pyrénées</a>
+                <a href="pyrEst.html">Pyrénées Est</a>
             </td>
         </tr>
     `);
