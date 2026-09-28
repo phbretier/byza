@@ -144,7 +144,106 @@
                 image.src = `${url}&forecast_days=${day}`;
             });
         });
-
     </script>
+
+    <h2>1. CAPE — Convective Available Potential Energy</h2>
+    
+    <h3>Définition</h3>
+    <p>La <strong>CAPE</strong> mesure l’énergie disponible pour qu’une parcelle d’air chaude et humide monte dans une atmosphère plus froide.</p>
+    <p>Elle est généralement exprimée en <strong>J/kg</strong>.</p>
+    
+    <table border="1" cellpadding="5" cellspacing="0">
+      <thead>
+        <tr>
+          <th>CAPE approximative</th>
+          <th>Interprétation générale</th>
+          <th>Implication pour le parapente</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0 à 100 J/kg</td>
+          <td>Atmosphère peu convective</td>
+          <td>Thermiques faibles ou modérés</td>
+        </tr>
+        <tr>
+          <td>100 à 500 J/kg</td>
+          <td>Instabilité légère à modérée</td>
+          <td>Thermiques exploitables, parfois turbulents</td>
+        </tr>
+        <tr>
+          <td>500 à 1 000 J/kg</td>
+          <td>Instabilité marquée</td>
+          <td>Thermiques puissants, cumulus actifs</td>
+        </tr>
+        <tr>
+          <td>1 000 à 2 000 J/kg</td>
+          <td>Forte instabilité</td>
+          <td>Risque important d’averses et d’orages</td>
+        </tr>
+        <tr>
+          <td>&gt; 2 000 J/kg</td>
+          <td>Instabilité très forte</td>
+          <td>Conditions souvent dangereuses pour le parapente</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <h3>Pour le pilote</h3>
+    <p>Une CAPE élevée signifie que les ascendances peuvent devenir :</p>
+    <ul>
+      <li>très fortes ;</li>
+      <li>étroites et irrégulières ;</li>
+      <li>accompagnées de cisaillements ;</li>
+      <li>associées à des cumulus congestus ou à des orages.</li>
+    </ul>
+    <p>Une CAPE faible n’implique pas nécessairement une journée sans thermique : le relief peut encore produire des ascendances, notamment par chauffage local.</p>
+    
+    <blockquote>
+      <strong>Important :</strong> la CAPE indique la quantité d’énergie disponible, mais pas si cette énergie sera effectivement libérée. Il faut aussi regarder le déclenchement, l’humidité et le blocage éventuel de l’atmosphère.
+    </blockquote>
+    
+    <h2>2. CIN — Convective Inhibition</h2>
+    
+    <h3>Définition</h3>
+    <p>La <strong>CIN</strong>, ou inhibition convective, représente l’énergie qui empêche une parcelle d’air de commencer à monter.</p>
+    <p>Elle est souvent exprimée en <strong>J/kg</strong>, avec des valeurs négatives ou affichées comme une valeur positive selon les logiciels.</p>
+    
+    <table border="1" cellpadding="5" cellspacing="0">
+      <thead>
+        <tr>
+          <th>CIN approximative</th>
+          <th>Interprétation</th>
+          <th>Conséquence possible</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0 à -25 J/kg</td>
+          <td>Faible inhibition</td>
+          <td>Les thermiques peuvent démarrer facilement</td>
+        </tr>
+        <tr>
+          <td>-25 à -75 J/kg</td>
+          <td>Inhibition modérée</td>
+          <td>Il faut un chauffage ou un déclencheur suffisant</td>
+        </tr>
+        <tr>
+          <td>-75 à -150 J/kg</td>
+          <td>Forte inhibition</td>
+          <td>Convection limitée ou retardée</td>
+        </tr>
+        <tr>
+          <td>&lt; -150 J/kg</td>
+          <td>Très forte inhibition</td>
+          <td>Atmosphère potentiellement bloquée</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <h3>Pour le parapente</h3>
+    <p>Une CIN faible peut favoriser :</p>
+    <ul>
+
 </body>
 </html>
