@@ -207,6 +207,7 @@ function BasDePage() {
                 https://meteo-parapente.com/v5/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big">
                     <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/> MétéoParap.
                 </a>
+                <br><div style="height: 7px;"></div>
                 <a href="https://meteo-parapente.com/v5/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big">
                     <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/> MétéoP. V5
                 </a>
@@ -222,6 +223,7 @@ function BasDePage() {
                 <a href="meteoblue.html#${encodeURIComponent(this.dataset.nom)}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="big">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/> MétéoBlue
                 </a>
+                <br><div style="height: 7px;"></div>
                 <a href="https://meteo-parapente.com/spotair/sounding?lat=${this.dataset.lat}&lon=${this.dataset.lon}&name=${this.dataset.nom}" target="_blank" class="big">
                     <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/> Émagramme
                 </a>
