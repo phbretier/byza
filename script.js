@@ -363,10 +363,10 @@ function BasDePage() {
         </tr>
         <tr>
             <td colspan="3">
-                <a href="pyrOuest.html">Pyrénées Ouest</a>
+                <a href="pyrouest.html">Pyrénées Ouest</a>
             </td>
             <td colspan="3">
-                <a href="pyrEst.html">Pyrénées Est</a>
+                <a href="pyrest.html">Pyrénées Est</a>
             </td>
         </tr>
     `);
