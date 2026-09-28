@@ -203,8 +203,12 @@ function BasDePage() {
             container.style.textAlign = 'left';
             const htmlContent = `
                 <div style="height: 10px;"></div>
-                <a href="https://meteo-parapente.com/v5/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big">
+                <a href="https://meteo-parapente.com/spotair/windgram?lat=${this.dataset.lat}&lon=${this.dataset.lon}&name=${this.dataset.nom}
+                https://meteo-parapente.com/v5/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big">
                     <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/> MétéoParap.
+                </a>
+                <a href="https://meteo-parapente.com/v5/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big">
+                    <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/> MétéoP. V5
                 </a>
                 <br><div style="height: 7px;"></div>
                 <a href="https://www.windy.com/${this.dataset.lat}/${this.dataset.lon}/airgram?clouds,${this.dataset.lat},${this.dataset.lon},10,i:temp,p:wind" target="_blank" class="big">
@@ -217,6 +221,9 @@ function BasDePage() {
                 <br><div style="height: 7px;"></div>
                 <a href="meteoblue.html#${encodeURIComponent(this.dataset.nom)}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="big">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/> MétéoBlue
+                </a>
+                <a href="https://meteo-parapente.com/spotair/sounding?lat=${this.dataset.lat}&lon=${this.dataset.lon}&name=${this.dataset.nom}" target="_blank" class="big">
+                    <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/> Émagramme
                 </a>
                 <br><div style="height: 7px;"></div>
                 <a href="https://www.windy.com/plugin/sdg/aromeFrance/${this.dataset.lat}/${this.dataset.lon}?aromeFrance,clouds,${this.dataset.lat},${this.dataset.lon},10,i:pressure,p:wind" target="_blank" class="big">
