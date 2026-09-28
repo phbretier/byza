@@ -330,24 +330,43 @@ function BasDePage() {
         </tr>
         <tr>
             <td colspan="2">
+                <a href="vosges.html">Vosges</a>
+            </td>
+            <td colspan="2">
+                <a href="jura.html">Jura</a>
+            </td>
+            <td colspan="2">
+                <a href="alpesnord.html">Jura</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
                 <a href="baf.html">BAF</a>
             </td>
             <td colspan="2">
                 <a href="sh.html">St Hilaire</a>
             </td>
             <td colspan="2">
-                <a href="jura.html">Jura</a>
+                <a href="ecrins.html">St Hilaire</a>
             </td>
         </tr>
         <tr>
             <td colspan="2">
-                <a href="pyr.html">Pyrénées</a>
+                <a href="baronnies.html">BAF</a>
+            </td>
+            <td colspan="2">
+                <a href="alpessud.html">St Hilaire</a>
             </td>
             <td colspan="2">
                 <a href="millau.html">Millau</a>
             </td>
-            <td colspan="2">
-                <a href="vosges.html">Vosges</a>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <a href="pyrOuest.html">Pyrénées</a>
+            </td>
+            <td colspan="3">
+                <a href="pyrEst.html">Pyrénées</a>
             </td>
         </tr>
     `);
