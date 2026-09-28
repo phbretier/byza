@@ -146,7 +146,30 @@
         });
     </script>
 
-    <h2>1. CAPE — Convective Available Potential Energy</h2>
+    <!-- *********************************************************************************************************************************** -->
+    
+    <hr />
+    <div class="section" style="display: flex; justify-content: center;"> 
+        Glossaire et Info pratiques
+    </div>
+
+    <script>
+        var menu = `
+            <hr />
+            <div style="display: flex; justify-content: center; font-size: small;">
+        `;
+        const glossaire = ['CAPE', 'CIN', 'LiftedIndex', 'Helicity', 'Pratique', 'Résumé'];
+        glossaire.forEach(item => {
+            menu += `&ensp; <a href="#${item)}">${item}</a> `;
+        });
+        menu += `
+            &ensp; </div>
+            <hr />
+        `;
+        document.write(menu);
+    </script>
+
+    <h2 id='CAPE'>1. CAPE — Convective Available Potential Energy</h2>
     
     <h3>Définition</h3>
     <p>La <strong>CAPE</strong> mesure l’énergie disponible pour qu’une parcelle d’air chaude et humide monte dans une atmosphère plus froide.</p>
@@ -203,7 +226,10 @@
       <strong>Important :</strong> la CAPE indique la quantité d’énergie disponible, mais pas si cette énergie sera effectivement libérée. Il faut aussi regarder le déclenchement, l’humidité et le blocage éventuel de l’atmosphère.
     </blockquote>
     
-    <h2>2. CIN — Convective Inhibition</h2>
+    <script>
+        document.write(menu);
+    </script>
+    <h2 id='CIN'>2. CIN — Convective Inhibition</h2>
     
     <h3>Définition</h3>
     <p>La <strong>CIN</strong>, ou inhibition convective, représente l’énergie qui empêche une parcelle d’air de commencer à monter.</p>
@@ -260,7 +286,10 @@
       Une CIN élevée n’est donc pas automatiquement une bonne nouvelle : elle peut simplement <strong>retarder</strong> une convection qui deviendra ensuite énergique.
     </blockquote>
     
-    <h2>3. Lifted Index — LI ou indice de soulèvement</h2>
+    <script>
+        document.write(menu);
+    </script>
+    <h2 id='LiftedIndex'>3. Lifted Index — LI ou indice de soulèvement</h2>
     
     <h3>Définition</h3>
     <p>Le <strong>Lifted Index</strong> compare la température d’une parcelle d’air soulevée à celle de l’environnement à un niveau donné, souvent autour de 500 hPa.</p>
@@ -321,7 +350,10 @@
     </ul>
     <p>Le LI est utile pour confirmer le caractère instable d’une masse d’air, mais il ne décrit pas précisément la force des thermiques près du sol.</p>
     
-    <h2>4. Helicity — Hélicité, souvent SRH</h2>
+    <script>
+        document.write(menu);
+    </script>
+    <h2 id='Helicity'>4. Helicity — Hélicité, souvent SRH</h2>
     
     <h3>Définition</h3>
     <p>L’hélicité, souvent appelée <strong>Storm Relative Helicity</strong> ou <strong>SRH</strong>, mesure la combinaison entre :</p>
@@ -382,7 +414,12 @@
       Pour un parapentiste, une hélicité élevée n’implique pas toujours un danger immédiat. Elle devient particulièrement significative lorsqu’elle est associée à une convection active.
     </blockquote>
     
-    <h2>5. Signification des couleurs d’arrière-plan</h2>
+    <script>
+        document.write(menu);
+    </script>
+    <h2 id='Pratique'>5. Lecture pratique pour le parapente</h2>
+
+    <h3>Signification des couleurs d’arrière-plan</h3>
     <p>Le dégradé allant du <strong>gris foncé au jaune</strong> semble représenter une classification globale de la stabilité :</p>
     <ul>
       <li><strong>gris foncé</strong> : atmosphère stable ;</li>
@@ -397,9 +434,7 @@
       <li>que les thermiques sont bons pour le parapente.</li>
     </ul>
     <p>Elle signifie plutôt que l’environnement présente un <strong>potentiel important de convection</strong>. Pour le vol, cela peut correspondre à des thermiques puissants, turbulents et difficiles à prévoir.</p>
-    
-    <h2>Lecture pratique pour le parapente</h2>
-    
+        
     <h3>Situation plutôt favorable</h3>
     <ul>
       <li>CAPE faible à modérée ;</li>
@@ -432,7 +467,7 @@
     </ul>
     <p>Dans ce cas, il faut considérer que le vol peut être fortement compromis, même si le décollage paraît encore calme.</p>
     
-    <h2>Ce que ces indices ne disent pas directement</h2>
+    <h3>Ce que ces indices ne disent pas directement</h3>
     <ul>
       <li><strong>Le vent au décollage et à l’atterrissage</strong> : Un vent acceptable au sol peut être beaucoup plus fort à 1 000 ou 2 000 mètres.</li>
       <li><strong>Le gradient de vent avec l’altitude</strong> : Une différence importante entre le vent au sol et le vent en altitude peut créer du cisaillement.</li>
@@ -442,7 +477,10 @@
       <li><strong>Les effets locaux</strong> : Vallées, brises de pente, convergences et rotors peuvent dominer les indices météorologiques généraux.</li>
     </ul>
     
-    <h2>Résumé</h2>
+    <script>
+        document.write(menu);
+    </script>
+    <h2 id='Résumé'>Résumé</h2>
     <ul>
       <li><strong>CAPE</strong> : quantité d’énergie disponible pour la convection.</li>
       <li><strong>CIN</strong> : barrière qui empêche ou retarde le déclenchement des thermiques.</li>
