@@ -30,6 +30,7 @@
         var dateSelectors = [];
         var daySelectors = [];
         var daysSelectors = [];
+        var okSelectors = [];
         items.forEach(([label, suffix]) => {
             const name = `${label} ${lieu}`;
             const url = `https://my.meteoblue.com/images/meteogram${suffix}?lat=${lat}&lon=${lon}&tz=Europe%2FParis&apikey=tZGNc2KP5iQ84Wjb&format=webp&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${encodeURIComponent(lieu)}&wind_symbol=barb`;
@@ -58,6 +59,13 @@
                     </div>
                 `;
                 daysSelectors.push([suffix, url]);
+            } else {
+                entete += `
+                    <div style="display: flex; justify-content: center;">
+                        <select id="okSelector${suffix}"></select>
+                    </div>
+                `;
+                okSelector$.push([suffix, url]);
             }
             
             var menu = `
@@ -75,7 +83,7 @@
                 ${entete}
                 ${menu}
                 <br>
-                <img src="${url}" alt="${name}" id="image${suffix}" width="100%"/>
+                <img src="" alt="${name}" id="image${suffix}" width="100%"/>
                 <br>
             `);
         });
@@ -99,13 +107,15 @@
                 option.text = `${hour}h`;
                 timeSelector.appendChild(option);
             }
+            dateSelector.value = "Choisir...";
+            timeSelector.value = "Choisir...";
 
-            dateSelector.addEventListener('change', function() {
-                const date = dateSelector.value;
-                const time = timeSelector.value;
-                const image = document.getElementById(`image${suffix}`);
-                image.src = `${url}&date=${date}&hour=${time}`;
-            });
+            // dateSelector.addEventListener('change', function() {
+            //     const date = dateSelector.value;
+            //     const time = timeSelector.value;
+            //     const image = document.getElementById(`image${suffix}`);
+            //     image.src = `${url}&date=${date}&hour=${time}`;
+            // });
             timeSelector.addEventListener('change', function() {
                 const date = dateSelector.value;
                 const time = timeSelector.value;
@@ -122,6 +132,7 @@
                 option.text = (i === 1) ? "J" : `J+${i-1}`;
                 daySelector.appendChild(option);
             }
+            daySelector.value = "Choisir...";
             daySelector.addEventListener('change', function() {
                 const day = daySelector.value;
                 const image = document.getElementById(`image${suffix}`);
@@ -137,10 +148,24 @@
                 option.text = `${i} jours`;
                 daysSelector.appendChild(option);
             }
+            daysSelector.value = "Choisir...";
             daysSelector.addEventListener('change', function() {
                 const day = daysSelector.value;
                 const image = document.getElementById(`image${suffix}`);
                 image.src = `${url}&forecast_days=${day}`;
+            });
+        });
+
+        okSelectors.forEach(([suffix, url]) => {
+            const okSelector = document.getElementById(`okSelector${suffix}`);
+            const option = document.createElement('option');
+            option.value = 'ok';
+            option.text = 'Ok';
+            okSelector.appendChild(option);
+            okSelector.value = "Choisir...";
+            daysSelector.addEventListener('change', function() {
+                const image = document.getElementById(`image${suffix}`);
+                image.src = `${url}`;
             });
         });
     </script>
