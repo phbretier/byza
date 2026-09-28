@@ -290,11 +290,14 @@ function BasDePage() {
             </td>
         </tr>
         <tr>
-            <td colspan=3">
+            <td colspan=2">
                 <a href="https://skopaero.com/" target="_blank">Skopaero</a>
             </td>
-            <td colspan="3">
-                <a href="https://paraglidable.com/" target="_blank">Paraglidable</a>
+            <td colspan="2">
+                <a href="https://paraglidable.com/" target="_blank">Paraglid.</a>
+            </td>
+            <td colspan="2">
+                <a href="https://v2.paraglidable.com/" target="_blank">Parag. V2</a>
             </td>
         </tr>
 
