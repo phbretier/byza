@@ -126,36 +126,6 @@ function SectionPrevisions() {
     `);
 }
 
-function previsions(colspan, cheminMeteociel, nom, lat, lon) {
-    const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
-    const urlMeteoParapente =`https://meteo-parapente.com/v5/#/${lat},${lon},9`;
-    const urlFlyXCSounding =`https://www.windy.com/plugin/sdg/aromeFrance/${lat}/${lon}?aromeFrance,clouds,${lat},${lon},10,i:pressure,p:wind`;
-    const urlWindyAirgram =`https://www.windy.com/${lat}/${lon}/airgram?clouds,${lat},${lon},10,i:temp,p:wind`;
-    const urlVelivole =`https://www.velivole.fr/profile?lat=${lat}&long=${lon}&model=AROME`;
-    const urlSondage =`https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lat=${lat}&lon=${lon}&ech=0&map=0`;
-    // &emsp; 1 em ; &ensp; 0,5 em ; &nbsp; 0,25-0,33 em ; &thinsp; &#8239; 0,16-0,20 em ; &hairsp; 0,08-0,10 em
-    document.write(`
-        <td colspan="${colspan}">
-            <a href="${urlMeteociel}" target="_blank">${nom}</a>
-            <br>
-            <div style="height: 10px;"></div>
-            <a href="${urlMeteoParapente}" target="_blank" class="big"><img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/></a>
-            &#8239;
-            <a href="${urlWindyAirgram}" target="_blank" class="big"><img src="https://www.windy.com/favicon.ico" alt="⛅" width="24px"/></a>
-            &#8239;
-            <a href="${urlVelivole}" target="_blank" class="big"><img src="${iconVV}" style="filter: invert(1);" alt="📊" width="24px"/></a>
-            <br>
-            <div style="height: 10px;"></div>
-            <a href="meteoblue.html#${encodeURIComponent(nom.replace(/<[^>]*>/g, ' ').trim())}/${lat}/${lon}" target="_blank" class="big"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
-            &#8239;
-            <a href="${urlFlyXCSounding}" target="_blank" class="big"><img src="https://flyxc.app/static/img/jumoplane.svg" alt="📈" width="24px"/></a>
-            &#8239;
-            <a href="${urlSondage}" target="_blank" class="big"><img src="https://meteofrance.fr/sites/default/files/favicon_0.png" alt="📉" width="24px"/></a>
-            <div style="height: 10px;"></div>
-        </td>
-    `);
-}
-
 function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientations=null, fiche=null) {
     const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
     var td = `
