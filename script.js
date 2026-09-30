@@ -171,61 +171,62 @@ function BasDePage() {
             container.className = 'menu-opened';
             container.style.fontSize = 'small';
             container.style.textAlign = 'center';
+            // &emsp; 1 em ; &ensp; 0,5 em ; &nbsp; 0,25-0,33 em ; &thinsp; &#8239; 0,16-0,20 em ; &hairsp; 0,08-0,10 em
             const htmlContent = `
                 <div style="height: 10px;"></div>
                 Coupes
                 <br>
                 <a href="https://meteo-parapente.com/spotair/windgram?lat=${this.dataset.lat}&lon=${this.dataset.lon}&name=${this.dataset.nom}
-                https://meteo-parapente.com/v5/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big">
+                https://meteo-parapente.com/v5/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big" style="display: content;">
                     <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/> 
                 </a>
-                &#8239;
-                <a href="https://www.meteoblue.com/fr/meteo/aviation/air/${this.dataset.lat}Nlon=${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="big">
+                &#8239; 
+                <a href="https://www.meteoblue.com/fr/meteo/aviation/air/${this.dataset.lat}Nlon=${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="big" style="display: content;">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
                 </a>
-                &#8239;
-                <a href="https://www.velivole.fr/profile?lat=${this.dataset.lat}&long=${this.dataset.lon}&model=AROME" target="_blank" class="big">
+                &#8239; 
+                <a href="https://www.velivole.fr/profile?lat=${this.dataset.lat}&long=${this.dataset.lon}&model=AROME" target="_blank" class="big" style="display: content;">
                     <img src="${iconVV}" style="filter: invert(1);" alt="📊" width="24px"/>
                 </a>
 
                 <br><div style="height: 7px;"></div>
                 Multimodèles
                 <br>
-                <a href="https://www.meteoblue.com/fr/meteo/prevision/multimodel/${this.dataset.lat}Nlon=${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="big">
+                <a href="https://www.meteoblue.com/fr/meteo/prevision/multimodel/${this.dataset.lat}Nlon=${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="big" style="display: content;">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
                 </a>
-                &#8239;
-                <a href="https://www.windy.com/${this.dataset.lat}/${this.dataset.lon}/wind?clouds,${this.dataset.lat},${this.dataset.lon},10,i:temp,p:wind" target="_blank" class="big">
+                &#8239; 
+                <a href="https://www.windy.com/${this.dataset.lat}/${this.dataset.lon}/wind?clouds,${this.dataset.lat},${this.dataset.lon},10,i:temp,p:wind" target="_blank" class="big" style="display: content;">
                     <img src="https://www.windy.com/favicon.ico" alt="⛅" width="24px"/>
                 </a>
 
                 <br><div style="height: 7px;"></div>                
                 Emagrammes
                 <br>
-                <a href="https://meteo-parapente.com/spotair/sounding?lat=${this.dataset.lat}&lon=${this.dataset.lon}&name=${this.dataset.nom}" target="_blank" class="big">
+                <a href="https://meteo-parapente.com/spotair/sounding?lat=${this.dataset.lat}&lon=${this.dataset.lon}&name=${this.dataset.nom}" target="_blank" class="big" style="display: content;">
                     <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/>
                 </a>
-                &#8239;
-                <a href="https://www.windy.com/plugin/sdg/aromeFrance/${this.dataset.lat}/${this.dataset.lon}?aromeFrance,clouds,${this.dataset.lat},${this.dataset.lon},10,i:pressure,p:wind" target="_blank" class="big">
+                &#8239; 
+                <a href="https://www.windy.com/plugin/sdg/aromeFrance/${this.dataset.lat}/${this.dataset.lon}?aromeFrance,clouds,${this.dataset.lat},${this.dataset.lon},10,i:pressure,p:wind" target="_blank" class="big" style="display: content;">
                     <img src="https://flyxc.app/static/img/jumoplane.svg" alt="📈" width="24px"/>
                 </a>
-                &#8239;
-                <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lat=${this.dataset.lat}&lon=${this.dataset.lon}&ech=0&map=0" target="_blank" class="big">
+                &#8239; 
+                <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lat=${this.dataset.lat}&lon=${this.dataset.lon}&ech=0&map=0" target="_blank" class="big" style="display: content;">
                     <img src="https://meteofrance.fr/sites/default/files/favicon_0.png" alt="📉" width="24px"/>
                 </a>
 
                 <br><div style="height: 7px;"></div>
                 Sites                
                 <br>
-                <a href="https://meteo-parapente.com/v5/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big">
+                <a href="https://meteo-parapente.com/v5/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="big" style="display: content;">
                     <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/>
                 </a>
-                &#8239;
-                <a href="https://www.meteoblue.com/fr/meteo/prevision/meteogramweb/${this.dataset.lat}Nlon=${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="big">
+                &#8239; 
+                <a href="https://www.meteoblue.com/fr/meteo/prevision/meteogramweb/${this.dataset.lat}Nlon=${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="big" style="display: content;">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
                 </a>
-                &#8239;
-                <a href="meteoblue.html#${encodeURIComponent(this.dataset.nom)}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="big">
+                &#8239; 
+                <a href="meteoblue.html#${encodeURIComponent(this.dataset.nom)}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="big" style="display: content;">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>⁺
                 </a>
                 <br><div style="height: 10px;"></div>
