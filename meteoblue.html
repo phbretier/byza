@@ -144,7 +144,9 @@
 
         okSelectors.forEach(([suffix, url]) => {
             const okSelector = document.getElementById(`okSelector${suffix}`);
-            okSelector.value += " 7j";
+            if (['', '_air', '_multimodel'].includes(suffix)) {
+                okSelector.value += " 7j";
+            }
             okSelector.addEventListener('click', function() {
                 const image = document.getElementById(`image${suffix}`);
                 if (['', '_air', '_multimodel'].includes(suffix)) {
