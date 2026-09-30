@@ -48,7 +48,7 @@
         var okSelectors = [];
         items.forEach((item) => {
             console.log(item);
-        }
+        });
         items.forEach(([label, suffix]) => {
             const name = `${label} ${lieu}`;
             const url = `https://my.meteoblue.com/images/meteogram${suffix}?lat=${lat}&lon=${lon}&tz=Europe%2FParis&apikey=${apikey.value}&format=webp&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${encodeURIComponent(lieu)}&wind_symbol=barb`;
