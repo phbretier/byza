@@ -38,9 +38,9 @@
             ['Météogram Wind', '_multimodelwind'],
             ['Météogram Stueve', '_stueve'],
             ['Météogram Sounding', '_sounding'],
-            ['Météogram', ''],
-            ['Météogram Air', '_air'],
-            ['Météogram Multimodel', '_multimodel'],
+            ['Météogram 7j', ''],
+            ['Météogram Air 7j', '_air'],
+            ['Météogram Multimodel 7j', '_multimodel'],
         ];
 
         var dateSelectors = [];
@@ -144,13 +144,11 @@
 
         okSelectors.forEach(([suffix, url]) => {
             const okSelector = document.getElementById(`okSelector${suffix}`);
+            okselector.value += " 7j";
             okSelector.addEventListener('click', function() {
                 const image = document.getElementById(`image${suffix}`);
                 if (['', '_air', '_multimodel'].includes(suffix)) {
                     url += "&forecast_days=7";
-                    console.log(okselector.value);
-                    okselector.value = okselector.value + " 7j";
-                    console.log(okselector.value);
                 }
                 image.src = url;
             });
