@@ -15,7 +15,21 @@
             <div class="section" style="display: flex; justify-content: center;"> 
                 MétéoBlue - ${lieu} - (${lat},${lon})
             </div>
+            <label for="saisie">API Key Météoblue :</label>
+            <input id="saisie" type="text">
         `);
+
+        const apikey = document.querySelector("#saisie");
+        const lastkey = "lastAPIKey";
+        // Récupérer et utiliser la dernière valeur enregistrée
+        const valeurEnregistree = localStorage.getItem(lastkey);
+        if (valeurEnregistree !== null) {
+            apikey.value = valeurEnregistree;
+        }
+        // Enregistrer chaque nouvelle saisie et l'utiliser
+        champ.addEventListener("input", () => {
+            localStorage.setItem(lastkey, apikey.value);
+        });
         
         const items = [
             ['Météogram', ''],
@@ -33,7 +47,7 @@
         var okSelectors = [];
         items.forEach(([label, suffix]) => {
             const name = `${label} ${lieu}`;
-            const url = `https://my.meteoblue.com/images/meteogram${suffix}?lat=${lat}&lon=${lon}&tz=Europe%2FParis&apikey=tZGNc2KP5iQ84Wjb&format=webp&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${encodeURIComponent(lieu)}&wind_symbol=barb`;
+            const url = `https://my.meteoblue.com/images/meteogram${suffix}?lat=${lat}&lon=${lon}&tz=Europe%2FParis&apikey=${apikey.value}&format=webp&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${encodeURIComponent(lieu)}&wind_symbol=barb`;
             var entete = `
                 <div class="section" id="${encodeURIComponent(label)}" style="display: flex; justify-content: center;">${label}</div> 
             `;
