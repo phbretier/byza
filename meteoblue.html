@@ -61,7 +61,7 @@
                 current = current.parentElement;
             }
             
-            await setElementStyles(target, {
+            setElementStyles(target, {
                 'margin-left': 'auto',
                 'margin-right': 'auto',
                 'display': 'block',
@@ -71,7 +71,7 @@
             
             let current = target.parentElement;
             while (current && !frames.include(current)) {
-                await setElementStyles(current, {
+                setElementStyles(current, {
                     'padding-left': '0',
                     'padding-right': '0',
                     'margin-left': '0',
@@ -81,7 +81,7 @@
                 });
                 current = current.parentElement;
             }
-            await setElementStyles(target.parentElement, {
+            setElementStyles(target.parentElement, {
                 'display': 'flex',
                 'flex-direction': 'column',
                 'align-items': 'center'
