@@ -226,7 +226,7 @@ function BasDePage() {
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
                 </a>
                 &#8239; 
-                <a href="meteoblue.html#${encodeURIComponent(this.dataset.nom)}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="imglink">
+                <a href="meteoblue.html#${encodeURIComponent(this.dataset.nom)}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="imglink big">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>⁺
                 </a>
                 <br><div style="height: 10px;"></div>
