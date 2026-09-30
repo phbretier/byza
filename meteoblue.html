@@ -15,8 +15,10 @@
             <div class="section" style="display: flex; justify-content: center;"> 
                 MétéoBlue - ${lieu} - (${lat},${lon})
             </div>
-            <label for="saisie">API Key Météoblue :</label>
-            <input id="saisie" type="text">
+            <div style="display: flex; justify-content: center;">
+                <label for="saisie">API Key Météoblue :</label>
+                <input id="saisie" type="text">
+            </div>
         `);
 
         const apikey = document.querySelector("#saisie");
@@ -27,7 +29,7 @@
             apikey.value = valeurEnregistree;
         }
         // Enregistrer chaque nouvelle saisie et l'utiliser
-        champ.addEventListener("input", () => {
+        apikey.addEventListener("input", () => {
             localStorage.setItem(lastkey, apikey.value);
         });
         
