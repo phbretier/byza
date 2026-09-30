@@ -34,18 +34,17 @@
         });
 
         const items = [
-            ['Météogram', ''],
-            ['Météogram Air', '_air'],
             ['Météogram Thermal', '_thermal'],
-            ['Météogram Multimodel', '_multimodel'],
             ['Météogram Wind', '_multimodelwind'],
             ['Météogram Stueve', '_stueve'],
             ['Météogram Sounding', '_sounding']
+            ['Météogram', ''],
+            ['Météogram Air', '_air'],
+            ['Météogram Multimodel', '_multimodel'],
         ];
 
         var dateSelectors = [];
         var daySelectors = [];
-        var daysSelectors = [];
         var okSelectors = [];
         items.forEach(([label, suffix]) => {
             const name = `${label} ${lieu}`;
@@ -68,17 +67,10 @@
                     </div>
                 `;
                 daySelectors.push([suffix, url]);
-            } else if (['', '_air', '_multimodel'].includes(suffix)) {
-                entete += `
-                    <div style="display: flex; justify-content: center;">
-                        <select id="daysSelector${suffix}"></select>
-                    </div>
-                `;
-                daysSelectors.push([suffix, url]);
             } else {
                 entete += `
                     <div style="display: flex; justify-content: center;">
-                        <select id="okSelector${suffix}"></select>
+                        <input type="button" value="Générer" id="okSelector${suffix}"/>
                     </div>
                 `;
                 okSelectors.push([suffix, url]);
@@ -115,7 +107,6 @@
                 option.text = date.toLocaleDateString('fr-FR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
                 dateSelector.appendChild(option);
             }
-            
             const timeSelector = document.getElementById(`timeSelector${suffix}`);
             for (let hour = 8; hour <= 20; hour++) {
                 const option = document.createElement('option');
@@ -126,12 +117,6 @@
             dateSelector.value = "Choisir...";
             timeSelector.value = "Choisir...";
 
-            // dateSelector.addEventListener('change', function() {
-            //     const date = dateSelector.value;
-            //     const time = timeSelector.value;
-            //     const image = document.getElementById(`image${suffix}`);
-            //     image.src = `${url}&date=${date}&hour=${time}`;
-            // });
             timeSelector.addEventListener('change', function() {
                 const date = dateSelector.value;
                 const time = timeSelector.value;
@@ -149,6 +134,7 @@
                 daySelector.appendChild(option);
             }
             daySelector.value = "Choisir...";
+            
             daySelector.addEventListener('change', function() {
                 const day = daySelector.value;
                 const image = document.getElementById(`image${suffix}`);
@@ -156,32 +142,14 @@
             });
         });
 
-        daysSelectors.forEach(([suffix, url]) => {
-            const daysSelector = document.getElementById(`daysSelector${suffix}`);
-            for (let i = 3; i <= 7; i++) {
-                const option = document.createElement('option');
-                option.value = i;
-                option.text = `${i} jours`;
-                daysSelector.appendChild(option);
-            }
-            daysSelector.value = "Choisir...";
-            daysSelector.addEventListener('change', function() {
-                const day = daysSelector.value;
-                const image = document.getElementById(`image${suffix}`);
-                image.src = `${url}&forecast_days=${day}`;
-            });
-        });
-
         okSelectors.forEach(([suffix, url]) => {
             const okSelector = document.getElementById(`okSelector${suffix}`);
-            const option = document.createElement('option');
-            option.value = 'ok';
-            option.text = 'Ok';
-            okSelector.appendChild(option);
-            okSelector.value = "Choisir...";
-            daysSelector.addEventListener('change', function() {
+            okSelector.addEventListener('click', function() {
                 const image = document.getElementById(`image${suffix}`);
-                image.src = `${url}`;
+                if (['', '_air', '_multimodel'].includes(suffix)) {
+                    url += "&forecast_days=7"
+                }
+                image.src = url`;
             });
         });
     </script>
