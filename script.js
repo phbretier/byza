@@ -192,12 +192,12 @@ function BasDePage() {
                 <br><div style="height: 7px;"></div>
                 Multimodèles
                 <br>
-                <a href="https://www.meteoblue.com/fr/meteo/prevision/multimodel/${this.dataset.lat}Nlon=${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
-                    <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
-                </a>
-                &#8239; 
                 <a href="https://www.windy.com/${this.dataset.lat}/${this.dataset.lon}/wind?clouds,${this.dataset.lat},${this.dataset.lon},10,i:temp,p:wind" target="_blank" class="imglink">
                     <img src="https://www.windy.com/favicon.ico" alt="⛅" width="24px"/>
+                </a>
+                &#8239; 
+                <a href="https://www.meteoblue.com/fr/meteo/prevision/multimodel/${this.dataset.lat}Nlon=${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
+                    <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
                 </a>
 
                 <br><div style="height: 7px;"></div>                
