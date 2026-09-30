@@ -42,32 +42,12 @@
         const frames = document.querySelectorAll('.framemeteoblue');
         const targets = document.querySelectorAll('.bloo');
         targets.forEach(target=> {
-            // // Hide all elements that are not ancestors or descendants of the target
             // const allElements = Array.from(document.querySelectorAll('body *'));            
             // allElements.forEach(el => {
             //   if (!el.contains(target) && !target.contains(el)) {
             //     el.style.display = 'none';
             //   }
             // });
-            
-            // Ensure parents are visible but don't take up space/layout from other children
-            let current = target.parentElement;
-            while (current && !frames.include(current)) {
-                Array.from(current.children).forEach(child => {
-                    if (!child.contains(target) && child !== target) {
-                        child.style.display = 'none';
-                    }
-                });
-                current = current.parentElement;
-            }
-            
-            setElementStyles(target, {
-                'margin-left': 'auto',
-                'margin-right': 'auto',
-                'display': 'block',
-                'width': 'fit-content', // or a specific width if 100% was not literal
-                'max-width': '100%'
-            });
             
             let current = target.parentElement;
             while (current && !frames.include(current)) {
@@ -79,8 +59,20 @@
                     'max-width': 'none',
                     'width': '100%'
                 });
+                Array.from(current.children).forEach(child => {
+                    if (!child.contains(target) && child !== target) {
+                        child.style.display = 'none';
+                    }
+                });
                 current = current.parentElement;
             }
+            setElementStyles(target, {
+                'margin-left': 'auto',
+                'margin-right': 'auto',
+                'display': 'block',
+                'width': 'fit-content', // or a specific width if 100% was not literal
+                'max-width': '100%'
+            });
             setElementStyles(target.parentElement, {
                 'display': 'flex',
                 'flex-direction': 'column',
