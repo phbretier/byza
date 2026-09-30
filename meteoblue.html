@@ -34,19 +34,19 @@
         });
 
         const items = [
-            ['Météogram Thermal', '_thermal', ''],
-            ['Météogram Wind', '_multimodelwind', ''],
-            ['Météogram Stueve', '_stueve', ''],
-            ['Météogram Sounding', '_sounding', ''],
-            ['Météogram', '', `https://www.meteoblue.com/fr/meteo/prevision/meteogramweb/${lat}Nlon=${lon}E46_Europe%2FParis`],
-            ['Météogram Air', '_air', `https://www.meteoblue.com/fr/meteo/aviation/air/${lat}Nlon=${lon}E46_Europe%2FParis`],
-            ['Météogram Multimodel', '_multimodel', `https://www.meteoblue.com/fr/meteo/prevision/multimodel/${lat}Nlon=${lon}E46_Europe%2FParis`],
+            ['Météogram Thermal', '_thermal'],
+            ['Météogram Wind', '_multimodelwind'],
+            ['Météogram Stueve', '_stueve'],
+            ['Météogram Sounding', '_sounding'],
+            ['Météogram', ''],
+            ['Météogram Air', '_air'],
+            ['Météogram Multimodel', '_multimodel'],
         ];
 
         var dateSelectors = [];
         var daySelectors = [];
         var okSelectors = [];
-        items.forEach(([label, suffix, urlimg]) => {
+        items.forEach(([label, suffix]) => {
             const name = `${label} ${lieu}`;
             const url = `https://my.meteoblue.com/images/meteogram${suffix}?lat=${lat}&lon=${lon}&tz=Europe%2FParis&apikey=${apikey.value}&format=webp&dpi=72&lang=fr&temperature_units=C&precipitation_units=mm&windspeed_units=kmh&location_name=${encodeURIComponent(lieu)}&wind_symbol=barb`;
             var entete = `
@@ -79,7 +79,7 @@
             var menu = `
                 <div style="display: flex; justify-content: center; font-size: small;">
             `;
-            items.forEach(([label2, suffix2, urlimg2]) => {
+            items.forEach(([label2, suffix2]) => {
                 if (label != label2) {
                     const mots = label2.split(" ");
                     menu += `&ensp; <a href="#${encodeURIComponent(label2)}">${mots[mots.length - 1]}</a> `;
@@ -91,7 +91,7 @@
                 ${entete}
                 ${menu}
                 <br>
-                <img src="${urlimg}" alt="${name}" id="image${suffix}" width="100%"/>
+                <img src="" alt="${name}" id="image${suffix}" width="100%"/>
                 <br>
             `);
         });
@@ -148,7 +148,9 @@
                 const image = document.getElementById(`image${suffix}`);
                 if (['', '_air', '_multimodel'].includes(suffix)) {
                     url += "&forecast_days=7";
-                    okselector.value += " 7j";
+                    console.log(okselector.value);
+                    okselector.value = okselector.value + " 7j";
+                    console.log(okselector.value);
                 }
                 image.src = url;
             });
