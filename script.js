@@ -170,7 +170,7 @@ function BasDePage() {
             const container = document.createElement('div');
             container.className = 'menu-opened';
             container.style.fontSize = 'small';
-            container.style.textAlign = 'left';
+            container.style.textAlign = 'center';
             const htmlContent = `
                 <div style="height: 10px;"></div>
                 Coupes
@@ -226,7 +226,7 @@ function BasDePage() {
                 </a>
                 &#8239;
                 <a href="meteoblue.html#${encodeURIComponent(this.dataset.nom)}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="big">
-                    <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>+
+                    <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>⁺
                 </a>
                 <br><div style="height: 10px;"></div>
             `;
