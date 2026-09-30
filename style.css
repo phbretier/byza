@@ -25,7 +25,9 @@
       font-size: x-large;
   }
   .imglink {
-    display: content;
+    display: inline-flex;
+    vertical-align: middle;
+    text-decoration-line: unset;
   }
   .big {
     font-size: x-large;
