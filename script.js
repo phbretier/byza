@@ -335,7 +335,7 @@ function BasDePage() {
         </tr>
         <tr>
             <td colspan="2">
-                <a href="baf.html">Annecy</a>
+                <a href="annecy.html">Annecy</a>
             </td>
             <td colspan="2">
                 <a href="sh.html">St Hilaire</a>
