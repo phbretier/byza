@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Vent autour de Marlens</title>
+    <title>Vent autour d'Annecy</title>
     <script src="https://phbretier.github.io/byza/script.js"></script>
 </head>
 <body>
 <table>
-<!-- le grand bornand
-annecy semnoz
-Allevard -->
     <tr>
         <script> 
             balise(2,"Talloires<br>453m","pioupiou/1476");
@@ -18,9 +15,22 @@ Allevard -->
     </tr>
     <tr>
         <script> 
+            balise(2,"Semnoz<br>1697m","ffvl/67");
+            balise(2,"Semnoz<br>1476m","alpesdev/1");
+            balise(2,"Saint Eustache<br>970m","meteo-france/74060001");
+        </script>
+    </tr>
+    <tr>
+        <script> 
             balise(2,"Sambuy<br>1827m","ffvl/182");
             balise(2,"Seythenex<br>784m","romma/168");
             balise(2,"Marlens<br>509m","pioupiou/326");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(3,"Grand Bornand<br>1430m","meteo-france/74136005");
+            balise(3,"Mont Lachat<br>2019m","ffvl/117");
         </script>
     </tr>
     <tr>
@@ -34,6 +44,13 @@ Allevard -->
         <script> 
             balise(2,"Albertville<br>314m","meteo-france/73297003");
             balise(2,"Chamoux<br>1267m","pioupiou/159");
+            balise(2,"Val Pelouse<br>1808m","ffvl/3592");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"AAllevard S<br>1550m","ffvl/2170");
+            balise(2,"Allevard O<br>1409m","ffvl/12");
             balise(2,"Montlambert<br>894m","ffvl/5120");
         </script>
     </tr>
@@ -61,14 +78,28 @@ Allevard -->
     </tr>
     <tr>
         <script> 
+            webcam(2, "Semnoz O", "https://www.alpes-dev.com/semnoz/image_ouest.php");
+            webcam(2, "Semnoz E", "https://app.webcam-hd.com/semnoz/sommet_tmx");
             webcam(2, "Marlens", "https://www.chooksprod.com/parapente-annecy-marlens-webcam.jpg");
-            webcam(2, "Sambuy", "https://www.skaping.com/sambuy");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            webcam(2, "Grand Bornand", "https://www.skaping.com/le-grand-bornand/mont-lachat");
             webcam(2, "Bisanne", "https://www.skaping.com/les-saisies/le-manant");
+            webcam(2, "Sambuy", "https://www.skaping.com/sambuy");
         </script>
     </tr>
     <tr>
         <script> 
             webcam(2, "Albertville", "https://www.acalbertville.com/webcam/lfka.jpg");
+            webcam(2, "Allevard SE", "https://webcams.lecollet.com/imageSC.jpg");
+            webcam(2, "Allevard NE", "https://webcams.lecollet.com/image.jpg");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            webcam(2, "Allevard NO", "https://webcams.lecollet.com/imageCLARAN.jpg");
             webcam(2, "Revard", "https://www.skaping.com/grandlac/revard");
             webcam(2, "Aiguebelette", "https://www.skaping.com/lac-aiguebelette/peage");
         </script>
@@ -77,21 +108,28 @@ Allevard -->
     <script> SectionPrevisions(); </script>
     <tr>
         <script> 
-            previsionsMenu(2,"27723/montmin.htm","Montmin","45.853","6.223");
-            previsionsMenu(2,"27707/marlens.htm","Marlens","45.7777","6.3394");
+            previsionsMenu(2,"27723/montmin.htm","Montmin","45.853","6.223", {"vert": "N-SO-O-NO", "orange": "S-SE"}, "43830");
+            previsionsMenu(2,"27812/viuz_la_chiesaz.htm","Semnoz","45.6914","6.2727", {"vert": "SO-O-NO", "orange": "N-NE-E-SE-S"}, "53526");
             previsionsMenu(2,"27783/seythenex.htm","Sambuy","45.6914","6.2727");
         </script>
     </tr>
     <tr>
         <script> 
+            previsionsMenu(2,"27687/le_grand_bornand.htm","Grand Bornand","45.959682","6.3973203", {"vert": "NE-SO", "orange": "N-E-SE-S-O-NO"}, "42655");
             previsionsMenu(2,"27653/cordon.htm","Aravis","45.9128","6.5707");
-            previsionsMenu(2,"27579/villard_sur_doron.htm","Bisane","45.7467","6.507");
-            previsionsMenu(2,"27347/chamoux_sur_gelon.htm","Chamoux","45.5296","6.2527");
+            previsionsMenu(2,"27707/marlens.htm","Marlens","45.7931217","6.0979628", {"vert": "SO-O-NO", "orange": "N-NE-E-SE-S"}, "53526");
         </script>
     </tr>
     <tr>
         <script> 
+            previsionsMenu(2,"27579/villard_sur_doron.htm","Bisane","45.7467","6.507");
+            previsionsMenu(2,"27347/chamoux_sur_gelon.htm","Chamoux","45.5296","6.2527");
             previsionsMenu(2,"27513/saint_jean_de_la_porte.htm","Montlambert","45.5528","6.1052");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(2,"13191/allevard.htm","Allevard","45.388","6.147", {"vert": "N-SE-S-SO-O-NO", "orange": "NE-E"}, "43276");
             previsionsMenu(2,"27376/les_deserts.htm","Revard","45.6832","5.9747");
             previsionsMenu(2,"27288/aiguebelette_le_lac.htm","Aiguebelette","45.602","5.807");
         </script>
