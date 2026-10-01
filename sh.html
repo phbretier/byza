@@ -6,9 +6,6 @@
 </head>
 <body>
 <table>
-<!-- Chamrousse
-Serpaton
-Courtet -->
     <tr>
         <script> 
             balise(2,"St Hilaire S","romma/186"); 
@@ -25,23 +22,41 @@ Courtet -->
     </tr>
     <tr>
         <script> 
-            balise(2,"Petit Som","ffvl/3770"); 
-            balise(2,"la Scia","ffvl/13"); 
-            balise(2,"St Pierre","meteo-france/38442008"); 
+            balise(2,"Petit Som<br>1721m","ffvl/3770"); 
+            balise(2,"la Scia<br>38m","ffvl/13"); 
+            balise(2,"St Pierre<br>950m","meteo-france/38442008"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(3,"Chamrousse<br>1803m","ffvl/144"); 
+            balise(3,"Chamrousse<br>2244m","romma/72"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Gresse-en<br>Vercors<br>1245m","romma/131"); 
+            balise(2,"Miribel-<br>Lanchatre<br>700m","romma/208"); 
+            balise(2,"<br>Vilard<br>1649m","ffvl/14"); 
         </script>
     </tr>
     
     <script> SectionWebcams(); </script>
     <tr>
         <script> 
-            webcam(3, "St Hilaire N", "https://www.prevol.com/prevolwebcam/upload/prevol3decos.jpg");
-            webcam(3, "St Hilaire E", "https://air-alpin.com/api/webcam");
+            webcam(2, "St Hilaire N", "https://www.prevol.com/prevolwebcam/upload/prevol3decos.jpg");
+            webcam(2, "St Hilaire E", "https://air-alpin.com/api/webcam");
         </script>
+        <td colspan="2">
+            <a href="https://www.murblanc.org/sthil">Infos Prévol</a>
+        </td>
     </tr>
     <tr>
-        <td colspan="6">
-            <a href="https://www.murblanc.org/sthil">Infos école Prévol</a>
-        </td>
+        <script> 
+            webcam(2, "Casserousse", "https://www.skaping.com/chamrousse/panorama-casserousse");
+            webcam(2, "Chamrousse", "https://www.skaping.com/chamrousse/la-croix"); // voir windy
+            webcam(2, "Gresse-en<br>Vercors", "https://app.webcam-hd.com/gresse-en-vercors/grand-veymont");
+        </script>
     </tr>
 
     <script> SectionPrevisions(); </script>
@@ -50,6 +65,13 @@ Courtet -->
             previsionsMenu(2,"13555/saint_hilaire.htm","<br>St Hilaire","45.3068","5.8882", {"vert": "E-SE-S-SO", "orange": "N-NO-O"}, "42744"); 
             previsionsMenu(2,"13600/saint_pierre_de_chartreuse.htm","<br>la Sia","45.345","5.846", {"vert": "O-SO-S"}, "45545"); 
             previsionsMenu(2,"13628/sarcenas.htm","Charmant<br>Som","45.3251","5.7652", {"vert": "E-SE-S"}, "74290"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(2,"33496/chamrousse.htm","Chamrousse","45.1300038","5.8804251", {"vert": "N-NE-E-SE-S-SO-O-NO"}, "81137"); 
+            previsionsMenu(2,"13359/gresse_en_vercors.htm","Serpaton","44.9109","5.591", {"vert": "NO-N-E-SE-S-E", "orange": "NE-SO"}, "42726"); 
+            previsionsMenu(2,"13528/saint_baudille_et_pipet.htm","Courtet","44.7698714","5.780758", {"vert": "NO-N", "orange": "S-SE"}, "45880"); 
         </script>
     </tr>
 
