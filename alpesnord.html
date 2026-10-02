@@ -6,29 +6,103 @@
 </head>
 <body>
 <table>
-<!-- orcier
-mieussy
-samoens
-salève
-plaine joux
-chamonix -->
     <tr>
         <script> 
-            balise(2,"St Hilaire S","romma/186"); 
+            balise(2,"Orcier<br>1250m","iweathar/555"); 
+            balise(2,"Mieussy<br>1669m","ffvl/32"); 
+            balise(2,"Mieussy<br>593m","ffvl/2184"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Samoens<br>1775m","ffvl/186"); 
+            balise(2,"Samoens<br>684m","pioupiou/2136");
+            balise(2,"Salève<br>432m","ffvl/2104"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Salève<br>1258m","ffvl/2309"); 
+            balise(2,"Salève<br>1270m","ffvl/167"); 
+            balise(2,"Salève<br>1196m","ffvl/5123"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Plaine Joux<br>1355m","romma/241"); 
+            balise(2,"Varan<br>1640m","ffvl/2834"); 
+            balise(2,"Platières<br>2470m","ffvl/87"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Passy<br>580m","ffvl/3710"); 
+            balise(2,"Lepigny<br>542m","pioupiou/213"); 
+            balise(2,"Prarion<br>1865m","ffvl/2521"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Planpraz<br>2020m","ffvl/94"); 
+            balise(2,"Plan de l'Aig.<br>2102m","ffvl/95"); 
+            balise(2,"Aiguille<br>3845m","meteo-france/74056006"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(3,"Chamonix<br>1042m","meteo-france/74056001"); 
+            balise(3,"Chamonix<br>1050m","ffvl/5026"); 
         </script>
     </tr>
     
     <script> SectionWebcams(); </script>
     <tr>
         <script> 
-            webcam(3, "St Hilaire N", "https://www.prevol.com/prevolwebcam/upload/prevol3decos.jpg");
+            webcam(2, "Orcier", "https://cam-aero.eu/raspicamaero/LF7470_Cervens_AlpUlm");
+            webcam(2, "Mieussy", "https://app.webcam-hd.com/praz_lys_sommand/haut_fleury");
+            webcam(2, "Samoens", "https://app.webcam-hd.com/lesgets/depart-ranfoilly");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            webcam(2, "Salève", "https://www.vol-libre-geneve.ch/~windspot_img/popImg.php?data=Crets&raw=img");
+            webcam(2, "Salève", "https://www.vol-libre-geneve.ch/~webcam/data/repository/webcam_1/cam-repository/Deco_minute.jpg");
+            webcam(2, "Salève", "https://www.vol-libre-geneve.ch/~webcam/data/repository/webcam_1/cam-repository/MancheDelta_last.jpg");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            webcam(2, "Plaine Joux", "https://www.skaping.com/passy-plaine-joux/station");
+            webcam(2, "Plaine Joux", "https://www.skaping.com/passy-plaine-joux/barmus");
+            webcam(2, "Platière", "https://app.webcam-hd.com/grand-massif/grand-massif_flaine-grandes-platieres");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            webcam(3, "Plan Praz", "https://www.skaping.com/chamonix/plan-praz");
+            webcam(3, "Plan Praz", "https://www.compagniedumontblanc.fr/webcam/bvt1PPZ.jpg");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            webcam(3, "Brévent", "https://www.skaping.com/chamonix/brevent");
+            webcam(3, "Chhamonix", "https://en.chamonix.com/sites/default/files/styles/webcam/public/webcams/live/75.webp?itok=KhEh1fiI");
         </script>
     </tr>
 
     <script> SectionPrevisions(); </script>
     <tr>
         <script> 
-            previsionsMenu(2,"13555/saint_hilaire.htm","<br>St Hilaire","45.3068","5.8882", {"vert": "E-SE-S-SO", "orange": "N-NO-O"}, "42744"); 
+            previsionsMenu(2,"36549/orcier.htm","Orcier","46.280","6.491", {"vert": "N-NO-O", "orange": "NE-E-SE-S"}, "42744"); 
+            previsionsMenu(2,"27719/mieussy.htm","Mieussy","46.280","6.491", {"vert": "O-SO-S-SE", "orange": "NO-N-NE"}, "42658"); 
+            previsionsMenu(2,"27773/samoens.htm","Samoens","46.101","6.720", {"vert": "O-SO-S-SE"}, "42672"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(2,"27612/beaumont.htm","Salève","46.1576","6.1813", {"vert": "N-NO-O-SO"}, "43790"); 
+            previsionsMenu(2,"27737/passy.htm","Plaine Joux","45.944","6.740", {"vert": "O-SO-S-SE-E"}, "42730"); 
+            previsionsMenu(2,"27625/chamonix_mont_blanc.htm","Chamonix","45.9379","6.849", {"vert": "S-NE"}, "42557"); 
         </script>
     </tr>
 
