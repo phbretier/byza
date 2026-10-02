@@ -324,32 +324,32 @@ function BasDePage() {
         </tr>
         <tr>
             <td colspan="2">
-                <a href="vosges.html">Vosges</a>
-            </td>
-            <td colspan="2">
-                <a href="jura.html">Jura</a>
-            </td>
-            <td colspan="2">
                 <a href="alpesnord.html">Alpes Nord</a>
             </td>
-        </tr>
-        <tr>
             <td colspan="2">
                 <a href="annecy.html">Annecy</a>
             </td>
             <td colspan="2">
                 <a href="sh.html">St Hilaire</a>
             </td>
+        </tr>
+        <tr>
             <td colspan="2">
                 <a href="ecrins.html">Écrins</a>
             </td>
-        </tr>
-        <tr>
             <td colspan="2">
                 <a href="baronnies.html">Baronnies</a>
             </td>
             <td colspan="2">
                 <a href="alpessud.html">Alpes Sud</a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <a href="vosges.html">Vosges</a>
+            </td>
+            <td colspan="2">
+                <a href="jura.html">Jura</a>
             </td>
             <td colspan="2">
                 <a href="millau.html">Millau</a>
