@@ -6,33 +6,108 @@
 </head>
 <body>
 <table>
-<!-- Saint André des Alpes
-Moustiers
-Lachans
-Bleine
-Gréolières
-Gourdon
-Saint Victoire
-Signes
-Cuges-les-Pins
-Roquebrune -->
     <tr>
         <script> 
-            balise(2,"St Hilaire S","romma/186"); 
+            balise(2,"Saint André<br>les Alpes<br>1600m","ffvl/109"); 
+            balise(2,"Saint André<br>les Alpes<br>920m","meteo-france/04136001"); 
+            balise(2,"<br>Charvet<br>1712m","pioupiou/984"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Moustiers<br>Sainte-Marie<br>960m","ffvl/2373"); 
+            balise(2,"Moustiers<br>Pavillon<br>1483m","ffvl/130"); 
+            balise(2,"AiguineS<br>Le Puits<br>1074m","ffvl/2595"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Gréolières<br>964m","ffvl/2101"); 
+            balise(2,"Gréolières<br>1768m","ffvl/155"); 
+            balise(2,"Viérou<br>1377m","ffvl/3640"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"St Vallier Puet<br>1020m","ffvl/1009"); 
+            balise(2,"Gourdon<br>1130m","ffvl/63"); 
+            balise(2,"Kennedy<br>628m","ffvl/2808"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Roquebrune<br>669m","ffvl/163"); 
+            balise(2,"Laï Barraï<br>710m","ffvl/5096"); 
+            balise(2,"Peille<br>1106m","meteo-france/06091003"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"St Victoire<br>1001m","ffvl/134"); 
+            balise(2,"St Victoire<br>389m","ffvl/2123"); 
+            balise(2,"St Victoire<br>240m","ffvl/3412"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(3,"Signes<br>611m","ffvl/106"); 
+            balise(3,"Signes<br>451m","holfuy/1352"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Cuges SO<br>376m","ffvl/3385"); 
+            balise(2,"Cuges S<br>380m","ffvl/2384"); 
+            balise(2,"Cuges<br>151m","pioupiou/2059"); 
         </script>
     </tr>
     
     <script> SectionWebcams(); </script>
     <tr>
         <script> 
-            webcam(3, "St Hilaire N", "https://www.prevol.com/prevolwebcam/upload/prevol3decos.jpg");
+            webcam(2, "Moustiers<br>Sainte-Marie", "https://www.skaping.com/aiguines");
+            webcam(2, "Lachens", "https://www.skaping.com/pays-de-fayence/mons");
+            webcam(2, "Col de Bleine", "https://www-n.oca.eu/general/services/meteo/images/camera-c1.jpg");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            webcam(3, "Gréolières", "https://www.skaping.com/greolieres/huskies");
+            webcam(3, "Gréolières", "https://www.skaping.com/greolieres/front-de-neige");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            webcam(3, "Gourdon", "https://flux.wacan.com/gourdon/webcam.php");
+            webcam(3, "Roquebrune", "https://www.skaping.com/esterel/roquebrune-sur-argens-les-issambres");
         </script>
     </tr>
 
     <script> SectionPrevisions(); </script>
     <tr>
         <script> 
-            previsionsMenu(2,"13555/saint_hilaire.htm","<br>St Hilaire","45.3068","5.8882", {"vert": "E-SE-S-SO", "orange": "N-NO-O"}, "42744"); 
+            previsionsMenu(3,"1689/saint_andre_les_alpes.htm","Saint André<br>les Alpes","45.3068","5.8882", {"vert": "O-SO-S-SE", "orange": "N-NE-E"}, "82368"); 
+            previsionsMenu(3,"1656/moustiers_sainte_marie.htm","Moustiers<br>Sainte-Marie","43.8416","6.2285", {"vert": "S-SO-O-NO", "orange": "N-NE-E-SE"}, "42685"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(2,"30975/la_roque_esclapon.htm","Lachens","43.7457","6.6531", {"vert": "N-SE-S-SO-O", "orange": "NE-E-NO"}, "45385"); 
+            previsionsMenu(2,"1925/andon.htm","Col de Bleine","43.8133","6.8085", {"vert": "SE-S-SO", "orange": "NO-N-NE"}, "45978"); 
+            previsionsMenu(2,"84465/greolieres_les_neiges.htm","Gréolières","43.8022","6.9622", {"vert": "SE-S-SO", "orange": "O-NO-N-NE"}, "45975"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(3,"1986/gourdon.htm","Gourdon","43.723","6.9438", {"vert": "E-SE-S-SO", "orange": "NO-N-NE"}, "43100"); 
+            previsionsMenu(3,"36449/roquebrune_cap_martin.htm","Roquebrune","43.7657","7.4427", {"vert": "E-SE-S-SO-O", "orange": "NO-N-NE"}, "45943"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(2,"3548/saint_antonin_sur_bayon.htm","St Victoire","43.5389","5.6447", {"vert": "SE-S-SO-O", "orange": "NO-N-NE-E"}, "44268"); 
+            previsionsMenu(2,"30993/signes.htm","Signes","43.3021","5.8729", {"vert": "E-SE-S-SO", "orange": "NE-N-NO-O"}, "45157"); 
+            previsionsMenu(2,"13555/saint_hilaire.htm","Cuges-les-Pins","43.2823","5.6941", {"vert": "E-SE-S-SO-O", "orange": "NO-N-NE"}, "44481"); 
         </script>
     </tr>
 
