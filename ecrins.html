@@ -6,29 +6,63 @@
 </head>
 <body>
 <table>
-<!-- Richards
-Orcières-Merlette
-Puy Aillaud
-Ceillac
-Clamontard
-Saitn Vincent les Forts -->
     <tr>
         <script> 
-            balise(2,"St Hilaire S","romma/186"); 
+            balise(3,"Puy Aillaud<br>2240m","ffvl/191"); 
+            balise(3,"Ceillac<br>936m","romma/53"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Richard<br>1721m","ffvl/3525"); 
+            balise(2,"St-Jean-St-Nic.<br>1210m","meteo-france/05145002"); 
+            balise(2,"Cuchon<br>1934m","ffvl/3776"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Orcière<br>2073m","ffvl/5006"); 
+            balise(2,"Orcière<br>1620m","romma/2"); 
+            balise(2,"Orcière<br>1277m","romma/134"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(3,"St Vinc. Forts<br>2500m","ffvl/150"); 
+            balise(3,"Clamontard<br>1074m","ffvl/33"); 
         </script>
     </tr>
     
     <script> SectionWebcams(); </script>
     <tr>
         <script> 
-            webcam(3, "St Hilaire N", "https://www.prevol.com/prevolwebcam/upload/prevol3decos.jpg");
+            webcam(2, "Puy Aillaud", "https://www.vision-environnement.com/live/player/pelvoux30.php");
+            webcam(2, "Ceillac", "https://visionenvironnement.quanteec.com/contents/encodings/live/36e37b0f-f867-4c0b-746c-7561-6665-64-a133-3d1f31712c0ed/master.m3u8");
+            webcam(2, "Richards", "https://app.webcam-hd.com/st-leger/front-de-neige");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            webcam(3, "Orcière", "https://www.skaping.com/orcieres/plateau-de-rocherousse");
+            webcam(3, "Orcière", "https://app.webcam-hd.com/orcieres-1850/sommet-estaris");
         </script>
     </tr>
 
     <script> SectionPrevisions(); </script>
+<!-- 
+Saitn Vincent les Forts -->
     <tr>
         <script> 
-            previsionsMenu(2,"13555/saint_hilaire.htm","<br>St Hilaire","45.3068","5.8882", {"vert": "E-SE-S-SO", "orange": "N-NO-O"}, "42744"); 
+            previsionsMenu(2,"1913/vallouise.htm","Puy Aillaud","44.8511","6.4829", {"vert": "NE-E-SE-S-SO-O-NO", "orange": "N"}, "42574"); 
+            previsionsMenu(2,"1773/ceillac.htm","Ceillac","44.6672","6.7847", {"vert": "NE-N-NO-O-SO-S", "orange": "SE-E"}, "43668"); 
+            previsionsMenu(2,"1884/saint_jean_saint_nicolas.htm","Richards","44.6809","6.2317", {"vert": "S-SO-O-NO", "orange": "NE-E"}, "42537"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(2,"1839/orcieres.htm","Orcières-Merlette","44.6991","6.3061", {"vert": "SO-O-NO-S-SE", "orange": "N-NE-E"}, "44628"); 
+            previsionsMenu(2,"1712/saint_vincent_les_forts.htm","St Vinc. Forts","44.4431","6.3715", {"vert": "S-SO-O-NO", "orange": "NE-E-SE"}, "43504"); 
+            previsionsMenu(2,"8195/luc_en_diois.htm","Clamontard","44.6031","5.4409", {"vert": "N", "orange": "O"}, "45599"); 
         </script>
     </tr>
 
