@@ -6,27 +6,47 @@
 </head>
 <body>
 <table>
-<!-- Nyons
-Ventoux
-Séderon
-Laragne -->
     <tr>
         <script> 
-            balise(2,"St Hilaire S","romma/186"); 
+            balise(2,"Nyons<br>938m","ffvl/168"); 
+            balise(2,"Ventoux<br>1796m","ffvl/3484"); 
+            balise(2,"Ventoux<br>479m","ffvl/2098"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(3,"Séderon<br>1298m","pioupiou/2387"); 
+            balise(3,"Séderon<br>610m","pioupiou/3350"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Laragne<br>1332m","ffvl/35"); 
+            balise(2,"Laragne<br>687m","ffvl/5003"); 
+            balise(2,"Laragne<br>565m","meteo-france/05070003"); 
         </script>
     </tr>
     
     <script> SectionWebcams(); </script>
     <tr>
         <script> 
-            webcam(3, "St Hilaire N", "https://www.prevol.com/prevolwebcam/upload/prevol3decos.jpg");
+            webcam(2, "Ventoux", "https://visionenvironnement.quanteec.com/contents/encodings/live/78e0f372-db6f-420e-746c-7561-6665-64-b4d7-fc979b816efed/master.m3u8");
+            webcam(2, "Laragne", "https://www.skaping.com/sisteron-buech/montagne-de-chabre");
+            webcam(2, "Laragne", "https://webcams.sisteron-buech.fr/orpierre2.jpg");
         </script>
     </tr>
 
     <script> SectionPrevisions(); </script>
     <tr>
         <script> 
-            previsionsMenu(2,"13555/saint_hilaire.htm","<br>St Hilaire","45.3068","5.8882", {"vert": "E-SE-S-SO", "orange": "N-NO-O"}, "42744"); 
+            previsionsMenu(3,"8248/nyons.htm","Nyons","44.3366","5.1559", {"vert": "O-NO", "orange": "N-NE"}, "43698"); 
+            previsionsMenu(3,"31035/beaumont_du_ventoux.htm","Ventoux","44.174","5.2784", {"vert": "NO-N-NE-SE-S", "orange": "SO-O-E"}, "43386"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(3,"8363/sederon.htm","Séderon","44.2036","5.5114", {"vert": "O-NO-O-E-SE-S"}, "44706"); 
+            previsionsMenu(3,"1814/laragne_monteglin.htm","Laragne","44.2979","5.7649", {"vert": "SE-S-SO-O-NO-N-NE"}, "43674"); 
         </script>
     </tr>
 
