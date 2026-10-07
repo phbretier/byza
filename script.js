@@ -315,7 +315,7 @@ function BasDePage() {
                 <a href="index.html">Trégor</a>
             </td>
             <td colspan="2">
-                <a href="bzh.html">BZH <img src="${bzh}" width="15px"/></a>
+                <a href="bzh.html">BZH <img src="${bzh}" width="24px"/></a>
             </td>
             <td colspan="2">
                 <a href="normandie.html">Normandie</a>
