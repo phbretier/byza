@@ -252,11 +252,11 @@ function BasDePage() {
         </tr>
         <tr>
             <td colspan="2">
-                <a href="https://meteofrance.com/isofronts" target="_blank">Fronts <img src="https://meteofrance.fr/sites/default/files/favicon_0.png" width="24px"/>MF</a>
+                <a href="https://meteofrance.com/isofronts" target="_blank">Fronts <img src="https://meteofrance.fr/sites/default/files/favicon_0.png" width="15px" alt="MF"/></a>
                 <br>
-                <a href="https://weather.metoffice.gov.uk/maps-and-charts/surface-pressure" target="_blank"><img src="https://weather.metoffice.gov.uk/favicon-dark.png" width="24px"/>UK</a>
+                <a href="https://weather.metoffice.gov.uk/maps-and-charts/surface-pressure" target="_blank"><img src="https://weather.metoffice.gov.uk/favicon-dark.png" width="15px" alt="UK"/></a>
                 &#8239; 
-                <a href="https://www.met.ie/forecasts/atlantic-charts/airmass" target="_blank"><img src="${IR}" width="24px"/>IR</a>
+                <a href="https://www.met.ie/forecasts/atlantic-charts/airmass" target="_blank"><img src="${IR}" width="15px" alt="IR"/></a>
             </td>
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?500h,temp,52.000,-3.500,3,i:gh,p:wind">Géopot.</a>
