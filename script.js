@@ -256,7 +256,7 @@ function BasDePage() {
                 <br>
                 <a href="https://weather.metoffice.gov.uk/maps-and-charts/surface-pressure" target="_blank"><img src="https://weather.metoffice.gov.uk/favicon-dark.png" width="15px"/>UK</a>
                 &#8239; 
-                <a href="https://www.met.ie/forecasts/atlantic-charts/airmass" target="_blank"><img src="${IR}" width="15px"/>IR/a>
+                <a href="https://www.met.ie/forecasts/atlantic-charts/airmass" target="_blank"><img src="${IR}" width="15px"/>IR</a>
             </td>
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?500h,temp,52.000,-3.500,3,i:gh,p:wind">Géopot.</a>
