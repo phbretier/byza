@@ -199,12 +199,16 @@ function BasDePage() {
                 <a href="https://www.meteoblue.com/fr/meteo/prevision/multimodel/${this.dataset.lat}Nlon=${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
                 </a>
+                &#8239; 
+                <a href="https://www.spots.guru/?latitude=${this.dataset.lat}&longitude=${this.dataset.lon}&sport=Paragliding#" target="_blank" class="imglink">
+                    <img src="https://www.meteoblue.com/favicon.ico" alt="𖦏" width="24px"/>
+                </a>
 
                 <br><div style="height: 7px;"></div>                
                 Emagrammes
                 <br>
                 <a href="https://meteo-parapente.com/spotair/sounding?lat=${this.dataset.lat}&lon=${this.dataset.lon}&name=${this.dataset.nom}" target="_blank" class="imglink">
-                    <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/>
+                    <img src="https://www.spots.guru/assets/icons/favicon-32x32-f8d320415a0f5dfde334e89b3b6df42780c87a6b19d566f08e0eeaea55d15d1a.png" alt="🪂" width="24px"/>
                 </a>
                 &#8239; 
                 <a href="https://www.windy.com/plugin/sdg/aromeFrance/${this.dataset.lat}/${this.dataset.lon}?aromeFrance,clouds,${this.dataset.lat},${this.dataset.lon},10,i:pressure,p:wind" target="_blank" class="imglink">
