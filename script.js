@@ -305,7 +305,7 @@ function BasDePage() {
 
         <tr>
             <td class="section" colspan="6">
-                Autres sites <a href="https://puretrack.io/#philippe-bretier" target="_blank">📍</a>
+                Régions <a href="https://puretrack.io/#philippe-bretier" target="_blank">📍</a>
             </td>
         </tr>
         <tr>
@@ -313,7 +313,7 @@ function BasDePage() {
                 <a href="index.html">Trégor</a>
             </td>
             <td colspan="2">
-                <a href="bzh.html">Bzh</a>
+                <a href="bzh.html">BZH <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Drapeau_de_la_Bretagne_-_Gwenn_Ha_Du.svg" width="15px"/></a>
             </td>
             <td colspan="2">
                 <a href="normandie.html">Normandie</a>
