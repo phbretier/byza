@@ -120,6 +120,12 @@
               URL.revokeObjectURL(objectUrl);
             }, { once: true });
         }
+
+        document.write(`
+            <a><img id="testimage" alt="Image test" width="80%"></a>
+        `);
+        const image = document.getElementById("testimage");
+        chargerAfficherEtTelecharger(image, `https://www.meteoblue.com/assets/images/perfectSoaring.png`, `${image.id}.webp`).catch(console.error);
         
         const today = new Date();
         dateSelectors.forEach(([suffix, url]) => {
