@@ -172,7 +172,7 @@
         var aide = `
             <div style="display: flex; justify-content: center; font-size: small;">
         `;
-        const glossaire = ['CAPE', 'CIN', 'LiftedIndex', 'Helicity', 'Pratique', 'Résumé'];
+        const glossaire = ['CAPE', 'CIN', 'LiftedIndex', 'Helicity', 'Pratique', 'Thermal', 'Résumé'];
         glossaire.forEach(item => {
             aide += `&ensp; <a href="#${item}">${item}</a> `;
         });
@@ -491,9 +491,212 @@
       <li><strong>Les rafales descendantes et les fronts de rafales</strong> : Un orage distant peut provoquer une accélération et une rotation du vent avant même l’arrivée de la pluie.</li>
       <li><strong>Les effets locaux</strong> : Vallées, brises de pente, convergences et rotors peuvent dominer les indices météorologiques généraux.</li>
     </ul>
+
+    <hr />
+    <h2 id='Résumé'>6. Météogram Thermal</h2>
+    <script>
+        document.write(aide);
+    </script>
+
+    <p>
+        La prévision thermique et d'envolées contient les données atmosphériques les plus détaillées que nous ayons jamais intégrées dans un diagramme pour prévoir les conditions de vol pour le parapente, le vol à voile et les montgolfières. Les graphiques soigneusement assemblés incluent des informations détaillées sur les conditions de surface, les indices de stabilité, le taux de décroissance de température, l’humidité, les nuages et les vents. Elle est divisée en 4 parties :
+    </p>
+
+    <h2>
+        Conditions de surface
+    </h2>
+    <p>
+        Tous les diagrammes affichent des données horaires pour 48.81°N 3.39°O sur 3 jours. Les zones jaunes indiquent la lumière du jour.
+    </p>
+        <ul>
+            <li>
+                <strong>Température à 2 m et point de rosée à 2 m :</strong> 
+                Équivalent à des mesures prises 2 mètres au-dessus du sol. La température du point de rosée à 2 m indique la quantité d’eau présente dans l’air au niveau du sol, d’où pourraient partir les thermiques potentiels. Une différence plus grande entre la température et le point de rosée signifie moins d’humidité et donc une base de nuage plus élevée. Le Fahrenheit n’est pas encore pris en charge.                </li>
+            <li>
+                <strong>Précipitations:</strong> 
+                Précipitations totales (pluie, convection et neige) en millimètres de pluviomètre. Comme il faut beaucoup de chaleur pour évaporer l’eau, un sol humide se réchauffe plus lentement et est donc moins favorable aux thermiques qu’un sol sec. De plus, les thermiques se déclenchent plus tôt dans des conditions sèches lorsque aucune précipitation n’est survenue auparavant.                </li>
+            <li>
+                <strong>Vent à 10 m et vent à 80 m :</strong>
+                Les vitesses du vent à 10 et 80 mètres au-dessus du sol sont indiquées en kilomètres par heure. Les thermiques se développent dans des conditions calmes ou avec un vent léger et variable. Cependant, avec un vent de 10 à 20 km/h, les thermiques ont tendance à être mieux organisés. Des vents plus forts signifient généralement aussi plus de vent en altitude, ce qui peut provoquer un cisaillement du vent détruisant les thermiques. Consultez le diagramme sur le cisaillement du vent.                </li>
+        </ul>
+    <p></p>
+
+    <h2>Indices de stabilité</h2>
+    <p>
+        Les indices de stabilité ne doivent <strong>pas</strong> être compris comme un résumé des conditions thermiques. Différents indices de stabilité se contredisent souvent et peuvent au mieux apporter un éclairage supplémentaire sur certains aspects des conditions d'envolées. Malheureusement, il n’existe pas d’indice unique qui résume les conditions d'envolées ; ainsi, la consultation des diagrammes de taux de décroissance et de cisaillement du vent présentés ci-dessous fournit un tableau beaucoup plus précis et concluant. Tous les indices présentés sont mis à l’échelle pour s’adapter à 4 sections : faible, moyen, bon et excellent. Tous les indices ne sont pas fiables dans toutes les conditions météorologiques ou régions géographiques. Par exemple, dans les climats secs, le CAPE et le Lifted Index sous-estiment les conditions d'envolées en raison de la faible humidité atmosphérique. D’un autre côté, surtout en hiver avec de l’air sec, l’indice d'envolées peut être très élevé même si les conditions sont très mauvaises.
+    </p>
+    <ul>
+        <li>
+            <strong>Résumé quotidien des conditions d'envolées (ThrHGT) :</strong>
+            Pour chaque jour, les hauteurs maximales des thermiques secs ainsi que la hauteur maximale prévue pour un planeur sont indiquées. Les hauteurs sont exprimées en mètres au-dessus du niveau de la mer. Comme pour les autres indices, les valeurs sont très approximatives et ne sont pas réellement applicables en terrain complexe. Une valeur de 0 m indique que les thermiques secs ne soutiennent pas un planeur. En outre, l’indice thermique (TI) pour 700, 800, 850 et 900 hPa (mb) est prévu. Plus l’indice thermique est négatif, plus les thermiques attendus sont forts :
+        </li>
+    </ul>
+
+    <table class="datatable">
+        <tbody><tr>
+            <th>Indice thermique</th>
+            <th>Thermiques attendus</th>
+        </tr>
+        <tr>
+            <td>-10 ou -8</td>
+            <td>Convection Thérmique très bonne et Jour de plannage étendu. Les thermiques sont suffisamment forts pour se maintenir même par temps venteux.</td>
+        </tr>
+        <tr>
+            <td>-3</td>
+            <td>Très bonne probabilité que les planeurs atteignent l'altitude correspondant à cette différence de température.</td>
+        </tr>
+        <tr>
+            <td>-2 à 0</td>
+            <td>Un planeur ne pourra probablement pas atteindre la hauteur d'envolée prévue.</td>
+        </tr>
+        <tr>
+            <td>au-dessus de 0</td>
+            <td>Peu probable d’atteindre la hauteur thermique ou d'envolée indiquée.</td>
+        </tr>
+    </tbody></table>
+
+    <p>
+        N'oubliez pas que le TI est une valeur prévisionnelle. Une erreur dans le maximum prévu ou un changement de la température en altitude peut modifier considérablement la situation.
+    </p>
+        
+    <ul>
+        <li>
+            <strong>Vitesse de courant ascendant / Convection Thérmique (m/s) :</strong>
+            Une estimation de la force maximale des thermiques déterminée uniquement par les conditions de surface (chaleur, humidité et rayonnement solaire). L’élévation d'air causée par le vent n’est pas prise en compte (ondes orographiques, convergence, etc.). Minimum : 1,5 m/s, bon : 2 m/s, excellent : &gt;2,5 m/s.
+        </li>
+        <li>
+            <strong>Soaring Index :</strong> 
+            Une mesure de la stabilité prenant en compte la température et l'humidité entre 700 et 850 hPa. Sachez que les valeurs du Soaring Index peuvent changer de manière significative pendant l’été sur de courtes périodes en raison de l’advection de température et d’humidité. En hiver, lorsque les températures sont très froides, les composantes d’humidité sont très faibles. Ainsi, même si le Soaring Index est assez élevé, cela ne signifie pas que les conditions sont favorables aux orages en raison du manque d’humidité. L’indice ne fournit pas de données fiables si la profondeur de la couche convective se termine en dessous de 700 hPa.
+        </li>
+    </ul> 
+
+    <table class="datatable">
+        <tbody><tr>
+            <th>Soaring Index</th>
+            <th>Conditions d'envolées</th>
+        </tr>
+        <tr>
+            <td>en dessous de -10</td>
+            <td>Pas de thermiques ou thermiques faibles</td>
+        </tr>
+        <tr>
+            <td>-10 à 5</td>
+            <td>thermiques secs ou 1/8 cumulus avec thermiques modérés</td>
+        </tr>
+        <tr>
+            <td>5 à 15</td>
+            <td>bonnes conditions d'envolées</td>
+        </tr>
+        <tr>
+            <td>15 à 20</td>
+            <td>bonnes conditions d'envolées avec averses occasionnelles</td>
+        </tr>
+        <tr>
+            <td>20 à 30</td>
+            <td>excellentes conditions d'envolées, mais probabilité croissante d'averses et d'orages</td>
+        </tr>
+        <tr>
+            <td>au-dessus de 30</td>
+            <td>probabilité d’orages supérieure à 60 %</td>
+        </tr>
+    </tbody></table>
+        
+    <ul>
+        <li>
+            <strong>Lifted Index (LI) :</strong>
+            Une autre mesure d’instabilité (valeurs négatives) ou de stabilité (valeurs positives). Notez que des valeurs fortement négatives indiquent d’excellentes conditions d'envolées, mais des orages sévères sont probables et pourraient être très dangereux.
+        </li>
+    </ul>  
+    <table class="datatable">
+        <tbody><tr>
+            <th>Lifted Index</th>
+            <th>Conditions d'envolées</th>
+        </tr>
+        <tr>
+            <td>6 ou plus</td>
+            <td>Conditions très stables.</td>
+        </tr>
+        <tr>
+            <td>2 à 6</td>
+            <td>Conditions stables. Les orages sont peu probables.</td>
+        </tr>
+        <tr>
+            <td>0 à 2</td>
+            <td>Averses probables. Orages isolés possibles.</td>
+        </tr>
+        <tr>
+            <td>0 à -3</td>
+            <td>Légèrement instable. Orages possibles avec un Mécanisme de soulèvement (p. ex. front froid, réchauffement diurne, etc.).</td>
+        </tr>
+        <tr>
+            <td>de -3 à -6</td>
+            <td>Instable, orages probables, certains pouvant être sévères avec Mécanisme de soulèvement.</td>
+        </tr>
+        <tr>
+            <td>inférieur à -6</td>
+            <td>Très instable, orages violents probables avec Mécanisme de soulèvement.</td>
+        </tr>
+    </tbody></table>
+        
+    <ul>
+        <li>
+            <strong>CAPE (J/kg) :</strong> 
+            Le Convective Available Potential Energy est une mesure de la stabilité atmosphérique affectant la formation de nuages convectifs profonds au-dessus de la Hauteur de la couche limite. Des valeurs plus élevées indiquent des Vitesse de courant ascendant plus grandes et un potentiel accru de développement d’orages. Des valeurs proches ou supérieures à 1000 suggèrent la possibilité de temps sévère si une activité convective se développe.
+        </li>
+    </ul>
+
+    <h2>Taux de décroissance / Humidité / Nuages</h2>
+    <p>
+        Ce graphique montre un profil atmosphérique au fil du temps et constitue le diagramme le plus important pour estimer les conditions d'envolées. Il donne un aperçu de la stabilité thermodynamique et des nuages. La partie inférieure du diagramme correspond au niveau du sol du modèle de Prévision, qui peut différer sensiblement de la Hauteur réelle du lieu dans un relief complexe. Toutes les échelles de couleurs sont fixes afin de comparer les Prévisions pour différents lieux et moments. Ce diagramme peut devenir très chargé en informations et donc très difficile à lire, mais c'est une bonne chose car, en règle générale : <strong>« Plus c'est difficile à lire, pires sont les conditions d'envolées ! »</strong> Ce que vous recherchez, ce sont de belles zones dégagées de panaches bleu foncé s'élevant haut, avec une grande Hauteur de PBL et peut-être quelques petits nuages convectifs se développant au-dessus de ce panache dans l'après-midi comme illustré sur l'image ci-dessous.
+    </p>
+    <div class="image-wrapper">
+        <img src="/assets/images/perfectSoaring.png" description="Example meteogram with perfect soaring conditions">
+    </div>
+    <p>
+        Ceci est un exemple d’excellentes conditions d'envolées telles qu’elles se produisent fréquemment à Bitterwasser (Namibie), l’un des meilleurs sites de vol en thermique au monde. De telles conditions ne se produiront jamais dans la plupart des endroits, mais vous pouvez trouver des schémas similaires atteignant des altitudes plus basses lors de bonnes journées presque partout.
+    </p>
+    <ul>
+        <li>
+            <strong>Taux de décroissance de température</strong> est mesuré en kelvin par différence de Hauteur de 100 m. La valeur exacte est indiquée avec des étiquettes blanches sur les lignes de contours. Les inversions (conditions très stables) ont des valeurs positives et sont colorées du jaune au rouge. La limite entre le vert et le bleu correspond aux conditions atmosphériques standard. Les bleus plus sombres indiquent des conditions favorables aux courants ascendants. Les zones violettes indiquent des conditions sèches instables qui ne peuvent exister qu'à proximité du sol ou pendant de très courtes périodes dans l'atmosphère. Même les pierres voleraient alors. L'instabilité de Surface jusqu'à 200 mètres au-dessus du sol n'est généralement pas affichée. Remarque importante : Le Taux de décroissance est une moyenne due au mélange de courants d'air ascendants et descendants. Les courants ascendants réels peuvent avoir des taux de décroissance bien plus faibles.
+        </li>
+        <li>
+            <strong>Humidité relative</strong> (fines lignes colorées): 
+            Les nuages convectifs se développent plus facilement dans un air humide.            </li>
+        <li>
+            <strong>Nuages convectifs</strong> (zone à astérisques): 
+            lorsque les nuages convectifs commencent à se développer, le vol en thermique est à son meilleur et la recherche de thermiques est grandement simplifiée. Les thermiques se trouvent sous les cumulus en croissance. La base des nuages convectifs est indiquée par une ligne noire épaisse. Les cumulus bourgeonnants et les nuages cumulonimbus possèdent des courants ascendants très forts et peuvent donc devenir très dangereux.
+        </li>
+        <li>
+            <strong>Couverture nuageuse</strong> (zones ombragées): 
+            À moins qu'une zone hachurée ne soit également marquée d'astérisques (nuages convectifs), ces nuages ne sont pas bons pour les courants ascendants et, en raison de l'ombrage, réduisent fortement tout développement potentiel de courants ascendants.
+        </li>
+        <li>
+            <strong>Hauteur de la couche limite planétaire (PBL)</strong> (ligne blanche épaisse): 
+            La Hauteur de la couche limite planétaire décrit la hauteur moyenne qu’une parcelle d'air de surface pourrait atteindre en montant. La flottabilité et le vent (mélange mécanique) influencent cette hauteur. Le mélange dû aux nuages convectifs n’est pas pris en compte.
+        </li>
+    </ul>
+    
+    <h2>Vent horizontal / Température / Cisaillement vertical de vent</h2>
+    <p>
+        Les conditions de Vent en altitude pour les prochains jours sont affichées ici. Les forts Cisaillements du vent sont dangereux et doivent être évités. Même de faibles cisaillements perturbent les Bulles de convection. Les échelles de couleurs sont également fixes.
+    </p>
+    <ul>
+        <li>
+            <strong>Vitesse du vent</strong> (arrière-plan coloré): 
+            Les couleurs violette et bleu foncé représentent des vents calmes. Les chiffres blancs indiquent la vitesse réelle en kilomètres par heure. Les flèches de vent montrent la direction horizontale du vent et non les ascendances ou subsidences. Une flèche pointant vers le bas indique un vent du nord se dirigeant vers le sud.
+        </li>
+        <li>
+            <strong>Lignes de température</strong> (fines lignes colorées):
+            De petits chiffres colorés montrent le profil de Température au fil du temps. L'Isotherme zéro degré (0°C) est représenté par une ligne noire épaisse.
+        </li>
+        <li>
+            <strong>Cisaillement du vent</strong> (lignes colorées épaisses): 
+            Le cisaillement du vent peut fortement désorganiser les thermiques. Les grands thermiques plus puissants sont plus résistants au cisaillement que les petits. En général, un cisaillement de 2 km/h /100 m déforme les thermiques au point de les rendre difficiles à exploiter. Surtout pour des valeurs élevées, les cisaillements réels peuvent être beaucoup plus forts que ceux indiqués. Les valeurs de prévision représentent des valeurs moyennes horaires qui ne résolvent pas les rafales de vent.
+        </li>
+    </ul>
     
     <hr />
-    <h2 id='Résumé'>6. Résumé</h2>
+    <h2 id='Résumé'>7. Résumé</h2>
     <script>
         document.write(aide);
     </script>
