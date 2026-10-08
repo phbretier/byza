@@ -180,8 +180,7 @@ function BasDePage() {
                 <div style="height: 10px;"></div>
                 Coupes
                 <br>
-                <a href="https://meteo-parapente.com/spotair/windgram?lat=${this.dataset.lat}&lon=${this.dataset.lon}&name=${this.dataset.nom}
-                https://meteo-parapente.com/v5/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="imglink">
+                <a href="https://meteo-parapente.com/spotair/windgram?lat=${this.dataset.lat}&lon=${this.dataset.lon}&name=${this.dataset.nom}" target="_blank" class="imglink">
                     <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/> 
                 </a>
                 &#8239; 
