@@ -97,6 +97,29 @@
                 <br>
             `);
         });
+
+        async function chargerAfficherEtTelecharger(image, url, nom) {
+            const lien = image.closest("a");
+            if (!lien) {
+              throw new Error("L’image n’a pas de parent <a>.");
+            }
+            const response = await fetch(url);
+            if (!response.ok) {
+              throw new Error(`Erreur HTTP ${response.status}`);
+            }
+            const blob = await response.blob();
+            const objectUrl = URL.createObjectURL(blob);
+            
+            image.src = objectUrl;
+            lien.href = objectUrl;
+            lien.download = nom;
+            lien.click();
+            
+            // Ne révoquez pas l’URL immédiatement : le téléchargement peut ne pas avoir commencé. 
+            window.addEventListener("pagehide", () => {
+              URL.revokeObjectURL(objectUrl);
+            }, { once: true });
+        }
         
         const today = new Date();
         dateSelectors.forEach(([suffix, url]) => {
@@ -123,7 +146,8 @@
                 const date = dateSelector.value;
                 const time = timeSelector.value;
                 const image = document.getElementById(`image${suffix}`);
-                image.src = `${url}&date=${date}&hour=${time}`;
+                chargerAfficherEtTelecharger(image, `${url}&date=${date}&hour=${time}`, `${image.id}.D${date}.H${time}.webp`).catch(console.error);
+                // image.src = `${url}&date=${date}&hour=${time}`;
             });
         });
 
@@ -140,7 +164,8 @@
             daySelector.addEventListener('change', function() {
                 const day = daySelector.value;
                 const image = document.getElementById(`image${suffix}`);
-                image.src = `${url}&forecast_days=${day}`;
+                chargerAfficherEtTelecharger(image, `${url}&forecast_days=${day}`, `${image.id}.D${day}.webp`).catch(console.error);
+                // image.src = `${url}&forecast_days=${day}`;
             });
         });
 
@@ -151,10 +176,13 @@
             }
             okSelector.addEventListener('click', function() {
                 const image = document.getElementById(`image${suffix}`);
+                let ext = "";
                 if (['', '_air', '_multimodel'].includes(suffix)) {
                     url += "&forecast_days=7";
+                    ext += ".D7";
                 }
-                image.src = url;
+                chargerAfficherEtTelecharger(image, url, `${image.id}${ext}.webp`).catch(console.error);
+                // image.src = url;
             });
         });
     </script>
