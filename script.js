@@ -229,7 +229,7 @@ function BasDePage() {
                     <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/>
                 </a>
                 &#8239; 
-                <a href="https://www.meteoblue.com/fr/meteo/prevision/meteogramweb/${this.dataset.lat}N=${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
+                <a href="https://www.meteoblue.com/fr/meteo/prevision/meteogramweb/${this.dataset.lat}N${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
                 </a>
                 &#8239; 
