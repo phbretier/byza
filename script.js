@@ -184,7 +184,7 @@ function BasDePage() {
                     <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/> 
                 </a>
                 &#8239; 
-                <a href="https://www.meteoblue.com/fr/meteo/aviation/air/${this.dataset.lat}Nlon=${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
+                <a href="https://www.meteoblue.com/fr/meteo/aviation/air/${this.dataset.lat}N${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
                 </a>
                 &#8239; 
@@ -199,7 +199,7 @@ function BasDePage() {
                     <img src="https://www.windy.com/favicon.ico" alt="⛅" width="24px"/>
                 </a>
                 &#8239; 
-                <a href="https://www.meteoblue.com/fr/meteo/prevision/multimodel/${this.dataset.lat}Nlon=${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
+                <a href="https://www.meteoblue.com/fr/meteo/prevision/multimodel/${this.dataset.lat}N${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
                 </a>
                 &#8239; 
@@ -229,7 +229,7 @@ function BasDePage() {
                     <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/>
                 </a>
                 &#8239; 
-                <a href="https://www.meteoblue.com/fr/meteo/prevision/meteogramweb/${this.dataset.lat}Nlon=${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
+                <a href="https://www.meteoblue.com/fr/meteo/prevision/meteogramweb/${this.dataset.lat}N=${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
                 </a>
                 &#8239; 
