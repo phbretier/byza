@@ -253,54 +253,54 @@ function BasDePage() {
         </tr>
         <tr>
             <td colspan="2">
-                <a href="https://meteofrance.com/isofronts" target="_blank">Fronts <img src="https://meteofrance.fr/sites/default/files/favicon_0.png" width="15px" alt="MF"/></a>
+                <a href="https://meteofrance.com/isofronts" target="_blank">Fronts <img src="https://meteofrance.fr/sites/default/files/favicon_0.png" width="15px" style="position: relative; top: 3px;" alt="MF"/></a>
                 <br>
                 <a href="https://weather.metoffice.gov.uk/maps-and-charts/surface-pressure" target="_blank"><img src="https://weather.metoffice.gov.uk/favicon-dark.png" width="15px"/></a>
                 &#8239; 
-                <a href="https://www.met.ie/forecasts/atlantic-charts/airmass" target="_blank"><img src="${IR}" width="15px"/></a>
+                <a href="https://www.met.ie/forecasts/atlantic-charts/airmass" target="_blank"><img src="${IR}" width="15px" style="position: relative; top: 3px;"/></a>
                 &#8239; 
-                <a href="https://www.met.ie/latest-reports/surface-analysis" target="_blank"><img src="${IR}" width="15px"/></a>
+                <a href="https://www.met.ie/latest-reports/surface-analysis" target="_blank"><img src="${IR}" width="15px" style="position: relative; top: 3px;"/></a>
             </td>
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?500h,temp,52.000,-3.500,3,i:gh,p:wind">Géopot.</a>
                 <br>
-                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph850temperature~hourly~auto~500%20mb~none&coords=3/52/-3.5">500hPa</a>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph850temperature~hourly~auto~500%20mb~none&coords=4/52/-3.5" target="_blank">500hPa</a>
                 &#8239; 
-                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph500~hourly~auto~500%20mb~pressure2mOverlay&coords=3/52/-3.5"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph500~hourly~auto~500%20mb~pressure2mOverlay&coords=4/52/-3.5" target="_blank"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="15px" style="position: relative; top: 3px;"/></a>
             </td>
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?850h,temp,52.000,-3.500,3,i:temp,p:temp">Temp.</a>
                 <br>
-                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph850temperature~hourly~auto~850%20mb~pressure2mOverlay&coords=3/52/-3.5">850hPa</a>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph850temperature~hourly~auto~850%20mb~pressure2mOverlay&coords=4/52/-3.5" target="_blank">850hPa</a>
             </td>
         </tr>
         <tr>
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Pression-pressure?pressure,52.000,-3.500,3,i:pressure,p:wind">Pression</a>
                 <br>
-                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=seaLevelPressure~hourly~auto~MSL~pressure2mOverlay&coords=3/52/-3.5"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=seaLevelPressure~hourly~auto~MSL~pressure2mOverlay&coords=3/52/-3.5" target="_blank"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="15px" style="position: relative; top: 5px;"/></a>
             </td>
             <td colspan="2">
-                <a href="https://www.windy.com/fr/-Satellite-satellite?satellite,47.758,1.455,5,i:pressure,p:wind">Satellite</a>
+                <a href="https://www.windy.com/fr/-Satellite-satellite?satellite,47.000,-3.000,6,i:pressure,p:wind">Satellite</a>
                 <br>
-                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=satellite~radar~none~none~pressure2mOverlay&coords=5/47/-2.5"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=satellite~radar~none~none~pressure2mOverlay&coords=5/47/-2.5" target="_blank"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="15px" style="position: relative; top: 5px;"/></a>
             </td>
             <td colspan="2">
-                <a href="https://www.windy.com/fr/-Menu/menu?deg0,52.000,-3.500,3,i:deg0,p:wind">Isotherme</a>
+                <a href="https://www.windy.com/fr/-Isotherme-0%C2%B0C-deg0?deg0,52.000,-3.500,3,i:deg0,p:wind">Isotherme</a>
                 <br>
-                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=freezingLevel~daily-min~auto~0C%20isotherm~none&coords=3/52/-3.5"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=freezingLevel~daily-min~auto~0C%20isotherm~none&coords=3/52/-3.5" target="_blank"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="15px" style="position: relative; top: 5px;"/></a>
             </td>
         </tr>
         <tr>
             <td colspan=2">
                 <a href="https://www.windy.com/fr/-Nuages-clouds?iconEu,clouds,47.758,1.455,5,i:deg0,p:wind">Vents</a>
                 <br>
-                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=windAnimation~rainbow~auto~128%20m%20above%20gnd~pressure2mOverlay&coords=5/47/-2.5"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=windAnimation~rainbow~auto~128%20m%20above%20gnd~pressure2mOverlay&coords=5/47/-2.5" target="_blank"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="15px" style="position: relative; top: 5px;"/></a>
             </td>
             <td colspan=2">
                 <a href="https://www.windy.com/fr/-Nuages-clouds?iconEu,clouds,47.758,1.455,5,i:deg0,p:wind">Nuages</a>
                 <br>
-                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=cloudsAndPrecipitation~hourly~auto~sfc~pressure2mOverlay&coords=5/47/-2.5"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=cloudsAndPrecipitation~hourly~auto~sfc~pressure2mOverlay&coords=5/47/-2.5" target="_blank"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="15px" style="position: relative; top: 5px;"/></a>
             </td>
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Thermiques-ccl?ccl,47.758,1.455,5,i:deg0,p:wind">Plafonds</a>
@@ -328,7 +328,7 @@ function BasDePage() {
                 <a href="index.html">Trégor</a>
             </td>
             <td colspan="2">
-                <a href="bzh.html">BZH <img src="${bzh}" width="24px"/></a>
+                <a href="bzh.html">BZH <img src="${bzh}" width="24px" style="position: relative; top: 3px;"/></a>
             </td>
             <td colspan="2">
                 <a href="normandie.html">Normandie</a>
