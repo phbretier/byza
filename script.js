@@ -264,45 +264,57 @@ function BasDePage() {
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?500h,temp,52.000,-3.500,3,i:gh,p:wind">Géopot.</a>
                 <br>
-                <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?500h,temp,52.000,-3.500,3,i:gh,p:wind">500hPa</a>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph850temperature~hourly~auto~500%20mb~none&coords=3/52/-3.5">500hPa</a>
+                &#8239; 
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph500~hourly~auto~500%20mb~pressure2mOverlay&coords=3/52/-3.5"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
             </td>
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?850h,temp,52.000,-3.500,3,i:temp,p:temp">Temp.</a>
                 <br>
-                <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?850h,temp,52.000,-3.500,3,i:temp,p:temp">850hPa</a>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph850temperature~hourly~auto~850%20mb~pressure2mOverlay&coords=3/52/-3.5">850hPa</a>
             </td>
         </tr>
         <tr>
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Pression-pressure?pressure,52.000,-3.500,3,i:pressure,p:wind">Pression</a>
+                <br>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=seaLevelPressure~hourly~auto~MSL~pressure2mOverlay&coords=3/52/-3.5"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
             </td>
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Satellite-satellite?satellite,47.758,1.455,5,i:pressure,p:wind">Satellite</a>
+                <br>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=satellite~radar~none~none~pressure2mOverlay&coords=5/47/-2.5"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
+            </td>
+            <td colspan="2">
+                <a href="https://www.windy.com/fr/-Menu/menu?deg0,52.000,-3.500,3,i:deg0,p:wind">Isotherme</a>
+                <br>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=freezingLevel~daily-min~auto~0C%20isotherm~none&coords=3/52/-3.5"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2">
+                <a href="https://www.windy.com/fr/-Nuages-clouds?iconEu,clouds,47.758,1.455,5,i:deg0,p:wind">Vents</a>
+                <br>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=windAnimation~rainbow~auto~128%20m%20above%20gnd~pressure2mOverlay&coords=5/47/-2.5"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
+            </td>
+            <td colspan=2">
+                <a href="https://www.windy.com/fr/-Nuages-clouds?iconEu,clouds,47.758,1.455,5,i:deg0,p:wind">Nuages</a>
+                <br>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=cloudsAndPrecipitation~hourly~auto~sfc~pressure2mOverlay&coords=5/47/-2.5"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/></a>
             </td>
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Thermiques-ccl?ccl,47.758,1.455,5,i:deg0,p:wind">Plafonds</a>
             </td>
         </tr>
         <tr>
-            <td colspan=2">
-                <a href="https://www.windy.com/fr/-Nuages-clouds?iconEu,clouds,47.758,1.455,5,i:deg0,p:wind">Nuages</a>
-            </td>
             <td colspan="2">
                 <a href="https://www.velivole.fr/?center_lat=49.82&center_long=10.75&zoom=5.3" target="_blank">Velivole</a>
             </td>
-            <td colspan="2">
-                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=windAnimation~rainbow~auto~10%20m%20above%20gnd~pressure2mOverlay&coords=3.84/45.19/1" target="_blank">Meteoblue</a>
-            </td>
-        </tr>
-        <tr>
             <td colspan=2">
                 <a href="https://skopaero.com/" target="_blank">Skopaero</a>
             </td>
             <td colspan="2">
                 <a href="https://paraglidable.com/" target="_blank">Paraglid.</a>
-            </td>
-            <td colspan="2">
-                <a href="https://v2.paraglidable.com/" target="_blank">Parag. V2</a>
             </td>
         </tr>
 
