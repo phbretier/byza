@@ -255,18 +255,18 @@ function BasDePage() {
             <td colspan="2">
                 <a href="https://meteofrance.com/isofronts" target="_blank">Fronts <img src="https://meteofrance.fr/sites/default/files/favicon_0.png" width="15px" style="position: relative; top: 3px;" alt="MF"/></a>
                 <br>
-                <a href="https://weather.metoffice.gov.uk/maps-and-charts/surface-pressure" target="_blank"><img src="https://weather.metoffice.gov.uk/favicon-dark.png" width="15px"/></a>
+                <a href="https://weather.metoffice.gov.uk/maps-and-charts/surface-pressure" target="_blank">&hairsp;<img src="https://weather.metoffice.gov.uk/favicon-dark.png" width="15px" style="position: relative; top: 3px;"/>&hairsp;</a>
                 &#8239; 
-                <a href="https://www.met.ie/forecasts/atlantic-charts/airmass" target="_blank"><img src="${IR}" width="15px" style="position: relative; top: 3px;"/></a>
+                <a href="https://www.met.ie/forecasts/atlantic-charts/airmass" target="_blank">&hairsp;<img src="${IR}" width="15px" style="position: relative; top: 3px;"/>&hairsp;</a>
                 &#8239; 
-                <a href="https://www.met.ie/latest-reports/surface-analysis" target="_blank"><img src="${IR}" width="15px" style="position: relative; top: 3px;"/></a>
+                <a href="https://www.met.ie/latest-reports/surface-analysis" target="_blank">&hairsp;<img src="${IR}" width="15px" style="position: relative; top: 3px;"/>&hairsp;</a>
             </td>
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?500h,temp,52.000,-3.500,3,i:gh,p:wind">Géopot.</a>
                 <br>
                 <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph850temperature~hourly~auto~500%20mb~none&coords=2/52/-3.5" target="_blank">500hPa</a>
                 &#8239; 
-                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph500~hourly~auto~500%20mb~pressure2mOverlay&coords=2/52/-3.5" target="_blank"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="15px" style="position: relative; top: 3px;"/></a>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph500~hourly~auto~500%20mb~pressure2mOverlay&coords=2/52/-3.5" target="_blank">&hairsp;<img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="15px" style="position: relative; top: 3px;"/>&hairsp;</a>
             </td>
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?850h,temp,52.000,-3.500,3,i:temp,p:temp">Temp.</a>
@@ -278,7 +278,7 @@ function BasDePage() {
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Pression-pressure?pressure,52.000,-3.500,3,i:pressure,p:wind">Pression</a>
                 <br>
-                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=seaLevelPressure~hourly~auto~MSL~pressure2mOverlay&coords=2/52/-3.5" target="_blank"><img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="15px" style="position: relative; top: 5px;"/></a>
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=seaLevelPressure~hourly~auto~MSL~pressure2mOverlay&coords=2/52/-3.5" target="_blank">&hairsp;<img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="15px" style="position: relative; top: 5px;"/>&hairsp;</a>
             </td>
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Satellite-satellite?satellite,47.000,1.500,5,i:pressure,p:wind">Satellite</a>
