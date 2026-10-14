@@ -8,6 +8,20 @@
 <table>
     <tr>
         <script> 
+            balise(2,"Jasserie<br>1390m","holfuy/1946"); 
+            balise(2,"Oeillon<br>1350m","holfuy/1519"); 
+            balise(2,"Pilat<br>1390m","ffvl/4178"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Burdignes<br>945m","ffvl/77"); 
+            balise(2,"St Désirat<br>325m","holfuy/1119"); 
+            balise(2,"St Désirat<br>135m","meteo-france/26002003"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
             balise(2,"<br>Chaspinhac<br>905m","ffvl/82"); 
             balise(2,"Mt Denise<br>E<br>714m","meteo-france/43046001"); 
             balise(2,"Mt Denise<br>O<br>829m","metar/LFHP"); 
@@ -28,14 +42,20 @@
     </tr>
     <tr>
         <script> 
-            balise(2,"Tanargue<br>1510m","ffvl/2917"); 
-            balise(2,"St Désirat<br>325m","holfuy/1119"); 
-            balise(2,"St Désirat<br>135m","meteo-france/26002003"); 
+            balise(3,"Tanargue<br>1510m","ffvl/2917"); 
+            balise(3,"Croix Millet<br>779m","meteo-france/07187001"); 
         </script>
     </tr>
 
     <script> SectionWebcams(); </script>
-    <tr>
+   <tr>
+        <script> 
+             webcam(2, "Jasserie", "https://www.skaping.com/saint-chamond");
+             webcam(2, "Jasserie", "https://pv.viewsurf.com/548/Monts-du-Pilat?i=ODY1Njo");
+             webcam(2, "St Désirat", "https://www.aeroclubdannonay.org/img/cameraAero.jpeg?971");
+        </script>
+    </tr>
+   <tr>
         <script> 
             webcam(2, "Mt Mézenc", "https://www.skaping.com/les-estables-video");
             webcam(2, "Mt Mézenc", "https://www.skaping.com/les-estables/ski-alpin/panoramique");
@@ -44,27 +64,30 @@
     </tr>
     <tr>
         <script> 
-            webcam(2, "Mt Denise", "https://www.skaping.com/lepuyenvelay/notredamedefrance");
-            webcam(2, "Tanargue", "https://webcams.inforoutes.fr/croixdebauzon.jpg");
-            webcam(2, "St Désirat", "https://www.aeroclubdannonay.org/img/cameraAero.jpeg?971");
+            webcam(3, "Mt Denise", "https://www.skaping.com/lepuyenvelay/notredamedefrance");
+            webcam(3, "Tanargue", "https://webcams.inforoutes.fr/croixdebauzon.jpg");
         </script>
     </tr>
 
     <script> SectionPrevisions(); </script>
     <tr>
         <script> 
-            previsionsMenu(2,"15265/chaspinhac.htm","Chaspinhac","45.1044","3.9315", {"vert": "N-NE-E"}, "45085");
-            previsionsMenu(2,"15353/polignac.htm","Mt Denise","45.0581","3.854", {"vert": "O-SO", "orange": "NO-S"}, "45087"); 
-            previsionsMenu(2,"15295/les_estables.htm","Mt Mézenc","44.9103","4.1928", {"vert": "E-SE-S-NE", "orange": "O-NO-N"}, "45003"); 
-            // Burdignes
-            // La Jasserie
+            previsionsMenu(2,"15187/la_valla_en_gier","Jasserie","45.3855","4.5676", {"vert": "O-NO-N", "orange": "NE-E-SE-S"}, "42689"); 
+            previsionsMenu(2,"14905/burdignes","Burdignes","45.2476","4.5372", {"vert": "SE-S-NO-N-NE", "orange": "SO-O"}, "43791"); 
+            previsionsMenu(2,"2295/saint_desirat","St Désirat","45.2529444","4.7959831", {"vert": "NO-N-NE-E", "orange": "SE-S-SO-O"}, "42497"); 
         </script>
     </tr>
     <tr>
         <script> 
-            previsionsMenu(2,"23140/job.htm","Mt Chouvé","45.631","3.7813", {"vert": "N-NO-O-SO", "orange": "NE-E-SE-S"}, "45643"); 
-            previsionsMenu(2,"2392/valgorge.htm","Tanargue","44.6112","4.0825", {"vert": "S-SE", "orange": "O-NO-N"}, "45024"); 
-            previsionsMenu(2,"2295/saint_desirat","St Désirat","45.2529444","4.7959831", {"vert": "NO-N-NE-E", "orange": "SE-S-SO-O"}, "42497"); 
+            previsionsMenu(2,"15265/chaspinhac.htm","Chaspinhac","45.1044","3.9315", {"vert": "N-NE-E"}, "45085");
+            previsionsMenu(2,"15353/polignac.htm","Mt Denise","45.0581","3.854", {"vert": "O-SO", "orange": "NO-S"}, "45087"); 
+            previsionsMenu(2,"15295/les_estables.htm","Mt Mézenc","44.9103","4.1928", {"vert": "E-SE-S-NE", "orange": "O-NO-N"}, "45003"); 
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(3,"23140/job.htm","Mt Chouvé","45.631","3.7813", {"vert": "N-NO-O-SO", "orange": "NE-E-SE-S"}, "45643"); 
+            previsionsMenu(3,"2392/valgorge.htm","Tanargue","44.6112","4.0825", {"vert": "S-SE", "orange": "O-NO-N"}, "45024"); 
         </script>
     </tr>
 
