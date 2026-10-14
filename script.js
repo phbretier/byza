@@ -331,7 +331,7 @@ function BasDePage() {
                 <a href="bzh.html">BZH <img src="${bzh}" width="24px" style="position: relative; top: 3px;"/></a>
             </td>
             <td colspan="2">
-                <a href="plaineO.html">plaine O</a>
+                <a href="plaineO.html">Plaine d'O</a>
             </td>
         </tr>
         <tr>
@@ -377,7 +377,7 @@ function BasDePage() {
         </tr>
         <tr>
             <td colspan="2">
-                <a href="plaineE.html">plaine E</a>
+                <a href="plaineE.html">Plaine d'E</a>
             </td>
             <td colspan="2">
                 <a href="vosges.html">Vosges</a>
