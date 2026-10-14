@@ -331,18 +331,26 @@ function BasDePage() {
                 <a href="bzh.html">BZH <img src="${bzh}" width="24px" style="position: relative; top: 3px;"/></a>
             </td>
             <td colspan="2">
-                <a href="normandie.html">Normandie</a>
+                <a href="plaineO.html">plaine O</a>
             </td>
         </tr>
         <tr>
-            <td colspan="2">
-                <a href="plaine.html">plaine</a>
+            <td colspan="3">
+                <a href="normandie.html">Basse Normandie</a>
             </td>
+            <td colspan="3">
+                <a href="haute_normandie.html">Haute Normandie</a>
+            </td>
+        </tr>
+        <tr>
             <td colspan="2">
                 <a href="mc.html">Massif Central</a>
             </td>
             <td colspan="2">
                 <a href="ardeche.html">Ardèche</a>
+            </td>
+            <td colspan="2">
+                <a href="millau.html">Millau</a>
             </td>
         </tr>
         <tr>
@@ -369,13 +377,13 @@ function BasDePage() {
         </tr>
         <tr>
             <td colspan="2">
+                <a href="plaineE.html">plaine E</a>
+            </td>
+            <td colspan="2">
                 <a href="vosges.html">Vosges</a>
             </td>
             <td colspan="2">
                 <a href="jura.html">Jura</a>
-            </td>
-            <td colspan="2">
-                <a href="millau.html">Millau</a>
             </td>
         </tr>
         <tr>
