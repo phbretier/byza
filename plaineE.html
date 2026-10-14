@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vol de plaine à l'Est</title>
+    <script src="https://phbretier.github.io/byza/script.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <script> 
+            balise(2,"<br>Massognes","ffvl/5111");
+            balise(2,"Grand<br>Moiré","pioupiou/2168");
+            balise(2,"<br>Pouancay","pioupiou/841");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"<br>Chaudefonds","pioupiou/2198");
+            balise(2,"<br>Angers","holfuy/899");
+            balise(2,"Angers<br>Arpt","metar/LFJR");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Evreux","metar/LFOE");
+            balise(2,"Thoiry","pioupiou/2061");
+            balise(2,"Roquette","ffvl/5069");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Guéret","ffvl/31");
+            balise(2,"St Laurent","meteo-france/23206002");
+            balise(2,"Monédière","ffvl/79");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Soult","pioupiou/818");
+            balise(2,"Douelle","ffvl/83");
+            balise(2,"Crayssac","ffvl/179");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Fumay","ffvl/5055");
+            balise(2,"Revin","ffvl/2164");
+            balise(2,"Bar/Aube","ffvl/73");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"St Martin/<br>Armançon","meteo-france/89418007");
+            balise(2,"St Martin/<br>Armançon","ffvl/113");
+            balise(2,"<br>Noyers","ffvl/5035");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Baulme","ffvl/152");
+            balise(2,"Velars","ffvl/5099");
+            balise(2,"Savigny","ffvl/5100");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Autun","meteo-france/71014004");
+            balise(2,"Uchon","ffvl/65");
+            balise(2,"Mt Dardon","pioupiou/962");
+        </script>
+    </tr>
+
+    <script> SectionWebcams(); </script>
+    <tr>
+        <script> 
+            webcam(2, "Thouars", "https://cam-aero.eu/raspicamaero/LFCT_Thouars/img");
+            webcam(2, "Guéret", "https://dev.meteo-centre.fr/?mcw_embed=saint-sulpice-le-gueretois");
+            webcam(2, "Baulme", "https://aeroclub-cotedor.ovh/camera/DSO.jpg");
+        </script>
+    </tr>
+
+    <script> SectionPrevisions(); </script>
+    <tr>
+        <script> 
+            previsionsMenu(3,"31599/massognes.htm","Massognes","46.7637","0.0468", {"vert": "NO-NE-SO-SE"}, "43477");
+            previsionsMenu(3,"29306/availles_thouarsais.htm","Grand Moiré","46.858","-0.182", {"vert": "N-NE-E-SE-S-SO-O-NO"}, "44019");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(3,"16935/chaudefonds_sur_layon.htm","Chaudefonds","47.3228","-0.7174", {"vert": "N-NE", "orange": "E-SE-S-SO-O-NO"}, "42959");
+            previsionsMenu(3,"16883/blaison_gohier.htm","Blaison Gohier","47.403","-0.397", {"vert": "N-NO-E-SE-S-O"}, "43196");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(2,"29145/jeufosse.htm","Jeufosse","49.0362","1.5396", {"vert": "NE", "orange": "N-E-SE-S-SO-O-NO"}, "42532");
+            // Ons-en-bray
+            previsionsMenu(2,"6742/gueret.htm","Guéret","46.1637","1.8377", {"vert": "N-NE-E-SE-S-SO", "orange": "O"}, "43816");
+            previsionsMenu(2,"5957/veix.htm","Monédière","45.486","1.8394", {"vert": "SE-S-SO", "orange": "NO-N-NE"}, "45261");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(3,"16122/floirac.htm","Soult","44.898","1.6543", {"vert": "SE-O-NO", "orange": "NE-E-S-SO"}, "45371");
+            // Le roc
+            previsionsMenu(3,"16104/douelle.htm","Douelle","44.4635","1.3722", {"vert": "NO-N-NE-SO-S-SE", "orange": "O-E"}, "45711");
+            // La Mounine
+            // Dourgne
+            // Argelier
+            // Vesole
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(2,"35478/revin.htm","Revin","49.9478","4.6246", {"vert": "SE-S-SO", "orange": "O-NO-N-NE-E"}, "45516");
+            // Letanne
+            // Chamery
+            // Malay
+            // Rigny
+            // Saint Colombe
+            previsionsMenu(4,"32770/saint_martin_sur_armancon.htm","St Martin/Armançon","47.8738","4.0567", {"vert": "SE"}, "42762");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            previsionsMenu(2,"34373/bar_sur_aube.htm","Bar/Aube","48.2187","4.6996", {"vert": "NE-E-SE", "orange": "N-S"}, "43482");
+            previsionsMenu(2,"6014/baulme_la_roche.htm","Baulme","47.3489","4.8014", {"vert": "O-NO-NE-E-S-SO", "orange": "SE"}, "44561");
+            previsionsMenu(2,"26875/uchon.htm","Uchon","46.8064","4.2527", {"vert": "O-NO", "orange": "N-NE-E-SE-S-SO"}, "42608");
+        </script>
+    </tr>
+
+    <script> BasDePage(); </script>
+</table>
+</body>
+</html>
