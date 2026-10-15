@@ -344,7 +344,7 @@ function BasDePage() {
         </tr>
         <tr>
             <td colspan="2">
-                <a href="mc.html">Massif Central</a>
+                <a href="auvergne.html">Auvergne</a>
             </td>
             <td colspan="2">
                 <a href="ardeche.html">Ardèche</a>
