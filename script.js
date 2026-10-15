@@ -325,7 +325,7 @@ function BasDePage() {
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Thermiques-ccl?ccl,47.000,1.500,5,i:deg0,p:wind">Plafonds</a>
                 <br>
-                <a href="https://meteo-parapente.com/v5/#/48.809,-3.386,5" target="_blank">
+                <a href="https://meteo-parapente.com/v5/#/46.5397,2.4303,4" target="_blank">
                     <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" height="18px" style="position: relative; top: 5px;"/>
                 </a>
             </td>
