@@ -8,16 +8,36 @@
 <table>
     <tr>
         <script> 
-            balise(2,"Fumay","ffvl/5055");
-            balise(2,"Revin","ffvl/2164");
-            balise(2,"Bar/Aube","ffvl/73");
+            balise(2,"Ardennes","ffvl/2088");
+            balise(2,"Monthermé","ffvl/5089");
+            balise(2,"Létanne ","ffvl/5029");
         </script>
     </tr>
     <tr>
         <script> 
+            balise(2,"Troissy","ffvl/103");
+            balise(2,"Trigny","ffvl/5062");
+            balise(2,"Chouilly","meteo-france/51153001");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Jouy\\Côtes","ffvl/5113");
+            balise(2,"Houéville","ffvl/5050");
+            balise(2,"Rolainville","meteo-france/88393003");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(4,"Malay le grand","meteo-france/89387002");
+            balise(2,"Ste Colombe","ffvl/5033");
+        </script>
+    </tr>
+    <tr>
+        <script> 
+            balise(2,"Bar/Aube","ffvl/73");
             balise(2,"St Martin/<br>Armançon","meteo-france/89418007");
             balise(2,"St Martin/<br>Armançon","ffvl/113");
-            balise(2,"<br>Noyers","ffvl/5035");
         </script>
     </tr>
     <tr>
@@ -29,16 +49,18 @@
     </tr>
     <tr>
         <script> 
-            balise(2,"Autun","meteo-france/71014004");
             balise(2,"Uchon","ffvl/65");
             balise(2,"Mt Dardon","pioupiou/962");
+            balise(2,"Quincié","ffvl/86");
         </script>
     </tr>
 
     <script> SectionWebcams(); </script>
     <tr>
         <script> 
-            webcam(6, "Baulme", "https://aeroclub-cotedor.ovh/camera/DSO.jpg");
+            webcam(2, "Reins", "https://www.skaping.com/reims/cathedrale");
+            webcam(2, "Baulme", "https://aeroclub-cotedor.ovh/camera/DSO.jpg");
+            webcam(2, "Uchon", "https://www.skaping.com/autun/panorama");
         </script>
     </tr>
 
@@ -46,21 +68,21 @@
     <tr>
         <script> 
             previsionsMenu(2,"35478/revin.htm","Revin","49.9478","4.6246", {"vert": "SE-S-SO", "orange": "O-NO-N-NE-E"}, "45516");
-            // Létanne 08
-            // Chamery 51 
+            previsionsMenu(2,"35368/letanne.htm","Létanne ","49.5569","5.0606", {"vert": "NE-E"}, "45117");
+            previsionsMenu(2,"35868/chamery.htm","Chamery","49.1649","3.9532", {"vert": "NE", "orange": "E-SE-S-SO-O-NO-N"}, "44005");
         </script>
     </tr>
     <tr>
         <script> 
-            // Commercy 55
-            // Houéville 88
+            previsionsMenu(3,"18833/geville.htm","Jouy\\Côtes","48.7844","5.6809", {"vert": "NE-E", "orange": "SE-S-SO-O-NO-N"}, "43087");
+            previsionsMenu(3,"32167/houeville.htm","Houéville","48.372","5.8038", {"vert": "NO-NE-E-SE", "orange": "S-SO"}, "44466");
         </script>
     </tr>
     <tr>
         <script> 
-            // Malay le grand (veron)
-            // Rigny-le-Ferron
-            // Eaux-Puiseaux
+            previsionsMenu(2,"32667/malay_le_grand.htm","Malay<br>le Grand","48.1649","3.3498", {"vert": "O-N-NE", "orange": "E-SE-S-SO-NO"}, "43080");
+            previsionsMenu(2,"34787/rigny_le_ferron.htm","Rigny<br>le Ferron","48.194","3.6381", {"vert": "NE"}, "82318");
+            previsionsMenu(2,"34673/eaux_puiseaux.htm","Ste<br>Colombe","48.1196","3.904", {"vert": "O"}, "45952");
         </script>
     </tr>
     <tr>
@@ -73,7 +95,7 @@
         <script> 
             previsionsMenu(2,"6014/baulme_la_roche.htm","Baulme","47.3489","4.8014", {"vert": "O-NO-NE-E-S-SO", "orange": "SE"}, "44561");
             previsionsMenu(2,"26875/uchon.htm","Uchon","46.8064","4.2527", {"vert": "O-NO", "orange": "N-NE-E-SE-S-SO"}, "42608");
-            // Quincié-en-Beaujolais
+            previsionsMenu(2,"25666/quincie_en_beaujolais.htm","Quincie","46.1086","4.6189", {"vert": "NO-N-SE-S", "orange": "E-SO-O"}, "42424");
         </script>
     </tr>
 
