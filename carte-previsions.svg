@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1210" viewBox="270 130 1080 1210" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1210" viewBox="250 130 1000 1210" role="img" aria-labelledby="title description">
   <title id="title">Carte des points de prévisions</title>
   <desc id="description">Carte de la France métropolitaine avec son contour géographique et les points de prévisions colorés selon leur fichier HTML source. Survoler un point pour voir son nom et ses coordonnées.</desc>
   <defs>
-    <filter id="Saint Hylaireadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropshadow dx="0" dy="2" stdDeviation="4" flood-color="#17252a" flood-opacity=".14"/>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#17252a" flood-opacity=".14"/>
     </filter>
     <style>
       text { font-family: Inter, "Segoe UI", Arial, sans-serif; }
@@ -14,8 +14,8 @@
     </style>
   </defs>
 
-  <rect x="270" y="130" width="1080" height="1210" fill="#dcecf0"/>
-  <g transform="matrix(72 0 0 -108.5 630 5694.6)" fill="#f7f4e9" stroke="#50696b" stroke-width=".035" stroke-linejoin="round" stroke-linecap="round" filter="url(#Saint Hylaireadow)">
+  <rect x="250" y="130" width="1000" height="1210" fill="#dcecf0"/>
+  <g transform="matrix(72 0 0 -108.5 630 5694.6)" fill="#f7f4e9" stroke="#50696b" stroke-width=".035" stroke-linejoin="round" stroke-linecap="round" filter="url(#shadows)">
     <path d="M3.588184 50.378992L4.286023 49.907497L4.799222 49.985373L5.674052 49.529484L5.897759 49.442667L6.18632 49.463803L6.65823 49.201958L8.099279 49.017784L7.593676 48.333019L7.466759 47.620582L7.192202 47.449766L6.736571 47.541801L6.768714 47.287708L6.037389 46.725779L6.022609 46.27299L6.5001 46.429673L6.843593 45.991147L6.802355 45.70858L7.096652 45.333099L6.749955 45.028518L7.007562 44.254767L7.549596 44.127901L7.435185 43.693845L6.529245 43.128892L4.556963 43.399651L3.100411 43.075201L2.985999 42.473015L1.826793 42.343385L0.701591 42.795734L0.338047 42.579546L-1.502771 43.034014L-1.901351 43.422802L-1.384225 44.02261L-1.193798 46.014918L-2.225724 47.064363L-2.963276 47.570327L-4.491555 47.954954L-4.59235 48.68416L-3.295814 48.901692L-1.616511 48.644421L-1.933494 49.776342L-0.989469 49.347376L1.338761 50.127173L1.639001 50.946606L2.513573 51.148506L2.658422 50.796848L3.123252 50.780363Z"/>
   </g>
 
@@ -249,28 +249,28 @@
 
   </g>
 
-  <g transform="translate(286 1165)" filter="url(#Saint Hylaireadow)">
-    <rect width="780" height="165" rx="14" fill="#fff" opacity=".97"/>
+  <g transform="translate(298 1165)" filter="url(#shadow)">
+    <rect width="920" height="145" rx="14" fill="#fff" opacity=".97"/>
     <g font-size="12" fill="#30494b">
-      <circle cx="24" cy="36" r="5" fill="#d7191c"/><text x="36" y="40">Trégor-Goëllo</text>
-      <circle cx="224" cy="36" r="5" fill="#2c7bb6"/><text x="236" y="40">Bretagne</text>
-      <circle cx="424" cy="36" r="5" fill="#fdae61"/><text x="436" y="40">Basse Normandie</text>
-      <circle cx="624" cy="36" r="5" fill="#7b3294"/><text x="636" y="40">Haute Normandie</text>
-      <circle cx="24" cy="60" r="5" fill="#1a9641"/><text x="36" y="64">Plaine Ouest</text>
-      <circle cx="224" cy="60" r="5" fill="#e7298a"/><text x="236" y="64">Plaine Est</text>
-      <circle cx="424" cy="60" r="5" fill="#66a61e"/><text x="436" y="64">Auvergne</text>
-      <circle cx="624" cy="60" r="5" fill="#b88600"/><text x="636" y="64">Ardèche</text>
-      <circle cx="24" cy="84" r="5" fill="#1b9e77"/><text x="36" y="88">Alpes du Nord</text>
-      <circle cx="224" cy="84" r="5" fill="#7570b3"/><text x="236" y="88">Annecy</text>
-      <circle cx="424" cy="84" r="5" fill="#d95f02"/><text x="436" y="88">Saint Hylaire</text>
-      <circle cx="624" cy="84" r="5" fill="#a6761d"/><text x="636" y="88">Écrins</text>
-      <circle cx="24" cy="108" r="5" fill="#00a6d6"/><text x="36" y="112">Baronnies</text>
-      <circle cx="224" cy="108" r="5" fill="#c51b7d"/><text x="236" y="112">Alpes du Sud</text>
-      <circle cx="424" cy="108" r="5" fill="#4d4d4d"/><text x="436" y="112">Millau</text>
-      <circle cx="624" cy="108" r="5" fill="#6b8e23"/><text x="636" y="112">Jura</text>
-      <circle cx="24" cy="132" r="5" fill="#3b528b"/><text x="36" y="136">Vosges</text>
-      <circle cx="224" cy="132" r="5" fill="#f03b20"/><text x="236" y="136">Pyrénnées Ouest</text>
-      <circle cx="424" cy="132" r="5" fill="#5e3c99"/><text x="436" y="136">Pyrénnées Est</text>
+      <circle cx="20" cy="38" r="5" fill="#d7191c"/><text x="32" y="42">Trégor-Goëllo</text>
+      <circle cx="220" cy="38" r="5" fill="#2c7bb6"/><text x="232" y="42">Bretagne</text>
+      <circle cx="420" cy="38" r="5" fill="#fdae61"/><text x="432" y="42">Basse Normandie</text>
+      <circle cx="620" cy="38" r="5" fill="#7b3294"/><text x="632" y="42">Haute Normandie</text>
+      <circle cx="820" cy="38" r="5" fill="#1a9641"/><text x="832" y="42">Plaine Ouest</text>
+      <circle cx="20" cy="66" r="5" fill="#e7298a"/><text x="32" y="70">Plaine Est</text>
+      <circle cx="220" cy="66" r="5" fill="#66a61e"/><text x="232" y="70">Auvergne</text>
+      <circle cx="420" cy="66" r="5" fill="#b88600"/><text x="432" y="70">Ardèche</text>
+      <circle cx="620" cy="66" r="5" fill="#1b9e77"/><text x="632" y="70">Alpes du Nord</text>
+      <circle cx="820" cy="66" r="5" fill="#7570b3"/><text x="832" y="70">Annecy</text>
+      <circle cx="20" cy="94" r="5" fill="#d95f02"/><text x="32" y="98">Saint Hylaire</text>
+      <circle cx="220" cy="94" r="5" fill="#a6761d"/><text x="232" y="98">Écrins</text>
+      <circle cx="420" cy="94" r="5" fill="#00a6d6"/><text x="432" y="98">Baronnies</text>
+      <circle cx="620" cy="94" r="5" fill="#c51b7d"/><text x="632" y="98">Alpes du Sud</text>
+      <circle cx="820" cy="94" r="5" fill="#4d4d4d"/><text x="832" y="98">Millau</text>
+      <circle cx="20" cy="122" r="5" fill="#6b8e23"/><text x="32" y="126">Jura</text>
+      <circle cx="220" cy="122" r="5" fill="#ad1457"/><text x="232" y="126">Vosges</text>
+      <circle cx="420" cy="122" r="5" fill="#f03b20"/><text x="432" y="126">Pyrénnées Ouest</text>
+      <circle cx="620" cy="122" r="5" fill="#5e3c99"/><text x="632" y="126">Pyrénnées Est</text>
     </g>
   </g>
 
