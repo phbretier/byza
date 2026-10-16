@@ -2,26 +2,26 @@
   <title id="title">Carte des points de prévisions</title>
   <desc id="description">Carte de la France métropolitaine avec son contour géographique et les points de prévisions colorés selon leur fichier HTML source. Survoler un point pour voir son nom et ses coordonnées.</desc>
   <defs>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#17252a" flood-opacity=".14"/>
+    <filter id="Saint Hylaireadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropshadow dx="0" dy="2" stdDeviation="4" flood-color="#17252a" flood-opacity=".14"/>
     </filter>
     <style>
       text { font-family: Inter, "Segoe UI", Arial, sans-serif; }
       .place { font-size: 14px; fill: #60787a; letter-spacing: .4px; }
       .country { font-size: 25px; fill: #476365; font-weight: 700; letter-spacing: 5px; }
-      .point { stroke: #fff; stroke-width: 1.5; cursor: help; }
-      .point:hover { stroke: #17252a; stroke-width: 3; r: 8; }
+      .point { stroke: none; cursor: help; }
+      .point:hover { r: 8; }
     </style>
   </defs>
 
   <rect x="270" y="130" width="1080" height="1210" fill="#dcecf0"/>
-  <g transform="matrix(72 0 0 -108.5 630 5694.6)" fill="#f7f4e9" stroke="#50696b" stroke-width=".035" stroke-linejoin="round" stroke-linecap="round" filter="url(#shadow)">
+  <g transform="matrix(72 0 0 -108.5 630 5694.6)" fill="#f7f4e9" stroke="#50696b" stroke-width=".035" stroke-linejoin="round" stroke-linecap="round" filter="url(#Saint Hylaireadow)">
     <path d="M3.588184 50.378992L4.286023 49.907497L4.799222 49.985373L5.674052 49.529484L5.897759 49.442667L6.18632 49.463803L6.65823 49.201958L8.099279 49.017784L7.593676 48.333019L7.466759 47.620582L7.192202 47.449766L6.736571 47.541801L6.768714 47.287708L6.037389 46.725779L6.022609 46.27299L6.5001 46.429673L6.843593 45.991147L6.802355 45.70858L7.096652 45.333099L6.749955 45.028518L7.007562 44.254767L7.549596 44.127901L7.435185 43.693845L6.529245 43.128892L4.556963 43.399651L3.100411 43.075201L2.985999 42.473015L1.826793 42.343385L0.701591 42.795734L0.338047 42.579546L-1.502771 43.034014L-1.901351 43.422802L-1.384225 44.02261L-1.193798 46.014918L-2.225724 47.064363L-2.963276 47.570327L-4.491555 47.954954L-4.59235 48.68416L-3.295814 48.901692L-1.616511 48.644421L-1.933494 49.776342L-0.989469 49.347376L1.338761 50.127173L1.639001 50.946606L2.513573 51.148506L2.658422 50.796848L3.123252 50.780363Z"/>
   </g>
 
   <g id="points">
-    <g fill="#ef476f">
-      <circle class="point" cx="372.7" cy="413.7" r="5.2"><title>Trégor-Goëllo — Bus | 48.6719, -3.5739</title></circle>
+    <g fill="#d7191c">
+      <circle class="point" cx="372.7" cy="413.7" r="5.2"><title>Trégor-Goëllo — Bus ( Plestin ) | 48.6719, -3.5739</title></circle>
       <circle class="point" cx="372.3" cy="411.2" r="5.2"><title>Trégor-Goëllo — Beg-ar-Forn | 48.6946, -3.5793</title></circle>
       <circle class="point" cx="374.5" cy="406.7" r="5.2"><title>Trégor-Goëllo — Maez | 48.736, -3.5491</title></circle>
       <circle class="point" cx="374.4" cy="405.2" r="5.2"><title>Trégor-Goëllo — Beg Leguer | 48.7503, -3.5496</title></circle>
@@ -39,233 +39,238 @@
       <circle class="point" cx="449.5" cy="421.4" r="5.2"><title>Trégor-Goëllo — St Pabu | 48.601, -2.507</title></circle>
     </g>
 
-    <g fill="#06a77d">
-      <circle class="point" cx="458.6" cy="455.6" r="5.2"><title>bzh — Rouillac | 48.286, -2.381</title></circle>
-      <circle class="point" cx="465.1" cy="441.3" r="5.2"><title>bzh — Jugon les Lacs | 48.4178, -2.2899</title></circle>
-      <circle class="point" cx="484.9" cy="502.4" r="5.2"><title>bzh — St Séglin | 47.8545, -2.0156</title></circle>
-      <circle class="point" cx="505.1" cy="507.3" r="5.2"><title>bzh — Noé Blanche | 47.8092, -1.7346</title></circle>
-      <circle class="point" cx="493.1" cy="520.4" r="5.2"><title>bzh — Masserac | 47.6882, -1.9011</title></circle>
-      <circle class="point" cx="450.4" cy="542.7" r="5.2"><title>bzh — Pénestin | 47.4826, -2.4944</title></circle>
-      <circle class="point" cx="345.4" cy="446.2" r="5.2"><title>bzh — Botmeur | 48.372, -3.953</title></circle>
-      <circle class="point" cx="325.1" cy="462.7" r="5.2"><title>bzh — Menez Hom | 48.22, -4.235</title></circle>
-      <circle class="point" cx="322.0" cy="472.5" r="5.2"><title>bzh — Tréfeuntec | 48.1298, -4.2776</title></circle>
+    <g fill="#2c7bb6">
+      <circle class="point" cx="458.6" cy="455.6" r="5.2"><title>Bretagne — Rouillac | 48.286, -2.381</title></circle>
+      <circle class="point" cx="465.1" cy="441.3" r="5.2"><title>Bretagne — Jugon les Lacs | 48.4178, -2.2899</title></circle>
+      <circle class="point" cx="484.9" cy="502.4" r="5.2"><title>Bretagne — St Séglin | 47.8545, -2.0156</title></circle>
+      <circle class="point" cx="505.1" cy="507.3" r="5.2"><title>Bretagne — Noé Blanche | 47.8092, -1.7346</title></circle>
+      <circle class="point" cx="493.1" cy="520.4" r="5.2"><title>Bretagne — Masserac | 47.6882, -1.9011</title></circle>
+      <circle class="point" cx="450.4" cy="542.7" r="5.2"><title>Bretagne — Pénestin | 47.4826, -2.4944</title></circle>
+      <circle class="point" cx="345.4" cy="446.2" r="5.2"><title>Bretagne — Botmeur | 48.372, -3.953</title></circle>
+      <circle class="point" cx="325.1" cy="462.7" r="5.2"><title>Bretagne — Menez Hom | 48.22, -4.235</title></circle>
+      <circle class="point" cx="322.0" cy="472.5" r="5.2"><title>Bretagne — Tréfeuntec | 48.1298, -4.2776</title></circle>
     </g>
 
-    <g fill="#f77f00">
-      <circle class="point" cx="596.4" cy="386.1" r="5.2"><title>normandie — Clécy | 48.926, -0.4667</title></circle>
-      <circle class="point" cx="626.3" cy="393.9" r="5.2"><title>normandie — Crocy | 48.8543, -0.0519</title></circle>
-      <circle class="point" cx="597.9" cy="390.9" r="5.2"><title>normandie — St Marc d'Ouilly | 48.8824, -0.4452</title></circle>
-      <circle class="point" cx="522.0" cy="410.0" r="5.2"><title>normandie — Champeaux | 48.7058, -1.4995</title></circle>
-      <circle class="point" cx="515.5" cy="394.9" r="5.2"><title>normandie — Granville | 48.8451, -1.5903</title></circle>
-      <circle class="point" cx="555.0" cy="375.2" r="5.2"><title>normandie — St Lô | 49.0268, -1.0421</title></circle>
-      <circle class="point" cx="490.8" cy="302.8" r="5.2"><title>normandie — Jobourg | 49.6944, -1.9335</title></circle>
-      <circle class="point" cx="496.4" cy="307.6" r="5.2"><title>normandie — Vauville | 49.6499, -1.8554</title></circle>
-      <circle class="point" cx="497.3" cy="312.1" r="5.2"><title>normandie — Biville | 49.6084, -1.8425</title></circle>
-      <circle class="point" cx="564.4" cy="336.5" r="5.2"><title>normandie — Vierville | 49.383, -0.911</title></circle>
-      <circle class="point" cx="577.7" cy="340.6" r="5.2"><title>normandie — Commes | 49.346, -0.726</title></circle>
-      <circle class="point" cx="584.2" cy="341.0" r="5.2"><title>normandie — Tracy | 49.3421, -0.6358</title></circle>
-      <circle class="point" cx="636.2" cy="318.7" r="5.2"><title>normandie — Octeville | 49.5471, 0.0863</title></circle>
-      <circle class="point" cx="665.4" cy="290.1" r="5.2"><title>normandie — St Pierre | 49.8106, 0.4911</title></circle>
-      <circle class="point" cx="731.6" cy="285.9" r="5.2"><title>normandie — Londinières | 49.8496, 1.4105</title></circle>
-      <circle class="point" cx="719.7" cy="343.5" r="5.2"><title>normandie — 2 Amants | 49.319, 1.2463</title></circle>
+    <g fill="#fdae61">
+      <circle class="point" cx="596.4" cy="386.1" r="5.2"><title>Basse Normandie — Clécy | 48.926, -0.4667</title></circle>
+      <circle class="point" cx="597.9" cy="390.9" r="5.2"><title>Basse Normandie — St Marc d'Ouilly | 48.8824, -0.4452</title></circle>
+      <circle class="point" cx="626.3" cy="393.9" r="5.2"><title>Basse Normandie — Crocy | 48.8543, -0.0519</title></circle>
+      <circle class="point" cx="522.0" cy="410.0" r="5.2"><title>Basse Normandie — Champeaux | 48.7058, -1.4995</title></circle>
+      <circle class="point" cx="515.5" cy="394.9" r="5.2"><title>Basse Normandie — Granville | 48.8451, -1.5903</title></circle>
+      <circle class="point" cx="555.0" cy="375.2" r="5.2"><title>Basse Normandie — St Lô | 49.0268, -1.0421</title></circle>
+      <circle class="point" cx="490.8" cy="302.8" r="5.2"><title>Basse Normandie — Jobourg | 49.6944, -1.9335</title></circle>
+      <circle class="point" cx="496.4" cy="307.6" r="5.2"><title>Basse Normandie — Vauville | 49.6499, -1.8554</title></circle>
+      <circle class="point" cx="497.3" cy="312.1" r="5.2"><title>Basse Normandie — Biville | 49.6084, -1.8425</title></circle>
+      <circle class="point" cx="564.4" cy="336.5" r="5.2"><title>Basse Normandie — Vierville | 49.383, -0.911</title></circle>
+      <circle class="point" cx="577.7" cy="340.6" r="5.2"><title>Basse Normandie — Commes | 49.346, -0.726</title></circle>
+      <circle class="point" cx="584.2" cy="341.0" r="5.2"><title>Basse Normandie — Tracy | 49.3421, -0.6358</title></circle>
     </g>
 
-    <g fill="#3a86ff">
-      <circle class="point" cx="633.4" cy="620.7" r="5.2"><title>plaine — Massognes | 46.7637, 0.0468</title></circle>
-      <circle class="point" cx="616.9" cy="610.5" r="5.2"><title>plaine — Grand Moiré | 46.858, -0.182</title></circle>
-      <circle class="point" cx="578.3" cy="560.1" r="5.2"><title>plaine — Chaudefonds | 47.3228, -0.7174</title></circle>
-      <circle class="point" cx="601.4" cy="551.4" r="5.2"><title>plaine — Blaison Gohier | 47.403, -0.397</title></circle>
-      <circle class="point" cx="740.9" cy="374.2" r="5.2"><title>plaine — Jeufosse | 49.0362, 1.5396</title></circle>
-      <circle class="point" cx="762.3" cy="685.8" r="5.2"><title>plaine — Guéret | 46.1637, 1.8377</title></circle>
-      <circle class="point" cx="762.4" cy="759.4" r="5.2"><title>plaine — Monédière | 45.486, 1.8394</title></circle>
-      <circle class="point" cx="749.1" cy="823.2" r="5.2"><title>plaine — Soult | 44.898, 1.6543</title></circle>
-      <circle class="point" cx="728.8" cy="870.3" r="5.2"><title>plaine — Douelle | 44.4635, 1.3722</title></circle>
-      <circle class="point" cx="963.0" cy="275.3" r="5.2"><title>plaine — Revin | 49.9478, 4.6246</title></circle>
-      <circle class="point" cx="922.1" cy="500.3" r="5.2"><title>plaine — St Martin/Armançon | 47.8738, 4.0567</title></circle>
-      <circle class="point" cx="968.4" cy="462.9" r="5.2"><title>plaine — Bar/Aube | 48.2187, 4.6996</title></circle>
-      <circle class="point" cx="975.7" cy="557.2" r="5.2"><title>plaine — Baulme | 47.3489, 4.8014</title></circle>
-      <circle class="point" cx="936.2" cy="616.1" r="5.2"><title>plaine — Uchon | 46.8064, 4.2527</title></circle>
+    <g fill="#7b3294">
+      <circle class="point" cx="636.2" cy="318.7" r="5.2"><title>Haute Normandie — Octeville | 49.5471, 0.0863</title></circle>
+      <circle class="point" cx="663.7" cy="334.4" r="5.2"><title>Haute Normandie — Marais Vernier | 49.4024, 0.4675</title></circle>
+      <circle class="point" cx="665.4" cy="290.1" r="5.2"><title>Haute Normandie — St Pierre | 49.8106, 0.4911</title></circle>
+      <circle class="point" cx="691.1" cy="336.0" r="5.2"><title>Haute Normandie — Barneville | 49.3877, 0.8484</title></circle>
+      <circle class="point" cx="697.7" cy="326.1" r="5.2"><title>Haute Normandie — Henouville | 49.4797, 0.9406</title></circle>
+      <circle class="point" cx="719.7" cy="343.5" r="5.2"><title>Haute Normandie — 2 Amants | 49.319, 1.2463</title></circle>
+      <circle class="point" cx="725.7" cy="351.8" r="5.2"><title>Haute Normandie — Roquette | 49.2428, 1.3295</title></circle>
+      <circle class="point" cx="740.9" cy="374.2" r="5.2"><title>Haute Normandie — Jeufosse | 49.0362, 1.5396</title></circle>
+      <circle class="point" cx="766.7" cy="334.1" r="5.2"><title>Haute Normandie — Ons-en-Bray | 49.4053, 1.8984</title></circle>
+      <circle class="point" cx="723.8" cy="292.7" r="5.2"><title>Haute Normandie — Osmoy | 49.7871, 1.3021</title></circle>
+      <circle class="point" cx="731.6" cy="285.9" r="5.2"><title>Haute Normandie — Londinières | 49.8496, 1.4105</title></circle>
+      <circle class="point" cx="750.8" cy="281.4" r="5.2"><title>Haute Normandie — Mt clique | 49.8909, 1.6773</title></circle>
     </g>
 
-    <g fill="#8338ec">
-      <circle class="point" cx="843.3" cy="728.3" r="5.2"><title>mc — Puy de Dôme | 45.7728, 2.9625</title></circle>
-      <circle class="point" cx="854.3" cy="743.5" r="5.2"><title>mc — St Sandoux | 45.6319, 3.1156</title></circle>
-      <circle class="point" cx="834.9" cy="747.9" r="5.2"><title>mc — Puy de la Tache | 45.592, 2.8454</title></circle>
-      <circle class="point" cx="832.6" cy="754.8" r="5.2"><title>mc — Puy de Sancy | 45.5285, 2.8138</title></circle>
-      <circle class="point" cx="833.4" cy="756.9" r="5.2"><title>mc — Puy de Paillaret | 45.5085, 2.825</title></circle>
-      <circle class="point" cx="826.7" cy="795.5" r="5.2"><title>mc — Le Claux | 45.1529, 2.7326</title></circle>
-      <circle class="point" cx="828.8" cy="805.5" r="5.2"><title>mc — Plomb du Cantal | 45.0612, 2.7608</title></circle>
+    <g fill="#1a9641">
+      <circle class="point" cx="578.3" cy="560.1" r="5.2"><title>Plaine Ouest — Chaudefonds | 47.3228, -0.7174</title></circle>
+      <circle class="point" cx="601.4" cy="551.4" r="5.2"><title>Plaine Ouest — Blaison Gohier | 47.403, -0.397</title></circle>
+      <circle class="point" cx="633.4" cy="620.7" r="5.2"><title>Plaine Ouest — Massognes | 46.7637, 0.0468</title></circle>
+      <circle class="point" cx="616.9" cy="610.5" r="5.2"><title>Plaine Ouest — Grand Moiré | 46.858, -0.182</title></circle>
+      <circle class="point" cx="762.3" cy="685.8" r="5.2"><title>Plaine Ouest — Guéret | 46.1637, 1.8377</title></circle>
+      <circle class="point" cx="762.5" cy="759.4" r="5.2"><title>Plaine Ouest — Monédière | 45.4853, 1.8396</title></circle>
+      <circle class="point" cx="749.1" cy="823.2" r="5.2"><title>Plaine Ouest — Soult | 44.898, 1.6543</title></circle>
+      <circle class="point" cx="734.4" cy="825.8" r="5.2"><title>Plaine Ouest — Le Roc | 44.8733, 1.4506</title></circle>
+      <circle class="point" cx="728.8" cy="870.3" r="5.2"><title>Plaine Ouest — Douelle | 44.4635, 1.3722</title></circle>
+      <circle class="point" cx="768.3" cy="867.7" r="5.2"><title>Plaine Ouest — Montbrun | 44.4872, 1.9211</title></circle>
     </g>
 
-    <g fill="#ff006e">
-      <circle class="point" cx="913.1" cy="800.8" r="5.2"><title>ardeche — Chaspinhac | 45.1044, 3.9315</title></circle>
-      <circle class="point" cx="907.5" cy="805.8" r="5.2"><title>ardeche — Mt Denise | 45.0581, 3.854</title></circle>
-      <circle class="point" cx="931.9" cy="821.8" r="5.2"><title>ardeche — Mt Mézenc | 44.9103, 4.1928</title></circle>
-      <circle class="point" cx="902.3" cy="743.6" r="5.2"><title>ardeche — Mt Chouvé | 45.631, 3.7813</title></circle>
-      <circle class="point" cx="923.9" cy="854.3" r="5.2"><title>ardeche — Tanargue | 44.6112, 4.0825</title></circle>
-      <circle class="point" cx="975.3" cy="784.7" r="5.2"><title>ardeche — St Désirat | 45.2529444, 4.7959831</title></circle>
+    <g fill="#e7298a">
+      <circle class="point" cx="963.0" cy="275.3" r="5.2"><title>Plaine Est — Revin | 49.9478, 4.6246</title></circle>
+      <circle class="point" cx="995.5" cy="319.0" r="5.2"><title>Plaine Est — Létanne | 49.5569, 5.0606</title></circle>
+      <circle class="point" cx="914.6" cy="360.2" r="5.2"><title>Plaine Est — Chamery | 49.1649, 3.9532</title></circle>
+      <circle class="point" cx="1039.0" cy="405.8" r="5.2"><title>Plaine Est — Jouy/Côtes | 48.7844, 5.6809</title></circle>
+      <circle class="point" cx="1047.9" cy="450.0" r="5.2"><title>Plaine Est — Houéville | 48.372, 5.8038</title></circle>
+      <circle class="point" cx="871.2" cy="478.6" r="5.2"><title>Plaine Est — Malay le Grand | 48.1649, 3.3498</title></circle>
+      <circle class="point" cx="891.9" cy="475.4" r="5.2"><title>Plaine Est — Rigny le Ferron | 48.194, 3.6381</title></circle>
+      <circle class="point" cx="911.1" cy="483.8" r="5.2"><title>Plaine Est — Ste Colombe | 48.1196, 3.904</title></circle>
+      <circle class="point" cx="968.4" cy="462.9" r="5.2"><title>Plaine Est — Bar/Aube | 48.2187, 4.6996</title></circle>
+      <circle class="point" cx="922.1" cy="500.3" r="5.2"><title>Plaine Est — St Martin/Armançon | 47.8738, 4.0567</title></circle>
+      <circle class="point" cx="975.7" cy="557.2" r="5.2"><title>Plaine Est — Baulme | 47.3489, 4.8014</title></circle>
+      <circle class="point" cx="936.2" cy="616.1" r="5.2"><title>Plaine Est — Uchon | 46.8064, 4.2527</title></circle>
+      <circle class="point" cx="962.5" cy="691.7" r="5.2"><title>Plaine Est — Quincié | 46.1086, 4.6189</title></circle>
     </g>
 
-    <g fill="#00b4d8">
-      <circle class="point" cx="1097.2" cy="672.6" r="5.2"><title>alpesnord — Orcier | 46.2856, 6.4893</title></circle>
-      <circle class="point" cx="1101.3" cy="687.9" r="5.2"><title>alpesnord — Mieussy | 46.1449, 6.5459</title></circle>
-      <circle class="point" cx="1113.9" cy="691.1" r="5.2"><title>alpesnord — Samoens | 46.1148, 6.7203</title></circle>
-      <circle class="point" cx="1075.6" cy="687.5" r="5.2"><title>alpesnord — Salève | 46.1487, 6.1888</title></circle>
-      <circle class="point" cx="1115.3" cy="709.1" r="5.2"><title>alpesnord — Plaine Joux | 45.9496, 6.7396</title></circle>
-      <circle class="point" cx="1123.6" cy="710.6" r="5.2"><title>alpesnord — Chamonix | 45.9355, 6.855</title></circle>
+    <g fill="#66a61e">
+      <circle class="point" cx="843.3" cy="728.3" r="5.2"><title>Auvergne — Puy de Dôme | 45.7728, 2.9625</title></circle>
+      <circle class="point" cx="854.3" cy="743.5" r="5.2"><title>Auvergne — St Sandoux | 45.6319, 3.1156</title></circle>
+      <circle class="point" cx="834.9" cy="747.9" r="5.2"><title>Auvergne — Puy de la Tache | 45.592, 2.8454</title></circle>
+      <circle class="point" cx="832.6" cy="754.8" r="5.2"><title>Auvergne — Puy de Sancy | 45.5285, 2.8138</title></circle>
+      <circle class="point" cx="833.4" cy="756.9" r="5.2"><title>Auvergne — Puy de Paillaret | 45.5085, 2.825</title></circle>
+      <circle class="point" cx="826.7" cy="795.5" r="5.2"><title>Auvergne — Le Claux | 45.1529, 2.7326</title></circle>
+      <circle class="point" cx="828.8" cy="805.5" r="5.2"><title>Auvergne — Plomb du Cantal | 45.0612, 2.7608</title></circle>
     </g>
 
-    <g fill="#ffbe0b">
-      <circle class="point" cx="1079.8" cy="723.7" r="5.2"><title>annecy — Montmin | 45.8144, 6.2469</title></circle>
-      <circle class="point" cx="1068.9" cy="724.8" r="5.2"><title>annecy — Semnoz | 45.8048, 6.0954</title></circle>
-      <circle class="point" cx="1081.6" cy="737.1" r="5.2"><title>annecy — Sambuy | 45.6914, 6.2727</title></circle>
-      <circle class="point" cx="1096.3" cy="708.1" r="5.2"><title>annecy — Grand Bornand | 45.9589, 6.4761</title></circle>
-      <circle class="point" cx="1098.5" cy="731.1" r="5.2"><title>annecy — Bisane | 45.7467, 6.507</title></circle>
-      <circle class="point" cx="1086.4" cy="727.7" r="5.2"><title>annecy — Marlens | 45.7775, 6.3395</title></circle>
-      <circle class="point" cx="1080.2" cy="754.6" r="5.2"><title>annecy — Chamoux | 45.5296, 6.2527</title></circle>
-      <circle class="point" cx="1072.6" cy="770.0" r="5.2"><title>annecy — Allevard | 45.388, 6.147</title></circle>
-      <circle class="point" cx="1069.6" cy="752.1" r="5.2"><title>annecy — Montlambert | 45.5528, 6.1052</title></circle>
-      <circle class="point" cx="1060.2" cy="738.0" r="5.2"><title>annecy — Revard | 45.6832, 5.9747</title></circle>
-      <circle class="point" cx="1048.1" cy="746.8" r="5.2"><title>annecy — Aiguebelette | 45.602, 5.807</title></circle>
-      <circle class="point" cx="1042.7" cy="750.6" r="5.2"><title>annecy — Banchet | 45.5671, 5.7323</title></circle>
+    <g fill="#b88600">
+      <circle class="point" cx="958.9" cy="770.3" r="5.2"><title>Ardèche — Jasserie | 45.3855, 4.5676</title></circle>
+      <circle class="point" cx="956.7" cy="785.2" r="5.2"><title>Ardèche — Burdignes | 45.2476, 4.5372</title></circle>
+      <circle class="point" cx="975.3" cy="784.7" r="5.2"><title>Ardèche — St Désirat | 45.2529444, 4.7959831</title></circle>
+      <circle class="point" cx="913.1" cy="800.8" r="5.2"><title>Ardèche — Chaspinhac | 45.1044, 3.9315</title></circle>
+      <circle class="point" cx="907.5" cy="805.8" r="5.2"><title>Ardèche — Mt Denise | 45.0581, 3.854</title></circle>
+      <circle class="point" cx="931.9" cy="821.8" r="5.2"><title>Ardèche — Mt Mézenc | 44.9103, 4.1928</title></circle>
+      <circle class="point" cx="902.3" cy="743.6" r="5.2"><title>Ardèche — Mt Chouvé | 45.631, 3.7813</title></circle>
+      <circle class="point" cx="923.9" cy="854.3" r="5.2"><title>Ardèche — Tanargue | 44.6112, 4.0825</title></circle>
     </g>
 
-    <g fill="#9b5de5">
-      <circle class="point" cx="1054.0" cy="778.8" r="5.2"><title>sh — St Hilaire | 45.3068, 5.8882</title></circle>
-      <circle class="point" cx="1050.9" cy="774.7" r="5.2"><title>sh — la Sia | 45.345, 5.846</title></circle>
-      <circle class="point" cx="1045.1" cy="776.8" r="5.2"><title>sh — Charmant Som | 45.3251, 5.7652</title></circle>
-      <circle class="point" cx="1053.6" cy="798.0" r="5.2"><title>sh — Chamrousse | 45.13, 5.8833</title></circle>
-      <circle class="point" cx="1032.6" cy="821.8" r="5.2"><title>sh — Serpaton | 44.9109, 5.591</title></circle>
+    <g fill="#1b9e77">
+      <circle class="point" cx="1097.2" cy="672.6" r="5.2"><title>Alpes du Nord — Orcier | 46.2856, 6.4893</title></circle>
+      <circle class="point" cx="1101.3" cy="687.9" r="5.2"><title>Alpes du Nord — Mieussy | 46.1449, 6.5459</title></circle>
+      <circle class="point" cx="1113.9" cy="691.1" r="5.2"><title>Alpes du Nord — Samoens | 46.1148, 6.7203</title></circle>
+      <circle class="point" cx="1075.6" cy="687.5" r="5.2"><title>Alpes du Nord — Salève | 46.1487, 6.1888</title></circle>
+      <circle class="point" cx="1115.3" cy="709.1" r="5.2"><title>Alpes du Nord — Plaine Joux | 45.9496, 6.7396</title></circle>
+      <circle class="point" cx="1123.6" cy="710.6" r="5.2"><title>Alpes du Nord — Chamonix | 45.9355, 6.855</title></circle>
     </g>
 
-    <g fill="#e63946">
-      <circle class="point" cx="1096.8" cy="828.3" r="5.2"><title>ecrins — Puy Aillaud | 44.8511, 6.4829</title></circle>
-      <circle class="point" cx="1118.5" cy="848.2" r="5.2"><title>ecrins — Ceillac | 44.6672, 6.7847</title></circle>
-      <circle class="point" cx="1078.7" cy="846.7" r="5.2"><title>ecrins — Richards | 44.6809, 6.2317</title></circle>
-      <circle class="point" cx="1084.0" cy="844.7" r="5.2"><title>ecrins — Orcières Merlette | 44.6991, 6.3061</title></circle>
-      <circle class="point" cx="1088.7" cy="872.5" r="5.2"><title>ecrins — St Vincent les Forts | 44.4431, 6.3715</title></circle>
-      <circle class="point" cx="1021.7" cy="855.2" r="5.2"><title>ecrins — Clamontard | 44.6031, 5.4409</title></circle>
-      <circle class="point" cx="1047.5" cy="837.1" r="5.2"><title>ecrins — Courtet | 44.7698, 5.798</title></circle>
+    <g fill="#7570b3">
+      <circle class="point" cx="1079.8" cy="723.7" r="5.2"><title>Annecy — Montmin | 45.8144, 6.2469</title></circle>
+      <circle class="point" cx="1068.9" cy="724.8" r="5.2"><title>Annecy — Semnoz | 45.8048, 6.0954</title></circle>
+      <circle class="point" cx="1081.6" cy="737.1" r="5.2"><title>Annecy — Sambuy | 45.6914, 6.2727</title></circle>
+      <circle class="point" cx="1096.3" cy="708.1" r="5.2"><title>Annecy — Grand Bornand | 45.9589, 6.4761</title></circle>
+      <circle class="point" cx="1098.5" cy="731.1" r="5.2"><title>Annecy — Bisane | 45.7467, 6.507</title></circle>
+      <circle class="point" cx="1086.4" cy="727.7" r="5.2"><title>Annecy — Marlens | 45.7775, 6.3395</title></circle>
+      <circle class="point" cx="1080.2" cy="754.6" r="5.2"><title>Annecy — Chamoux | 45.5296, 6.2527</title></circle>
+      <circle class="point" cx="1072.6" cy="770.0" r="5.2"><title>Annecy — Allevard | 45.388, 6.147</title></circle>
+      <circle class="point" cx="1069.6" cy="752.1" r="5.2"><title>Annecy — Montlambert | 45.5528, 6.1052</title></circle>
+      <circle class="point" cx="1060.2" cy="738.0" r="5.2"><title>Annecy — Revard | 45.6832, 5.9747</title></circle>
+      <circle class="point" cx="1048.1" cy="746.8" r="5.2"><title>Annecy — Aiguebelette | 45.602, 5.807</title></circle>
+      <circle class="point" cx="1042.7" cy="750.6" r="5.2"><title>Annecy — Banchet | 45.5671, 5.7323</title></circle>
     </g>
 
-    <g fill="#2a9d8f">
-      <circle class="point" cx="1001.2" cy="884.1" r="5.2"><title>baronnies — Nyons | 44.3366, 5.1559</title></circle>
-      <circle class="point" cx="1010.0" cy="901.7" r="5.2"><title>baronnies — Ventoux | 44.174, 5.2784</title></circle>
-      <circle class="point" cx="1026.8" cy="898.5" r="5.2"><title>baronnies — Séderon | 44.2036, 5.5114</title></circle>
-      <circle class="point" cx="1045.1" cy="888.3" r="5.2"><title>baronnies — Laragne | 44.2979, 5.7649</title></circle>
+    <g fill="#d95f02">
+      <circle class="point" cx="1045.1" cy="776.8" r="5.2"><title>Saint Hylaire — Charmant Som | 45.3251, 5.7652</title></circle>
+      <circle class="point" cx="1050.9" cy="774.7" r="5.2"><title>Saint Hylaire — la Sia | 45.345, 5.846</title></circle>
+      <circle class="point" cx="1054.0" cy="778.8" r="5.2"><title>Saint Hylaire — St Hilaire | 45.3068, 5.8882</title></circle>
+      <circle class="point" cx="1053.6" cy="798.0" r="5.2"><title>Saint Hylaire — Chamrousse | 45.13, 5.8833</title></circle>
+      <circle class="point" cx="1032.6" cy="821.8" r="5.2"><title>Saint Hylaire — Serpaton | 44.9109, 5.591</title></circle>
     </g>
 
-    <g fill="#fb5607">
-      <circle class="point" cx="1096.6" cy="922.9" r="5.2"><title>alpessud — Saint André les Alpes | 43.9787, 6.4799</title></circle>
-      <circle class="point" cx="1078.5" cy="937.8" r="5.2"><title>alpessud — Moustiers Sainte-Marie | 43.8416, 6.2285</title></circle>
-      <circle class="point" cx="1109.0" cy="948.2" r="5.2"><title>alpessud — Lachens | 43.7457, 6.6531</title></circle>
-      <circle class="point" cx="1120.2" cy="940.9" r="5.2"><title>alpessud — Col de Bleyne | 43.8133, 6.8085</title></circle>
-      <circle class="point" cx="1131.3" cy="942.1" r="5.2"><title>alpessud — Gréolières | 43.8022, 6.9622</title></circle>
-      <circle class="point" cx="1130.0" cy="950.7" r="5.2"><title>alpessud — Gourdon | 43.723, 6.9438</title></circle>
-      <circle class="point" cx="1165.9" cy="946.0" r="5.2"><title>alpessud — Roquebrune | 43.7657, 7.4427</title></circle>
-      <circle class="point" cx="1036.4" cy="970.6" r="5.2"><title>alpessud — St Victoire | 43.5389, 5.6447</title></circle>
-      <circle class="point" cx="1052.8" cy="996.3" r="5.2"><title>alpessud — Signes | 43.3021, 5.8729</title></circle>
-      <circle class="point" cx="1040.0" cy="998.5" r="5.2"><title>alpessud — Cuges les-Pins | 43.2823, 5.6941</title></circle>
+    <g fill="#a6761d">
+      <circle class="point" cx="1021.7" cy="855.2" r="5.2"><title>Écrins — Clamontard | 44.6031, 5.4409</title></circle>
+      <circle class="point" cx="1047.5" cy="837.1" r="5.2"><title>Écrins — Courtet | 44.7698, 5.798</title></circle>
+      <circle class="point" cx="1078.7" cy="846.7" r="5.2"><title>Écrins — Richards | 44.6809, 6.2317</title></circle>
+      <circle class="point" cx="1084.0" cy="844.7" r="5.2"><title>Écrins — Orcières | 44.6991, 6.3061</title></circle>
+      <circle class="point" cx="1096.8" cy="828.3" r="5.2"><title>Écrins — Puy Aillaud | 44.8511, 6.4829</title></circle>
+      <circle class="point" cx="1118.5" cy="848.2" r="5.2"><title>Écrins — Ceillac | 44.6672, 6.7847</title></circle>
+      <circle class="point" cx="1088.7" cy="872.5" r="5.2"><title>Écrins — St Vincent les Forts | 44.4431, 6.3715</title></circle>
     </g>
 
-    <g fill="#6a994e">
-      <circle class="point" cx="854.5" cy="892.7" r="5.2"><title>millau — Novis | 44.2574, 3.118</title></circle>
-      <circle class="point" cx="882.8" cy="879.7" r="5.2"><title>millau — Ispagnac | 44.3766, 3.5107</title></circle>
-      <circle class="point" cx="938.4" cy="906.3" r="5.2"><title>millau — Mont bouquet | 44.1322293, 4.2839719</title></circle>
-      <circle class="point" cx="850.6" cy="912.7" r="5.2"><title>millau — Millau | 44.0732, 3.0642</title></circle>
-      <circle class="point" cx="848.1" cy="924.2" r="5.2"><title>millau — Tournemire | 43.9666, 3.0293</title></circle>
-      <circle class="point" cx="892.1" cy="934.8" r="5.2"><title>millau — Seranne | 43.8688, 3.6405</title></circle>
-      <circle class="point" cx="871.3" cy="964.4" r="5.2"><title>millau — Vissou | 43.5966, 3.3508</title></circle>
+    <g fill="#00a6d6">
+      <circle class="point" cx="1001.2" cy="884.1" r="5.2"><title>Baronnies — Nyons | 44.3366, 5.1559</title></circle>
+      <circle class="point" cx="1010.0" cy="901.7" r="5.2"><title>Baronnies — Ventoux | 44.174, 5.2784</title></circle>
+      <circle class="point" cx="1026.8" cy="898.5" r="5.2"><title>Baronnies — Séderon | 44.2036, 5.5114</title></circle>
+      <circle class="point" cx="1045.1" cy="888.3" r="5.2"><title>Baronnies — Laragne | 44.2979, 5.7649</title></circle>
     </g>
 
-    <g fill="#577590">
-      <circle class="point" cx="1119.3" cy="548.3" r="5.2"><title>jura — Mandeure | 47.4315, 6.7958</title></circle>
-      <circle class="point" cx="1060.4" cy="572.9" r="5.2"><title>jura — Planoise | 47.2044, 5.9775</title></circle>
-      <circle class="point" cx="1105.5" cy="587.2" r="5.2"><title>jura — Morteau | 47.0732, 6.6039</title></circle>
-      <circle class="point" cx="1053.1" cy="598.4" r="5.2"><title>jura — Mt Poupet | 46.97, 5.8759</title></circle>
-      <circle class="point" cx="1087.9" cy="624.1" r="5.2"><title>jura — Mt d'Or | 46.7325, 6.3602</title></circle>
-      <circle class="point" cx="1060.8" cy="671.2" r="5.2"><title>jura — Crozet | 46.2986, 5.9833</title></circle>
-      <circle class="point" cx="1018.6" cy="667.8" r="5.2"><title>jura — Mt Myon | 46.3302, 5.3967</title></circle>
+    <g fill="#c51b7d">
+      <circle class="point" cx="1096.6" cy="922.9" r="5.2"><title>Alpes du Sud — Saint André les Alpes | 43.9787, 6.4799</title></circle>
+      <circle class="point" cx="1078.5" cy="937.8" r="5.2"><title>Alpes du Sud — Moustiers Sainte-Marie | 43.8416, 6.2285</title></circle>
+      <circle class="point" cx="1109.0" cy="948.2" r="5.2"><title>Alpes du Sud — Lachens | 43.7457, 6.6531</title></circle>
+      <circle class="point" cx="1120.2" cy="940.9" r="5.2"><title>Alpes du Sud — Col de Bleyne | 43.8133, 6.8085</title></circle>
+      <circle class="point" cx="1131.3" cy="942.1" r="5.2"><title>Alpes du Sud — Gréolières | 43.8022, 6.9622</title></circle>
+      <circle class="point" cx="1130.0" cy="950.7" r="5.2"><title>Alpes du Sud — Gourdon | 43.723, 6.9438</title></circle>
+      <circle class="point" cx="1165.9" cy="946.0" r="5.2"><title>Alpes du Sud — Roquebrune | 43.7657, 7.4427</title></circle>
+      <circle class="point" cx="1036.4" cy="970.6" r="5.2"><title>Alpes du Sud — St Victoire | 43.5389, 5.6447</title></circle>
+      <circle class="point" cx="1052.8" cy="996.3" r="5.2"><title>Alpes du Sud — Signes | 43.3021, 5.8729</title></circle>
+      <circle class="point" cx="1040.0" cy="998.5" r="5.2"><title>Alpes du Sud — Cuges les-Pins | 43.2823, 5.6941</title></circle>
     </g>
 
-    <g fill="#bc6c25">
-      <circle class="point" cx="537.0" cy="997.5" r="5.2"><title>pyrouest — Baigura | 43.2916, -1.2917</title></circle>
-      <circle class="point" cx="589.6" cy="1031.8" r="5.2"><title>pyrouest — Accous | 42.9747, -0.5611</title></circle>
-      <circle class="point" cx="615.9" cy="1030.2" r="5.2"><title>pyrouest — Val d'Azun | 42.9902, -0.1964</title></circle>
-      <circle class="point" cx="627.6" cy="1031.0" r="5.2"><title>pyrouest — Hautacam | 42.9824, -0.0327</title></circle>
-      <circle class="point" cx="642.1" cy="1029.4" r="5.2"><title>pyrouest — Courade | 42.9976, 0.1687</title></circle>
-      <circle class="point" cx="640.3" cy="1038.8" r="5.2"><title>pyrouest — Tourmalet | 42.9103, 0.1427</title></circle>
+    <g fill="#4d4d4d">
+      <circle class="point" cx="854.5" cy="892.7" r="5.2"><title>Millau — Novis | 44.2574, 3.118</title></circle>
+      <circle class="point" cx="850.6" cy="912.7" r="5.2"><title>Millau — Millau | 44.0732, 3.0642</title></circle>
+      <circle class="point" cx="848.1" cy="924.2" r="5.2"><title>Millau — Tournemire | 43.9666, 3.0293</title></circle>
+      <circle class="point" cx="882.8" cy="879.7" r="5.2"><title>Millau — Ispagnac | 44.3766, 3.5107</title></circle>
+      <circle class="point" cx="938.4" cy="906.3" r="5.2"><title>Millau — Mont bouquet | 44.1322293, 4.2839719</title></circle>
+      <circle class="point" cx="892.1" cy="934.8" r="5.2"><title>Millau — Seranne | 43.8688, 3.6405</title></circle>
+      <circle class="point" cx="833.7" cy="968.1" r="5.2"><title>Millau — Vesole | 43.5624, 2.8292</title></circle>
+      <circle class="point" cx="871.3" cy="964.4" r="5.2"><title>Millau — Vissou | 43.5966, 3.3508</title></circle>
+      <circle class="point" cx="784.3" cy="977.5" r="5.2"><title>Millau — St Stapin | 43.4757, 2.1431</title></circle>
+      <circle class="point" cx="837.7" cy="995.0" r="5.2"><title>Millau — Argelier | 43.3143, 2.8851</title></circle>
     </g>
 
-    <g fill="#7f5539">
-      <circle class="point" cx="651.5" cy="1049.3" r="5.2"><title>pyrest — St Lary | 42.8136, 0.2983</title></circle>
-      <circle class="point" cx="657.1" cy="1049.8" r="5.2"><title>pyrest — Loudenvielle | 42.8093, 0.3761</title></circle>
-      <circle class="point" cx="671.8" cy="1054.3" r="5.2"><title>pyrest — Luchon | 42.7678, 0.5801</title></circle>
-      <circle class="point" cx="693.7" cy="1032.4" r="5.2"><title>pyrest — Arbas | 42.9697024, 0.885136</title></circle>
-      <circle class="point" cx="743.9" cy="1037.6" r="5.2"><title>pyrest — Prat d'Albis | 42.9217, 1.5814</title></circle>
-      <circle class="point" cx="773.2" cy="1082.2" r="5.2"><title>pyrest — Targassonne | 42.5103, 1.989</title></circle>
-      <circle class="point" cx="683.7" cy="1132.6" r="5.2"><title>pyrest — Ager | 42.0462, 0.746</title></circle>
+    <g fill="#6b8e23">
+      <circle class="point" cx="1119.3" cy="548.3" r="5.2"><title>Jura — Mandeure | 47.4315, 6.7958</title></circle>
+      <circle class="point" cx="1060.4" cy="572.9" r="5.2"><title>Jura — Planoise | 47.2044, 5.9775</title></circle>
+      <circle class="point" cx="1105.5" cy="587.2" r="5.2"><title>Jura — Morteau | 47.0732, 6.6039</title></circle>
+      <circle class="point" cx="1053.1" cy="598.4" r="5.2"><title>Jura — Mt Poupet | 46.97, 5.8759</title></circle>
+      <circle class="point" cx="1087.9" cy="624.1" r="5.2"><title>Jura — Mt d'Or | 46.7325, 6.3602</title></circle>
+      <circle class="point" cx="1060.8" cy="671.2" r="5.2"><title>Jura — Crozet | 46.2986, 5.9833</title></circle>
+      <circle class="point" cx="1018.6" cy="667.8" r="5.2"><title>Jura — Mt Myon | 46.3302, 5.3967</title></circle>
     </g>
 
-    <g fill="#d00000">
-      <circle class="point" cx="1069.2" cy="329.6" r="5.2"><title>vosges — Volmerange (Hetschenberg) | 49.4468, 6.0997</title></circle>
-      <circle class="point" cx="1156.5" cy="413.1" r="5.2"><title>vosges — Reinhardsmunster | 48.6775, 7.3121</title></circle>
-      <circle class="point" cx="1154.3" cy="445.0" r="5.2"><title>vosges — Breitenbach | 48.3837, 7.2825</title></circle>
-      <circle class="point" cx="1129.1" cy="457.1" r="5.2"><title>vosges — St Dié | 48.2721, 6.9326</title></circle>
-      <circle class="point" cx="1113.0" cy="482.4" r="5.2"><title>vosges — Vagney | 48.0386, 6.7082</title></circle>
-      <circle class="point" cx="1111.4" cy="495.0" r="5.2"><title>vosges — Rupt/Moselle | 47.9225, 6.6858</title></circle>
-      <circle class="point" cx="1128.2" cy="497.6" r="5.2"><title>vosges — Drumont | 47.8983, 6.9192</title></circle>
-      <circle class="point" cx="1134.9" cy="494.7" r="5.2"><title>vosges — Markstein | 47.9257, 7.0119</title></circle>
-      <circle class="point" cx="1122.5" cy="505.6" r="5.2"><title>vosges — Ballon d'Alsace | 47.8248, 6.8402</title></circle>
+    <g fill="#3b528b">
+      <circle class="point" cx="1069.2" cy="329.6" r="5.2"><title>Vosges — Volmerange | 49.4468, 6.0997</title></circle>
+      <circle class="point" cx="1156.5" cy="413.1" r="5.2"><title>Vosges — Reinhards munster | 48.6775, 7.3121</title></circle>
+      <circle class="point" cx="1154.3" cy="445.0" r="5.2"><title>Vosges — Breitenbach | 48.3837, 7.2825</title></circle>
+      <circle class="point" cx="1129.1" cy="457.1" r="5.2"><title>Vosges — St Dié | 48.2721, 6.9326</title></circle>
+      <circle class="point" cx="1113.0" cy="482.4" r="5.2"><title>Vosges — Vagney | 48.0386, 6.7082</title></circle>
+      <circle class="point" cx="1111.4" cy="495.0" r="5.2"><title>Vosges — Rupt/Moselle | 47.9225, 6.6858</title></circle>
+      <circle class="point" cx="1128.2" cy="497.6" r="5.2"><title>Vosges — Drumont | 47.8983, 6.9192</title></circle>
+      <circle class="point" cx="1134.9" cy="494.7" r="5.2"><title>Vosges — Markstein | 47.9257, 7.0119</title></circle>
+      <circle class="point" cx="1122.5" cy="505.6" r="5.2"><title>Vosges — Ballon d'Alsace | 47.8248, 6.8402</title></circle>
     </g>
 
-    <g fill="#bd3dce">
-      <circle class="point" cx="958.6" cy="782.9" r="5.2"><title>NOUVEAUX — Burdignes (ardeche) | 45.2695373, 4.5643317</title></circle>
-      <circle class="point" cx="959.3" cy="769.7" r="5.2"><title>NOUVEAUX — La Jasserie (ardeche) | 45.3904696, 4.5738483</title></circle>
-      <circle class="point" cx="662.8" cy="332.7" r="5.2"><title>NOUVEAUX — Marais Vernier (normandie) | 49.418273, 0.4555555</title></circle>
-      <circle class="point" cx="725.2" cy="291.7" r="5.2"><title>NOUVEAUX — Osmoy (normandie; Osmoy-Saint-Valery) | 49.7962394, 1.3227912</title></circle>
-      <circle class="point" cx="750.5" cy="281.4" r="5.2"><title>NOUVEAUX — Mont de la clique (normandie; Nesle-Normandeuse) | 49.8910909, 1.6738785</title></circle>
-      <circle class="point" cx="503.8" cy="336.7" r="5.2"><title>NOUVEAUX — Barneville (normandie; Barneville-sur-Mer) | 49.3815306, -1.7528273</title></circle>
-      <circle class="point" cx="698.9" cy="326.2" r="5.2"><title>NOUVEAUX — Hénouville (normandie) | 49.4782367, 0.9575335</title></circle>
-      <circle class="point" cx="726.9" cy="350.8" r="5.2"><title>NOUVEAUX — La Roquette (normandie) | 49.2517807, 1.3452256</title></circle>
-      <circle class="point" cx="768.6" cy="332.8" r="5.2"><title>NOUVEAUX — Ons-en-Bray (plaine) | 49.417579, 1.9248054</title></circle>
-      <circle class="point" cx="733.7" cy="826.7" r="5.2"><title>NOUVEAUX — Le Roc (plaine; commune du Lot) | 44.8655853, 1.4408482</title></circle>
-      <circle class="point" cx="768.4" cy="867.8" r="5.2"><title>NOUVEAUX — La Mounine (plaine; site FFVL 13193) | 44.4867, 1.9216</title></circle>
-      <circle class="point" cx="783.8" cy="976.4" r="5.2"><title>NOUVEAUX — Dourgne (plaine) | 43.4855, 2.13617</title></circle>
-      <circle class="point" cx="839.6" cy="995.2" r="5.2"><title>NOUVEAUX — Argelier (plaine; Argeliers, candidat géographique) | 43.3121894, 2.9113792</title></circle>
-      <circle class="point" cx="834.3" cy="970.0" r="5.2"><title>NOUVEAUX — Vesole (plaine; site à Prémian) | 43.545037, 2.8370863</title></circle>
-      <circle class="point" cx="995.9" cy="319.0" r="5.2"><title>NOUVEAUX — Létanne (plaine) | 49.544666, 5.0815331</title></circle>
-      <circle class="point" cx="914.8" cy="359.4" r="5.2"><title>NOUVEAUX — Chamery (plaine; Marne) | 49.1724784, 3.9557464</title></circle>
-      <circle class="point" cx="967.1" cy="642.1" r="5.2"><title>NOUVEAUX — Malay (plaine; Saône-et-Loire) | 46.5665122, 4.6813344</title></circle>
-      <circle class="point" cx="891.4" cy="464.0" r="5.2"><title>NOUVEAUX — Rigny (plaine; Rigny-le-Ferron) | 48.2084989, 3.6310348</title></circle>
-      <circle class="point" cx="957.1" cy="500.6" r="5.2"><title>NOUVEAUX — Saint Colombe (plaine; Sainte-Colombe-sur-Seine) | 47.8707146, 4.5424678</title></circle>
+    <g fill="#f03b20">
+      <circle class="point" cx="537.0" cy="997.5" r="5.2"><title>Pyrénnées Ouest — Baigura | 43.2916, -1.2917</title></circle>
+      <circle class="point" cx="589.6" cy="1031.8" r="5.2"><title>Pyrénnées Ouest — Accous | 42.9747, -0.5611</title></circle>
+      <circle class="point" cx="615.9" cy="1030.2" r="5.2"><title>Pyrénnées Ouest — Val d'Azun | 42.9902, -0.1964</title></circle>
+      <circle class="point" cx="627.6" cy="1031.0" r="5.2"><title>Pyrénnées Ouest — Hautacam | 42.9824, -0.0327</title></circle>
+      <circle class="point" cx="642.1" cy="1029.4" r="5.2"><title>Pyrénnées Ouest — Courade | 42.9976, 0.1687</title></circle>
+      <circle class="point" cx="640.3" cy="1038.8" r="5.2"><title>Pyrénnées Ouest — Tourmalet | 42.9103, 0.1427</title></circle>
     </g>
+
+    <g fill="#5e3c99">
+      <circle class="point" cx="651.5" cy="1049.3" r="5.2"><title>Pyrénnées Est — St Lary | 42.8136, 0.2983</title></circle>
+      <circle class="point" cx="657.1" cy="1049.8" r="5.2"><title>Pyrénnées Est — Loudenvielle | 42.8093, 0.3761</title></circle>
+      <circle class="point" cx="671.8" cy="1054.3" r="5.2"><title>Pyrénnées Est — Luchon | 42.7678, 0.5801</title></circle>
+      <circle class="point" cx="693.7" cy="1032.4" r="5.2"><title>Pyrénnées Est — Arbas | 42.9697024, 0.885136</title></circle>
+      <circle class="point" cx="743.9" cy="1037.6" r="5.2"><title>Pyrénnées Est — Prat d'Albis | 42.9217, 1.5814</title></circle>
+      <circle class="point" cx="773.2" cy="1082.2" r="5.2"><title>Pyrénnées Est — Targassonne | 42.5103, 1.989</title></circle>
+      <circle class="point" cx="683.7" cy="1132.6" r="5.2"><title>Pyrénnées Est — Ager | 42.0462, 0.746</title></circle>
+    </g>
+
   </g>
 
-  <g transform="translate(286 1165)" filter="url(#shadow)">
-    <rect width="1048" height="155" rx="14" fill="#fff" opacity=".97"/>
-    <text x="18" y="23" font-size="12" font-weight="700" letter-spacing="1" fill="#526a6d">FICHIERS SOURCE</text>
+  <g transform="translate(286 1165)" filter="url(#Saint Hylaireadow)">
+    <rect width="780" height="165" rx="14" fill="#fff" opacity=".97"/>
     <g font-size="12" fill="#30494b">
-      <circle cx="24" cy="48" r="5" fill="#ef476f"/><text x="36" y="52">Trégor-Goëllo</text>
-      <circle cx="194" cy="48" r="5" fill="#06a77d"/><text x="206" y="52">bzh</text>
-      <circle cx="364" cy="48" r="5" fill="#f77f00"/><text x="376" y="52">normandie</text>
-      <circle cx="534" cy="48" r="5" fill="#3a86ff"/><text x="546" y="52">plaine</text>
-      <circle cx="704" cy="48" r="5" fill="#8338ec"/><text x="716" y="52">mc</text>
-      <circle cx="874" cy="48" r="5" fill="#ff006e"/><text x="886" y="52">ardeche</text>
-
-      <circle cx="24" cy="79" r="5" fill="#00b4d8"/><text x="36" y="83">alpesnord</text>
-      <circle cx="194" cy="79" r="5" fill="#ffbe0b"/><text x="206" y="83">annecy</text>
-      <circle cx="364" cy="79" r="5" fill="#9b5de5"/><text x="376" y="83">sh</text>
-      <circle cx="534" cy="79" r="5" fill="#e63946"/><text x="546" y="83">ecrins</text>
-      <circle cx="704" cy="79" r="5" fill="#2a9d8f"/><text x="716" y="83">baronnies</text>
-      <circle cx="874" cy="79" r="5" fill="#fb5607"/><text x="886" y="83">alpessud</text>
-
-      <circle cx="24" cy="110" r="5" fill="#6a994e"/><text x="36" y="114">millau</text>
-      <circle cx="194" cy="110" r="5" fill="#577590"/><text x="206" y="114">jura</text>
-      <circle cx="364" cy="110" r="5" fill="#bc6c25"/><text x="376" y="114">pyrouest</text>
-      <circle cx="534" cy="110" r="5" fill="#7f5539"/><text x="546" y="114">pyrest</text>
-      <circle cx="704" cy="110" r="5" fill="#d00000"/><text x="716" y="114">vosges</text>
-      <circle cx="874" cy="110" r="5" fill="#bd3dce"/><text x="886" y="114" font-weight="700">NOUVEAUX (19)</text>
+      <circle cx="24" cy="36" r="5" fill="#d7191c"/><text x="36" y="40">Trégor-Goëllo</text>
+      <circle cx="224" cy="36" r="5" fill="#2c7bb6"/><text x="236" y="40">Bretagne</text>
+      <circle cx="424" cy="36" r="5" fill="#fdae61"/><text x="436" y="40">Basse Normandie</text>
+      <circle cx="624" cy="36" r="5" fill="#7b3294"/><text x="636" y="40">Haute Normandie</text>
+      <circle cx="24" cy="60" r="5" fill="#1a9641"/><text x="36" y="64">Plaine Ouest</text>
+      <circle cx="224" cy="60" r="5" fill="#e7298a"/><text x="236" y="64">Plaine Est</text>
+      <circle cx="424" cy="60" r="5" fill="#66a61e"/><text x="436" y="64">Auvergne</text>
+      <circle cx="624" cy="60" r="5" fill="#b88600"/><text x="636" y="64">Ardèche</text>
+      <circle cx="24" cy="84" r="5" fill="#1b9e77"/><text x="36" y="88">Alpes du Nord</text>
+      <circle cx="224" cy="84" r="5" fill="#7570b3"/><text x="236" y="88">Annecy</text>
+      <circle cx="424" cy="84" r="5" fill="#d95f02"/><text x="436" y="88">Saint Hylaire</text>
+      <circle cx="624" cy="84" r="5" fill="#a6761d"/><text x="636" y="88">Écrins</text>
+      <circle cx="24" cy="108" r="5" fill="#00a6d6"/><text x="36" y="112">Baronnies</text>
+      <circle cx="224" cy="108" r="5" fill="#c51b7d"/><text x="236" y="112">Alpes du Sud</text>
+      <circle cx="424" cy="108" r="5" fill="#4d4d4d"/><text x="436" y="112">Millau</text>
+      <circle cx="624" cy="108" r="5" fill="#6b8e23"/><text x="636" y="112">Jura</text>
+      <circle cx="24" cy="132" r="5" fill="#3b528b"/><text x="36" y="136">Vosges</text>
+      <circle cx="224" cy="132" r="5" fill="#f03b20"/><text x="236" y="136">Pyrénnées Ouest</text>
+      <circle cx="424" cy="132" r="5" fill="#5e3c99"/><text x="436" y="136">Pyrénnées Est</text>
     </g>
   </g>
 
