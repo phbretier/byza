@@ -309,14 +309,14 @@ function BasDePage() {
         </tr>
         <tr>
             <td colspan=2">
-                <a href="https://www.windy.com/fr/-Nuages-clouds?iconEu,clouds47.000,1.500,5,i:deg0,p:wind">Vents</a>
+                <a href="https://www.windy.com/?gfs,47.000,1.500,5,i:pressure,p:wind">Vents</a>
                 <br>
                 <a href="https://www.meteoblue.com/fr/meteo/cartes#map=windAnimation~rainbow~auto~128%20m%20above%20gnd~pressure2mOverlay&coords=4/47/0.5" target="_blank">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" height="18px" style="position: relative; top: 5px;"/>
                 </a>
             </td>
             <td colspan=2">
-                <a href="https://www.windy.com/fr/-Nuages-clouds?iconEu,clouds,47.000,1.500,5,i:deg0,p:wind">Nuages</a>
+                <a href="https://www.windy.com/fr/-Nuages-clouds?iconEu,clouds,47.000,1.500,5,i:pressure,p:wind">Nuages</a>
                 <br>
                 <a href="https://www.meteoblue.com/fr/meteo/cartes#map=cloudsAndPrecipitation~hourly~auto~sfc~pressure2mOverlay&coords=4/47/0.5" target="_blank">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" height="18px" style="position: relative; top: 5px;"/>
