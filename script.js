@@ -228,8 +228,7 @@ function BasDePage() {
                 <a href="https://www.meteoblue.com/fr/meteo/prevision/meteogramweb/${this.dataset.lat}N${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
                 </a>
-                &#8239; 
-                <br>
+                &#8239;
                 <a href="https://www.parameteo.app/fr/forecast?lat=${this.dataset.lat}&lng=${this.dataset.lon}&orientation=W&deg=270&day=6&region=${this.dataset.lat}%C2%B0N%2C${this.dataset.lon}%C2%B0E&soaring=1&ridgeHeight=70&slopeAngle=30" target="_blank" class="imglink">
                     <img src="https://www.parameteo.app/favicon.ico?favicon.0_o08r-y8wd7w.ico" alt="🪂" width="24px"/>
                 </a>
