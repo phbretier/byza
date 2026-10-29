@@ -180,8 +180,8 @@ function BasDePage() {
                 <div style="height: 10px;"></div>
                 Coupes
                 <br>
-                <a href="https://meteo-parapente.com/spotair/windgram?lat=${this.dataset.lat}&lon=${this.dataset.lon}&name=${this.dataset.nom}" target="_blank" class="imglink">
-                    <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/> 
+                <a href="https://meteo-parapente.com/v5/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="imglink">
+                    <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/>
                 </a>
                 &#8239; 
                 <a href="https://www.meteoblue.com/fr/meteo/aviation/air/${this.dataset.lat}N${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
@@ -210,12 +210,12 @@ function BasDePage() {
                 <br><div style="height: 7px;"></div>                
                 Emagrammes
                 <br>
-                <a href="https://meteo-parapente.com/spotair/sounding?lat=${this.dataset.lat}&lon=${this.dataset.lon}&name=${this.dataset.nom}" target="_blank" class="imglink">
-                    <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/>
-                </a>
-                &#8239; 
                 <a href="https://www.windy.com/plugin/sdg/aromeFrance/${this.dataset.lat}/${this.dataset.lon}?aromeFrance,clouds,${this.dataset.lat},${this.dataset.lon},10,i:pressure,p:wind" target="_blank" class="imglink">
                     <img src="https://flyxc.app/static/img/jumoplane.svg" alt="📈" width="24px"/>
+                </a>
+                &#8239; 
+                <a href="https://skopaero.com/?p=${this.dataset.lat},${this.dataset.lon}&v=e" target="_blank" class="imglink">
+                    <img src="https://skopaero.com/favicon.png" alt="📉" width="24px"/>
                 </a>
                 &#8239; 
                 <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lat=${this.dataset.lat}&lon=${this.dataset.lon}&ech=0&map=0" target="_blank" class="imglink">
@@ -224,13 +224,13 @@ function BasDePage() {
 
                 <br><div style="height: 7px;"></div>
                 Sites                
-                <br>
-                <a href="https://meteo-parapente.com/v5/#/${this.dataset.lat},${this.dataset.lon},9" target="_blank" class="imglink">
-                    <img src="https://meteo-parapente.com/v5/icons/icon-180.png" alt="🪂" width="24px"/>
-                </a>
-                &#8239; 
                 <a href="https://www.meteoblue.com/fr/meteo/prevision/meteogramweb/${this.dataset.lat}N${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
+                </a>
+                &#8239; 
+                <br>
+                <a href="https://www.parameteo.app/fr/forecast?lat=${this.dataset.lat}&lng=${this.dataset.lon}&orientation=W&deg=270&day=6&region=${this.dataset.lat}%C2%B0N%2C${this.dataset.lon}%C2%B0E&soaring=1&ridgeHeight=70&slopeAngle=30" target="_blank" class="imglink">
+                    <img src="https://www.parameteo.app/favicon.ico?favicon.0_o08r-y8wd7w.ico" alt="🪂" width="24px"/>
                 </a>
                 &#8239; 
                 <a href="meteoblue.html#${encodeURIComponent(this.dataset.nom)}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="imglink big">
