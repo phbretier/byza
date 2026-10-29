@@ -335,6 +335,9 @@ function BasDePage() {
                 <a href="https://www.velivole.fr/?center_lat=49.82&center_long=10.75&zoom=5.3" target="_blank">Velivole</a>
             </td>
             <td colspan="3">
+                <a href="https://xctherm.com/icon" target="_blank">XCTherm</a>
+            </td>
+            <td colspan="3">
                 <a href="https://paraglidable.com/" target="_blank">Paraglid.</a>
             </td>
         </tr>
