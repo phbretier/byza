@@ -223,7 +223,8 @@ function BasDePage() {
                 </a>
 
                 <br><div style="height: 7px;"></div>
-                Sites                
+                Sites
+                <br>
                 <a href="https://www.meteoblue.com/fr/meteo/prevision/meteogramweb/${this.dataset.lat}N${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
                 </a>
@@ -331,13 +332,10 @@ function BasDePage() {
             </td>
         </tr>
         <tr>
-            <td colspan="2">
+            <td colspan="3">
                 <a href="https://www.velivole.fr/?center_lat=49.82&center_long=10.75&zoom=5.3" target="_blank">Velivole</a>
             </td>
-            <td colspan=2">
-                <a href="https://skopaero.com/" target="_blank">Skopaero</a>
-            </td>
-            <td colspan="2">
+            <td colspan="3">
                 <a href="https://paraglidable.com/" target="_blank">Paraglid.</a>
             </td>
         </tr>
