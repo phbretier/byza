@@ -130,7 +130,7 @@ function SectionPrevisions() {
     `);
 }
 
-function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientations=null, fiche=null) {
+function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientations=null, fiche=null, deg=null, alt=null) {
     const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
     var td = `
         <td colspan="${colspan}">
@@ -146,8 +146,10 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientations=nu
         } 
         td += ` ${img} `;
     }
+    const deg2 = deg ? deg : "0";
+    const alt2 = alt ? alt : "100";
     td += `
-            <a href="#" class="open-menu" data-nom="${nom.replace(/<[^>]*>/g, ' ').trim()}" data-lat="${lat}" data-lon="${lon}"><img src="${menu}" alt="🍔" width="24px"/></a>
+            <a href="#" class="open-menu" data-nom="${nom.replace(/<[^>]*>/g, ' ').trim()}" data-lat="${lat}" data-lon="${lon}" data-deg="${deg2}" data-alt="${alt2}"><img src="${menu}" alt="🍔" width="24px"/></a>
         </td>
     `;
     document.write(td);
@@ -229,7 +231,7 @@ function BasDePage() {
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
                 </a>
                 &#8239;
-                <a href="https://www.parameteo.app/fr/forecast?lat=${this.dataset.lat}&lng=${this.dataset.lon}&orientation=W&deg=270&day=6&region=${this.dataset.lat}%C2%B0N%2C${this.dataset.lon}%C2%B0E&soaring=1&ridgeHeight=70&slopeAngle=30" target="_blank" class="imglink">
+                <a href="https://www.parameteo.app/fr/forecast?lat=${this.dataset.lat}&lng=${this.dataset.lon}&alt=${this.dataset.alt}&deg=${this.dataset.deg}&day=0&soaring=1&ridgeHeight=${this.dataset.alt}&slopeAngle=${this.dataset.deg}" target="_blank" class="imglink">
                     <img src="https://www.parameteo.app/favicon.ico?favicon.0_o08r-y8wd7w.ico" alt="🪂" width="24px"/>
                 </a>
                 &#8239; 
