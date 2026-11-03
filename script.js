@@ -130,7 +130,7 @@ function SectionPrevisions() {
     `);
 }
 
-function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientations=null, fiche=null, deg=null, alt=null) {
+function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientations=null, fiche=null, deg="0", alt="100", hau="", pen="") {
     const urlMeteociel =`https://www.meteociel.fr/previsions-arome-1h/${cheminMeteociel}`;
     var td = `
         <td colspan="${colspan}">
@@ -146,10 +146,8 @@ function previsionsMenu(colspan, cheminMeteociel, nom, lat, lon, orientations=nu
         } 
         td += ` ${img} `;
     }
-    const deg2 = deg ? deg : "0";
-    const alt2 = alt ? alt : "100";
     td += `
-            <a href="#" class="open-menu" data-nom="${nom.replace(/<[^>]*>/g, ' ').trim()}" data-lat="${lat}" data-lon="${lon}" data-deg="${deg2}" data-alt="${alt2}"><img src="${menu}" alt="🍔" width="24px"/></a>
+            <a href="#" class="open-menu" data-nom="${nom.replace(/<[^>]*>/g, ' ').trim()}" data-lat="${lat}" data-lon="${lon}" data-deg="${deg}" data-alt="${alt}" data-hau="${hau}" data-pen="${pen}"><img src="${menu}" alt="🍔" width="24px"/></a>
         </td>
     `;
     document.write(td);
@@ -177,6 +175,7 @@ function BasDePage() {
             container.className = 'menu-opened';
             container.style.fontSize = 'small';
             container.style.textAlign = 'center';
+            const soaring = (this.dataset.hau == null || this.dataset.hau === "" || this.dataset.pen == null || this.dataset.pen === "") ? "" : `&soaring=1&ridgeHeight=${this.dataset.hau}&slopeAngle=${this.dataset.pen}`;
             // &emsp; 1 em ; &ensp; 0,5 em ; &nbsp; 0,25-0,33 em ; &thinsp; &#8239; 0,16-0,20 em ; &hairsp; 0,08-0,10 em
             const htmlContent = `
                 <div style="height: 10px;"></div>
@@ -231,7 +230,7 @@ function BasDePage() {
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>
                 </a>
                 &#8239;
-                <a href="https://www.parameteo.app/fr/forecast?lat=${this.dataset.lat}&lng=${this.dataset.lon}&alt=${this.dataset.alt}&deg=${this.dataset.deg}&day=0&soaring=1&ridgeHeight=${this.dataset.alt}&slopeAngle=${this.dataset.deg}" target="_blank" class="imglink">
+                <a href="https://www.parameteo.app/fr/forecast?lat=${this.dataset.lat}&lng=${this.dataset.lon}&alt=${this.dataset.alt}&deg=${this.dataset.deg}&day=0${soaring}" target="_blank" class="imglink">
                     <img src="https://www.parameteo.app/favicon.ico?favicon.0_o08r-y8wd7w.ico" alt="🪂" width="24px"/>
                 </a>
                 &#8239; 
