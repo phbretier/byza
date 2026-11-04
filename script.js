@@ -237,6 +237,12 @@ function BasDePage() {
                 <a href="meteoblue.html#${encodeURIComponent(this.dataset.nom)}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="imglink big">
                     <img src="https://www.meteoblue.com/favicon.ico" alt="🌎" width="24px"/>⁺
                 </a>
+
+                <br><div style="height: 7px;"></div>
+                <a href="https://earth.google.com/web/@${this.dataset.lat},${this.dataset.lon}" target="_blank" class="imglink big">
+                    <img src="https://www.gstatic.com/earth/00-favicon.ico" alt="🌎" width="24px"/>⁺
+                </a>
+
                 <br><div style="height: 10px;"></div>
             `;
             container.innerHTML = htmlContent;
