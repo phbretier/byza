@@ -301,7 +301,7 @@ function BasDePage() {
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?500h,temp,52.000,-3.500,3,i:gh,p:wind">Géop.500</a>
                 <br>
-                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph850temperature~hourly~auto~500%20mb~none&coords=2/52/-3.5" target="_blank">
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph850temperature~hourly~auto~500%20mb~none&coords=2/52/-3.5" target="_blank" style="text-decoration: none">
                     <img src="${iconMB}" alt="🌎" height="18px" style="position: relative; top: 3px;"/>
                 </a>
                 &#8239; 
@@ -312,7 +312,7 @@ function BasDePage() {
             <td colspan="2">
                 <a href="https://www.windy.com/fr/-Temp%C3%A9rature-temp?850h,temp,52.000,-3.500,3,i:temp,p:temp">T°850</a>
                 <br>
-                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph850temperature~hourly~auto~850%20mb~pressure2mOverlay&coords=2/52/-3.5" target="_blank">
+                <a href="https://www.meteoblue.com/fr/meteo/cartes#map=gph850temperature~hourly~auto~850%20mb~pressure2mOverlay&coords=2/52/-3.5" target="_blank" style="text-decoration: none">
                     <img src="${iconMB}" alt="🌎" height="18px" style="position: relative; top: 3px;"/>
                 </a>
             </td>
