@@ -249,7 +249,7 @@ function BasDePage() {
                     <img src="${iconMB}" alt="🌎" width="24px"/>
                 </a>
                 &#8239;
-                <a href="https://www.parameteo.app/fr/forecast?lat=${this.dataset.lat}&lng=${this.dataset.lon}&alt=${this.dataset.alt}&deg=${this.dataset.deg}&day=0${soaring}" target="_blank" class="imglink">
+                <a href="https://www.parameteo.app/fr/forecast?lat=${this.dataset.lat}&lng=${this.dataset.lon}&alt=${this.dataset.alt}&deg=${this.dataset.deg}&name=${encodeURIComponent(this.dataset.nom)}${soaring}" target="_blank" class="imglink">
                     <img src="${iconPM}" alt="🪂" width="24px"/>
                 </a>
                 &#8239; 
