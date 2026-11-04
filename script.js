@@ -373,7 +373,7 @@ function BasDePage() {
 
         <tr>
             <td class="section" colspan="6">
-                Régions <a href="https://puretrack.io/#philippe-bretier" target="_blank">📍</a>
+                Régions <a href="https://puretrack.io/#philippe-bretier" target="_blank" style="text-decoration: none">📍</a>
             </td>
         </tr>
         <tr>
