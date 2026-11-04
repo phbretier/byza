@@ -256,7 +256,7 @@ function BasDePage() {
                 <a href="https://hehol.fr/gliding/plan?points=${this.dataset.lon}_${this.dataset.lat}" target="_blank" class="imglink">
                     <img src="${iconHH}" alt="✈︎" width="24px"/>
                 </a>
-                <br>
+                <br><div style="height: 7px;"></div>
                 <a href="meteoblue.html#${encodeURIComponent(this.dataset.nom)}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="imglink big">
                     <img src="${iconMB}" alt="🌎" width="28px"/>⁺
                 </a>
