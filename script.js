@@ -219,12 +219,12 @@ function BasDePage() {
                     <img src="${iconW}" alt="⛅" width="24px"/>
                 </a>
                 &#8239; 
-                <a href="https://www.meteoblue.com/fr/meteo/prevision/multimodel/${this.dataset.lat}N${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
-                    <img src="${iconMB}" alt="🌎" width="24px"/>
-                </a>
-                &#8239; 
                 <a href="https://www.spots.guru/?latitude=${this.dataset.lat}&longitude=${this.dataset.lon}&sport=Paragliding#" target="_blank" class="imglink">
                     <img src="${iconSG}" alt="𖦏" width="24px"/>
+                </a>
+                &#8239; 
+                <a href="https://www.meteoblue.com/fr/meteo/prevision/multimodel/${this.dataset.lat}N${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
+                    <img src="${iconMB}" alt="🌎" width="24px"/>
                 </a>
 
                 <br><div style="height: 7px;"></div>                
@@ -235,7 +235,7 @@ function BasDePage() {
                 </a>
                 &#8239; 
                 <a href="https://skopaero.com/?p=${this.dataset.lat},${this.dataset.lon}&v=e" target="_blank" class="imglink">
-                    <img src="${iconSA}" alt="📉" width="24px"/>
+                    <img src="${iconSA}" alt="𝓢" width="24px"/>
                 </a>
                 &#8239; 
                 <a href="https://www.meteociel.fr/modeles/sondage2arome.php?mode=0&lat=${this.dataset.lat}&lon=${this.dataset.lon}&ech=0&map=0" target="_blank" class="imglink">
@@ -245,16 +245,16 @@ function BasDePage() {
                 <br><div style="height: 7px;"></div>
                 Sites
                 <br>
-                <a href="https://www.meteoblue.com/fr/meteo/prevision/meteogramweb/${this.dataset.lat}N${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
-                    <img src="${iconMB}" alt="🌎" width="24px"/>
+                <a href="https://hehol.fr/gliding/plan?points=${this.dataset.lon}_${this.dataset.lat}" target="_blank" class="imglink">
+                    <img src="${iconHH}" alt="✈︎" width="24px"/>
                 </a>
                 &#8239;
                 <a href="https://www.parameteo.app/fr/forecast?lat=${this.dataset.lat}&lng=${this.dataset.lon}&alt=${this.dataset.alt}&deg=${this.dataset.deg}&name=${encodeURIComponent(this.dataset.nom)}${soaring}" target="_blank" class="imglink">
                     <img src="${iconPM}" alt="🪂" width="24px"/>
                 </a>
                 &#8239; 
-                <a href="https://hehol.fr/gliding/plan?points=${this.dataset.lon}_${this.dataset.lat}" target="_blank" class="imglink">
-                    <img src="${iconHH}" alt="✈︎" width="24px"/>
+                <a href="https://www.meteoblue.com/fr/meteo/prevision/meteogramweb/${this.dataset.lat}N${this.dataset.lon}E46_Europe%2FParis" target="_blank" class="imglink">
+                    <img src="${iconMB}" alt="🌎" width="24px"/>
                 </a>
                 <br><div style="height: 7px;"></div>
                 <a href="meteoblue.html#${encodeURIComponent(this.dataset.nom)}/${this.dataset.lat}/${this.dataset.lon}" target="_blank" class="imglink big">
@@ -262,7 +262,7 @@ function BasDePage() {
                 </a>
                 &#8239; 
                 <a href="https://earth.google.com/web/@${this.dataset.lat},${this.dataset.lon}" target="_blank" class="imglink">
-                    <img src="${iconGE}" alt="🌎" width="24px"/>
+                    <img src="${iconGE}" alt="🌍" width="24px"/>
                 </a>
 
                 <br><div style="height: 10px;"></div>
